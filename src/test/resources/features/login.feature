@@ -19,6 +19,35 @@
 @tag
 Feature: Title of your feature
   I want to use this template for my feature file
+  
+  
+  Feature:Feature to test login functionality
+  
+   @tag1
+  Scenario: Check login is successful with valid credentials
+  Given user is on home page
+  And user clicks on "Get Started" button
+  And Next page is displayed with content
+  
+  Given user is on login page
+  When user enters username and password
+  And clicks on login button
+  Then user is navigated to the home page
+  
+    @tag2
+    Scenario Outline: check login  with valid and invalid credentials
+    
+  Given user is on login page
+  When user enters <username> and <password>
+  And clicks on login button
+  Then user is navigated to the home page
+  
+  Examples:
+  |username|password|
+  |Bismiraj|doorno@32|
+#  |user2|pass2|
+  
+  
 
   @tag1
   Scenario: Title of your scenario
@@ -40,3 +69,5 @@ Feature: Title of your feature
       | name  | value | status  |
       | name1 |     5 | success |
       | name2 |     7 | Fail    |
+      
+  
