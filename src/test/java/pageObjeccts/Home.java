@@ -44,12 +44,16 @@ public class Home {
 		chromeDriver.findElement(By.xpath("//input[@value='Login']")).click();
 	}
 	
+	public void sign_out(){
+		chromeDriver.findElement(By.partialLinkText("Sign out")).click();
+	}
+	
 	public static void main(String[] args){
 		Home HomeOBJ=new Home();
 		HomeOBJ.init();
 		HomeOBJ.home();
 		HomeOBJ.sign_in();
 		HomeOBJ.login();
-//		HomeOBJ.test3();
+		HomeOBJ.sign_out();
 	}
 }
