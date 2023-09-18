@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Login {
+public class Login_SD {
 //	You can implement missing steps with the snippets below:
 
 		@Given("I want to write a step with precondition")
