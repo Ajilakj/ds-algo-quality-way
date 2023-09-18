@@ -30,10 +30,8 @@ public class BaseClass {
 		Home HomeOBJ=new Home();
 		HomeOBJ.home();
 		HomeOBJ.sign_in();
-//		BaseClassObj.home();
-//		HomeOBJ.login();
 		Login LoginOBJ=new Login();
-		LoginOBJ.test1();
+		LoginOBJ.login();
 		HomeOBJ.sign_out();
 	}
 }

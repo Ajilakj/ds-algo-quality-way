@@ -8,14 +8,10 @@ public class Login extends BaseClass {
 	By password=By.id("id_password");
 	By loginBtn=By.xpath("//input[@value='Login']");
 	
-	public void test1(){
+	public void login(){
 		chromeDriver.findElement(username).sendKeys("QualityWay");
 		chromeDriver.findElement(password).sendKeys("pwd_ds_algo@2");
 		chromeDriver.findElement(loginBtn).click();
 	}
 	
-//	public static void main(String[] args){
-//		Login LoginOBJ=new Login();
-//		LoginOBJ.test1();
-//	}
 }

@@ -12,18 +12,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class Home extends BaseClass{
-	
+	By getStartedLnk=By.xpath("//button[text()='Get Started']");
+	By sign_in=By.partialLinkText("Sign in");
+	By sign_out=By.partialLinkText("Sign out");
 
 	public void home(){
-		chromeDriver.findElement(By.xpath("//button[text()='Get Started']")).click();
+		chromeDriver.findElement(getStartedLnk).click();
 	}
 	
 	public void sign_in(){
-		chromeDriver.findElement(By.partialLinkText("Sign in")).click();
+		chromeDriver.findElement(sign_in).click();
 	}
 	
 	public void sign_out(){
-		chromeDriver.findElement(By.partialLinkText("Sign out")).click();
+		chromeDriver.findElement(sign_out).click();
 	}
 	
 }
