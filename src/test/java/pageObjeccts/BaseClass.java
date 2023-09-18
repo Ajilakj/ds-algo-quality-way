@@ -29,6 +29,9 @@ public class BaseClass {
 		BaseClassObj.init();
 		Home HomeOBJ=new Home();
 		HomeOBJ.home();
+		HomeOBJ.register();
+//		Register RegisterBJ=new Register();
+//		RegisterBJ.register();
 		HomeOBJ.sign_in();
 		Login LoginOBJ=new Login();
 		LoginOBJ.login();
