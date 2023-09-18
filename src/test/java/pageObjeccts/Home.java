@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class Home {
-	WebDriver chromeDriver;
+	static WebDriver chromeDriver;
 	WebDriverWait wait;
 	JavascriptExecutor js;	
 	
@@ -25,7 +25,6 @@ public class Home {
 		chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //		wait = new WebDriverWait(chromeDriver,Duration.ofSeconds(10) );
 //		js = (JavascriptExecutor)chromeDriver;			
-//		PageFactory.initElements(chromeDriver, this);
 		chromeDriver.get("https://dsportalapp.herokuapp.com/");  
 		
 	}
@@ -38,12 +37,6 @@ public class Home {
 		chromeDriver.findElement(By.partialLinkText("Sign in")).click();
 	}
 	
-	public void login(){
-		chromeDriver.findElement(By.id("id_username")).sendKeys("QualityWay");
-		chromeDriver.findElement(By.id("id_password")).sendKeys("pwd_ds_algo@2");
-		chromeDriver.findElement(By.xpath("//input[@value='Login']")).click();
-	}
-	
 	public void sign_out(){
 		chromeDriver.findElement(By.partialLinkText("Sign out")).click();
 	}
@@ -53,7 +46,9 @@ public class Home {
 		HomeOBJ.init();
 		HomeOBJ.home();
 		HomeOBJ.sign_in();
-		HomeOBJ.login();
+//		HomeOBJ.login();
+		Login LoginOBJ=new Login();
+		LoginOBJ.test1();
 		HomeOBJ.sign_out();
 	}
 }
