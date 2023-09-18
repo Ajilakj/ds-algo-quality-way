@@ -30,9 +30,9 @@ public class Home {
 		
 	}
 
-//		public void test1(){
-//			chromeDriver.findElement(By.xpath("//button[text()='Get Started']")).click();
-//		}
+		public void test1(){
+			chromeDriver.findElement(By.xpath("//button[text()='Get Started']")).click();
+		}
 		
 		public static void main(String[] args){
 			Home HomeOBJ=new Home();
