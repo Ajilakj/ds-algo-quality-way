@@ -30,13 +30,26 @@ public class Home {
 		
 	}
 
-		public void test1(){
-			chromeDriver.findElement(By.xpath("//button[text()='Get Started']")).click();
-		}
-		
-		public static void main(String[] args){
-			Home HomeOBJ=new Home();
-			HomeOBJ.init();
-			HomeOBJ.test1();
-		}
+	public void home(){
+		chromeDriver.findElement(By.xpath("//button[text()='Get Started']")).click();
+	}
+	
+	public void sign_in(){
+		chromeDriver.findElement(By.partialLinkText("Sign in")).click();
+	}
+	
+	public void login(){
+		chromeDriver.findElement(By.id("id_username")).sendKeys("QualityWay");
+		chromeDriver.findElement(By.id("id_password")).sendKeys("pwd_ds_algo@2");
+		chromeDriver.findElement(By.xpath("//input[@value='Login']")).click();
+	}
+	
+	public static void main(String[] args){
+		Home HomeOBJ=new Home();
+		HomeOBJ.init();
+		HomeOBJ.home();
+		HomeOBJ.sign_in();
+		HomeOBJ.login();
+//		HomeOBJ.test3();
+	}
 }
