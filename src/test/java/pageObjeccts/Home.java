@@ -11,23 +11,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class Home {
-	static WebDriver chromeDriver;
-	WebDriverWait wait;
-	JavascriptExecutor js;	
+public class Home extends BaseClass{
 	
-
-	public void init(){
-		System.setProperty("webdinput-enquiryriver.chrome.driver", "C:\\Users\\bobby\\eclipse-workspace\\HelloWorldSelenium\\src\\test\\resources\\drivers\\chromedriver.exe");
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeDriver=new ChromeDriver(chromeOptions);
-		chromeDriver.manage().window().maximize();
-		chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//		wait = new WebDriverWait(chromeDriver,Duration.ofSeconds(10) );
-//		js = (JavascriptExecutor)chromeDriver;			
-		chromeDriver.get("https://dsportalapp.herokuapp.com/");  
-		
-	}
 
 	public void home(){
 		chromeDriver.findElement(By.xpath("//button[text()='Get Started']")).click();
@@ -41,14 +26,4 @@ public class Home {
 		chromeDriver.findElement(By.partialLinkText("Sign out")).click();
 	}
 	
-	public static void main(String[] args){
-		Home HomeOBJ=new Home();
-		HomeOBJ.init();
-		HomeOBJ.home();
-		HomeOBJ.sign_in();
-//		HomeOBJ.login();
-		Login LoginOBJ=new Login();
-		LoginOBJ.test1();
-		HomeOBJ.sign_out();
-	}
 }
