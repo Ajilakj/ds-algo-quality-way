@@ -7,9 +7,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-//import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.UtlityFunctions;
 
 public class Home_POM extends BaseClass{
 	By getStartedLnk=By.xpath("//button[text()='Get Started']");
@@ -18,7 +18,9 @@ public class Home_POM extends BaseClass{
 	By sign_out=By.partialLinkText("Sign out");
 
 	public void home(){
-		chromeDriver.findElement(getStartedLnk).click();
+//		chromeDriver.findElement(getStartedLnk).click();
+		UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
+		UtlityFunctionsOBJ.webElementClick(getStartedLnk);
 	}
 	
 	public void sign_in(){
