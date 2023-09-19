@@ -2,7 +2,7 @@ package pageObjeccts;
 
 import org.openqa.selenium.By;
 
-public class Register extends BaseClass{
+public class Register_POM extends BaseClass{
 	By username=By.id("id_username");
 	By password1=By.id("id_password1");
 	By password2=By.id("id_password2");
