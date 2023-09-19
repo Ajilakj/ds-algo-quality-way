@@ -21,7 +21,7 @@ Feature: Title of your feature
   I want to use this template for my feature file
   
   
-  Feature:Feature to test login functionality
+  #Feature:Feature to test login functionality
   
    @tag1
   Scenario: Check login is successful with valid credentials

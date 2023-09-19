@@ -17,9 +17,9 @@ public class Home_POM extends BaseClass{
 	By register =By.partialLinkText("Register");
 	By sign_out=By.partialLinkText("Sign out");
 
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
+	
 	public void home(){
-//		chromeDriver.findElement(getStartedLnk).click();
-		UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 		UtlityFunctionsOBJ.webElementClick(getStartedLnk);
 	}
 	

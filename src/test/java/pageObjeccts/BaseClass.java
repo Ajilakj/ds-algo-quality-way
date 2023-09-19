@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import step_definition.Login_SD;
-//import utilities.UtlityFunctions;
 
 public class BaseClass {
 	protected static WebDriver chromeDriver;
@@ -24,7 +23,6 @@ public class BaseClass {
 		chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //		wait = new WebDriverWait(chromeDriver,Duration.ofSeconds(10) );
 //		js = (JavascriptExecutor)chromeDriver;			
-//		UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 		chromeDriver.get("https://dsportalapp.herokuapp.com/");  
 		
 	}

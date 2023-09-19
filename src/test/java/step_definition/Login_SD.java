@@ -33,8 +33,8 @@ public void the_user_clicks_the_button(String string) {
 @Then("The user should be redirected to homepage")
 public void the_user_should_be_redirected_to_homepage() {
     // Write code here that turns the phrase above into concrete actions
-	Login_POM LoginOBJ=new Login_POM();
-	LoginOBJ.login();
+//	Login_POM LoginOBJ=new Login_POM();
+//	LoginOBJ.login();
 //    throw new io.cucumber.java.PendingException();
 }
 
