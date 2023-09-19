@@ -16,27 +16,14 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag5
+@test
 Feature: Title of your feature
-  I want to use this template for my feature file
+  Home
 
   @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  Scenario: Home
+    Given The user opens DS Algo portal link
+    When The user clicks the "Get Started" button
+    Then The user should be redirected to homepage
 
-  @tag3
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+ 

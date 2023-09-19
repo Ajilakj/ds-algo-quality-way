@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class Home extends BaseClass{
+public class Home_POM extends BaseClass{
 	By getStartedLnk=By.xpath("//button[text()='Get Started']");
 	By sign_in=By.partialLinkText("Sign in");
 	By register =By.partialLinkText("Register");
