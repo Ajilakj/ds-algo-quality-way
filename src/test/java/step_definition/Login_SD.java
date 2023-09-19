@@ -14,9 +14,6 @@ public class Login_SD{
 	
 @Given("The user opens DS Algo portal link")
 public void the_user_opens_ds_algo_portal_link() {
-	BaseClass BaseClassObj=new BaseClass();
-	BaseClassObj.init();
-
     // Write code here that turns the phrase above into concrete actions
 //	chromeDriver.get("https://dsportalapp.herokuapp.com/");  
 //    throw new io.cucumber.java.PendingException();
@@ -25,8 +22,7 @@ public void the_user_opens_ds_algo_portal_link() {
 @When("The user clicks the {string} button")
 public void the_user_clicks_the_button(String string) {
     // Write code here that turns the phrase above into concrete actions
-	Home_POM HomeOBJ=new Home_POM();
-	HomeOBJ.home();
+
 //    throw new io.cucumber.java.PendingException();
 }
 

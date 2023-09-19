@@ -22,10 +22,12 @@ public class BaseClass {
 		chromeDriver.manage().window().maximize();
 		chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //		wait = new WebDriverWait(chromeDriver,Duration.ofSeconds(10) );
-//		js = (JavascriptExecutor)chromeDriver;			
-		chromeDriver.get("https://dsportalapp.herokuapp.com/");  
-		
+//		js = (JavascriptExecutor)chromeDriver;		
 	}
+		public static void openDsAlgo(){
+			chromeDriver.get("https://dsportalapp.herokuapp.com/");  
+		}
+		
 	public static void main(String[] args){
 //		BaseClass BaseClassObj=new BaseClass();
 //		BaseClassObj.init();
