@@ -73,19 +73,17 @@ public class Home_SD {
 	public void it_should_alert_the_user_with_a_message_you_are_not_logged_in() {
 		HomeOBJ.checkNotSigninMsg();
 	}
-//
-//	@When("The user clicks {string} link")
-//	public void the_user_clicks_link(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("Sign in page should open")
-//	public void sign_in_page_should_open() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
+
+	@When("The user clicks {string} link")
+	public void the_user_clicks_link(String string) {
+		HomeOBJ.sign_in();
+	}
+
+	@Then("Sign in page should open")
+	public void sign_in_page_should_open() {
+		HomeOBJ.check_sign_in_url();
+	}
+
 //	@Then("Register page should open")
 //	public void register_page_should_open() {
 //	    // Write code here that turns the phrase above into concrete actions

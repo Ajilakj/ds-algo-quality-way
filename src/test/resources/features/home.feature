@@ -55,12 +55,12 @@
     Then It should alert the user with a message You are not logged in
     
     
-     #@tag6
-  #Scenario: user try to go to sign in page
-    #Given The user already on DS Algo portal page
-    #When The user clicks "Sign in" link
-    #Then Sign in page should open
-    #
+     @tag6
+  Scenario: user try to go to sign in page
+    Given The user already on DS Algo portal page
+    When The user clicks "Sign in" link
+    Then Sign in page should open
+    
      #@tag7
   #Scenario: user try to go to sign in page
     #Given The user opens DS Algo portal link

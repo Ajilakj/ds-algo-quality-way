@@ -24,14 +24,15 @@ public class Home_POM extends BaseClass{
 	By alert =By.className("alert-primary");
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	
+	String actual_url="";
+	String expected_url="";
 	public void home(){
 		UtlityFunctionsOBJ.webElementClick(getStartedLnk);
 	}
 	
 	public void checkUrlDsAlgoportal(){
-		String actual_url=chromeDriver.getCurrentUrl();
-		String expected_url="https://dsportalapp.herokuapp.com/"; 
+		actual_url=chromeDriver.getCurrentUrl();
+		expected_url="https://dsportalapp.herokuapp.com/"; 
 		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
 	}
 	public void checkUrlHome(){
@@ -67,7 +68,13 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void sign_in(){
-		chromeDriver.findElement(sign_in).click();
+		chromeDriver.findElement(sign_in).click(); 
+	}
+	
+	public void check_sign_in_url(){
+		actual_url=chromeDriver.getCurrentUrl();
+		expected_url="https://dsportalapp.herokuapp.com/login"; 
+		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
 	}
 	
 	public void register(){
