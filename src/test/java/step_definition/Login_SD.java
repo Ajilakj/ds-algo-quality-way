@@ -33,13 +33,8 @@ public class Login_SD{
 //		HomeOBJ.check_sign_in();
 //	}
 //
-
-	@Given("user is on ds-algo page")
-	public void user_is_on_ds_algo_page() {
-		 LoginOBJ.check_url_home();
-	}
 	
-	@When("clicks on signin button")
+	@Given("clicks on signin button")
 	public void clicks_on_signin_button() {
 		HomeOBJ.sign_in();
 	}

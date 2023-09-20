@@ -60,8 +60,7 @@
  @tag4
   Scenario: Check login is successful with valid credentials
   
-  Given user is on ds-algo page
-  When clicks on signin button
+  Given clicks on signin button
   And enters valid username and valid password
   And click Login button
   Then user is navigated to home page
