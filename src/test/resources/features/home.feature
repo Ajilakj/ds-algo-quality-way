@@ -31,12 +31,12 @@
 	  Given The user try to  open DS Algo portal link
 	  Then DS Algo portal page should open
     
-  #@tag2 @home
-  #Scenario: get started button to go to home page
-    #Given The user already on DS Algo portal page
-    #When The user clicks the Get Started button
-    #Then DS Algo home page should open
-    #
+  @tag2 @home
+  Scenario: get started button to go to home page
+    Given The user already on DS Algo portal page
+    When The user clicks the Get Started button
+    Then DS Algo home page should open
+    
 #	@tag3  @home
   #Scenario:The user already on DS Algo portal page drop down with Data structures 
     #When The user clicks Data Structures drop down

@@ -21,20 +21,20 @@ public class Home_SD {
 		BaseClassObj.openDsAlgo();
 	}
 
-//	@Given("The user already on DS Algo portal page")
-//	public void the_user_already_on_ds_algo_portal_page() {
-//		HomeOBJ.checkUrlDsAlgoportal();
-//	}
-//	
-//	@When("The user clicks the Get Started button")
-//	public void the_user_clicks_get_started_button() {
-//		HomeOBJ.home();
-//	}
-//
-//	@Then("DS Algo home page should open")
-//	public void ds_algo_home_page_should_open() {
-//		HomeOBJ.checkUrlHome();
-//	}
+	@Given("The user already on DS Algo portal page")
+	public void the_user_already_on_ds_algo_portal_page() {
+		HomeOBJ.checkUrlDsAlgoportal();
+	}
+	
+	@When("The user clicks the Get Started button")
+	public void the_user_clicks_get_started_button() {
+		HomeOBJ.home();
+	}
+
+	@Then("DS Algo home page should open")
+	public void ds_algo_home_page_should_open() {
+		HomeOBJ.checkUrlHome();
+	}
 //
 //	@When("The user clicks Data Structures drop down")
 //	public void the_user_clicks_data_structures_drop_down() {
