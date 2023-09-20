@@ -19,4 +19,8 @@ public class UtlityFunctions extends BaseClass {
 	public static void check_text(String actual_text, String expected_text){
 		Assert.assertEquals(actual_text, expected_text);
 	}
+	
+	public static void send_keys(By ele, String text){
+		chromeDriver.findElement(ele).sendKeys(text);
+	}
 }

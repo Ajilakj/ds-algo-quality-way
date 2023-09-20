@@ -11,12 +11,12 @@ public class Login_POM extends BaseClass {
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	public void enter_valid_credentials(){
-		chromeDriver.findElement(username).sendKeys("QualityWay");
-		chromeDriver.findElement(password).sendKeys("pwd_ds_algo@2");
+		UtlityFunctionsOBJ.send_keys(username,"QualityWay");
+		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2");
 	}
 	
 	public void login(){
-		chromeDriver.findElement(loginBtn).click();
+		UtlityFunctionsOBJ.web_element_click(loginBtn);
 	}
 	
 	public void check_url_home(){
