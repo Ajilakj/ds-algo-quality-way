@@ -58,21 +58,21 @@ public class Home_SD {
 //	    throw new io.cucumber.java.PendingException();
 //	}
 
-//	@Given("The user already on DS Algo portal page and The user did not sign in")
-//	public void the_user_already_on_ds_algo_portal_page_and_the_user_did_not_sign_in() {
-////		public void the_user_clicks_any_of_the_buttons_below_the_data_structures(String string) {
-//		HomeOBJ.checkSignin();
-//	}
-//
-//	@When("The user clicks any of the {string} buttons below the data structures")
-//	public void the_user_clicks_any_of_the_buttons_below_the_data_structures(String string) {
-//		HomeOBJ.clickGetStartLnk();
-//	}
-//	
-//	@Then("It should alert the user with a message You are not logged in")
-//	public void it_should_alert_the_user_with_a_message_you_are_not_logged_in() {
-//		HomeOBJ.checkNotSigninMsg();
-//	}
+	@Given("The user already on DS Algo portal page and The user did not sign in")
+	public void the_user_already_on_ds_algo_portal_page_and_the_user_did_not_sign_in() {
+//		public void the_user_clicks_any_of_the_buttons_below_the_data_structures(String string) {
+		HomeOBJ.checkSignin();
+	}
+
+	@When("The user clicks any of the {string} buttons below the data structures")
+	public void the_user_clicks_any_of_the_buttons_below_the_data_structures(String string) {
+		HomeOBJ.clickGetStartLnk();
+	}
+	
+	@Then("It should alert the user with a message You are not logged in")
+	public void it_should_alert_the_user_with_a_message_you_are_not_logged_in() {
+		HomeOBJ.checkNotSigninMsg();
+	}
 //
 //	@When("The user clicks {string} link")
 //	public void the_user_clicks_link(String string) {

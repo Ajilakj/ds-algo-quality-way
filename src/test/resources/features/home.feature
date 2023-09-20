@@ -48,13 +48,13 @@
     #When The user select any of the 6 items from the drop down
     #Then It should alert the user with a message "You are not logged in"
     #
-    #@tag5  @home
-  #Scenario: select one item from home page without sign in
-    #Given The user already on DS Algo portal page and The user did not sign in
-    #When The user clicks any of the "Get Started" buttons below the data structures 
-    #Then It should alert the user with a message You are not logged in
-    #
-    #
+    @tag5  @home
+  Scenario: select one item from home page without sign in
+    Given The user already on DS Algo portal page and The user did not sign in
+    When The user clicks any of the "Get Started" buttons below the data structures 
+    Then It should alert the user with a message You are not logged in
+    
+    
      #@tag6
   #Scenario: user try to go to sign in page
     #Given The user already on DS Algo portal page
