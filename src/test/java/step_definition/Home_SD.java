@@ -18,12 +18,12 @@ public class Home_SD {
 
 	@Then("DS Algo portal page should open")
 	public void ds_algo_portal_page_should_open() {
-		BaseClassObj.openDsAlgo();
+		BaseClassObj.open_Ds_Algo();
 	}
 
 	@Given("The user already on DS Algo portal page")
 	public void the_user_already_on_ds_algo_portal_page() {
-		HomeOBJ.checkUrlDsAlgoportal();
+		HomeOBJ.check_url_DsAlgo_portal();
 	}
 	
 	@When("The user clicks the Get Started button")
@@ -33,17 +33,17 @@ public class Home_SD {
 
 	@Then("DS Algo home page should open")
 	public void ds_algo_home_page_should_open() {
-		HomeOBJ.checkUrlHome();
+		HomeOBJ.check_url_home();
 	}
 
 	@When("The user clicks Data Structures drop down")
 	public void the_user_clicks_data_structures_drop_down() {
-		HomeOBJ.clickDS();
+		HomeOBJ.click_DS_dropdown();
 	}
 
 	@Then("A drop down with 6 different data structure entries should be visible")
 	public void a_drop_down_with_different_data_structure_entries_should_be_visible() {
-		HomeOBJ.checkDSsize(6);
+		HomeOBJ.check_DS_size(6);
 	}
 
 //	@When("The user slect any of the {int} items from the drop down")
@@ -61,17 +61,17 @@ public class Home_SD {
 	@Given("The user already on DS Algo portal page and The user did not sign in")
 	public void the_user_already_on_ds_algo_portal_page_and_the_user_did_not_sign_in() {
 //		public void the_user_clicks_any_of_the_buttons_below_the_data_structures(String string) {
-		HomeOBJ.checkSignin();
+		HomeOBJ.check_sign_in();
 	}
 
 	@When("The user clicks any of the {string} buttons below the data structures")
 	public void the_user_clicks_any_of_the_buttons_below_the_data_structures(String string) {
-		HomeOBJ.clickGetStartLnk();
+		HomeOBJ.click_get_start_lnk();
 	}
 	
 	@Then("It should alert the user with a message You are not logged in")
 	public void it_should_alert_the_user_with_a_message_you_are_not_logged_in() {
-		HomeOBJ.checkNotSigninMsg();
+		HomeOBJ.check_not_sign_in_msg();
 	}
 	
 	@When("The user clicks Sign in link")

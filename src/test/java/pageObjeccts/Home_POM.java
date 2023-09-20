@@ -27,24 +27,24 @@ public class Home_POM extends BaseClass{
 	String actual_url="";
 	String expected_url="";
 	public void home(){
-		UtlityFunctionsOBJ.webElementClick(getStartedLnk);
+		UtlityFunctionsOBJ.web_element_click(getStartedLnk);
 	}
 	
-	public void checkUrlDsAlgoportal(){
+	public void check_url_DsAlgo_portal(){
 		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/"; 
-		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
 	}
-	public void checkUrlHome(){
+	public void check_url_home(){
 		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/home";
-		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
 	}
-	public void clickDS(){
-		UtlityFunctionsOBJ.webElementClick(ds);
+	public void click_DS_dropdown(){
+		UtlityFunctionsOBJ.web_element_click(ds);
 	}
 	
-	public void checkDSsize(int int1){
+	public void check_DS_size(int int1){
 //		Select selEle = new Select(chromeDriver.findElement(ds));
 //		List options = selEle.getOptions();
 //		int ds_size=options.size();
@@ -53,18 +53,18 @@ public class Home_POM extends BaseClass{
 		Assert.assertEquals(int1, ds_size);
 	}
 	
-	public void clickGetStartLnk(){
-		UtlityFunctionsOBJ.webElementClick(getStartLnk);
+	public void click_get_start_lnk(){
+		UtlityFunctionsOBJ.web_element_click(getStartLnk);
 	}
 	
-	public void checkSignin(){
+	public void check_sign_in(){
 		String txt=(chromeDriver.findElement(signoutLnk)).getText();
-		UtlityFunctionsOBJ.checText(txt, "Sign in");
+		UtlityFunctionsOBJ.check_text(txt, "Sign in");
 	}
 	
-	public void checkNotSigninMsg(){
+	public void check_not_sign_in_msg(){
 		String txt=(chromeDriver.findElement(alert)).getText();
-		UtlityFunctionsOBJ.checText(txt, "You are not logged in");
+		UtlityFunctionsOBJ.check_text(txt, "You are not logged in");
 	}
 	
 	public void sign_in(){
@@ -74,7 +74,7 @@ public class Home_POM extends BaseClass{
 	public void check_sign_in_url(){
 		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/login"; 
-		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
 	}
 	
 	public void register(){
@@ -83,7 +83,7 @@ public class Home_POM extends BaseClass{
 	public void check_register_url(){
 		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/register"; 
-		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
 	}
 	
 	public void sign_out(){

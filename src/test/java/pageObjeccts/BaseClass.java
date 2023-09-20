@@ -24,7 +24,7 @@ public class BaseClass {
 //		wait = new WebDriverWait(chromeDriver,Duration.ofSeconds(10) );
 //		js = (JavascriptExecutor)chromeDriver;		
 	}
-		public static void openDsAlgo(){
+		public static void open_Ds_Algo(){
 			chromeDriver.get("https://dsportalapp.herokuapp.com/");  
 		}
 		
