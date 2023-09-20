@@ -2,7 +2,6 @@ package pageObjeccts;
 
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -22,11 +21,13 @@ public class Home_POM extends BaseClass{
 	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By getStartLnk=By.xpath("//a[text()='Get Started']");
 	By signoutLnk=By.xpath("//ul/a[3]"); 
-	By alert =By.className("alert-primary");
+	By alert =By.className("alert-primary"); 
+	By dropdown_item =By.className("dropdown-item");
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	String actual_url="";
 	String expected_url="";
+	
 	public void home(){
 		UtlityFunctionsOBJ.web_element_click(getStartedLnk);
 	}
@@ -42,8 +43,13 @@ public class Home_POM extends BaseClass{
 		expected_url="https://dsportalapp.herokuapp.com/home";
 		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
 	}
+	
 	public void click_DS_dropdown(){
 		UtlityFunctionsOBJ.web_element_click(ds);
+	}
+	
+	public void click_DS_dropdown_item(){
+		UtlityFunctionsOBJ.web_element_click(dropdown_item);
 	}
 	
 	public void check_DS_size(int int1){
@@ -82,6 +88,7 @@ public class Home_POM extends BaseClass{
 	public void register(){
 		chromeDriver.findElement(register).click();
 	}
+	
 	public void check_register_url(){
 		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/register"; 

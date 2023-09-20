@@ -46,17 +46,16 @@ public class Home_SD {
 		HomeOBJ.check_DS_size(6);
 	}
 
-//	@When("The user slect any of the {int} items from the drop down")
-//	public void the_user_slect_any_of_the_items_from_the_drop_down(Integer int1) {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("It should alert the user with a message {string}")
-//	public void it_should_alert_the_user_with_a_message(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
+	@When("The user select any of the items from the drop down")
+	public void the_user_slect_any_of_the_items_from_the_drop_down() {
+		HomeOBJ.click_DS_dropdown();
+		HomeOBJ.click_DS_dropdown_item();
+	}
+
+	@Then("It should alert the user with a message")
+	public void it_should_alert_the_user_with_a_message() {
+		HomeOBJ.check_not_sign_in_msg();
+	}
 
 	@Given("The user already on DS Algo portal page and The user did not sign in")
 	public void the_user_already_on_ds_algo_portal_page_and_the_user_did_not_sign_in() {

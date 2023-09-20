@@ -20,7 +20,7 @@
 # I want to use this template for my feature file
 
   
-  @tag @home
+  @tag @login
   Feature: to test login functionality
 
   #

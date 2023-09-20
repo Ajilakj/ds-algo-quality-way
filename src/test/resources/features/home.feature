@@ -42,12 +42,12 @@
     When The user clicks Data Structures drop down
     Then A drop down with 6 different data structure entries should be visible
     
-   #@tag4 
-  #Scenario: select one item from drop down without sign in
-    #Given The user already on DS Algo portal page and The user clicks Data Structures drop down
-    #When The user select any of the 6 items from the drop down
-    #Then It should alert the user with a message "You are not logged in"
-    #
+   @tag4 
+  Scenario: select one item from drop down without sign in
+    Given The user clicks Data Structures drop down
+    When The user select any of the items from the drop down
+    Then It should alert the user with a message You are not logged in
+    
     @tag5 
   Scenario: select one item from home page without sign in
     Given The user already on DS Algo portal page and The user did not sign in
