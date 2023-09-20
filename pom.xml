@@ -32,5 +32,10 @@
 		    <version>7.13.0</version>
 		</dependency>
 
-  </dependencies>
+		<dependency>
+			<groupId>Cucumber_BDD_maven</groupId>
+			<artifactId>Cucumber_BDD_maven</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+   </dependencies>
 </project>
