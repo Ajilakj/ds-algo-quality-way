@@ -80,6 +80,11 @@ public class Home_POM extends BaseClass{
 	public void register(){
 		chromeDriver.findElement(register).click();
 	}
+	public void check_register_url(){
+		actual_url=chromeDriver.getCurrentUrl();
+		expected_url="https://dsportalapp.herokuapp.com/register"; 
+		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
+	}
 	
 	public void sign_out(){
 		chromeDriver.findElement(sign_out).click();

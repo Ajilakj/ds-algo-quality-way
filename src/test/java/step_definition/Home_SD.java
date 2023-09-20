@@ -84,11 +84,15 @@ public class Home_SD {
 		HomeOBJ.check_sign_in_url();
 	}
 
-//	@Then("Register page should open")
-//	public void register_page_should_open() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
+	@When("The user clicks Register link")
+	public void the_user_clicks_register_link() {
+		HomeOBJ.register();
+	}
+	
+	@Then("Register page should open")
+	public void register_page_should_open() {
+		HomeOBJ.check_register_url();
+	}
 
 
 
