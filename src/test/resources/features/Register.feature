@@ -33,7 +33,7 @@ Feature: Register with valid and invalid credentials
    
     
   @tag2
-  Scenario Outline: Register with Valid credentials
+  Scenario Outline: Register with Valid username and password and Valid username but invalid password credentials
   
 When User is in First page  
    Then click the 'Get started button'
@@ -46,6 +46,20 @@ When User is in First page
    Then Registration is successful
     
     Examples: 
-      | name  |password| value | status  |
-      | name1 | Bismiraj@32   |8 | success |
-      | name2 |  BIsmi  |5| Fail    |
+      | Username  |password| value | status  |
+      | Bismiraj | doorno@32  |8 | success |
+      | Bismiraj |  BIsmi  |5| Fail    |
+      
+      
+      @tag3
+      
+      Scenario: password mismatch
+      
+      When user is in the Register page
+      And enters valid username 
+      And enters valid password in password textbox
+      And enters invalid or different password in password confirmation box
+      And clicks the register button
+      Then "The two password fields didn't match" appears below.
+      
+      
