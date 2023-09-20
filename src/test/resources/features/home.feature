@@ -37,11 +37,11 @@
     When The user clicks the Get Started button
     Then DS Algo home page should open
     
-#	@tag3  @home
-  #Scenario:The user already on DS Algo portal page drop down with Data structures 
-    #When The user clicks Data Structures drop down
-    #Then A drop down with 6 different data structure entries should be visible
-    #
+	@tag3  @home
+  Scenario:The user already on DS Algo portal page drop down with Data structures 
+    When The user clicks Data Structures drop down
+    Then A drop down with 6 different data structure entries should be visible
+    
    #@tag4 
   #Scenario: select one item from drop down without sign in
     #Given The user already on DS Algo portal page and The user clicks Data Structures drop down

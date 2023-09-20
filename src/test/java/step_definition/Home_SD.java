@@ -35,16 +35,16 @@ public class Home_SD {
 	public void ds_algo_home_page_should_open() {
 		HomeOBJ.checkUrlHome();
 	}
-//
-//	@When("The user clicks Data Structures drop down")
-//	public void the_user_clicks_data_structures_drop_down() {
-//		HomeOBJ.clickDS();
-//	}
-//
-//	@Then("A drop down with 6 different data structure entries should be visible")
-//	public void a_drop_down_with_different_data_structure_entries_should_be_visible() {
-//		HomeOBJ.checkDSsize(6);
-//	}
+
+	@When("The user clicks Data Structures drop down")
+	public void the_user_clicks_data_structures_drop_down() {
+		HomeOBJ.clickDS();
+	}
+
+	@Then("A drop down with 6 different data structure entries should be visible")
+	public void a_drop_down_with_different_data_structure_entries_should_be_visible() {
+		HomeOBJ.checkDSsize(6);
+	}
 
 //	@When("The user slect any of the {int} items from the drop down")
 //	public void the_user_slect_any_of_the_items_from_the_drop_down(Integer int1) {
