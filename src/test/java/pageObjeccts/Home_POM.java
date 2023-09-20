@@ -10,9 +10,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import utilities.UtlityFunctions;
-import org.testng.Assert;
+
 public class Home_POM extends BaseClass{
 	By getStartedLnk=By.xpath("//button[text()='Get Started']");
 	By sign_in=By.partialLinkText("Sign in");
@@ -35,6 +36,7 @@ public class Home_POM extends BaseClass{
 		expected_url="https://dsportalapp.herokuapp.com/"; 
 		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
 	}
+	
 	public void check_url_home(){
 		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/home";
