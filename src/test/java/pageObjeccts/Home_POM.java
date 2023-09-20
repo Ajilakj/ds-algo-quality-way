@@ -36,8 +36,8 @@ public class Home_POM extends BaseClass{
 		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
 	}
 	public void checkUrlHome(){
-		String actual_url=chromeDriver.getCurrentUrl();
-		String expected_url="https://dsportalapp.herokuapp.com/home";
+		actual_url=chromeDriver.getCurrentUrl();
+		expected_url="https://dsportalapp.herokuapp.com/home";
 		UtlityFunctionsOBJ.checkUrl(actual_url, expected_url);
 	}
 	public void clickDS(){
