@@ -51,7 +51,7 @@ When User is in First page
       | Bismiraj |  BIsmi  |5| Fail    |
       
       
-      @tag3
+      @tag3e
       
       Scenario: password mismatch
       

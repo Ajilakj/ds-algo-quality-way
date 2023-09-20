@@ -16,9 +16,13 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
+# Feature: Title of your feature
+# I want to use this template for my feature file
+
   
-  
+  @tag
   Feature: to test login functionality
+
   
    @tag1
   Scenario: Check login is successful with valid credentials
@@ -49,7 +53,7 @@
   Scenario: Register if no account
   
   Given user is in Login page
-  And user has no account already
+  When user has no account already
   And click the Register button
   Then user is navigated to Register page
   
