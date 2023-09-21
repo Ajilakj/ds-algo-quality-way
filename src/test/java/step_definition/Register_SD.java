@@ -7,9 +7,9 @@ import pageObjeccts.BaseClass;
 import pageObjeccts.Register_POM;
 import utilities.UtlityFunctions;
 
-public class Register_SD{
+public class Register_SD extends BaseClass {
 	Register_POM RegisterOBJ=new Register_POM();
-	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions(chromeDriver);
 	
 	@Given("clicks on register button")
 	public void clicks_on_register_button() {

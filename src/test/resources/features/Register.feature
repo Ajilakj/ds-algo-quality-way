@@ -20,7 +20,7 @@
 # I want to use this template for my feature file
 
 
-@tag @register
+@tagxyz @register
 Feature: Register with valid and invalid credentials
 
   #@tag1

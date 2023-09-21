@@ -10,7 +10,7 @@ public class Register_POM extends BaseClass{
 	By password2=By.id("id_password2");
 	By regiterBtn=By.xpath("//input[@value='Register']");
 	
-	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions(chromeDriver);
 	
 	public void enter_valid_credentials() {
 		UtlityFunctionsOBJ.send_keys(username,"QualityWayTest");

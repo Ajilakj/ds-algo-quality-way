@@ -22,8 +22,7 @@ public class Home_POM extends BaseClass{
 	By alert =By.className("alert-primary"); 
 	By dropdown_item =By.className("dropdown-item");
 	
-	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	String actual_url="";
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions(chromeDriver);
 	String expected_url="";
 	
 	public void home(){
@@ -31,15 +30,13 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void check_url_DsAlgo_portal(){
-		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/"; 
-		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url(expected_url);
 	}
 	
 	public void check_url_home(){
-		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/home";
-		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url(expected_url);
 	}
 	
 	public void click_DS_dropdown(){
@@ -74,15 +71,13 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void check_sign_in_url(){
-		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/login"; 
-		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url(expected_url);
 	}
 	
 	public void check_register_url(){
-		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/register"; 
-		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url(expected_url);
 	}
 	
 	public void sign_out(){

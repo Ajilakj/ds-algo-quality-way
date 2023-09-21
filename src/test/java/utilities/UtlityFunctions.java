@@ -1,21 +1,28 @@
 package utilities;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import pageObjeccts.BaseClass;
 
 public class UtlityFunctions extends BaseClass {
+	public  UtlityFunctions(WebDriver driver) {
+		this.chromeDriver = driver;
+		PageFactory.initElements(chromeDriver, this);
+	} 
 	static By sign_in=By.partialLinkText("Sign in");
 	static By register =By.partialLinkText("Register");
-	
+
 	public static void web_element_click(By webEle) {
 		chromeDriver.findElement(webEle).click();
 	}
 	
-	public static void check_url(String actual_url, String expected_url){
-		Assert.assertEquals(actual_url, expected_url);
+	public static void check_url(String expected_url){
+		String current_url=chromeDriver.getCurrentUrl();
+		Assert.assertEquals(current_url, expected_url);
 	}
 	
 	public static void check_text(String actual_text, String expected_text){

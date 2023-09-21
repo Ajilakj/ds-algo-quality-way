@@ -8,9 +8,9 @@ import pageObjeccts.Home_POM;
 import pageObjeccts.Login_POM;
 import utilities.UtlityFunctions;
 
-public class Login_SD{
+public class Login_SD extends BaseClass{
 	Login_POM LoginOBJ=new Login_POM();
-	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions(chromeDriver);
 //	@Given("user is on ds-algo page")
 //	public void user_is_on_ds_algo_page() {
 //	    // Write code here that turns the phrase above into concrete actions

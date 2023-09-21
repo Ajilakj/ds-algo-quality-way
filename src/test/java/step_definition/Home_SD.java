@@ -7,20 +7,22 @@ import pageObjeccts.BaseClass;
 import pageObjeccts.Home_POM;
 import utilities.UtlityFunctions;
 
-public class Home_SD {
+public class Home_SD extends BaseClass {
 	
-	BaseClass BaseClassObj=new BaseClass();
+//	BaseClass BaseClassObj=new BaseClass();
 	Home_POM HomeOBJ=new Home_POM();
-	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions(chromeDriver);
 	
 	@Given("The user try to  open DS Algo portal link")
 	public void the_user_try_to_open_ds_algo_portal_link() {
-		BaseClassObj.init();
+//		BaseClassObj.init();
+		super.init();
 	}
 
 	@Then("DS Algo portal page should open")
 	public void ds_algo_portal_page_should_open() {
-		BaseClassObj.open_Ds_Algo();
+//		BaseClassObj.open_Ds_Algo();
+		super.open_Ds_Algo();
 	}
 
 	@Given("The user already on DS Algo portal page")
