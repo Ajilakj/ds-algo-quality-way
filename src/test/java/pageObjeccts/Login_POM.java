@@ -9,7 +9,6 @@ public class Login_POM extends BaseClass {
 	By loginBtn=By.xpath("//input[@value='Login']");
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	
 	public void enter_valid_credentials(){
 		UtlityFunctionsOBJ.send_keys(username,"QualityWay");
 		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2");

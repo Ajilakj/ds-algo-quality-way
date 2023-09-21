@@ -3,6 +3,7 @@ package step_definition;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,14 +18,10 @@ public class Graph_SD extends BaseClass {
 	Graph_POM GraphOBJ=new Graph_POM();
 	WebDriver chromeDriver=super.chromeDriver;
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	
+//	@Test (priority = 9)
 	@Given("An existing user is in the Home page after logged in")
 	public void an_existing_user_is_in_the_home_page_after_logged_in() {
-		
-//		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/home");
-		String current_url=chromeDriver.getCurrentUrl();
-		String expected_url="https://dsportalapp.herokuapp.com/home";
-		Assert.assertEquals(current_url, expected_url);
+		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
 	}
 //
 	@When("The user clicks the Getting Started button in Graph Pane")
@@ -34,7 +31,7 @@ public class Graph_SD extends BaseClass {
 
 	@Then("The user will directed to Graph Page")
 	public void the_user_will_directed_to_graph_page() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/array/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/");
 	}
 
 //	@When("The user select the option Graph from the datastructure drop down menu")

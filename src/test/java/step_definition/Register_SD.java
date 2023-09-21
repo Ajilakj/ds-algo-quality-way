@@ -18,7 +18,7 @@ import utilities.UtlityFunctions;
 public class Register_SD extends BaseClass{
 	Register_POM RegisterOBJ=new Register_POM();
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	@Test (priority = 0)
+//	@Test (priority = 8)
 	@Given("clicks on register link")
 	public void clicks_on_register_link() {
 		chromeDriver.get("https://dsportalapp.herokuapp.com/register");

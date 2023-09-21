@@ -13,20 +13,17 @@ public class Graph_POM extends BaseClass {
 //		PageFactory.initElements(chromeDriver, this);
 //	} 
 	
-	By getStartedLnk=By.xpath("//a[@href='array']");
+	By getStartedLnk=By.xpath("//a[@href='graph']");
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	String expected_url="";
-	
-	
 	
 	public void click_get_start_lnk(){
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			Thread.sleep(1000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		UtlityFunctionsOBJ.web_element_click(getStartedLnk);
 	}
 	

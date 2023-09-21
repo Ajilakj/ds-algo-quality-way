@@ -90,7 +90,7 @@ Feature: to test login functionality
   #And click the Register button
   #Then user is navigated to Register page
   #
- @tag4
+ @tag9
   Scenario: Check login is successful with valid credentials
   
   Given clicks on signin button

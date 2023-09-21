@@ -36,10 +36,11 @@ public class Login_SD extends BaseClass{
 //		HomeOBJ.check_sign_in();
 //	}
 //
-	@Test (priority = -1)
+//	@Test (priority = 9)
 	@Given("clicks on signin button")
 	public void clicks_on_signin_button() {
-		UtlityFunctionsOBJ.click_sign_in();;
+//		UtlityFunctionsOBJ.click_sign_in();
+		chromeDriver.get("https://dsportalapp.herokuapp.com/login");
 	}
 	
 	@When("enters valid username and valid password")

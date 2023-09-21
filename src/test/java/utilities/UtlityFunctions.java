@@ -21,6 +21,7 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void check_url(String expected_url){
+		chromeDriver.navigate().refresh();
 		String current_url=chromeDriver.getCurrentUrl();
 		Assert.assertEquals(current_url, expected_url);
 	}
