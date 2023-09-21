@@ -20,6 +20,7 @@
 # I want to use this template for my feature file
 Feature: to test login functionality
 
+<<<<<<< HEAD
   @tag1
   Scenario: Check login is successful with valid credentials
     Given user is on ds-algo page
@@ -42,9 +43,63 @@ Feature: to test login functionality
       | Bismiraj | doorno@32 |
       | bismi123 | abcdef    |
 
-  @tag2
+  @tag3
   Scenario: Register if no account
     Given user is in Login page
     When user has no account already
     And click the Register button
     Then user is navigated to Register page
+    
+  
+ # @tag @login
+ # Feature: to test login functionality
+
+  #
+   #@tag1
+  #Scenario: Check login is successful with valid credentials
+  #
+  #Given user is on ds-algo page
+  #And user clicks on "Get Started" button
+  #And home page is displayed with content
+  #And clicks on signin button
+  #And enters valid username and valid password
+  #And click Login button
+  #Then user is navigated to home page
+  
+    #@tag2
+    #Scenario Outline: check login  with valid and invalid credentials
+  #Given  clicks on signin button
+  #Given user is in login page
+  #When user enters <username> and <password>
+  #And clicks on login button
+  #Then user is navigated to the home page
+  
+  #Examples:
+  #|username|password|
+  #|Bismiraj|doorno@32|
+  #|bismi123|abcdef|
+  #
+  #@tag3
+  #
+  #Scenario: Register if no account
+  #
+  #Given user is in Login page
+  #When user has no account already
+  #And click the Register button
+  #Then user is navigated to Register page
+  #
+ @tag4
+  Scenario: Check login is successful with valid credentials
+  
+  Given clicks on signin button
+  And enters valid username and valid password
+  And click Login button
+  Then user is navigated to home page
+  
+  
+  
+  
+
+ 
+  
+# >>>>>>> d076057a7da29b482322759284771f190f132cc7
