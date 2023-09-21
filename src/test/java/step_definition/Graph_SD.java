@@ -1,5 +1,9 @@
 package step_definition;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -7,16 +11,22 @@ import pageObjeccts.BaseClass;
 import pageObjeccts.Graph_POM;
 import utilities.UtlityFunctions;
 
+
 public class Graph_SD extends BaseClass {
 	
 	Graph_POM GraphOBJ=new Graph_POM();
-	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions(chromeDriver);
+	WebDriver chromeDriver=super.chromeDriver;
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	@Given("An existing user is in the Home page after logged in")
 	public void an_existing_user_is_in_the_home_page_after_logged_in() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/home");
+		
+//		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/home");
+		String current_url=chromeDriver.getCurrentUrl();
+		String expected_url="https://dsportalapp.herokuapp.com/home";
+		Assert.assertEquals(current_url, expected_url);
 	}
-
+//
 	@When("The user clicks the Getting Started button in Graph Pane")
 	public void the_user_clicks_the_getting_started_button_in_graph_pane() {
 		GraphOBJ.click_get_start_lnk();

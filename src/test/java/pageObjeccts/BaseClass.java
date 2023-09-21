@@ -19,19 +19,20 @@ public class BaseClass {
 	WebDriverWait wait;
 	JavascriptExecutor js;	
 	
-	public static void init(){
-		System.setProperty("webdinput-enquiryriver.chrome.driver", "C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\drivers\\chromedriver.exe");
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeDriver=new ChromeDriver(chromeOptions);
-		chromeDriver.manage().window().maximize();
-//		chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//		wait = new WebDriverWait(chromeDriver,Duration.ofSeconds(10) );
-//		js = (JavascriptExecutor)chromeDriver;		
+	public  BaseClass() {
 		
-	}
-		public static void open_Ds_Algo(){
-			chromeDriver.get("https://dsportalapp.herokuapp.com/");  
+		if(chromeDriver==null)
+		{
+			System.setProperty("webdinput-enquiryriver.chrome.driver", "C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\drivers\\chromedriver.exe");
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeDriver=new ChromeDriver(chromeOptions);
+			chromeDriver.manage().window().maximize();
 		}
+	}
+	
+	public void open_Ds_Algo(){
+		chromeDriver.get("https://dsportalapp.herokuapp.com/");  
+	}
 		
 	public static void main(String[] args){
 //		BaseClass BaseClassObj=new BaseClass();

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 21 09:58:22 EDT 2023</td>
+<td>Started on:</td><td>Thu Sep 21 17:25:25 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9976 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5768 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of graph"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getCurrentUrl()&quot; because &quot;utilities.UtlityFunctions.chromeDriver&quot; is null
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:24)
-	at step_definition.Graph_SD.an_existing_user_is_in_the_home_page_after_logged_in(Graph_SD.java:17)
-	at ✽.An existing user is in the Home page after logged in(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/graph.feature:27)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1410367298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1410367298'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getCurrentUrl()&quot; because &quot;utilities.UtlityFunctions.chromeDriver&quot; is null
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:24)
-	at step_definition.Graph_SD.an_existing_user_is_in_the_home_page_after_logged_in(Graph_SD.java:17)
-	at ✽.An existing user is in the Home page after logged in(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/graph.feature:27)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "create user with valid credentials", "Register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:25)
+	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:46)
+	at step_definition.Register_SD.user_willl_direct_to_home_page(Register_SD.java:39)
+	at ✽.user willl direct to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/Register.feature:76)
+</pre></div><a href='#' onClick='toggleBox("stack-trace140702728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace140702728'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:25)
+	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:46)
+	at step_definition.Register_SD.user_willl_direct_to_home_page(Register_SD.java:39)
+	at ✽.user willl direct to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/Register.feature:76)
 </pre></div></td>
-<td>0</td>
+<td>3</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -99,12 +113,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -115,26 +149,6 @@ function toggleAllBoxes() {
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
-<td></td>
-<td>7</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>

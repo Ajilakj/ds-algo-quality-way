@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.UtlityFunctions;
 
-public class Graph_POM extends BaseClass{
+public class Graph_POM extends BaseClass {
 //	public  Graph_POM(WebDriver driver) {
 //		this.chromeDriver = driver;
 //		PageFactory.initElements(chromeDriver, this);
@@ -15,7 +15,7 @@ public class Graph_POM extends BaseClass{
 	
 	By getStartedLnk=By.xpath("//a[@href='array']");
 	
-	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions(chromeDriver);
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	String expected_url="";
 	
 	

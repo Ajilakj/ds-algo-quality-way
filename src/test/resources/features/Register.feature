@@ -20,7 +20,7 @@
 # I want to use this template for my feature file
 
 
-@tagxyz @register
+@tag @register
 Feature: Register with valid and invalid credentials
 
   #@tag1
@@ -67,10 +67,10 @@ Feature: Register with valid and invalid credentials
       #
       
       
-  @tag4
+  @tag8
   Scenario: create user with valid credentials
   
-  Given clicks on register button
+  Given clicks on register link
   When enters valid username and valid password and confirm password
   And click register button
-  Then user is navigated to home page
+  Then user willl direct to home page
