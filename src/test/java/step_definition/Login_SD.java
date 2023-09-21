@@ -6,10 +6,11 @@ import io.cucumber.java.en.When;
 import pageObjeccts.BaseClass;
 import pageObjeccts.Home_POM;
 import pageObjeccts.Login_POM;
+import utilities.UtlityFunctions;
 
 public class Login_SD{
-	Home_POM HomeOBJ=new Home_POM();
 	Login_POM LoginOBJ=new Login_POM();
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 //	@Given("user is on ds-algo page")
 //	public void user_is_on_ds_algo_page() {
 //	    // Write code here that turns the phrase above into concrete actions
@@ -36,7 +37,7 @@ public class Login_SD{
 	
 	@Given("clicks on signin button")
 	public void clicks_on_signin_button() {
-		HomeOBJ.sign_in();
+		UtlityFunctionsOBJ.click_sign_in();;
 	}
 	
 	@When("enters valid username and valid password")

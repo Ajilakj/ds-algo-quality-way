@@ -54,15 +54,16 @@
     When The user clicks any of the "Get Started" buttons below the data structures 
     Then It should alert the user with a message You are not logged in
     
-      @tag6
-  Scenario: The user already on DS Algo portal page and user try to go to sign in page
-    When The user clicks Register link
-    Then Register page should open
     
-     @tag7
+     @tag6
   Scenario: The user already on DS Algo portal page and the user try to go to sign in page
     When The user clicks Sign in link
     Then Sign in page should open
+    
+    @tag7
+  Scenario: The user already on DS Algo portal page and user try to go to sign in page
+    When The user clicks Register link
+    Then Register page should open
     
    
     
