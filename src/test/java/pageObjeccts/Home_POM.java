@@ -15,8 +15,6 @@ import utilities.UtlityFunctions;
 
 public class Home_POM extends BaseClass{
 	By getStartedLnk=By.xpath("//button[text()='Get Started']");
-	By sign_in=By.partialLinkText("Sign in");
-	By register =By.partialLinkText("Register");
 	By sign_out=By.partialLinkText("Sign out");
 	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By getStartLnk=By.xpath("//a[text()='Get Started']");
@@ -75,18 +73,10 @@ public class Home_POM extends BaseClass{
 		UtlityFunctionsOBJ.check_text(txt, "You are not logged in");
 	}
 	
-	public void sign_in(){
-		chromeDriver.findElement(sign_in).click(); 
-	}
-	
 	public void check_sign_in_url(){
 		actual_url=chromeDriver.getCurrentUrl();
 		expected_url="https://dsportalapp.herokuapp.com/login"; 
 		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
-	}
-	
-	public void register(){
-		chromeDriver.findElement(register).click();
 	}
 	
 	public void check_register_url(){

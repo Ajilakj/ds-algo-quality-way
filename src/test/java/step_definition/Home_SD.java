@@ -5,11 +5,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjeccts.BaseClass;
 import pageObjeccts.Home_POM;
+import utilities.UtlityFunctions;
 
 public class Home_SD {
 	
 	BaseClass BaseClassObj=new BaseClass();
 	Home_POM HomeOBJ=new Home_POM();
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	@Given("The user try to  open DS Algo portal link")
 	public void the_user_try_to_open_ds_algo_portal_link() {
@@ -75,7 +77,7 @@ public class Home_SD {
 	
 	@When("The user clicks Sign in link")
 	public void the_user_clicks_sign_in_link() {
-		HomeOBJ.sign_in();
+		UtlityFunctionsOBJ.click_sign_in();;
 	}
 
 	@Then("Sign in page should open")
@@ -85,7 +87,7 @@ public class Home_SD {
 
 	@When("The user clicks Register link")
 	public void the_user_clicks_register_link() {
-		HomeOBJ.register();
+		UtlityFunctionsOBJ.click_register();;;
 	}
 	
 	@Then("Register page should open")
