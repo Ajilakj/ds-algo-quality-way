@@ -129,7 +129,7 @@ public class Graph_SD extends BaseClass {
 	
 	@When("The user clicks Practice questions link")
 	public void the_user_clicks_practice_questions_link() {
-		GraphOBJ.select_practice_uestions_from_left_link();
+		UtlityFunctionsOBJ.select_practice_questions_link();
 	}
 
 	@Then("The user should be directed to practice questions Page")

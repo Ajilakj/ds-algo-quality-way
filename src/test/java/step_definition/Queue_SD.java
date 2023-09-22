@@ -190,16 +190,20 @@ public class Queue_SD extends BaseClass  {
 		UtlityFunctionsOBJ.check_output();
 	}
 
-//
-//	@When("The user clicks Practice questions link from queue")
-//	public void the_user_clicks_practice_questions_link_from_queue() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("The user should be directed to practice questions Page for queue")
-//	public void the_user_should_be_directed_to_practice_questions_page_for_queue() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
+	@Given("A logged in user is in the Queue Operations page")
+	public void a_logged_in_user_is_in_the_queue_operations_page() {
+		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/QueueOp/");
+	}
+
+
+	@When("The user clicks Practice questions link from queue")
+	public void the_user_clicks_practice_questions_link_from_queue() {
+		UtlityFunctionsOBJ.select_practice_questions_link();
+	}
+
+	@Then("The user should be directed to practice questions Page for queue")
+	public void the_user_should_be_directed_to_practice_questions_page_for_queue() {
+		 UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/practice");
+	}
 }

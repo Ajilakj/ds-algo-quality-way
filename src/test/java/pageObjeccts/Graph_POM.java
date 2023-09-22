@@ -12,7 +12,6 @@ public class Graph_POM extends BaseClass {
 	By getStartedLnkGraph=By.xpath("//a[@href='graph']");
 	By graph=By.partialLinkText("Graph");
 	By graphRepresentations=By.partialLinkText("Graph Representations");
-	By practiceQuestions=By.partialLinkText("Practice Questions");
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	public void click_get_start_lnk(){
@@ -29,10 +28,6 @@ public class Graph_POM extends BaseClass {
 	
 	public void select_graph_reprsentation_from_left_link(){
 		UtlityFunctionsOBJ.web_element_click(graphRepresentations);
-	}
-	
-	public void select_practice_uestions_from_left_link(){
-		UtlityFunctionsOBJ.web_element_click(practiceQuestions);
 	}
 	
 }

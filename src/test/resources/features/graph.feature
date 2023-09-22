@@ -22,7 +22,7 @@
   
   
   
-  @tag  @ds 
+  @tag  @graph
   Feature: to test functionality of graph
   
   @tag1 

@@ -28,6 +28,7 @@ public class UtlityFunctions extends BaseClass {
 //	By code=By.className("CodeMirror-scroll"); 
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
+	By practiceQuestions=By.partialLinkText("Practice Questions");
 	
 	public void web_element_click(By webEle) {
 		chromeDriver.findElement(webEle).click();
@@ -76,7 +77,7 @@ public class UtlityFunctions extends BaseClass {
 	public void try_editor_code(){
 //		wait.until(ExpectedConditions.elementToBeClickable(code));
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -94,6 +95,10 @@ public class UtlityFunctions extends BaseClass {
 	public void click_back_button(){
 		chromeDriver.navigate().back();
 		chromeDriver.navigate().refresh();
+	}
+	
+	public void select_practice_questions_link(){
+		web_element_click(practiceQuestions);
 	}
 	
 //	public void click_back_button_twice(){
