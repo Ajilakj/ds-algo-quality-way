@@ -74,7 +74,7 @@ public class Graph_SD extends BaseClass {
 	public void the_user_should_be_redirected_to_a_try_editor_page() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tryEditor");
 	}
-
+	
 	@When("some python as input then click run button")
 	public void some_python_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -85,30 +85,32 @@ public class Graph_SD extends BaseClass {
 	public void the_output_will_be_display_in_the_editor() {
 		UtlityFunctionsOBJ.check_output();
 	}
-//
-//	@When("The user clicks Graph Representations link")
-//	public void the_user_clicks_graph_representations_link() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("The user should be directed to Graph Representations Page")
-//	public void the_user_should_be_directed_to_graph_representations_page() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Given("A logged in user is in the Graph Representations page")
-//	public void a_logged_in_user_is_in_the_graph_representations_page() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("A tryEditor page with run button will appear")
-//	public void a_try_editor_page_with_run_button_will_appear() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
+	
+	
+	@Given("The user is in the graph or graph graph page")
+	public void the_user_is_in_the_graph_or_graph_graph_page() {
+		UtlityFunctionsOBJ.click_back_button();
+	}
+	
+	@When("The user clicks Graph Representations link")
+	public void the_user_clicks_graph_representations_link() {
+		GraphOBJ.select_graph_reprsentation_from_left_link();
+	}
+
+	@Then("The user should be directed to Graph Representations Page")
+	public void the_user_should_be_directed_to_graph_representations_page() {
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph-representations/");
+	}
+
+	@Given("A logged in user is in the Graph Representations page")
+	public void a_logged_in_user_is_in_the_graph_representations_page() {
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph-representations/");
+	}
+
+	@Then("A tryEditor page with run button will appear")
+	public void a_try_editor_page_with_run_button_will_appear() {
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tryEditor");
+	}
 //
 //	@When("The user enter some code in python and click run button")
 //	public void the_user_enter_some_code_in_python_and_click_run_button() {

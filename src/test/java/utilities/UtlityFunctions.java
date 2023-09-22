@@ -17,7 +17,7 @@ public class UtlityFunctions extends BaseClass {
 	By register =By.partialLinkText("Register");
 	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By tryHere=By.partialLinkText("Try here");
-	By code=By.xpath("//textarea[@tabindex=0]");
+	By code=By.xpath("//textarea[@tabindex='0']");
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
 
@@ -61,6 +61,12 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void try_editor_code(){
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		send_keys(code, "print 'welcome'");
 		web_element_click(runBtn);
 	}
@@ -69,6 +75,10 @@ public class UtlityFunctions extends BaseClass {
 		String txt=(chromeDriver.findElement(output)).getText();
 		web_element_click(runBtn);
 		check_text(txt,"welcome");
+	}
+	
+	public void click_back_button(){
+		chromeDriver.navigate().back();
 	}
 }
 

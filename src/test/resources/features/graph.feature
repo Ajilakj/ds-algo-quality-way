@@ -53,17 +53,18 @@
     When some python as input then click run button
     Then The output will be display in the editor
     
-   #@tag6 
-  #Scenario: A logged in user is in the Graph page
-    #When The user clicks Graph Representations link
-    #Then The user should be directed to Graph Representations Page
-    #
-    #@tag7
-  #Scenario:A logged in user is in the Graph Representations page
-    #Given A logged in user is in the Graph Representations page
-    #When The user clicks Try Here button
-    #Then A tryEditor page with run button will appear
-    #
+   @tag6 
+  Scenario: A logged in user is in the Graph page
+  	Given The user is in the graph or graph graph page
+    When The user clicks Graph Representations link
+    Then The user should be directed to Graph Representations Page
+    
+    @tag7
+  Scenario:A logged in user is in the Graph Representations page
+    Given A logged in user is in the Graph Representations page
+    When The user clicks Try Here button
+    Then A tryEditor page with run button will appear
+    
      #@tag8
   #Scenario: A logged in user is in the tryEditor page from Graph/Graph Representations page
     #When The user enter some code in python and click run button

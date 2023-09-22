@@ -11,9 +11,9 @@ public class Graph_POM extends BaseClass {
 
 	By getStartedLnk=By.xpath("//a[@href='graph']");
 //	By graphOption=By.partialLinkText("Graph");
-//	By graphLink=By.partialLinkText("Graph");
+//	By graphLink=By.partialLinkText("Graph"); 
 	By graph=By.partialLinkText("Graph");
-
+	By graphRepresentations=By.partialLinkText("Graph Representations");
 //	By code=By.className("CodeMirror-scroll");
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
@@ -28,6 +28,8 @@ public class Graph_POM extends BaseClass {
 	public void select_graph_from_left_link(){
 		UtlityFunctionsOBJ.web_element_click(graph);
 	}
-	
+	public void select_graph_reprsentation_from_left_link(){
+		UtlityFunctionsOBJ.web_element_click(graphRepresentations);
+	}
 	
 }
