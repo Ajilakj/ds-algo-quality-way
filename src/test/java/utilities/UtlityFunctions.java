@@ -32,12 +32,6 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void send_keys(By ele, String text){
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		chromeDriver.findElement(ele).sendKeys(text);
 	}
 	

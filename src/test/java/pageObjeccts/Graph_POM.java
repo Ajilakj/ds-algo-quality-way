@@ -14,8 +14,8 @@ public class Graph_POM extends BaseClass {
 //	By graphLink=By.partialLinkText("Graph");
 	By graph=By.partialLinkText("Graph");
 	By tryHere=By.partialLinkText("Try here");
-	By code=By.className("CodeMirror-scroll");
-
+//	By code=By.className("CodeMirror-scroll");
+	By code=By.xpath("(//div[@class='input']//textArea)[2]");
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
@@ -37,7 +37,7 @@ public class Graph_POM extends BaseClass {
 	}
 	
 	public void try_editor_code(){
-		UtlityFunctionsOBJ.send_keys(code, "welcome");
+		UtlityFunctionsOBJ.send_keys(code, "print 'welcome'");
 		UtlityFunctionsOBJ.web_element_click(runBtn);
 	}
 	
