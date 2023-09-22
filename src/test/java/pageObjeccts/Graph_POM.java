@@ -15,7 +15,7 @@ public class Graph_POM extends BaseClass {
 	By graph=By.partialLinkText("Graph");
 	By tryHere=By.partialLinkText("Try here");
 //	By code=By.className("CodeMirror-scroll");
-	By code=By.xpath("(//div[@class='input']//textArea)[2]");
+	By code=By.xpath("//textarea[@tabindex=0]");
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
