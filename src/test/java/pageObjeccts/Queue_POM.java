@@ -11,9 +11,10 @@ public class Queue_POM extends BaseClass {
 
 	By getStartedLnkQueue=By.xpath("//a[@href='queue']");
 	By queue=By.partialLinkText("Queue");
-//	By graphRepresentations=By.partialLinkText("Graph Representations");
-//	By practiceQuestions=By.partialLinkText("Practice Questions");
-//	By code=By.className("CodeMirror-scroll"); 
+	By queueInPython=By.partialLinkText("Implementation of Queue in Python");
+	By queueUsingCollections=By.partialLinkText("Implementation using collections");
+	By queueUsingArray=By.partialLinkText("Implementation using array");
+	By queueOperations=By.partialLinkText("Queue Operations");
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	public void click_get_start_lnk(){
@@ -24,16 +25,19 @@ public class Queue_POM extends BaseClass {
 		UtlityFunctionsOBJ.web_element_click(queue);
 	}
 	
-//	public void select_graph_from_left_link(){
-//		UtlityFunctionsOBJ.web_element_click(graph);
-//	}
-//	
-//	public void select_graph_reprsentation_from_left_link(){
-//		UtlityFunctionsOBJ.web_element_click(graphRepresentations);
-//	}
-//	
-//	public void select_practice_uestions_from_left_link(){
-//		UtlityFunctionsOBJ.web_element_click(practiceQuestions);
-//	}
+	public void select_queue_in_python(){
+		UtlityFunctionsOBJ.web_element_click(queueInPython);
+	}
 	
+	public void select_queue_using_collections(){
+		UtlityFunctionsOBJ.web_element_click(queueUsingCollections);
+	}
+	
+	public void select_queue_using_arrays(){
+		UtlityFunctionsOBJ.web_element_click(queueUsingArray);
+	}
+	
+	public void select_queue_operations(){
+		UtlityFunctionsOBJ.web_element_click(queueOperations);
+	}
 }

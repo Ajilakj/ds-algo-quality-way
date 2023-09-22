@@ -22,7 +22,7 @@
   
   
   
-  @tag  @ds 
+  @tag  @queue
   Feature: to test functionality of queue
   
   @tag1 
@@ -37,22 +37,22 @@
 	  When The user select the option queue from the datastructure drop down menu
 	  Then The user will directed to queue Page using dropdown
     
-  #@tag3
-  #Scenario: A logged in user is in the queue page
-    #Given The user is in the queue page
-    #When The user clicks Implementation of Queue in Python link
-    #Then The user should be directed to queue/implementation-lists Page
-    #
-#	@tag4  
-  #Scenario: A logged in user is in the  queue/implementation-lists page
-    #When The user clicks Try Here button
-    #Then The user should be redirected to a tryEditor page
-  #
-  #@tag5
-  #Scenario: A logged in user is in the tryEditor page from queue/implementation-lists  page
-    #When some python as input then click run button
-    #Then The output will be display in the editor
-    #
+  @tag3
+  Scenario: A logged in user is in the queue page
+    Given The user is in the queue page
+    When The user clicks Implementation of Queue in Python link
+    Then The user should be directed to queue/implementation-lists Page
+    
+	@tag4  
+  Scenario: A logged in user is in the  queue/implementation-lists page
+    When The user clicks Try Here button
+    Then The user should be redirected to a tryEditor page
+  
+  @tag5
+  Scenario: A logged in user is in the tryEditor page for queue/implementation-lists  page
+    When some python as input then click run button for queue/implementation-lists
+    Then The output will be display in the editor for queue/implementation-lists
+    
     #@tag6
   #Scenario: A logged in user is in the queue page
     #Given The user is in the queue page
