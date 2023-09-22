@@ -45,30 +45,30 @@
     
 	@tag4  
   Scenario: A logged in user is in the  queue/implementation-lists page
-    When The user clicks Try Here button
-    Then The user should be redirected to a tryEditor page
+    When The user clicks Try Here button from implementation-lists
+    Then The user should be redirected to a tryEditor page for queue/implementation-lists
   
   @tag5
   Scenario: A logged in user is in the tryEditor page for queue/implementation-lists  page
     When some python as input then click run button for queue/implementation-lists
     Then The output will be display in the editor for queue/implementation-lists
     
-    #@tag6
-  #Scenario: A logged in user is in the queue page
-    #Given The user is in the queue page
-    #When The user clicks Implementation using collections link
-    #Then The user should be directed to queue/implementation-collectionss Page
-    #
-#	@tag7  
-  #Scenario: A logged in user is in the  queue/implementation-collections page
-    #When The user clicks Try Here button
-    #Then The user should be redirected to a tryEditor page
-  #
-  #@tag8
-  #Scenario: A logged in user is in the tryEditor page from queue/implementation-collections  page
-    #When some python as input then click run button
-    #Then The output will be display in the editor
-    #
+    @tag6
+  Scenario: A logged in user is in the queue/implementation-lists Page
+    Given The user is in the queue/implementation-lists Page
+    When The user clicks Implementation using collections link
+    Then The user should be directed to queue/implementation-collectionss Page
+    
+	@tag7  
+  Scenario: A logged in user is in the queue/implementation-collections page
+    When The user clicks Try Here button from queue/implementation-collections page
+    Then The user should be redirected to a tryEditor page for queue/implementation-collections
+  
+  @tag8
+  Scenario: A logged in user is in the tryEditor page from queue/implementation-collections  page
+    When some python as input then click run button for queue/implementation-collections
+    Then The output will be display in the editor for queue/implementation-collections
+    
    #@tag9
   #Scenario: A logged in user is in the queue page
     #Given The user is in the queue page

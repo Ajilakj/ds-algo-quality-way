@@ -63,7 +63,7 @@ public class Queue_SD extends BaseClass  {
 
 	@Then("The user should be redirected to a tryEditor page for queue\\/implementation-lists")
 	public void the_user_should_be_redirected_to_a_try_editor_page_for_queue_implementation_lists() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tryEditor");
+		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 	
 	@When("some python as input then click run button for queue\\/implementation-lists")
@@ -74,6 +74,12 @@ public class Queue_SD extends BaseClass  {
 	@Then("The output will be display in the editor for queue\\/implementation-lists")
 	public void the_output_will_be_display_in_the_editor_for_queue_implementation_lists() {
 		UtlityFunctionsOBJ.check_output();
+	}
+	
+	@Given("The user is in the queue\\/implementation-lists Page")
+	public void the_user_is_in_the_queue_implementation_lists_page() {
+		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/implementation-lists/");
 	}
 
 	@When("The user clicks Implementation using collections link")
@@ -86,6 +92,27 @@ public class Queue_SD extends BaseClass  {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/implementation-collections/");
 	}
 
+
+	@When("The user clicks Try Here button from queue\\/implementation-collections page")
+	public void the_user_clicks_try_here_button_from_queue_implementation_collections_page() {
+		UtlityFunctionsOBJ.click_try_here();
+	}
+
+	@Then("The user should be redirected to a tryEditor page for queue\\/implementation-collections")
+	public void the_user_should_be_redirected_to_a_try_editor_page_for_queue_implementation_collections() {
+		UtlityFunctionsOBJ.check_url_try_editor();
+	}
+
+	@When("some python as input then click run button for queue\\/implementation-collections")
+	public void some_python_as_input_then_click_run_button_for_queue_implementation_collections() {
+		UtlityFunctionsOBJ.try_editor_code();
+	}
+
+	@Then("The output will be display in the editor for queue\\/implementation-collections")
+	public void the_output_will_be_display_in_the_editor_for_queue_implementation_collections() {
+		UtlityFunctionsOBJ.check_output();
+	}
+	
 //	@When("The user clicks implementation using array link")
 //	public void the_user_clicks_implementation_using_array_link() {
 //	    // Write code here that turns the phrase above into concrete actions

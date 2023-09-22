@@ -72,7 +72,7 @@ public class Graph_SD extends BaseClass {
 
 	@Then("The user should be redirected to a tryEditor page")
 	public void the_user_should_be_redirected_to_a_try_editor_page() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tryEditor");
+		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 	
 	@When("some python as input then click run button")
@@ -108,7 +108,7 @@ public class Graph_SD extends BaseClass {
 
 	@Then("A tryEditor page with run button will appear")
 	public void a_try_editor_page_with_run_button_will_appear() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tryEditor");
+		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
 	@When("The user enter some code in python and click run button")

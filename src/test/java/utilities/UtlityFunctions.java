@@ -60,6 +60,11 @@ public class UtlityFunctions extends BaseClass {
 		check_url(expected_url);
 	}
 	
+	public void check_url_try_editor(){
+		String expected_url="https://dsportalapp.herokuapp.com/tryEditor";
+		check_url(expected_url);
+	}
+	
 	public void click_DS_dropdown(){
 		web_element_click(ds);
 	}
