@@ -13,9 +13,13 @@ public class UtlityFunctions extends BaseClass {
 //		super.chromeDriver = driver;
 //		PageFactory.initElements(chromeDriver, this);
 //	} 
-	static By sign_in=By.partialLinkText("Sign in");
-	static By register =By.partialLinkText("Register");
-	static By ds=By.xpath("//a[text()='Data Structures']"); 
+	By sign_in=By.partialLinkText("Sign in");
+	By register =By.partialLinkText("Register");
+	By ds=By.xpath("//a[text()='Data Structures']"); 
+	By tryHere=By.partialLinkText("Try here");
+	By code=By.xpath("//textarea[@tabindex=0]");
+	By output=By.id("output");
+	By runBtn=By.xpath("//button[text()='Run']");
 
 	public void web_element_click(By webEle) {
 		chromeDriver.findElement(webEle).click();
@@ -50,6 +54,21 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void click_DS_dropdown(){
 		web_element_click(ds);
+	}
+	
+	public void click_try_here(){
+		web_element_click(tryHere);
+	}
+	
+	public void try_editor_code(){
+		send_keys(code, "print 'welcome'");
+		web_element_click(runBtn);
+	}
+	
+	public void check_output(){
+		String txt=(chromeDriver.findElement(output)).getText();
+		web_element_click(runBtn);
+		check_text(txt,"welcome");
 	}
 }
 

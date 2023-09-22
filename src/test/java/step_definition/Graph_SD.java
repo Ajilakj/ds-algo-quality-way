@@ -67,7 +67,7 @@ public class Graph_SD extends BaseClass {
 
 	@When("The user clicks Try Here button")
 	public void the_user_clicks_try_here_button() {
-		GraphOBJ.click_try_here();
+		UtlityFunctionsOBJ.click_try_here();
 	}
 
 	@Then("The user should be redirected to a tryEditor page")
@@ -77,13 +77,13 @@ public class Graph_SD extends BaseClass {
 
 	@When("some python as input then click run button")
 	public void some_python_as_input_then_click_run_button() {
-		GraphOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_code();
 
 	}
 
 	@Then("The output will be display in the editor")
 	public void the_output_will_be_display_in_the_editor() {
-		GraphOBJ.check_output();
+		UtlityFunctionsOBJ.check_output();
 	}
 //
 //	@When("The user clicks Graph Representations link")

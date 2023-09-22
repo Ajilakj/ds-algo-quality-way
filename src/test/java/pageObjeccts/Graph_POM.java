@@ -13,11 +13,8 @@ public class Graph_POM extends BaseClass {
 //	By graphOption=By.partialLinkText("Graph");
 //	By graphLink=By.partialLinkText("Graph");
 	By graph=By.partialLinkText("Graph");
-	By tryHere=By.partialLinkText("Try here");
+
 //	By code=By.className("CodeMirror-scroll");
-	By code=By.xpath("//textarea[@tabindex=0]");
-	By output=By.id("output");
-	By runBtn=By.xpath("//button[text()='Run']");
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	public void click_get_start_lnk(){
@@ -32,18 +29,5 @@ public class Graph_POM extends BaseClass {
 		UtlityFunctionsOBJ.web_element_click(graph);
 	}
 	
-	public void click_try_here(){
-		UtlityFunctionsOBJ.web_element_click(tryHere);
-	}
 	
-	public void try_editor_code(){
-		UtlityFunctionsOBJ.send_keys(code, "print 'welcome'");
-		UtlityFunctionsOBJ.web_element_click(runBtn);
-	}
-	
-	public void check_output(){
-		String txt=(chromeDriver.findElement(output)).getText();
-		UtlityFunctionsOBJ.web_element_click(runBtn);
-		UtlityFunctionsOBJ.check_text(txt,"welcome");
-	}
 }
