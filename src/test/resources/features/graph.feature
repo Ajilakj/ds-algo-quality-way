@@ -31,27 +31,28 @@
 	  When The user clicks the Getting Started button in Graph Pane
 	  Then The user will directed to Graph Page
 	  
-#	@tag2
-  #Scenario:  An existing user logged in with valid credentials in homepage
-#	  When The user select the option Graph from the datastructure drop down menu
-#	  Then The user will directed to graph Page
-    #
-  #@tag3
-  #Scenario: A logged in user is in the Graph page
-    #Given The user is in the Graph page
-    #When The user clicks Graph link
-    #Then The user should be directed to graph/graph Page
-    #
-#	@tag4  
-  #Scenario: A logged in user is in the Graph page
-    #When The user clicks Try Here button
-    #Then The user should be redirected to a tryEditor page
-    #
-  #@tag5
-  #Scenario: A logged in user is in the tryEditor page from Graph/Graph page
-    #When some python as input then click run button
-    #Then The output will be display in the editor
-    #
+	@tag2
+  Scenario:  An existing user logged in with valid credentials in homepage
+  	Given( A valid user is in the Home page after logged in
+	  When The user select the option Graph from the datastructure drop down menu
+	  Then The user will directed to graph Page
+    
+  @tag3
+  Scenario: A logged in user is in the Graph page
+    Given The user is in the Graph page
+    When The user clicks Graph link
+    Then The user should be directed to graph/graph Page
+    
+	@tag4  
+  Scenario: A logged in user is in the Graph page
+    When The user clicks Try Here button
+    Then The user should be redirected to a tryEditor page
+    
+  @tag5
+  Scenario: A logged in user is in the tryEditor page from Graph/Graph page
+    When some python as input then click run button
+    Then The output will be display in the editor
+    
    #@tag6 
   #Scenario: A logged in user is in the Graph page
     #When The user clicks Graph Representations link

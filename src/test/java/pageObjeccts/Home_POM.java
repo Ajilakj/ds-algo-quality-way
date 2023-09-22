@@ -16,7 +16,6 @@ import utilities.UtlityFunctions;
 public class Home_POM extends BaseClass{
 	By getStartedLnk=By.xpath("//button[text()='Get Started']");
 	By sign_out=By.partialLinkText("Sign out");
-	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By getStartLnk=By.xpath("//a[text()='Get Started']");
 	By signoutLnk=By.xpath("//ul/a[3]"); 
 	By alert =By.className("alert-primary"); 
@@ -40,7 +39,7 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void click_DS_dropdown(){
-		UtlityFunctionsOBJ.web_element_click(ds);
+		UtlityFunctionsOBJ.click_DS_dropdown();
 	}
 	
 	public void click_DS_dropdown_item(){

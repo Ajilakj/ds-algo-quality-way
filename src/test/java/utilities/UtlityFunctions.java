@@ -15,6 +15,7 @@ public class UtlityFunctions extends BaseClass {
 //	} 
 	static By sign_in=By.partialLinkText("Sign in");
 	static By register =By.partialLinkText("Register");
+	static By ds=By.xpath("//a[text()='Data Structures']"); 
 
 	public void web_element_click(By webEle) {
 		chromeDriver.findElement(webEle).click();
@@ -31,6 +32,12 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void send_keys(By ele, String text){
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		chromeDriver.findElement(ele).sendKeys(text);
 	}
 	
@@ -46,4 +53,9 @@ public class UtlityFunctions extends BaseClass {
 		String expected_url="https://dsportalapp.herokuapp.com/home";
 		check_url(expected_url);
 	}
+	
+	public void click_DS_dropdown(){
+		web_element_click(ds);
+	}
 }
+
