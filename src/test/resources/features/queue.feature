@@ -69,38 +69,38 @@
     When some python as input then click run button for queue/implementation-collections
     Then The output will be display in the editor for queue/implementation-collections
     
-   #@tag9
-  #Scenario: A logged in user is in the queue page
-    #Given The user is in the queue page
-    #When The user clicks implementation using array link
-    #Then The user should be directed to queue/implementation using array Page
-    #
-#	@tag10  
-  #Scenario: A logged in user is in the  queue/implementation using array page
-    #When The user clicks Try Here button
-    #Then The user should be redirected to a tryEditor page
-  #
-  #@tag11
-  #Scenario: A logged in user is in the tryEditor page from queue/implementation using array page
-    #When some python as input then click run button
-    #Then The output will be display in the editor  
-    #
-  #@tag12
-  #Scenario: A logged in user is in the queue page
-    #Given The user is in the queue page
-    #When The user clicks Queue Operations link
-    #Then The user should be directed to queue/Queue Operations Page
-    #
-#	@tag13  
-  #Scenario: A logged in user is in the  queue/Queue Operations page
-    #When The user clicks Try Here button
-    #Then The user should be redirected to a tryEditor page
-  #
-  #@tag14
-  #Scenario: A logged in user is in the tryEditor page from queue/Queue Operations page
-    #When some python as input then click run button
-    #Then The output will be display in the editor  
-    #
+   @tag9
+  Scenario: A logged in user is in the queue/implementation-collections  page
+    Given The user is in the queue page queue/implementation-collections  page
+    When The user clicks implementation using array link
+    Then The user should be directed to queue/implementation using array Page
+    
+	@tag10  
+  Scenario: A logged in user is in the  queue/implementation using array page
+    When The user clicks Try Here button button from queue/implementation using array page
+    Then The user should be redirected to a tryEditor for queue/implementation using array
+  
+  @tag11
+  Scenario: A logged in user is in the tryEditor page from queue/implementation using array page
+    When some python as input then click run button for queue/implementation using array
+    Then The output will be display in the editor for queue/implementation using array
+    
+  @tag12
+  Scenario:  A logged in user is in the queue/implementation using array page
+    Given The user is in the queue/implementation using array page
+    When The user clicks Queue Operations link
+    Then The user should be directed to queue/Queue Operations Page
+    
+	@tag13  
+  Scenario: A logged in user is in the  queue/Queue Operations page
+    When The user clicks Try Here button for queue/Queue Operations
+    Then The user should be redirected to a tryEditor page for queue/Queue Operations
+  
+  @tag14
+  Scenario: A logged in user is in the tryEditor page from queue/Queue Operations page
+    When some python as input then click run button for queue/Queue Operations
+    Then The output will be display in the editor  for queue/Queue Operations
+    
     #@tag15
   #Scenario: A logged in user is in the Queue Operations page
   #	Given A logged in user is in the Queue Operations page
