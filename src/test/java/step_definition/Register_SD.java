@@ -1,19 +1,27 @@
 package step_definition;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+//import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjeccts.BaseClass;
 import pageObjeccts.Register_POM;
 import utilities.UtlityFunctions;
 
-public class Register_SD{
+public class Register_SD extends BaseClass{
 	Register_POM RegisterOBJ=new Register_POM();
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	
-	@Given("clicks on register button")
-	public void clicks_on_register_button() {
-		UtlityFunctionsOBJ.click_register();;;
+//	@Test (priority = 8)
+	@Given("clicks on register link")
+	public void clicks_on_register_link() {
+		chromeDriver.get("https://dsportalapp.herokuapp.com/register");
 	}
 	
 	@When("enters valid username and valid password and confirm password")
@@ -23,13 +31,13 @@ public class Register_SD{
 
 	@When("click register button")
 	public void click_register_button() {
-		RegisterOBJ.register();;
+		RegisterOBJ.register();
 	}
 
-//	@Then("user is navigated to home page")
-//	public void user_is_navigated_to_home_page() {
-//	    LoginOBJ.check_url_home();
-//	}
+	@Then("user willl direct to home page")
+	public void user_willl_direct_to_home_page() {
+		UtlityFunctionsOBJ.check_url_home();
+	}
 	
 	
 //	

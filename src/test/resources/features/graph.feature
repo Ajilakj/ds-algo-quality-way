@@ -16,19 +16,24 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
- 
-  @tag @ds
+
+# Feature: Title of your feature
+# I want to use this template for my feature file
+  
+  
+  
+  @tag  @graph
   Feature: to test functionality of graph
   
-  
   @tag1 
-  Scenario:  An existing user logged in with valid credentials in homepage
-	  Given  An existing user is in the Home page after logged in
+  Scenario: An existing user logged in with valid credentials in homepage
+	  Given An existing user is in the Home page after logged in
 	  When The user clicks the Getting Started button in Graph Pane
 	  Then The user will directed to Graph Page
 	  
 	@tag2
   Scenario:  An existing user logged in with valid credentials in homepage
+  	Given( A valid user is in the Home page after logged in
 	  When The user select the option Graph from the datastructure drop down menu
 	  Then The user will directed to graph Page
     
@@ -50,6 +55,7 @@
     
    @tag6 
   Scenario: A logged in user is in the Graph page
+  	Given The user is in the graph or graph graph page
     When The user clicks Graph Representations link
     Then The user should be directed to Graph Representations Page
     
@@ -62,10 +68,11 @@
      @tag8
   Scenario: A logged in user is in the tryEditor page from Graph/Graph Representations page
     When The user enter some code in python and click run button
-    Then The output will be display in the editor
+    Then The output from the pyton code will display in the editor
     
     @tag9
   Scenario: A logged in user is in the Graph page
+  	Given A logged in user is in the graph home page
     When The user clicks Practice questions link
     Then The user should be directed to practice questions Page
     

@@ -13,9 +13,9 @@ public class Register_POM extends BaseClass{
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	public void enter_valid_credentials() {
-		UtlityFunctionsOBJ.send_keys(username,"QualityWayTest");
-		UtlityFunctionsOBJ.send_keys(password1,"pwd_ds_algo@12");
-		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@12");
+		UtlityFunctionsOBJ.send_keys(username,"QualityWayAB");
+		UtlityFunctionsOBJ.send_keys(password1,"pwd_ds_algo@12ABC");
+		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@12ABC");
 	}
 	
 	public void register(){

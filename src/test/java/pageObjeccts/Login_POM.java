@@ -9,7 +9,6 @@ public class Login_POM extends BaseClass {
 	By loginBtn=By.xpath("//input[@value='Login']");
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	
 	public void enter_valid_credentials(){
 		UtlityFunctionsOBJ.send_keys(username,"QualityWay");
 		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2");
@@ -20,8 +19,6 @@ public class Login_POM extends BaseClass {
 	}
 	
 	public void check_url_home(){
-		String actual_url=chromeDriver.getCurrentUrl();
-		String expected_url="https://dsportalapp.herokuapp.com/home";
-		UtlityFunctionsOBJ.check_url(actual_url, expected_url);
+		UtlityFunctionsOBJ.check_url_home();
 	}
 }

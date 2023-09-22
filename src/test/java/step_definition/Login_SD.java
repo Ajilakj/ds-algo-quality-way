@@ -1,5 +1,7 @@
 package step_definition;
 
+import org.testng.annotations.Test;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,7 +10,7 @@ import pageObjeccts.Home_POM;
 import pageObjeccts.Login_POM;
 import utilities.UtlityFunctions;
 
-public class Login_SD{
+public class Login_SD extends BaseClass{
 	Login_POM LoginOBJ=new Login_POM();
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 //	@Given("user is on ds-algo page")
@@ -34,10 +36,11 @@ public class Login_SD{
 //		HomeOBJ.check_sign_in();
 //	}
 //
-	
+//	@Test (priority = 9)
 	@Given("clicks on signin button")
 	public void clicks_on_signin_button() {
-		UtlityFunctionsOBJ.click_sign_in();;
+//		UtlityFunctionsOBJ.click_sign_in();
+		chromeDriver.get("https://dsportalapp.herokuapp.com/login");
 	}
 	
 	@When("enters valid username and valid password")

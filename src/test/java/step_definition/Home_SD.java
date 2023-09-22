@@ -1,5 +1,8 @@
 package step_definition;
 
+import org.testng.annotations.Test;
+
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -7,22 +10,24 @@ import pageObjeccts.BaseClass;
 import pageObjeccts.Home_POM;
 import utilities.UtlityFunctions;
 
-public class Home_SD {
+public class Home_SD extends BaseClass {
 	
-	BaseClass BaseClassObj=new BaseClass();
 	Home_POM HomeOBJ=new Home_POM();
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
-	@Given("The user try to  open DS Algo portal link")
+//	@Test (priority = 1)
+	@Given("The user try to  open DS Algo portal link") 
 	public void the_user_try_to_open_ds_algo_portal_link() {
-		BaseClassObj.init();
+		System.out.print("chromeDriver" + chromeDriver);
+		
 	}
 
 	@Then("DS Algo portal page should open")
 	public void ds_algo_portal_page_should_open() {
-		BaseClassObj.open_Ds_Algo();
+		super.open_Ds_Algo();
 	}
 
+//	@Test (priority = 2)
 	@Given("The user already on DS Algo portal page")
 	public void the_user_already_on_ds_algo_portal_page() {
 		HomeOBJ.check_url_DsAlgo_portal();
@@ -37,7 +42,7 @@ public class Home_SD {
 	public void ds_algo_home_page_should_open() {
 		HomeOBJ.check_url_home();
 	}
-
+//	@Test (priority = 3)
 	@When("The user clicks Data Structures drop down")
 	public void the_user_clicks_data_structures_drop_down() {
 		HomeOBJ.click_DS_dropdown();
@@ -48,6 +53,7 @@ public class Home_SD {
 		HomeOBJ.check_DS_size(6);
 	}
 
+//	@Test (priority = 4)
 	@When("The user select any of the items from the drop down")
 	public void the_user_slect_any_of_the_items_from_the_drop_down() {
 		HomeOBJ.click_DS_dropdown();
@@ -58,7 +64,7 @@ public class Home_SD {
 	public void it_should_alert_the_user_with_a_message() {
 		HomeOBJ.check_not_sign_in_msg();
 	}
-
+//	@Test (priority = 5)
 	@Given("The user already on DS Algo portal page and The user did not sign in")
 	public void the_user_already_on_ds_algo_portal_page_and_the_user_did_not_sign_in() {
 //		public void the_user_clicks_any_of_the_buttons_below_the_data_structures(String string) {
@@ -74,7 +80,7 @@ public class Home_SD {
 	public void it_should_alert_the_user_with_a_message_you_are_not_logged_in() {
 		HomeOBJ.check_not_sign_in_msg();
 	}
-	
+//	@Test (priority = 6)
 	@When("The user clicks Sign in link")
 	public void the_user_clicks_sign_in_link() {
 		UtlityFunctionsOBJ.click_sign_in();;
@@ -84,7 +90,7 @@ public class Home_SD {
 	public void sign_in_page_should_open() {
 		HomeOBJ.check_sign_in_url();
 	}
-
+//	@Test (priority = 7)
 	@When("The user clicks Register link")
 	public void the_user_clicks_register_link() {
 		UtlityFunctionsOBJ.click_register();;;
