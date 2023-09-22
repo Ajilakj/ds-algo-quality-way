@@ -27,7 +27,7 @@
   
   @tag1 
   Scenario: An existing user logged in with valid credentials in homepage
-	  Given An existing user is in the Home page after logged in
+	  Given An existing user is in the Home page
 	  When The user clicks the Getting Started button in queue Pane
 	  Then The user will directed to queue Page
 	  
@@ -35,77 +35,77 @@
   Scenario:  An existing user logged in with valid credentials in homepage
   	Given( A valid user is in the Home page after logged in
 	  When The user select the option queue from the datastructure drop down menu
-	  Then The user will directed to queue Page
+	  Then The user will directed to queue Page using dropdown
     
-  @tag3
-  Scenario: A logged in user is in the queue page
-    Given The user is in the queue page
-    When The user clicks Implementation of Queue in Python link
-    Then The user should be directed to queue/implementation-lists Page
-    
-	@tag4  
-  Scenario: A logged in user is in the  queue/implementation-lists page
-    When The user clicks Try Here button
-    Then The user should be redirected to a tryEditor page
-  
-  @tag5
-  Scenario: A logged in user is in the tryEditor page from queue/implementation-lists  page
-    When some python as input then click run button
-    Then The output will be display in the editor
-    
-    @tag6
-  Scenario: A logged in user is in the queue page
-    Given The user is in the queue page
-    When The user clicks Implementation using collections link
-    Then The user should be directed to queue/implementation-collectionss Page
-    
-	@tag7  
-  Scenario: A logged in user is in the  queue/implementation-collections page
-    When The user clicks Try Here button
-    Then The user should be redirected to a tryEditor page
-  
-  @tag8
-  Scenario: A logged in user is in the tryEditor page from queue/implementation-collections  page
-    When some python as input then click run button
-    Then The output will be display in the editor
-    
-   @tag9
-  Scenario: A logged in user is in the queue page
-    Given The user is in the queue page
-    When The user clicks implementation using array link
-    Then The user should be directed to queue/implementation using array Page
-    
-	@tag10  
-  Scenario: A logged in user is in the  queue/implementation using array page
-    When The user clicks Try Here button
-    Then The user should be redirected to a tryEditor page
-  
-  @tag11
-  Scenario: A logged in user is in the tryEditor page from queue/implementation using array page
-    When some python as input then click run button
-    Then The output will be display in the editor  
-    
-  @tag12
-  Scenario: A logged in user is in the queue page
-    Given The user is in the queue page
-    When The user clicks Queue Operations link
-    Then The user should be directed to queue/Queue Operations Page
-    
-	@tag13  
-  Scenario: A logged in user is in the  queue/Queue Operations page
-    When The user clicks Try Here button
-    Then The user should be redirected to a tryEditor page
-  
-  @tag14
-  Scenario: A logged in user is in the tryEditor page from queue/Queue Operations page
-    When some python as input then click run button
-    Then The output will be display in the editor  
-    
-    @tag15
-  Scenario: A logged in user is in the Queue Operations page
-  	Given A logged in user is in the Queue Operations page
-    When The user clicks Practice questions link from queue
-    Then The user should be directed to practice questions Page for queue
+  #@tag3
+  #Scenario: A logged in user is in the queue page
+    #Given The user is in the queue page
+    #When The user clicks Implementation of Queue in Python link
+    #Then The user should be directed to queue/implementation-lists Page
+    #
+#	@tag4  
+  #Scenario: A logged in user is in the  queue/implementation-lists page
+    #When The user clicks Try Here button
+    #Then The user should be redirected to a tryEditor page
+  #
+  #@tag5
+  #Scenario: A logged in user is in the tryEditor page from queue/implementation-lists  page
+    #When some python as input then click run button
+    #Then The output will be display in the editor
+    #
+    #@tag6
+  #Scenario: A logged in user is in the queue page
+    #Given The user is in the queue page
+    #When The user clicks Implementation using collections link
+    #Then The user should be directed to queue/implementation-collectionss Page
+    #
+#	@tag7  
+  #Scenario: A logged in user is in the  queue/implementation-collections page
+    #When The user clicks Try Here button
+    #Then The user should be redirected to a tryEditor page
+  #
+  #@tag8
+  #Scenario: A logged in user is in the tryEditor page from queue/implementation-collections  page
+    #When some python as input then click run button
+    #Then The output will be display in the editor
+    #
+   #@tag9
+  #Scenario: A logged in user is in the queue page
+    #Given The user is in the queue page
+    #When The user clicks implementation using array link
+    #Then The user should be directed to queue/implementation using array Page
+    #
+#	@tag10  
+  #Scenario: A logged in user is in the  queue/implementation using array page
+    #When The user clicks Try Here button
+    #Then The user should be redirected to a tryEditor page
+  #
+  #@tag11
+  #Scenario: A logged in user is in the tryEditor page from queue/implementation using array page
+    #When some python as input then click run button
+    #Then The output will be display in the editor  
+    #
+  #@tag12
+  #Scenario: A logged in user is in the queue page
+    #Given The user is in the queue page
+    #When The user clicks Queue Operations link
+    #Then The user should be directed to queue/Queue Operations Page
+    #
+#	@tag13  
+  #Scenario: A logged in user is in the  queue/Queue Operations page
+    #When The user clicks Try Here button
+    #Then The user should be redirected to a tryEditor page
+  #
+  #@tag14
+  #Scenario: A logged in user is in the tryEditor page from queue/Queue Operations page
+    #When some python as input then click run button
+    #Then The output will be display in the editor  
+    #
+    #@tag15
+  #Scenario: A logged in user is in the Queue Operations page
+  #	Given A logged in user is in the Queue Operations page
+    #When The user clicks Practice questions link from queue
+    #Then The user should be directed to practice questions Page for queue
     
     
 

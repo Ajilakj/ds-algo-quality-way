@@ -9,17 +9,14 @@ import utilities.UtlityFunctions;
 
 public class Graph_POM extends BaseClass {
 
-	By getStartedLnk=By.xpath("//a[@href='graph']");
-//	By graphOption=By.partialLinkText("Graph");
-//	By graphLink=By.partialLinkText("Graph"); 
+	By getStartedLnkGraph=By.xpath("//a[@href='graph']");
 	By graph=By.partialLinkText("Graph");
 	By graphRepresentations=By.partialLinkText("Graph Representations");
 	By practiceQuestions=By.partialLinkText("Practice Questions");
-//	By code=By.className("CodeMirror-scroll"); 
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	public void click_get_start_lnk(){
-		UtlityFunctionsOBJ.web_element_click(getStartedLnk);
+		UtlityFunctionsOBJ.web_element_click(getStartedLnkGraph);
 	}
 	
 	public void select_graph_from_drop_down(){

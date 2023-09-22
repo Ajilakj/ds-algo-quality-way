@@ -25,6 +25,7 @@ public class UtlityFunctions extends BaseClass {
 	By code=By.xpath("//textarea[@tabindex='0']"); 
 //	By code=By.xpath("//div[@class='CodeMirror-lines']");
 //	By code=By.className("cm-variable");
+//	By code=By.className("CodeMirror-scroll"); 
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
 	
