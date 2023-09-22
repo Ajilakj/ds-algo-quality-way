@@ -78,7 +78,6 @@ public class Graph_SD extends BaseClass {
 	@When("some python as input then click run button")
 	public void some_python_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_code();
-
 	}
 
 	@Then("The output will be display in the editor")
@@ -111,23 +110,31 @@ public class Graph_SD extends BaseClass {
 	public void a_try_editor_page_with_run_button_will_appear() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tryEditor");
 	}
-//
-//	@When("The user enter some code in python and click run button")
-//	public void the_user_enter_some_code_in_python_and_click_run_button() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@When("The user clicks Practice questions link")
-//	public void the_user_clicks_practice_questions_link() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("The user should be directed to practice questions Page")
-//	public void the_user_should_be_directed_to_practice_questions_page() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
+
+	@When("The user enter some code in python and click run button")
+	public void the_user_enter_some_code_in_python_and_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_code();
+	}
+	
+	@Then("The output from the pyton code will display in the editor")
+	public void the_output_from_the_pyton_code_will_display_in_the_editor() {
+		UtlityFunctionsOBJ.check_output();
+	}
+
+	@Given("A logged in user is in the graph home page")
+	public void a_logged_in_user_is_in_the_graph_home_page() {
+		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph-representations/");
+	}
+	
+	@When("The user clicks Practice questions link")
+	public void the_user_clicks_practice_questions_link() {
+		GraphOBJ.select_practice_uestions_from_left_link();
+	}
+
+	@Then("The user should be directed to practice questions Page")
+	public void the_user_should_be_directed_to_practice_questions_page() {
+	    UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/practice");
+	}
 
 }

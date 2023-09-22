@@ -16,7 +16,7 @@ import utilities.UtlityFunctions;
 public class BaseClass {
 	
 	protected static WebDriver chromeDriver;
-	WebDriverWait wait;
+//	protected WebDriverWait wait;
 	JavascriptExecutor js;	
 	
 	public  BaseClass() {
@@ -27,6 +27,7 @@ public class BaseClass {
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeDriver=new ChromeDriver(chromeOptions);
 			chromeDriver.manage().window().maximize();
+//			wait = new WebDriverWait(chromeDriver,Duration.ofSeconds(10));
 		}
 	}
 	

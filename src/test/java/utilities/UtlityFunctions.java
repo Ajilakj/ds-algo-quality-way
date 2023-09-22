@@ -1,9 +1,13 @@
 package utilities;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import pageObjeccts.BaseClass;
@@ -13,14 +17,17 @@ public class UtlityFunctions extends BaseClass {
 //		super.chromeDriver = driver;
 //		PageFactory.initElements(chromeDriver, this);
 //	} 
+	WebDriverWait wait=new WebDriverWait(chromeDriver,Duration.ofSeconds(20));
 	By sign_in=By.partialLinkText("Sign in");
 	By register =By.partialLinkText("Register");
 	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By tryHere=By.partialLinkText("Try here");
-	By code=By.xpath("//textarea[@tabindex='0']");
+	By code=By.xpath("//textarea[@tabindex='0']"); 
+//	By code=By.xpath("//div[@class='CodeMirror-lines']");
+//	By code=By.className("cm-variable");
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
-
+	
 	public void web_element_click(By webEle) {
 		chromeDriver.findElement(webEle).click();
 	}
@@ -61,24 +68,33 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void try_editor_code(){
+//		wait.until(ExpectedConditions.elementToBeClickable(code));
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		send_keys(code, "print 'welcome'");
+//		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
 	}
 	
 	public void check_output(){
 		String txt=(chromeDriver.findElement(output)).getText();
-		web_element_click(runBtn);
 		check_text(txt,"welcome");
 	}
 	
 	public void click_back_button(){
 		chromeDriver.navigate().back();
+		chromeDriver.navigate().refresh();
 	}
+	
+//	public void click_back_button_twice(){
+//		chromeDriver.navigate().back();
+//		chromeDriver.navigate().refresh();
+//		chromeDriver.navigate().back();
+//		chromeDriver.navigate().refresh();
+//	}
 }
 

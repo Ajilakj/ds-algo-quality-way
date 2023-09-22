@@ -65,16 +65,17 @@
     When The user clicks Try Here button
     Then A tryEditor page with run button will appear
     
-     #@tag8
-  #Scenario: A logged in user is in the tryEditor page from Graph/Graph Representations page
-    #When The user enter some code in python and click run button
-    #Then The output will be display in the editor
-    #
-    #@tag9
-  #Scenario: A logged in user is in the Graph page
-    #When The user clicks Practice questions link
-    #Then The user should be directed to practice questions Page
-    #
+     @tag8
+  Scenario: A logged in user is in the tryEditor page from Graph/Graph Representations page
+    When The user enter some code in python and click run button
+    Then The output from the pyton code will display in the editor
+    
+    @tag9
+  Scenario: A logged in user is in the Graph page
+  	Given A logged in user is in the graph home page
+    When The user clicks Practice questions link
+    Then The user should be directed to practice questions Page
+    
     
 
 
