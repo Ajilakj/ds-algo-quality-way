@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\bobby\AppData\Local\Temp\testng-eclipse--1564009544\testng-customsuite.xml</span>
+                    <span>C:\Users\bobby\AppData\Local\Temp\testng-eclipse--1836298516\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">33 methods, 1 failed,   32 passed</span>
+                    <span class="method-stats">33 methods, 2 failed,   31 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;A logged in user is in the tryEditor page from queue/Queue Operations page&quot;, &quot;to test functionality...)">runScenario("A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;create user with valid credentials&quot;, &quot;Register with valid and invalid credentials&quot;)">runScenario("create user with valid credentials", "Register with valid and invalid credentials")</a> <!-- method navigator-link -->
@@ -118,11 +123,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;The user already on DS Algo portal page and the user try to go to sign in page&quot;, &quot;to test functiona...)">runScenario("The user already on DS Algo portal page and the user try to go to sign in page", "to test functiona...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;A logged in user is in the Queue Operations page&quot;, &quot;to test functionality of queue&quot;)">runScenario("A logged in user is in the Queue Operations page", "to test functionality of queue")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,12 +172,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;A logged in user is in the tryEditor page from queue/Queue Operations page&quot;, &quot;to test functionality...)">runScenario("A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;An existing user logged in with valid credentials in homepage&quot;, &quot;to test functionality of queue&quot;)">runScenario("An existing user logged in with valid credentials in homepage", "to test functionality of queue")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;An existing user logged in with valid credentials in homepage&quot;, &quot;to test functionality of queue&quot;)">runScenario("An existing user logged in with valid credentials in homepage", "to test functionality of queue")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;A logged in user is in the Queue Operations page&quot;, &quot;to test functionality of queue&quot;)">runScenario("A logged in user is in the Queue Operations page", "to test functionality of queue")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -295,6 +295,43 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;A logged in user is in the tryEditor page from queue/Queue Operations page&quot;, &quot;to test functionality...)">
+                  </a> <!-- runScenario("A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("A logged in user is in the tryEditor page from queue/Queue Operations page","to test functionality of queue")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d4573db738142e8ca3df8ac3dd5d5859, sendKeysToElement {id=600B539DB03839D967C47CE68AAD69BB_element_207, value=[Ljava.lang.CharSequence;@abad89c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60193}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60193/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d4573db738142e8ca3df8ac3dd5d5859)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
+Session ID: d4573db738142e8ca3df8ac3dd5d5859
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_queue_operations(Queue_SD.java:185)
+	at ✽.some python as input then click run button for queue/Queue Operations(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:101)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;create user with valid credentials&quot;, &quot;Register with valid and invalid credentials&quot;)">
                   </a> <!-- runScenario("create user with valid credentials", "Register with valid and invalid credentials") -->
                   <span class="method-name">runScenario</span>
@@ -330,16 +367,6 @@
                   </a> <!-- runScenario("The user already on DS Algo portal page and the user try to go to sign in page", "to test functiona...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("The user already on DS Algo portal page and the user try to go to sign in page","to test functionality of home page")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;A logged in user is in the Queue Operations page&quot;, &quot;to test functionality of queue&quot;)">
-                  </a> <!-- runScenario("A logged in user is in the Queue Operations page", "to test functionality of queue") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("A logged in user is in the Queue Operations page","to test functionality of queue")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -436,20 +463,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;A logged in user is in the tryEditor page from queue/Queue Operations page&quot;, &quot;to test functionality...)">
-                  </a> <!-- runScenario("A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality...) -->
+                  <a name="runScenario(&quot;An existing user logged in with valid credentials in homepage&quot;, &quot;to test functionality of queue&quot;)">
+                  </a> <!-- runScenario("An existing user logged in with valid credentials in homepage", "to test functionality of queue") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("A logged in user is in the tryEditor page from queue/Queue Operations page","to test functionality of queue")</span>
+                  <span class="parameters">("An existing user logged in with valid credentials in homepage","to test functionality of queue")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;An existing user logged in with valid credentials in homepage&quot;, &quot;to test functionality of queue&quot;)">
-                  </a> <!-- runScenario("An existing user logged in with valid credentials in homepage", "to test functionality of queue") -->
+                  <a name="runScenario(&quot;A logged in user is in the Queue Operations page&quot;, &quot;to test functionality of queue&quot;)">
+                  </a> <!-- runScenario("A logged in user is in the Queue Operations page", "to test functionality of queue") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("An existing user logged in with valid credentials in homepage","to test functionality of queue")</span>
+                  <span class="parameters">("A logged in user is in the Queue Operations page","to test functionality of queue")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -649,7 +676,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\bobby\AppData\Local\Temp\testng-eclipse--1564009544\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\bobby\AppData\Local\Temp\testng-eclipse--1836298516\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -710,140 +737,140 @@ data.addRows(33);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 7463);
+data.setCell(0, 3, 5187);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.TestRunner')
-data.setCell(1, 3, 5212);
+data.setCell(1, 3, 5169);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.TestRunner')
-data.setCell(2, 3, 5206);
+data.setCell(2, 3, 5163);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.TestRunner')
-data.setCell(3, 3, 5151);
+data.setCell(3, 3, 5149);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runner.TestRunner')
-data.setCell(4, 3, 5147);
+data.setCell(4, 3, 5128);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'runner.TestRunner')
-data.setCell(5, 3, 5145);
+data.setCell(5, 3, 5063);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'runner.TestRunner')
-data.setCell(6, 3, 5138);
+data.setCell(6, 3, 3193);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'runner.TestRunner')
-data.setCell(7, 3, 649);
+data.setCell(7, 3, 509);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'runner.TestRunner')
-data.setCell(8, 3, 489);
+data.setCell(8, 3, 454);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'runner.TestRunner')
-data.setCell(9, 3, 467);
+data.setCell(9, 3, 445);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'runner.TestRunner')
-data.setCell(10, 3, 437);
+data.setCell(10, 3, 433);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
 data.setCell(11, 2, 'runner.TestRunner')
-data.setCell(11, 3, 410);
+data.setCell(11, 3, 394);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'runScenario')
 data.setCell(12, 2, 'runner.TestRunner')
-data.setCell(12, 3, 402);
+data.setCell(12, 3, 363);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'runScenario')
 data.setCell(13, 2, 'runner.TestRunner')
-data.setCell(13, 3, 387);
+data.setCell(13, 3, 352);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'runScenario')
 data.setCell(14, 2, 'runner.TestRunner')
-data.setCell(14, 3, 383);
+data.setCell(14, 3, 343);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'runScenario')
 data.setCell(15, 2, 'runner.TestRunner')
-data.setCell(15, 3, 367);
+data.setCell(15, 3, 336);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'runScenario')
 data.setCell(16, 2, 'runner.TestRunner')
-data.setCell(16, 3, 355);
+data.setCell(16, 3, 322);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'runScenario')
 data.setCell(17, 2, 'runner.TestRunner')
-data.setCell(17, 3, 350);
+data.setCell(17, 3, 310);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'runScenario')
 data.setCell(18, 2, 'runner.TestRunner')
-data.setCell(18, 3, 341);
+data.setCell(18, 3, 304);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'runScenario')
 data.setCell(19, 2, 'runner.TestRunner')
-data.setCell(19, 3, 332);
+data.setCell(19, 3, 303);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'runScenario')
 data.setCell(20, 2, 'runner.TestRunner')
-data.setCell(20, 3, 330);
+data.setCell(20, 3, 299);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'runScenario')
 data.setCell(21, 2, 'runner.TestRunner')
-data.setCell(21, 3, 309);
+data.setCell(21, 3, 280);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'runScenario')
 data.setCell(22, 2, 'runner.TestRunner')
-data.setCell(22, 3, 300);
+data.setCell(22, 3, 279);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'runScenario')
 data.setCell(23, 2, 'runner.TestRunner')
-data.setCell(23, 3, 274);
+data.setCell(23, 3, 246);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'runScenario')
 data.setCell(24, 2, 'runner.TestRunner')
-data.setCell(24, 3, 265);
+data.setCell(24, 3, 244);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'runScenario')
 data.setCell(25, 2, 'runner.TestRunner')
-data.setCell(25, 3, 264);
+data.setCell(25, 3, 241);
 data.setCell(26, 0, 26)
 data.setCell(26, 1, 'runScenario')
 data.setCell(26, 2, 'runner.TestRunner')
-data.setCell(26, 3, 255);
+data.setCell(26, 3, 241);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'runScenario')
 data.setCell(27, 2, 'runner.TestRunner')
-data.setCell(27, 3, 252);
+data.setCell(27, 3, 227);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'runScenario')
 data.setCell(28, 2, 'runner.TestRunner')
-data.setCell(28, 3, 250);
+data.setCell(28, 3, 213);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'runScenario')
 data.setCell(29, 2, 'runner.TestRunner')
-data.setCell(29, 3, 240);
+data.setCell(29, 3, 210);
 data.setCell(30, 0, 30)
 data.setCell(30, 1, 'runScenario')
 data.setCell(30, 2, 'runner.TestRunner')
-data.setCell(30, 3, 207);
+data.setCell(30, 3, 202);
 data.setCell(31, 0, 31)
 data.setCell(31, 1, 'runScenario')
 data.setCell(31, 2, 'runner.TestRunner')
-data.setCell(31, 3, 199);
+data.setCell(31, 3, 201);
 data.setCell(32, 0, 32)
 data.setCell(32, 1, 'runScenario')
 data.setCell(32, 2, 'runner.TestRunner')
-data.setCell(32, 3, 108);
+data.setCell(32, 3, 93);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -871,146 +898,148 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2b736fee)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@3249e278)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("open home page", "to test functionality of home page")</span>
-                <span class="method-start">527 ms</span>
+                <span class="method-start">536 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("get started button to go to home page", "to test functionality of home page")</span>
-                <span class="method-start">8000 ms</span>
+                <span class="method-start">3738 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("The user already on DS Algo portal page drop down with Data structures", "to test functionality of ...)</span>
-                <span class="method-start">8404 ms</span>
+                <span class="method-start">4174 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("select one item from drop down without sign in", "to test functionality of home page")</span>
-                <span class="method-start">8513 ms</span>
+                <span class="method-start">4268 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("select one item from home page without sign in", "to test functionality of home page")</span>
-                <span class="method-start">8788 ms</span>
+                <span class="method-start">4548 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("The user already on DS Algo portal page and user try to go to sign in page", "to test functionality...)</span>
-                <span class="method-start">9030 ms</span>
+                <span class="method-start">4760 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("The user already on DS Algo portal page and the user try to go to sign in page", "to test functiona...)</span>
-                <span class="method-start">9231 ms</span>
+                <span class="method-start">4965 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("create user with valid credentials", "Register with valid and invalid credentials")</span>
-                <span class="method-start">9442 ms</span>
+                <span class="method-start">5168 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check login is successful with valid credentials", "to test login functionality")</span>
-                <span class="method-start">9913 ms</span>
+                <span class="method-start">5627 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("An existing user logged in with valid credentials in homepage", "to test functionality of graph")</span>
-                <span class="method-start">10564 ms</span>
+                <span class="method-start">6138 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("An existing user logged in with valid credentials in homepage", "to test functionality of graph")</span>
-                <span class="method-start">10875 ms</span>
+                <span class="method-start">6439 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the Graph page", "to test functionality of graph")</span>
-                <span class="method-start">11142 ms</span>
+                <span class="method-start">6684 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the Graph page", "to test functionality of graph")</span>
-                <span class="method-start">11443 ms</span>
+                <span class="method-start">6990 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the tryEditor page from Graph/Graph page", "to test functionality of graph")</span>
-                <span class="method-start">11881 ms</span>
+                <span class="method-start">7385 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the Graph page", "to test functionality of graph")</span>
-                <span class="method-start">17095 ms</span>
+                <span class="method-start">12574 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the Graph Representations page", "to test functionality of graph")</span>
-                <span class="method-start">17438 ms</span>
+                <span class="method-start">12897 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the tryEditor page from Graph/Graph Representations page", "to test function...)</span>
-                <span class="method-start">17774 ms</span>
+                <span class="method-start">13203 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the Graph page", "to test functionality of graph")</span>
-                <span class="method-start">22922 ms</span>
+                <span class="method-start">18354 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("An existing user logged in with valid credentials in homepage", "to test functionality of queue")</span>
-                <span class="method-start">23333 ms</span>
+                <span class="method-start">18719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("An existing user logged in with valid credentials in homepage", "to test functionality of queue")</span>
-                <span class="method-start">23685 ms</span>
+                <span class="method-start">19031 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the queue page", "to test functionality of queue")</span>
-                <span class="method-start">23950 ms</span>
+                <span class="method-start">19273 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the  queue/implementation-lists page", "to test functionality of queue")</span>
-                <span class="method-start">24318 ms</span>
+                <span class="method-start">19554 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the tryEditor page for queue/implementation-lists  page", "to test functiona...)</span>
-                <span class="method-start">24650 ms</span>
+                <span class="method-start">19798 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the queue/implementation-lists Page", "to test functionality of queue")</span>
-                <span class="method-start">29858 ms</span>
+                <span class="method-start">24968 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the queue/implementation-collections page", "to test functionality of queue")</span>
-                <span class="method-start">30242 ms</span>
+                <span class="method-start">25312 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the tryEditor page from queue/implementation-collections  page", "to test fu...)</span>
-                <span class="method-start">30495 ms</span>
+                <span class="method-start">25560 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the queue/implementation-collections  page", "to test functionality of queue...)</span>
-                <span class="method-start">35647 ms</span>
+                <span class="method-start">30724 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the  queue/implementation using array page", "to test functionality of queue...)</span>
-                <span class="method-start">36137 ms</span>
+                <span class="method-start">31171 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the tryEditor page from queue/implementation using array page", "to test fun...)</span>
-                <span class="method-start">36390 ms</span>
+                <span class="method-start">31385 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the queue/implementation using array page", "to test functionality of queue")</span>
-                <span class="method-start">41530 ms</span>
+                <span class="method-start">36515 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the  queue/Queue Operations page", "to test functionality of queue")</span>
-                <span class="method-start">41918 ms</span>
+                <span class="method-start">36852 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality...)</span>
-                <span class="method-start">42174 ms</span>
+                <span class="method-start">37081 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("A logged in user is in the Queue Operations page", "to test functionality of queue")</span>
-                <span class="method-start">47324 ms</span>
+                <span class="method-start">42148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">47682 ms</span>
+                <span class="method-start">42503 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
