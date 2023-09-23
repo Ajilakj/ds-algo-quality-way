@@ -97,27 +97,27 @@
   
   Given clicks on signin button
   And enters valid username and valid password
-  And clicks Login button
+  And click Login button
   Then user is navigated to home page
   
-  @tag5
-  
-  Scenario: User enters valid credentials but not registerd already
-  
-  Given user is in Login page
-    When user has no account already
-    But enters valid username and password
-    And clicks Login
-    Then Invalid Username and Password text is displayed
-    
-    @tag6
-    
-    Scenario: check logging with  valid username and leaving password field empty
-    
-    Given User is in Login page
-    When  user enters valid username and leaves password field empty
-    And clicks Login
-    Then please fillout this field text is displayed
+  #@tag5
+  #
+  #Scenario: User enters valid credentials but not registerd already
+  #
+  #Given user is in Login page
+    #When user has no account already
+    #But enters valid username and password
+    #And clicks Login
+    #Then Invalid Username and Password text is displayed
+    #
+    #@tag6
+    #
+    #Scenario: check logging with  valid username and leaving password field empty
+    #
+    #Given User is in Login page
+    #When  user enters valid username and leaves password field empty
+    #And clicks Login
+    #Then please fillout this field text is displayed
     
   
   

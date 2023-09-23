@@ -18,7 +18,8 @@ public class Graph_SD extends BaseClass {
 	Graph_POM GraphOBJ=new Graph_POM();
 	WebDriver chromeDriver=super.chromeDriver;
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-//	@Test (priority = 9)
+	
+//	  @tag1 
 	@Given("An existing user is in the Home page after logged in")
 	public void an_existing_user_is_in_the_home_page_after_logged_in() {
 		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
@@ -33,7 +34,8 @@ public class Graph_SD extends BaseClass {
 	public void graph_page_will_load() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/");
 	}
-
+	
+//	  @tag2 
 	@Given("A valid user is in the Home page after logged in")
 	public void a_valid_user_is_in_the_home_page_after_logged_in() {
 		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
@@ -49,7 +51,8 @@ public class Graph_SD extends BaseClass {
 	public void the_user_will_directed_to_graph_page() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/");
 	}
-
+	
+//	  @tag3
 	@Given("The user is in the Graph page")
 	public void the_user_is_in_the_graph_page() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/");
@@ -65,6 +68,7 @@ public class Graph_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph/");
 	}
 
+//	  @tag4
 	@When("The user clicks Try Here button")
 	public void the_user_clicks_try_here_button() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -75,6 +79,7 @@ public class Graph_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 	
+//	  @tag5
 	@When("some python as input then click run button")
 	public void some_python_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -85,7 +90,7 @@ public class Graph_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 	
-	
+//	  @tag6
 	@Given("The user is in the graph or graph graph page")
 	public void the_user_is_in_the_graph_or_graph_graph_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -101,6 +106,7 @@ public class Graph_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph-representations/");
 	}
 
+//	  @tag7
 	@Given("A logged in user is in the Graph Representations page")
 	public void a_logged_in_user_is_in_the_graph_representations_page() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph-representations/");
@@ -111,6 +117,7 @@ public class Graph_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	  @tag8
 	@When("The user enter some code in python and click run button")
 	public void the_user_enter_some_code_in_python_and_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -121,6 +128,7 @@ public class Graph_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	  @tag9
 	@Given("A logged in user is in the graph home page")
 	public void a_logged_in_user_is_in_the_graph_home_page() {
 		UtlityFunctionsOBJ.click_back_button();

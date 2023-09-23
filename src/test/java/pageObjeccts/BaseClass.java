@@ -34,18 +34,4 @@ public class BaseClass {
 	public void open_Ds_Algo(){
 		chromeDriver.get("https://dsportalapp.herokuapp.com/");  
 	}
-		
-	public static void main(String[] args){
-//		BaseClass BaseClassObj=new BaseClass();
-//		BaseClassObj.init();
-//		Home HomeOBJ=new Home();
-//		HomeOBJ.home();
-//		HomeOBJ.register();
-//		Register RegisterBJ=new Register();
-//		RegisterBJ.register();
-//		HomeOBJ.sign_in();
-//		Login LoginOBJ=new Login();
-//		LoginOBJ.login();
-//		HomeOBJ.sign_out();
-	}
 }
