@@ -97,7 +97,7 @@
   
   Given clicks on signin button
   And enters valid username and valid password
-  And click Login button
+  And clicks Login button
   Then user is navigated to home page
   
   #@tag5

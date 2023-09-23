@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>31/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>32/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 22 23:15:02 EDT 2023</td>
+<td>Started on:</td><td>Fri Sep 22 23:20:45 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>47 seconds (47305 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48042 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -102,62 +102,6 @@ function toggleAllBoxes() {
 	at ✽.user willl direct to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:76)
 </pre></div></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2431dbf6acd9b29ab1bd13924926283f, sendKeysToElement {id=5CB9DFCE2DC66D16FD4D8E6BBF619A3A_element_225, value=[Ljava.lang.CharSequence;@715a70e9}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63074/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2431dbf6acd9b29ab1bd13924926283f)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: 2431dbf6acd9b29ab1bd13924926283f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_queue_operations(Queue_SD.java:186)
-	at ✽.some python as input then click run button for queue/Queue Operations(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:101)
-</pre></div><a href='#' onClick='toggleBox("stack-trace568221863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace568221863'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2431dbf6acd9b29ab1bd13924926283f, sendKeysToElement {id=5CB9DFCE2DC66D16FD4D8E6BBF619A3A_element_225, value=[Ljava.lang.CharSequence;@715a70e9}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63074/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2431dbf6acd9b29ab1bd13924926283f)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: 2431dbf6acd9b29ab1bd13924926283f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_queue_operations(Queue_SD.java:186)
-	at ✽.some python as input then click run button for queue/Queue Operations(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:101)
-</pre></div></td>
-<td>5</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -249,6 +193,11 @@ Session ID: 2431dbf6acd9b29ab1bd13924926283f
 <td>5</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Queue Operations page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of graph"</td>
 <td></td>
 <td>0</td>
@@ -260,6 +209,11 @@ Session ID: 2431dbf6acd9b29ab1bd13924926283f
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph Representations page", "to test functionality of graph"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality of queue"</td>
 <td></td>
 <td>5</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -305,11 +259,6 @@ Session ID: 2431dbf6acd9b29ab1bd13924926283f
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Queue Operations page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>

@@ -48,8 +48,8 @@ public class Login_SD extends BaseClass{
 	   LoginOBJ.enter_valid_credentials();
 	}
 
-	@When("click Login button")
-	public void click_login_button() {
+	@When("clicks Login button")
+	public void clicks_login_button() {
 	   LoginOBJ.login();
 	}
 
