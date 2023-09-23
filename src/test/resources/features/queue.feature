@@ -44,8 +44,8 @@
     Then The user should be directed to queue/implementation-lists Page
     
 	@tag4  
-  Scenario: A logged in user is in the  queue/implementation-lists page
-    When The user clicks Try Here button from implementation-lists
+  Scenario: A logged in user is in the queue/implementation-lists page
+    When The user clicks Try Here button for queue/implementation-lists
     Then The user should be redirected to a tryEditor page for queue/implementation-lists
   
   @tag5

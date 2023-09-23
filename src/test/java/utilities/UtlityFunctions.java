@@ -84,6 +84,12 @@ public class UtlityFunctions extends BaseClass {
 		}
 		send_keys(code, "print 'welcome'");
 //		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		web_element_click(runBtn);
 	}
 	

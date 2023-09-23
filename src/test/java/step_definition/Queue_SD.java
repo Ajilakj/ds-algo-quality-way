@@ -54,11 +54,6 @@ public class Queue_SD extends BaseClass  {
 		QueueOBJ.select_queue_in_python();
 	}
 	
-	@When("The user clicks Try Here button from implementation-lists")
-	public void the_user_clicks_try_here_button_from_implementation_lists() {
-		UtlityFunctionsOBJ.click_try_here();
-	}
-	
 	@Then("The user should be directed to queue\\/implementation-lists Page")
 	public void the_user_should_be_directed_to_queue_implementation_lists_page() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/implementation-lists/");
@@ -69,7 +64,7 @@ public class Queue_SD extends BaseClass  {
 	public void the_user_clicks_try_here_button_for_queue_implementation_lists() {
 		UtlityFunctionsOBJ.click_try_here();
 	}
-
+	
 	@Then("The user should be redirected to a tryEditor page for queue\\/implementation-lists")
 	public void the_user_should_be_redirected_to_a_try_editor_page_for_queue_implementation_lists() {
 		UtlityFunctionsOBJ.check_url_try_editor();
