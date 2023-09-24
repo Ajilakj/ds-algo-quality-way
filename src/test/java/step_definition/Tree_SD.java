@@ -343,6 +343,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	@tag26
 	@When("some python as input then click run button for Implementation in Python")
 	public void some_python_as_input_then_click_run_button_for_implementation_in_python() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -353,6 +354,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag27
 	@Given("The user is in the Implementation in Python page")
 	public void the_user_is_in_the_implementation_in_python_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -361,14 +363,15 @@ public class Tree_SD extends BaseClass {
 
 	@When("The user clicks Binary Tree Traversalslink")
 	public void the_user_clicks_binary_tree_traversalslink() {
-		TreeOBJ
+		TreeOBJ.select_binary_tree_traversals();
 	}
 
 	@Then("The user should be directed to Binary Tree Traversals Page")
 	public void the_user_should_be_directed_to_binary_tree_traversals_page() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-tree-traversals/");
 	}
 
+//	@tag28
 	@When("The user clicks Try Here button for Binary Tree Traversals")
 	public void the_user_clicks_try_here_button_for_binary_tree_traversals() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -379,6 +382,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	@tag29
 	@When("some python as input then click run button for Binary Tree Traversals")
 	public void some_python_as_input_then_click_run_button_for_binary_tree_traversals() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -389,10 +393,11 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag30
 	@Given("The user is in the Binary Tree Traversals Page")
 	public void the_user_is_in_the_binary_tree_traversals_page() {
 		UtlityFunctionsOBJ.click_back_button();
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-tree-traversals/");
 	}
 
 	@When("The user clicks Try Here button from Implementation of Binary Trees page")
@@ -404,7 +409,8 @@ public class Tree_SD extends BaseClass {
 	public void the_user_should_be_redirected_to_a_try_editor_page_for_implementation_of_binary_trees() {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
-
+	
+//	@tag31
 	@When("some python as input then click run button for Implementation of Binary Trees")
 	public void some_python_as_input_then_click_run_button_for_implementation_of_binary_trees() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -413,7 +419,7 @@ public class Tree_SD extends BaseClass {
 	public void the_output_will_be_display_in_the_editor_for_implementation_of_binary_trees() {
 		UtlityFunctionsOBJ.check_output();
 	}
-
+//	@tag32
 	@Given("The user is in the queue page Implementation of Binary Trees page")
 	public void the_user_is_in_the_queue_page_implementation_of_binary_trees_page() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
