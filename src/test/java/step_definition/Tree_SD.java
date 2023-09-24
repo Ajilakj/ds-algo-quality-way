@@ -285,16 +285,15 @@ public class Tree_SD extends BaseClass {
 
 	@When("The user clicks Types of Binary Trees link")
 	public void the_user_clicks_types_of_binary_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	   TreeOBJ.select_types_of_binary_treesn();
 	}
 
 	@Then("The user should be directed to Types of Binary Trees Page")
 	public void the_user_should_be_directed_to_types_of_binary_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/types-of-binary-trees/");
 	}
 
+//	@tag22
 	@When("The user clicks Try Here button button from Types of Binary Trees")
 	public void the_user_clicks_try_here_button_button_from_types_of_binary_trees() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -305,6 +304,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	@tag23
 	@When("some python as input then click run button for Types of Binary Trees")
 	public void some_python_as_input_then_click_run_button_for_types_of_binary_trees() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -315,23 +315,24 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag24
 	@Given("The user is in the Types of Binary Trees")
 	public void the_user_is_in_the_types_of_binary_trees() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/types-of-binary-trees/");
 	}
 
 	@When("The user clicks Implementation in Python")
 	public void the_user_clicks_implementation_in_python() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		TreeOBJ.select_implementation_in_python();
 	}
 
 	@Then("The user should be directed to Tree TraversalsImplementation in Python Page")
 	public void the_user_should_be_directed_to_tree_traversals_implementation_in_python_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/implementation-in-python/");
 	}
 
+//	@tag25
 	@When("The user clicks Try Here button for Implementation in Python")
 	public void the_user_clicks_try_here_button_for_implementation_in_python() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -355,18 +356,17 @@ public class Tree_SD extends BaseClass {
 	@Given("The user is in the Implementation in Python page")
 	public void the_user_is_in_the_implementation_in_python_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/implementation-in-python/");
 	}
 
 	@When("The user clicks Binary Tree Traversalslink")
 	public void the_user_clicks_binary_tree_traversalslink() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		TreeOBJ
 	}
 
 	@Then("The user should be directed to Binary Tree Traversals Page")
 	public void the_user_should_be_directed_to_binary_tree_traversals_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Try Here button for Binary Tree Traversals")
@@ -392,6 +392,7 @@ public class Tree_SD extends BaseClass {
 	@Given("The user is in the Binary Tree Traversals Page")
 	public void the_user_is_in_the_binary_tree_traversals_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Try Here button from Implementation of Binary Trees page")
@@ -415,14 +416,12 @@ public class Tree_SD extends BaseClass {
 
 	@Given("The user is in the queue page Implementation of Binary Trees page")
 	public void the_user_is_in_the_queue_page_implementation_of_binary_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Applications of Binary trees link")
 	public void the_user_clicks_applications_of_binary_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		TreeOBJ
 	}
 
 	@Then("The user should be directed to Applications of Binary trees Page")
@@ -454,18 +453,17 @@ public class Tree_SD extends BaseClass {
 	@Given("The user is in the Applications of Binary trees page")
 	public void the_user_is_in_the_applications_of_binary_trees_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Binary Search Trees link")
 	public void the_user_clicks_binary_search_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		TreeOBJ
 	}
 
 	@Then("The user should be directed to Tree TraversalsBinary Search Trees Page")
 	public void the_user_should_be_directed_to_tree_traversals_binary_search_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Try Here button for Binary Search Trees")
@@ -491,18 +489,17 @@ public class Tree_SD extends BaseClass {
 	@Given("The user is in the Binary Search Trees page")
 	public void the_user_is_in_the_binary_search_trees_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Implementation Of BST link")
 	public void the_user_clicks_implementation_of_bst_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		TreeOBJ
 	}
 
 	@Then("The user should be directed to Implementation Of BST Page")
 	public void the_user_should_be_directed_to_implementation_of_bst_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Try Here button for Implementation Of BST")
@@ -528,18 +525,17 @@ public class Tree_SD extends BaseClass {
 	@Given("A logged in user is in theImplementation Of BST page")
 	public void a_logged_in_user_is_in_the_implementation_of_bst_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Practice questions link from tree")
 	public void the_user_clicks_practice_questions_link_from_tree() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		TreeOBJ
 	}
 
 	@Then("The user should be directed to practice questions Page for tree")
 	public void the_user_should_be_directed_to_practice_questions_page_for_tree() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 
