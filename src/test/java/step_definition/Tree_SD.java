@@ -485,7 +485,7 @@ public class Tree_SD extends BaseClass {
 
 	@Then("The user should be directed to Binary Search Trees Page")
 	public void the_user_should_be_directed_to_binary_search_trees_page() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-search-trees/");
 	}
 
 //	@tag37
@@ -514,7 +514,7 @@ public class Tree_SD extends BaseClass {
 	@Given("The user is in the Binary Search Trees page")
 	public void the_user_is_in_the_binary_search_trees_page() {
 		UtlityFunctionsOBJ.click_back_button();
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-search-trees/");
 	}
 
 	@When("The user clicks Implementation Of BST link")
@@ -524,7 +524,7 @@ public class Tree_SD extends BaseClass {
 
 	@Then("The user should be directed to Implementation Of BST Page")
 	public void the_user_should_be_directed_to_implementation_of_bst_page() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/implementation-of-bst/");
 	}
 
 //	@tag40
@@ -553,7 +553,7 @@ public class Tree_SD extends BaseClass {
 	@Given("A logged in user is in theImplementation Of BST page")
 	public void a_logged_in_user_is_in_the_implementation_of_bst_page() {
 		UtlityFunctionsOBJ.click_back_button();
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/implementation-of-bst/");
 	}
 
 	@When("The user clicks Practice questions link from tree")
@@ -563,7 +563,7 @@ public class Tree_SD extends BaseClass {
 
 	@Then("The user should be directed to practice questions Page for tree")
 	public void the_user_should_be_directed_to_practice_questions_page_for_tree() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/practice");
 	}
 
 

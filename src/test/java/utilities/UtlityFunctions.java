@@ -77,19 +77,19 @@ public class UtlityFunctions extends BaseClass {
 	public void try_editor_code(){
 //		wait.until(ExpectedConditions.elementToBeClickable(code));
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		send_keys(code, "print 'welcome'");
 //		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		web_element_click(runBtn);
 	}
 	
