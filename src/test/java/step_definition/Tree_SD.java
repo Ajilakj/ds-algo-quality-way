@@ -98,6 +98,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/terminologies/");
 	}
 
+//	@tag7
 	@When("The user clicks Try Here button from Terminologies page")
 	public void the_user_clicks_try_here_button_from_terminologies_page() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -108,6 +109,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	@tag8
 	@When("some python as input then click run button for Terminologies")
 	public void some_python_as_input_then_click_run_button_for_terminologies() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -118,6 +120,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag9
 	@Given("The user is in the queue page Terminologies page")
 	public void the_user_is_in_the_queue_page_terminologies_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -126,16 +129,15 @@ public class Tree_SD extends BaseClass {
 
 	@When("The user clicks Types of Trees link")
 	public void the_user_clicks_types_of_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    TreeOBJ.select_types_of_trees();
 	}
 
 	@Then("The user should be directed to Types of Trees Page")
 	public void the_user_should_be_directed_to_types_of_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/types-of-trees/");
 	}
 
+//	@tag10
 	@When("The user clicks Try Here button button from Types of Trees page")
 	public void the_user_clicks_try_here_button_button_from_types_of_trees_page() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -146,6 +148,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	@tag11
 	@When("some python as input then click run button for Types of Trees")
 	public void some_python_as_input_then_click_run_button_for_types_of_trees() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -156,21 +159,21 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag12
 	@Given("The user is in the Types of Trees page")
 	public void the_user_is_in_the_types_of_trees_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/types-of-trees/");
 	}
 
 	@When("The user clicks Tree Traversals link")
 	public void the_user_clicks_tree_traversals_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    TreeOBJ.select_tree_traversals();
 	}
 
 	@Then("The user should be directed to Tree Traversals Page")
 	public void the_user_should_be_directed_to_tree_traversals_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/types-of-trees/");
 	}
 
 	@When("The user clicks Try Here button for Tree Traversals")

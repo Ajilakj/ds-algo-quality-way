@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="53" passed="10" failed="43" skipped="0">
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-23T23:10:18 EDT" name="Default suite" finished-at="2023-09-23T23:10:29 EDT" duration-ms="10824">
+  <suite started-at="2023-09-23T23:41:10 EDT" name="Default suite" finished-at="2023-09-23T23:41:44 EDT" duration-ms="34434">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-09-23T23:10:18 EDT" name="Default test" finished-at="2023-09-23T23:10:29 EDT" duration-ms="10824">
+    <test started-at="2023-09-23T23:41:10 EDT" name="Default test" finished-at="2023-09-23T23:41:44 EDT" duration-ms="34434">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:18 EDT" name="setUpClass" finished-at="2023-09-23T23:10:18 EDT" duration-ms="550" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:10 EDT" name="setUpClass" finished-at="2023-09-23T23:41:10 EDT" duration-ms="552" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6f1b8544]]>
+                <![CDATA[org.testng.TestRunner@71cea1b8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:26 EDT" duration-ms="7352" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:18 EDT" duration-ms="7712" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:26 EDT" duration-ms="441" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:19 EDT" duration-ms="431" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:26 EDT" duration-ms="108" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:19 EDT" duration-ms="107" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:27 EDT" duration-ms="295" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:19 EDT" duration-ms="273" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:27 EDT" duration-ms="209" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:19 EDT" duration-ms="216" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:27 EDT" duration-ms="191" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:19 EDT" duration-ms="191" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:27 EDT" duration-ms="213" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:20 EDT" duration-ms="216" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="507" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:20 EDT" duration-ms="507" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +149,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="266" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:20 EDT" duration-ms="296" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="221" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:21 EDT" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +181,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="12" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:21 EDT" duration-ms="305" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,21 +194,10 @@
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_tree_page(Tree_SD.java:49)
-at ✽.The user is in the tree page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:42)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:21 EDT" duration-ms="416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,21 +210,10 @@ at ✽.The user is in the tree page(file:///C:/Users/bobby/eclipse-workspace/ds-
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_for_overview_of_trees(Tree_SD.java:67)
-at ✽.The user clicks Try Here button for Overview of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:48)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:29 EDT" duration-ms="7231" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,21 +226,10 @@ at ✽.The user clicks Try Here button for Overview of Trees(file:///C:/Users/bo
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_overview_of_trees(Tree_SD.java:79)
-at ✽.some python as input then click run button for Overview of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:53)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:29 EDT" duration-ms="392" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -275,21 +242,10 @@ at ✽.some python as input then click run button for Overview of Trees(file:///
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_overview_of_trees_page(Tree_SD.java:91)
-at ✽.The user is in the Overview of Trees Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="12" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:29 EDT" duration-ms="249" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -302,21 +258,10 @@ at ✽.The user is in the Overview of Trees Page(file:///C:/Users/bobby/eclipse-
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_from_terminologies_page(Tree_SD.java:109)
-at ✽.The user clicks Try Here button from Terminologies page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:64)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="9" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:36 EDT" duration-ms="7206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,21 +274,10 @@ at ✽.The user clicks Try Here button from Terminologies page(file:///C:/Users/
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_terminologies(Tree_SD.java:121)
-at ✽.some python as input then click run button for Terminologies(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:69)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:37 EDT" duration-ms="376" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -356,21 +290,10 @@ at ✽.some python as input then click run button for Terminologies(file:///C:/U
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_queue_page_terminologies_page(Tree_SD.java:133)
-at ✽.The user is in the queue page Terminologies page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:37 EDT" duration-ms="225" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -383,21 +306,10 @@ at ✽.The user is in the queue page Terminologies page(file:///C:/Users/bobby/e
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_trees_page(Tree_SD.java:151)
-at ✽.The user clicks Try Here button button from Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:80)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="9" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:41:44 EDT" duration-ms="7211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -410,939 +322,10 @@ at ✽.The user clicks Try Here button button from Types of Trees page(file:///C
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_trees(Tree_SD.java:163)
-at ✽.some python as input then click run button for Types of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:85)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Types of Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_types_of_trees_page(Tree_SD.java:175)
-at ✽.The user is in the Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:90)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the  Tree Traversals page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_for_tree_traversals(Tree_SD.java:193)
-at ✽.The user clicks Try Here button for Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:96)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Tree Traversals page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_tree_traversals(Tree_SD.java:205)
-at ✽.some python as input then click run button for Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:101)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Tree Traversals page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_tree_traversals(Tree_SD.java:217)
-at ✽.The user is in the Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:106)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Traversals-Illustration page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_for_traversals_illustration(Tree_SD.java:235)
-at ✽.The user clicks Try Here button for Traversals-Illustration(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:112)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page forTraversals-Illustration page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_traversals_illustration(Tree_SD.java:247)
-at ✽.some python as input then click run button for Traversals-Illustration(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:117)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Traversals-Illustration Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_traversals_illustration_page(Tree_SD.java:259)
-at ✽.The user is in the Traversals-Illustration Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:122)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:28 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Binary Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_from_binary_trees_page(Tree_SD.java:277)
-at ✽.The user clicks Try Here button from Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:128)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Binary Trees  page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_trees(Tree_SD.java:289)
-at ✽.some python as input then click run button for Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:133)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Binary Trees  page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_queue_page_binary_trees_page(Tree_SD.java:301)
-at ✽.The user is in the queue page Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:138)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the  Types of Binary Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_binary_trees(Tree_SD.java:319)
-at ✽.The user clicks Try Here button button from Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:144)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Types of Binary Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_binary_trees(Tree_SD.java:331)
-at ✽.some python as input then click run button for Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:149)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="9" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Types of Binary Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_types_of_binary_trees(Tree_SD.java:343)
-at ✽.The user is in the Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:154)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the  Implementation in Python page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_for_implementation_in_python(Tree_SD.java:361)
-at ✽.The user clicks Try Here button for Implementation in Python(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:160)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Implementation in Python page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_in_python(Tree_SD.java:373)
-at ✽.some python as input then click run button for Implementation in Python(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:165)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Implementation in Python page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_implementation_in_python_page(Tree_SD.java:385)
-at ✽.The user is in the Implementation in Python page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:170)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="9" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Binary Tree Traversals page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_for_binary_tree_traversals(Tree_SD.java:403)
-at ✽.The user clicks Try Here button for Binary Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page for Binary Tree Traversals page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_tree_traversals(Tree_SD.java:415)
-at ✽.some python as input then click run button for Binary Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:181)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Binary Tree Traversals Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_binary_tree_traversals_page(Tree_SD.java:427)
-at ✽.The user is in the Binary Tree Traversals Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:186)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Terminologies page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_from_implementation_of_binary_trees_page(Tree_SD.java:433)
-at ✽.The user clicks Try Here button from Implementation of Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:192)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Implementation of Binary Trees  page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_of_binary_trees(Tree_SD.java:445)
-at ✽.some python as input then click run button for Implementation of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:197)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Implementation of Binary Trees  page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_queue_page_implementation_of_binary_trees_page(Tree_SD.java:456)
-at ✽.The user is in the queue page Implementation of Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:202)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the  Types of Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_trees_page(Tree_SD.java:151)
-at ✽.The user clicks Try Here button button from Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:208)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Types of Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_trees(Tree_SD.java:163)
-at ✽.some python as input then click run button for Types of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:213)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="5" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Types of Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_types_of_trees_page(Tree_SD.java:175)
-at ✽.The user is in the Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:218)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Applications of Binary trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_for_applications_of_binary_trees(Tree_SD.java:474)
-at ✽.The user clicks Try Here button for Applications of Binary trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:224)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Applications of Binary trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_applications_of_binary_trees(Tree_SD.java:486)
-at ✽.some python as input then click run button for Applications of Binary trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:229)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Applications of Binary trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_applications_of_binary_trees_page(Tree_SD.java:498)
-at ✽.The user is in the Applications of Binary trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:234)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Binary Search Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_for_binary_search_trees(Tree_SD.java:516)
-at ✽.The user clicks Try Here button for Binary Search Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:240)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Binary Search Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_search_trees(Tree_SD.java:528)
-at ✽.some python as input then click run button for Binary Search Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:245)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Binary Search Trees page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_is_in_the_binary_search_trees_page(Tree_SD.java:540)
-at ✽.The user is in the Binary Search Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:250)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the Implementation Of BST page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.the_user_clicks_try_here_button_for_implementation_of_bst(Tree_SD.java:558)
-at ✽.The user clicks Try Here button for Implementation Of BST(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:256)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="6" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in the tryEditor page from Implementation Of BST page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_of_bst(Tree_SD.java:570)
-at ✽.some python as input then click run button for Implementation Of BST(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:261)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-23T23:10:29 EDT" duration-ms="7" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A logged in user is in Implementation Of BST page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["to test functionality of tree"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.java.PendingException">
-            <message>
-              <![CDATA[TODO: implement me]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.java.PendingException: TODO: implement me
-at step_definition.Tree_SD.a_logged_in_user_is_in_the_implementation_of_bst_page(Tree_SD.java:582)
-at ✽.A logged in user is in theImplementation Of BST page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:266)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.java.PendingException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:10:29 EDT" name="tearDownClass" finished-at="2023-09-23T23:10:29 EDT" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-23T23:41:44 EDT" name="tearDownClass" finished-at="2023-09-23T23:41:44 EDT" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
