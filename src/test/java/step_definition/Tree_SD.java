@@ -15,34 +15,32 @@ public class Tree_SD extends BaseClass {
 	WebDriver chromeDriver=super.chromeDriver;
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
+//	@tag1 
 	@Given("An existing user is in the Home page for tree")
 	public void an_existing_user_is_in_the_home_page_for_tree() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
 	}
 
 	@When("The user clicks the Getting Started button in tree Pane")
 	public void the_user_clicks_the_getting_started_button_in_tree_pane() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		TreeOBJ.click_get_start_lnk();
 	}
 
 	@Then("The user will directed to tree Page")
 	public void the_user_will_directed_to_tree_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/");
 	}
-
+	
+//	@tag2 
 	@When("The user select the option tree from the datastructure drop down menu")
 	public void the_user_select_the_option_tree_from_the_datastructure_drop_down_menu() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.click_DS_dropdown();;
+		TreeOBJ.select_tree_from_drop_down();
 	}
 
 	@Then("The user will directed to tree Page using dropdown")
 	public void the_user_will_directed_to_tree_page_using_dropdown() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/");
 	}
 
 	@Given("The user is in the tree page")

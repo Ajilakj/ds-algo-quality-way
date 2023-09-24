@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>37/11/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/43/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 23 12:17:59 EDT 2023</td>
+<td>Started on:</td><td>Sat Sep 23 23:10:18 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>66 seconds (66617 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10824 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,592 +76,520 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "create user with valid credentials", "Register with valid and invalid credentials"</td>
-<td><div><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:40)
-	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:61)
-	at step_definition.Register_SD.user_willl_direct_to_home_page(Register_SD.java:39)
-	at ✽.user willl direct to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1559154670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1559154670'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:40)
-	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:61)
-	at step_definition.Register_SD.user_willl_direct_to_home_page(Register_SD.java:39)
-	at ✽.user willl direct to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:76)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Traversals-Illustration page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_traversals_illustration(Tree_SD.java:235)
+	at ✽.The user clicks Try Here button for Traversals-Illustration(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:112)
+</pre></div><a href='#' onClick='toggleBox("stack-trace873295241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace873295241'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_traversals_illustration(Tree_SD.java:235)
+	at ✽.The user clicks Try Here button for Traversals-Illustration(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:112)
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page for queue/implementation-lists  page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=BBA0803E4F893DC1B94ED02868AA7414_element_244, value=[Ljava.lang.CharSequence;@4293e066}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_lists(Queue_SD.java:76)
-	at ✽.some python as input then click run button for queue/implementation-lists(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:53)
-</pre></div><a href='#' onClick='toggleBox("stack-trace670299410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace670299410'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=BBA0803E4F893DC1B94ED02868AA7414_element_244, value=[Ljava.lang.CharSequence;@4293e066}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_lists(Queue_SD.java:76)
-	at ✽.some python as input then click run button for queue/implementation-lists(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:53)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Terminologies  page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_queue_page_terminologies_page(Tree_SD.java:133)
+	at ✽.The user is in the queue page Terminologies page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:74)
+</pre></div><a href='#' onClick='toggleBox("stack-trace567954271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace567954271'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_queue_page_terminologies_page(Tree_SD.java:133)
+	at ✽.The user is in the queue page Terminologies page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:74)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph Representations page", "to test functionality of graph"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=00B4844F98F51E92571BC45D35534609_element_117, value=[Ljava.lang.CharSequence;@479111ba}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Graph_SD.the_user_enter_some_code_in_python_and_click_run_button(Graph_SD.java:123)
-	at ✽.The user enter some code in python and click run button(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/graph.feature:70)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2084041029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2084041029'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=00B4844F98F51E92571BC45D35534609_element_117, value=[Ljava.lang.CharSequence;@479111ba}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Graph_SD.the_user_enter_some_code_in_python_and_click_run_button(Graph_SD.java:123)
-	at ✽.The user enter some code in python and click run button(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/graph.feature:70)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation Of BST page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_of_bst(Tree_SD.java:570)
+	at ✽.some python as input then click run button for Implementation Of BST(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:261)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1459040434", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1459040434'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_of_bst(Tree_SD.java:570)
+	at ✽.some python as input then click run button for Implementation Of BST(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:261)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from queue/implementation using array page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=E6DCC549B07009A255344C7DB6B0CACE_element_191, value=[Ljava.lang.CharSequence;@3b2e5c0d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_using_array(Queue_SD.java:155)
-	at ✽.some python as input then click run button for queue/implementation using array(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:85)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1413005690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1413005690'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=E6DCC549B07009A255344C7DB6B0CACE_element_191, value=[Ljava.lang.CharSequence;@3b2e5c0d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_using_array(Queue_SD.java:155)
-	at ✽.some python as input then click run button for queue/implementation using array(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:85)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_trees(Tree_SD.java:163)
+	at ✽.some python as input then click run button for Types of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:85)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1069131391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1069131391'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_trees(Tree_SD.java:163)
+	at ✽.some python as input then click run button for Types of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:85)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from queue/implementation-collections  page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=1782B83A6D1B5A14C294744F72D81F27_element_262, value=[Ljava.lang.CharSequence;@68b11545}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_collections(Queue_SD.java:115)
-	at ✽.some python as input then click run button for queue/implementation-collections(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:69)
-</pre></div><a href='#' onClick='toggleBox("stack-trace897303688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace897303688'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=1782B83A6D1B5A14C294744F72D81F27_element_262, value=[Ljava.lang.CharSequence;@68b11545}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_collections(Queue_SD.java:115)
-	at ✽.some python as input then click run button for queue/implementation-collections(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:69)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Types of Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_trees_page(Tree_SD.java:151)
+	at ✽.The user clicks Try Here button button from Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:80)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1650105437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1650105437'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_trees_page(Tree_SD.java:151)
+	at ✽.The user clicks Try Here button button from Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:80)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from queue/implementation using array page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=87BCB793D79EC249AEDC6450993A2D18_element_280, value=[Ljava.lang.CharSequence;@4d4436d0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_using_array(Queue_SD.java:155)
-	at ✽.some python as input then click run button for queue/implementation using array(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:85)
-</pre></div><a href='#' onClick='toggleBox("stack-trace608414678", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace608414678'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=87BCB793D79EC249AEDC6450993A2D18_element_280, value=[Ljava.lang.CharSequence;@4d4436d0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_using_array(Queue_SD.java:155)
-	at ✽.some python as input then click run button for queue/implementation using array(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:85)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_from_binary_trees_page(Tree_SD.java:277)
+	at ✽.The user clicks Try Here button from Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:128)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1687293378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1687293378'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_from_binary_trees_page(Tree_SD.java:277)
+	at ✽.The user clicks Try Here button from Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:128)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=C4A2CA167A59F646DFE5D961FE8AD6B1_element_208, value=[Ljava.lang.CharSequence;@16c1519e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_queue_operations(Queue_SD.java:194)
-	at ✽.some python as input then click run button for queue/Queue Operations(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:101)
-</pre></div><a href='#' onClick='toggleBox("stack-trace355920448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace355920448'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=C4A2CA167A59F646DFE5D961FE8AD6B1_element_208, value=[Ljava.lang.CharSequence;@16c1519e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_queue_operations(Queue_SD.java:194)
-	at ✽.some python as input then click run button for queue/Queue Operations(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:101)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page for Binary Tree Traversals page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_tree_traversals(Tree_SD.java:415)
+	at ✽.some python as input then click run button for Binary Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:181)
+</pre></div><a href='#' onClick='toggleBox("stack-trace878205641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace878205641'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_tree_traversals(Tree_SD.java:415)
+	at ✽.some python as input then click run button for Binary Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:181)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from queue/implementation-collections  page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=73C342F8C6FBBD4078C3FF3333998D37_element_171, value=[Ljava.lang.CharSequence;@3453acd2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_collections(Queue_SD.java:115)
-	at ✽.some python as input then click run button for queue/implementation-collections(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:69)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1456006896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1456006896'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=73C342F8C6FBBD4078C3FF3333998D37_element_171, value=[Ljava.lang.CharSequence;@3453acd2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_collections(Queue_SD.java:115)
-	at ✽.some python as input then click run button for queue/implementation-collections(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:69)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Search Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_binary_search_trees(Tree_SD.java:516)
+	at ✽.The user clicks Try Here button for Binary Search Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:240)
+</pre></div><a href='#' onClick='toggleBox("stack-trace518159731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace518159731'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_binary_search_trees(Tree_SD.java:516)
+	at ✽.The user clicks Try Here button for Binary Search Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:240)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from queue/Queue Operations page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=DA46CD2CB153FFA64885D6F25603054B_element_299, value=[Ljava.lang.CharSequence;@4f820f42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_queue_operations(Queue_SD.java:194)
-	at ✽.some python as input then click run button for queue/Queue Operations(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:101)
-</pre></div><a href='#' onClick='toggleBox("stack-trace645896037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace645896037'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=DA46CD2CB153FFA64885D6F25603054B_element_299, value=[Ljava.lang.CharSequence;@4f820f42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_queue_operations(Queue_SD.java:194)
-	at ✽.some python as input then click run button for queue/Queue Operations(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:101)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation of Binary Trees  page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_queue_page_implementation_of_binary_trees_page(Tree_SD.java:456)
+	at ✽.The user is in the queue page Implementation of Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:202)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1805672691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1805672691'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_queue_page_implementation_of_binary_trees_page(Tree_SD.java:456)
+	at ✽.The user is in the queue page Implementation of Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:202)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph page", "to test functionality of graph"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=14560C8778277D78EEEDD676309A7900_element_95, value=[Ljava.lang.CharSequence;@949c598}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Graph_SD.some_python_as_input_then_click_run_button(Graph_SD.java:85)
-	at ✽.some python as input then click run button(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/graph.feature:53)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1373300625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1373300625'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=14560C8778277D78EEEDD676309A7900_element_95, value=[Ljava.lang.CharSequence;@949c598}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Graph_SD.some_python_as_input_then_click_run_button(Graph_SD.java:85)
-	at ✽.some python as input then click run button(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/graph.feature:53)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Terminologies  page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_terminologies(Tree_SD.java:121)
+	at ✽.some python as input then click run button for Terminologies(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:69)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1153329578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1153329578'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_terminologies(Tree_SD.java:121)
+	at ✽.some python as input then click run button for Terminologies(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:69)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page for queue/implementation-lists  page", "to test functionality of queue"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=EB0C33FBF58042CFBF2A34580A0DEDD7_element_155, value=[Ljava.lang.CharSequence;@2007435e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_lists(Queue_SD.java:76)
-	at ✽.some python as input then click run button for queue/implementation-lists(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:53)
-</pre></div><a href='#' onClick='toggleBox("stack-trace247309715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace247309715'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.188)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ead357fa4c405abc5d70ddc6fe2b3ddc, sendKeysToElement {id=EB0C33FBF58042CFBF2A34580A0DEDD7_element_155, value=[Ljava.lang.CharSequence;@2007435e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62829}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62829/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ead357fa4c405abc5d70ddc6fe2b3ddc)] -&gt; xpath: //textarea[@tabindex=&apos;0&apos;]]
-Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
-	at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
-	at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_lists(Queue_SD.java:76)
-	at ✽.some python as input then click run button for queue/implementation-lists(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:53)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Binary Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_binary_trees(Tree_SD.java:331)
+	at ✽.some python as input then click run button for Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:149)
+</pre></div><a href='#' onClick='toggleBox("stack-trace779511842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace779511842'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_binary_trees(Tree_SD.java:331)
+	at ✽.some python as input then click run button for Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:149)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation of Binary Trees  page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_of_binary_trees(Tree_SD.java:445)
+	at ✽.some python as input then click run button for Implementation of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:197)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1494896526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1494896526'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_of_binary_trees(Tree_SD.java:445)
+	at ✽.some python as input then click run button for Implementation of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:197)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Overview of Trees Page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_overview_of_trees_page(Tree_SD.java:91)
+	at ✽.The user is in the Overview of Trees Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:58)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1902499120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1902499120'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_overview_of_trees_page(Tree_SD.java:91)
+	at ✽.The user is in the Overview of Trees Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:58)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Terminologies page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_from_implementation_of_binary_trees_page(Tree_SD.java:433)
+	at ✽.The user clicks Try Here button from Implementation of Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:192)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1619730386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1619730386'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_from_implementation_of_binary_trees_page(Tree_SD.java:433)
+	at ✽.The user clicks Try Here button from Implementation of Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:192)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in Implementation Of BST page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.a_logged_in_user_is_in_the_implementation_of_bst_page(Tree_SD.java:582)
+	at ✽.A logged in user is in theImplementation Of BST page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:266)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2033254313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2033254313'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.a_logged_in_user_is_in_the_implementation_of_bst_page(Tree_SD.java:582)
+	at ✽.A logged in user is in theImplementation Of BST page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:266)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Types of Binary Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_binary_trees(Tree_SD.java:319)
+	at ✽.The user clicks Try Here button button from Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:144)
+</pre></div><a href='#' onClick='toggleBox("stack-trace491825098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace491825098'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_binary_trees(Tree_SD.java:319)
+	at ✽.The user clicks Try Here button button from Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:144)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Implementation in Python page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_implementation_in_python(Tree_SD.java:361)
+	at ✽.The user clicks Try Here button for Implementation in Python(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:160)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2037964834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037964834'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_implementation_in_python(Tree_SD.java:361)
+	at ✽.The user clicks Try Here button for Implementation in Python(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:160)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation Of BST page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_implementation_of_bst(Tree_SD.java:558)
+	at ✽.The user clicks Try Here button for Implementation Of BST(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:256)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2095602418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2095602418'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_implementation_of_bst(Tree_SD.java:558)
+	at ✽.The user clicks Try Here button for Implementation Of BST(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:256)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Overview of Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_overview_of_trees(Tree_SD.java:67)
+	at ✽.The user clicks Try Here button for Overview of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:48)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1694073314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1694073314'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_overview_of_trees(Tree_SD.java:67)
+	at ✽.The user clicks Try Here button for Overview of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:48)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_trees(Tree_SD.java:163)
+	at ✽.some python as input then click run button for Types of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:213)
+</pre></div><a href='#' onClick='toggleBox("stack-trace547853628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace547853628'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_trees(Tree_SD.java:163)
+	at ✽.some python as input then click run button for Types of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:213)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation in Python page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_in_python(Tree_SD.java:373)
+	at ✽.some python as input then click run button for Implementation in Python(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:165)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1526453607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526453607'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_in_python(Tree_SD.java:373)
+	at ✽.some python as input then click run button for Implementation in Python(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:165)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Applications of Binary trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_applications_of_binary_trees_page(Tree_SD.java:498)
+	at ✽.The user is in the Applications of Binary trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:234)
+</pre></div><a href='#' onClick='toggleBox("stack-trace413293501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace413293501'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_applications_of_binary_trees_page(Tree_SD.java:498)
+	at ✽.The user is in the Applications of Binary trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:234)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Terminologies page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_from_terminologies_page(Tree_SD.java:109)
+	at ✽.The user clicks Try Here button from Terminologies page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:64)
+</pre></div><a href='#' onClick='toggleBox("stack-trace534350140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace534350140'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_from_terminologies_page(Tree_SD.java:109)
+	at ✽.The user clicks Try Here button from Terminologies page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:64)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page for Overview of Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_overview_of_trees(Tree_SD.java:79)
+	at ✽.some python as input then click run button for Overview of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1465606013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1465606013'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_overview_of_trees(Tree_SD.java:79)
+	at ✽.some python as input then click run button for Overview of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:53)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Tree Traversals page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_tree_traversals(Tree_SD.java:217)
+	at ✽.The user is in the Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:106)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1208702946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1208702946'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_tree_traversals(Tree_SD.java:217)
+	at ✽.The user is in the Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:106)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Trees  page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_trees(Tree_SD.java:289)
+	at ✽.some python as input then click run button for Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:133)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1228589267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1228589267'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_trees(Tree_SD.java:289)
+	at ✽.some python as input then click run button for Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:133)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Trees  page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_queue_page_binary_trees_page(Tree_SD.java:301)
+	at ✽.The user is in the queue page Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:138)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1733500474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1733500474'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_queue_page_binary_trees_page(Tree_SD.java:301)
+	at ✽.The user is in the queue page Binary Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:138)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Types of Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_trees_page(Tree_SD.java:151)
+	at ✽.The user clicks Try Here button button from Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:208)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2008821270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2008821270'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_button_from_types_of_trees_page(Tree_SD.java:151)
+	at ✽.The user clicks Try Here button button from Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:208)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Search Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_binary_search_trees_page(Tree_SD.java:540)
+	at ✽.The user is in the Binary Search Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:250)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1476915117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1476915117'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_binary_search_trees_page(Tree_SD.java:540)
+	at ✽.The user is in the Binary Search Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:250)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Types of Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_types_of_trees_page(Tree_SD.java:175)
+	at ✽.The user is in the Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:90)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1432535753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1432535753'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_types_of_trees_page(Tree_SD.java:175)
+	at ✽.The user is in the Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:90)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation in Python page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_implementation_in_python_page(Tree_SD.java:385)
+	at ✽.The user is in the Implementation in Python page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:170)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1465146431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1465146431'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_implementation_in_python_page(Tree_SD.java:385)
+	at ✽.The user is in the Implementation in Python page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:170)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tree page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_tree_page(Tree_SD.java:49)
+	at ✽.The user is in the tree page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:42)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1506217195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1506217195'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_tree_page(Tree_SD.java:49)
+	at ✽.The user is in the tree page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:42)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Tree Traversals page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_tree_traversals(Tree_SD.java:193)
+	at ✽.The user clicks Try Here button for Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:96)
+</pre></div><a href='#' onClick='toggleBox("stack-trace365201320", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace365201320'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_tree_traversals(Tree_SD.java:193)
+	at ✽.The user clicks Try Here button for Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:96)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Search Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_search_trees(Tree_SD.java:528)
+	at ✽.some python as input then click run button for Binary Search Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:245)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1412392963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412392963'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_search_trees(Tree_SD.java:528)
+	at ✽.some python as input then click run button for Binary Search Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:245)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Types of Binary Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_types_of_binary_trees(Tree_SD.java:343)
+	at ✽.The user is in the Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:154)
+</pre></div><a href='#' onClick='toggleBox("stack-trace493690178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace493690178'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_types_of_binary_trees(Tree_SD.java:343)
+	at ✽.The user is in the Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:154)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Tree Traversals Page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_binary_tree_traversals_page(Tree_SD.java:427)
+	at ✽.The user is in the Binary Tree Traversals Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:186)
+</pre></div><a href='#' onClick='toggleBox("stack-trace368270275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace368270275'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_binary_tree_traversals_page(Tree_SD.java:427)
+	at ✽.The user is in the Binary Tree Traversals Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:186)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Tree Traversals page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_binary_tree_traversals(Tree_SD.java:403)
+	at ✽.The user clicks Try Here button for Binary Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace918200393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace918200393'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_binary_tree_traversals(Tree_SD.java:403)
+	at ✽.The user clicks Try Here button for Binary Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:176)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Traversals-Illustration Page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_traversals_illustration_page(Tree_SD.java:259)
+	at ✽.The user is in the Traversals-Illustration Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:122)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1104820974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1104820974'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_traversals_illustration_page(Tree_SD.java:259)
+	at ✽.The user is in the Traversals-Illustration Page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:122)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Tree Traversals page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_tree_traversals(Tree_SD.java:205)
+	at ✽.some python as input then click run button for Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:101)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2080444788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2080444788'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_tree_traversals(Tree_SD.java:205)
+	at ✽.some python as input then click run button for Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:101)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page forTraversals-Illustration page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_traversals_illustration(Tree_SD.java:247)
+	at ✽.some python as input then click run button for Traversals-Illustration(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:117)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1145023109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1145023109'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_traversals_illustration(Tree_SD.java:247)
+	at ✽.some python as input then click run button for Traversals-Illustration(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:117)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications of Binary trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_applications_of_binary_trees(Tree_SD.java:486)
+	at ✽.some python as input then click run button for Applications of Binary trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:229)
+</pre></div><a href='#' onClick='toggleBox("stack-trace397052433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace397052433'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_applications_of_binary_trees(Tree_SD.java:486)
+	at ✽.some python as input then click run button for Applications of Binary trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:229)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Applications of Binary trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_applications_of_binary_trees(Tree_SD.java:474)
+	at ✽.The user clicks Try Here button for Applications of Binary trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:224)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1400324426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1400324426'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_clicks_try_here_button_for_applications_of_binary_trees(Tree_SD.java:474)
+	at ✽.The user clicks Try Here button for Applications of Binary trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:224)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Types of Trees page", "to test functionality of tree"</td>
+<td><div><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_types_of_trees_page(Tree_SD.java:175)
+	at ✽.The user is in the Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:218)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1092245861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1092245861'><pre>io.cucumber.java.PendingException: TODO: implement me
+	at step_definition.Tree_SD.the_user_is_in_the_types_of_trees_page(Tree_SD.java:175)
+	at ✽.The user is in the Types of Trees page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:218)
+</pre></div></td>
+<td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -673,112 +601,12 @@ Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists Page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections  page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections  page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph Representations page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists Page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
 <td></td>
-<td>4</td>
+<td>7</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of graph"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -788,22 +616,17 @@ Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue page", "to test functionality of queue"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of tree"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists page", "to test functionality of queue"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of tree"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -813,47 +636,17 @@ Session ID: ead357fa4c405abc5d70ddc6fe2b3ddc
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections page", "to test functionality of queue"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/Queue Operations page", "to test functionality of queue"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/implementation using array page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
