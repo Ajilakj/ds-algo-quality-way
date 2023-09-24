@@ -10,7 +10,7 @@ import utilities.UtlityFunctions;
 public class Stack_POM extends BaseClass {
 
 	By getStartedLnkStack=By.xpath("//a[@href='stack']");
-	By stack=By.partialLinkText("stack");
+	By stack=By.partialLinkText("Stack");
 	By operationsinStack=By.partialLinkText("Operations in Stack");
 	By implementationOfStack=By.partialLinkText("Implementation");
 	By applicationsOfStack=By.partialLinkText("Applications");

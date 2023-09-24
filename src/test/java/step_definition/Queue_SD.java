@@ -34,7 +34,7 @@ public class Queue_SD extends BaseClass  {
 //	@tag2
 	@When("The user select the option queue from the datastructure drop down menu")
 	public void the_user_select_the_option_queue_from_the_datastructure_drop_down_menu() {
-		UtlityFunctionsOBJ.click_DS_dropdown();;
+		UtlityFunctionsOBJ.click_DS_dropdown();
 		QueueOBJ.select_queue_from_drop_down();
 	}
 	
