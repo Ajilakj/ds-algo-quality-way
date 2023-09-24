@@ -144,54 +144,54 @@
     When The user clicks Try Here button button from Types of Binary Trees
     Then The user should be redirected to a tryEditor for Types of Binary Trees
   
-  #@tag23
-  #Scenario: A logged in user is in the tryEditor page from Types of Binary Trees page
-    #When some python as input then click run button for Types of Binary Trees
-    #Then The output will be display in the editor for Types of Binary Trees
-    #
-  #@tag25
-  #Scenario:  A logged in user is in the Types of Binary Trees page
-    #Given The user is in the Types of Binary Trees
-    #When The user clicks Implementation in Python
-    #Then The user should be directed to Tree TraversalsImplementation in Python Page
-    #
-#	@tag26  
-  #Scenario: A logged in user is in the  Implementation in Python page
-    #When The user clicks Try Here button for Implementation in Python
-    #Then The user should be redirected to a tryEditor page for Implementation in Python
-  #
-  #@tag27
-  #Scenario: A logged in user is in the tryEditor page from Implementation in Python page
-    #When some python as input then click run button for Implementation in Python
-    #Then The output will be display in the editor  for Implementation in Python
-    #
-  #@tag28
-  #Scenario: A logged in user is in the Implementation in Python page
-    #Given The user is in the Implementation in Python page
-    #When The user clicks Binary Tree Traversalslink
-    #Then The user should be directed to Binary Tree Traversals Page
-    #
-#	@tag29  
-  #Scenario: A logged in user is in the Binary Tree Traversals page
-    #When The user clicks Try Here button for Binary Tree Traversals
-    #Then The user should be redirected to a tryEditor page for Binary Tree Traversals
-  #
-  #@tag30
-  #Scenario: A logged in user is in the tryEditor page for Binary Tree Traversals page
-    #When some python as input then click run button for Binary Tree Traversals
-    #Then The output will be display in the editor for Binary Tree Traversals
-    #
-  #@tag31
-  #Scenario: A logged in user is in the Binary Tree Traversals Page
-    #Given The user is in the Binary Tree Traversals Page
-    #When The user clicks Terminologies link
-    #Then The user should be directed to Terminologiess Page
-    #
-#	@tag32  
-  #Scenario: A logged in user is in the Terminologies page
-    #When The user clicks Try Here button from Implementation of Binary Trees page
-    #Then The user should be redirected to a tryEditor page for Implementation of Binary Trees
-  #
+  @tag23
+  Scenario: A logged in user is in the tryEditor page from Types of Binary Trees page
+    When some python as input then click run button for Types of Binary Trees
+    Then The output will be display in the editor for Types of Binary Trees
+    
+  @tag25
+  Scenario:  A logged in user is in the Types of Binary Trees page
+    Given The user is in the Types of Binary Trees
+    When The user clicks Implementation in Python
+    Then The user should be directed to Tree TraversalsImplementation in Python Page
+    
+	@tag26  
+  Scenario: A logged in user is in the  Implementation in Python page
+    When The user clicks Try Here button for Implementation in Python
+    Then The user should be redirected to a tryEditor page for Implementation in Python
+  
+  @tag27
+  Scenario: A logged in user is in the tryEditor page from Implementation in Python page
+    When some python as input then click run button for Implementation in Python
+    Then The output will be display in the editor  for Implementation in Python
+    
+  @tag28
+  Scenario: A logged in user is in the Implementation in Python page
+    Given The user is in the Implementation in Python page
+    When The user clicks Binary Tree Traversalslink
+    Then The user should be directed to Binary Tree Traversals Page
+    
+	@tag29  
+  Scenario: A logged in user is in the Binary Tree Traversals page
+    When The user clicks Try Here button for Binary Tree Traversals
+    Then The user should be redirected to a tryEditor page for Binary Tree Traversals
+  
+  @tag30
+  Scenario: A logged in user is in the tryEditor page for Binary Tree Traversals page
+    When some python as input then click run button for Binary Tree Traversals
+    Then The output will be display in the editor for Binary Tree Traversals
+    
+  @tag31
+  Scenario: A logged in user is in the Binary Tree Traversals Page
+    Given The user is in the Binary Tree Traversals Page
+    When The user clicks Terminologies link
+    Then The user should be directed to Terminologiess Page
+    
+	@tag32  
+  Scenario: A logged in user is in the Terminologies page
+    When The user clicks Try Here button from Implementation of Binary Trees page
+    Then The user should be redirected to a tryEditor page for Implementation of Binary Trees
+  
   #@tag33
   #Scenario: A logged in user is in the tryEditor page from Implementation of Binary Trees  page
     #When some python as input then click run button for Implementation of Binary Trees
