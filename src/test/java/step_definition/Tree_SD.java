@@ -173,9 +173,10 @@ public class Tree_SD extends BaseClass {
 
 	@Then("The user should be directed to Tree Traversals Page")
 	public void the_user_should_be_directed_to_tree_traversals_page() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/types-of-trees/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/tree-traversals/");
 	}
 
+//	@tag13
 	@When("The user clicks Try Here button for Tree Traversals")
 	public void the_user_clicks_try_here_button_for_tree_traversals() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -186,6 +187,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	@tag14
 	@When("some python as input then click run button for Tree Traversals")
 	public void some_python_as_input_then_click_run_button_for_tree_traversals() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -196,23 +198,24 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag15
 	@Given("The user is in the Tree Traversals")
 	public void the_user_is_in_the_tree_traversals() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/tree-traversals/");
 	}
 
 	@When("The user clicks Traversals-Illustration link")
 	public void the_user_clicks_traversals_illustration_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    TreeOBJ.select_traversals_illustration();
 	}
 
 	@Then("The user should be directed to Traversals-Illustration")
 	public void the_user_should_be_directed_to_traversals_illustration() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/traversals-illustration/");
 	}
 
+//	@tag16
 	@When("The user clicks Try Here button for Traversals-Illustration")
 	public void the_user_clicks_try_here_button_for_traversals_illustration() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -223,6 +226,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	@tag16
 	@When("some python as input then click run button for Traversals-Illustration")
 	public void some_python_as_input_then_click_run_button_for_traversals_illustration() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -233,9 +237,11 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag17
 	@Given("The user is in the Traversals-Illustration Page")
 	public void the_user_is_in_the_traversals_illustration_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/traversals-illustration/");
 	}
 
 	@When("The user clicks Binary Trees link")
