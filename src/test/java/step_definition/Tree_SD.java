@@ -81,21 +81,21 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag6
 	@Given("The user is in the Overview of Trees Page")
 	public void the_user_is_in_the_overview_of_trees_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/overview-of-trees/");
 	}
 
 	@When("The user clicks Terminologies link")
 	public void the_user_clicks_terminologies_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		TreeOBJ.select_terminologies();
 	}
 
 	@Then("The user should be directed to Terminologiess Page")
 	public void the_user_should_be_directed_to_terminologiess_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/terminologies/");
 	}
 
 	@When("The user clicks Try Here button from Terminologies page")
@@ -121,6 +121,7 @@ public class Tree_SD extends BaseClass {
 	@Given("The user is in the queue page Terminologies page")
 	public void the_user_is_in_the_queue_page_terminologies_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/terminologies/");
 	}
 
 	@When("The user clicks Types of Trees link")
