@@ -226,7 +226,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
-//	@tag16
+//	@tag17
 	@When("some python as input then click run button for Traversals-Illustration")
 	public void some_python_as_input_then_click_run_button_for_traversals_illustration() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -237,7 +237,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
-//	@tag17
+//	@tag18
 	@Given("The user is in the Traversals-Illustration Page")
 	public void the_user_is_in_the_traversals_illustration_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -246,16 +246,15 @@ public class Tree_SD extends BaseClass {
 
 	@When("The user clicks Binary Trees link")
 	public void the_user_clicks_binary_trees_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    TreeOBJ.select_binary_trees();
 	}
 
 	@Then("The user should be directed to Binary Trees Page")
 	public void the_user_should_be_directed_to_binary_trees_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
+//	@tag19
 	@When("The user clicks Try Here button from Binary Trees page")
 	public void the_user_clicks_try_here_button_from_binary_trees_page() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -266,6 +265,7 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
+//	@tag20
 	@When("some python as input then click run button for Binary Trees")
 	public void some_python_as_input_then_click_run_button_for_binary_trees() {
 		UtlityFunctionsOBJ.try_editor_code();
@@ -276,9 +276,11 @@ public class Tree_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	@tag21
 	@Given("The user is in the queue page Binary Trees page")
 	public void the_user_is_in_the_queue_page_binary_trees_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/tree/binary-trees/");
 	}
 
 	@When("The user clicks Types of Binary Trees link")
