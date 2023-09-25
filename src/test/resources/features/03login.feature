@@ -84,30 +84,30 @@
   Given User is in Login page to check nonregister user
   When enters a username and a password
   And clicks Login button to check nonregister user
-  Then Invalid Username and Password message should display
+  Then Invalid Username and Password message should display for non registered user
   
-  #@tag5
-  #Scenario: Check login with registered user with password incorrect
-  #Given User is in Login page to check password incorrect
-  #And enters a valid username and incorrect password
-  #And clicks Login button to check password incorrect
-  #Then Invalid Username and Password message should display
-  #
-  #@tag6
-  #Scenario: Check login with non registered user with username incorrect
-  #Given User is in Login page to check username incorrect
-  #And enters an incorrect username and a valid password
-  #And clicks Login button to check username incorrect
-  #Then Invalid Username and Password message should display
-  #
-  #
- #@tag7
-  #Scenario: Check login is successful with valid credentials
-  #Given User is in Login page to check successful login with valid credentials
-  #And enters valid username and valid password
-  #And clicks Login button
-  #Then user is navigated to home page
-  #
+  @tag5
+  Scenario: Check login with registered user with password incorrect
+  Given User is in Login page to check password incorrect
+  When enters a valid username and incorrect password
+  And clicks Login button to check password incorrect
+  Then Invalid Username and Password message should display for non registered password
+  
+  @tag6
+  Scenario: Check login with non registered user with username incorrect
+  Given User is in Login page to check username incorrect
+  When enters an incorrect username and a valid password
+  And clicks Login button to check username incorrect
+  Then Invalid Username and Password message should display for non registered username
+  
+  
+ @tag7
+  Scenario: Check login is successful with valid credentials
+  Given User is in Login page to check successful login with valid credentials
+  And enters valid username and valid password
+  And clicks Login button
+  Then user is navigated to home page
+  
  
     
   
