@@ -79,13 +79,13 @@
     And clicks Login button to check username empty
     Then please fill out this field text is displayed for username
     
- #@tag4
-  #Scenario: Check login with non registered user
-  #Given User is in Login page to check nonregister user
-  #And enters a username and a password
-  #And clicks Login button to check nonregister user
-  #Then Invalid Username and Password message should display
-  #
+ @tag4
+  Scenario: Check login with non registered user
+  Given User is in Login page to check nonregister user
+  When enters a username and a password
+  And clicks Login button to check nonregister user
+  Then Invalid Username and Password message should display
+  
   #@tag5
   #Scenario: Check login with registered user with password incorrect
   #Given User is in Login page to check password incorrect

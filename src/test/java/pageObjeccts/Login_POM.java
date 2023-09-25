@@ -27,7 +27,20 @@ public class Login_POM extends BaseClass {
 		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2");
 	}
 	
+	public void enter_invalid_usename(){
+		UtlityFunctionsOBJ.send_keys(username,"QualityWayInvalid");
+	}
+	
+	public void enter_invalid_password(){
+		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2Invalid");
+	}
+	
 	public void click_login_button(){
 		UtlityFunctionsOBJ.web_element_click(loginBtn);
+	}
+	
+	public void invalid_username_password__msg(){
+		String txt=UtlityFunctionsOBJ.get_message_from_alert();
+		UtlityFunctionsOBJ.check_text(txt, "Invalid Username and Password");
 	}
 }

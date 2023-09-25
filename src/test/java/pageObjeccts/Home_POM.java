@@ -17,7 +17,6 @@ public class Home_POM extends BaseClass{
 	By getStartedLnk=By.xpath("//button[text()='Get Started']");
 	By getStartLnk=By.xpath("//a[text()='Get Started']");
 	By signoutLnk=By.xpath("//ul/a[3]"); 
-	By alert =By.className("alert-primary"); 
 	By dropdown_item =By.className("dropdown-item");
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
@@ -29,11 +28,6 @@ public class Home_POM extends BaseClass{
 	
 	public void check_url_DsAlgo_portal(){
 		expected_url="https://dsportalapp.herokuapp.com/"; 
-		UtlityFunctionsOBJ.check_url(expected_url);
-	}
-	
-	public void check_url_home(){
-		expected_url="https://dsportalapp.herokuapp.com/home";
 		UtlityFunctionsOBJ.check_url(expected_url);
 	}
 	
@@ -64,7 +58,7 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void check_not_sign_in_msg(){
-		String txt=(chromeDriver.findElement(alert)).getText();
+		String txt=UtlityFunctionsOBJ.get_message_from_alert();
 		UtlityFunctionsOBJ.check_text(txt, "You are not logged in");
 	}
 	

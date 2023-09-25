@@ -26,6 +26,7 @@ public class UtlityFunctions extends BaseClass {
 //	By code=By.xpath("//div[@class='CodeMirror-lines']");
 //	By code=By.className("cm-variable");
 //	By code=By.className("CodeMirror-scroll"); 
+	By alert =By.className("alert-primary"); 
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
 	By practiceQuestions=By.partialLinkText("Practice Questions");
@@ -110,6 +111,11 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void select_practice_questions_link(){
 		web_element_click(practiceQuestions);
+	}
+	
+	public String get_message_from_alert(){
+		String txt=(chromeDriver.findElement(alert)).getText();
+		return txt; 
 	}
 	
 	public void get_message_from_active_window(){

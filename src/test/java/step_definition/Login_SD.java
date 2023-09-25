@@ -81,31 +81,30 @@ public class Login_SD extends BaseClass{
 	public void please_fill_out_this_field_text_is_displayed_for_username() {
 		 UtlityFunctionsOBJ.get_message_from_active_window();
 	}
-//	  @tag5
+	
+//	  @tag4
 	@Given("User is in Login page to check nonregister user")
 	public void user_is_in_login_page_to_check_nonregister_user() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_login();
 	}
 	
-	@Given("enters a username and a password")
+	@When("enters a username and a password")
 	public void enters_a_username_and_a_password() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		LoginOBJ.enter_invalid_usename();
+		LoginOBJ.enter_invalid_password();
 	}
 	
-	@Given("clicks Login button to check nonregister user")
+	@When("clicks Login button to check nonregister user")
 	public void clicks_login_button_to_check_nonregister_user() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		LoginOBJ.click_login_button();
 	}
 	
 	@Then("Invalid Username and Password message should display")
 	public void invalid_username_and_password_message_should_display() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		LoginOBJ.invalid_username_password__msg();
 	}
 	
+//	  @tag5
 	@Given("User is in Login page to check password incorrect")
 	public void user_is_in_login_page_to_check_password_incorrect() {
 	    // Write code here that turns the phrase above into concrete actions

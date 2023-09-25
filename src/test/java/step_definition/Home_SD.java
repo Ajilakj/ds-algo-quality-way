@@ -40,7 +40,7 @@ public class Home_SD extends BaseClass {
 
 	@Then("DS Algo home page should open")
 	public void ds_algo_home_page_should_open() {
-		HomeOBJ.check_url_home();
+		UtlityFunctionsOBJ.check_url_home();
 	}
 //	@Test (priority = 3)
 	@When("The user clicks Data Structures drop down")
