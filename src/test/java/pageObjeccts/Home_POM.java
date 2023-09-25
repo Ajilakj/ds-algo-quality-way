@@ -15,7 +15,6 @@ import utilities.UtlityFunctions;
 
 public class Home_POM extends BaseClass{
 	By getStartedLnk=By.xpath("//button[text()='Get Started']");
-	By sign_out=By.partialLinkText("Sign out");
 	By getStartLnk=By.xpath("//a[text()='Get Started']");
 	By signoutLnk=By.xpath("//ul/a[3]"); 
 	By alert =By.className("alert-primary"); 
@@ -77,10 +76,6 @@ public class Home_POM extends BaseClass{
 	public void check_register_url(){
 		expected_url="https://dsportalapp.herokuapp.com/register"; 
 		UtlityFunctionsOBJ.check_url(expected_url);
-	}
-	
-	public void sign_out(){
-		chromeDriver.findElement(sign_out).click();
 	}
 	
 }
