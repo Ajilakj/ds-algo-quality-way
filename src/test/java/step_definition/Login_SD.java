@@ -37,8 +37,8 @@ public class Login_SD extends BaseClass{
 //	}
 //
 //	@Test (priority = 9)
-	@Given("clicks on signin button")
-	public void clicks_on_signin_button() {
+	@Given("User is in Login page")
+	public void  user_is_in_login_page() {
 //		UtlityFunctionsOBJ.click_sign_in();
 		chromeDriver.get("https://dsportalapp.herokuapp.com/login");
 	}

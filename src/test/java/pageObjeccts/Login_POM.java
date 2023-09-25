@@ -8,6 +8,10 @@ public class Login_POM extends BaseClass {
 	By password=By.id("id_password");
 	By loginBtn=By.xpath("//input[@value='Login']");
 	
+//	WebElement activeElement = driver.switchTo().activeElement();
+//	String messageStr = activeElement.getAttribute("validationMessage");
+//	System.out.println("Actual message appeared on screen: " + messageStr);
+	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	public void enter_valid_credentials(){
 		UtlityFunctionsOBJ.send_keys(username,"QualityWay");
