@@ -149,8 +149,25 @@ public class Login_SD extends BaseClass{
 	}
 	
 //	  @tag7
+	@Given("Check register link from login page")
+	public void check_register_link_from_login_page() {
+		UtlityFunctionsOBJ.check_url_login();
+	}
+
+	@When("use click register link from login page")
+	public void use_click_register_link_from_login_page() {
+		UtlityFunctionsOBJ.click_register();
+	}
+
+	@Then("user is navigated to register page")
+	public void user_is_navigated_to_register_page() {
+		UtlityFunctionsOBJ.check_url_register();
+	}
+	
+//	  @tag8
 	@Given("User is in Login page to check successful login with valid credentials")
 	public void user_is_in_login_page_to_check_successful_login_with_valid_credentials() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_login();
 	}
 	

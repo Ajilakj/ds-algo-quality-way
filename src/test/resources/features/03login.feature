@@ -100,11 +100,16 @@
   And clicks Login button to check username incorrect
   Then Invalid Username and Password message should display for non registered username
   
+  @tag7
+  Scenario: Check register link from login page
+  Given  Check register link from login page
+  When  use click register link from login page
+  Then user is navigated to register page
   
- @tag7
+ @tag8
   Scenario: Check login is successful with valid credentials
   Given User is in Login page to check successful login with valid credentials
-  And enters valid username and valid password
+  When enters valid username and valid password
   And clicks Login button
   Then user is navigated to home page
   
