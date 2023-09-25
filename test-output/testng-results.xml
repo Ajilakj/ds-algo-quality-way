@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="0" total="87" passed="64" failed="23" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-24T20:19:36 EDT" name="Default suite" finished-at="2023-09-24T20:20:10 EDT" duration-ms="34437">
+  <suite started-at="2023-09-24T20:21:34 EDT" name="Default suite" finished-at="2023-09-24T20:23:55 EDT" duration-ms="140051">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-09-24T20:19:36 EDT" name="Default test" finished-at="2023-09-24T20:20:10 EDT" duration-ms="34437">
+    <test started-at="2023-09-24T20:21:34 EDT" name="Default test" finished-at="2023-09-24T20:23:55 EDT" duration-ms="140051">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:36 EDT" name="setUpClass" finished-at="2023-09-24T20:19:36 EDT" duration-ms="578" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:34 EDT" name="setUpClass" finished-at="2023-09-24T20:21:35 EDT" duration-ms="561" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2ed71727]]>
+                <![CDATA[org.testng.TestRunner@69ffdaa8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:44 EDT" duration-ms="7377" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:35 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:42 EDT" duration-ms="7321" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:44 EDT" duration-ms="468" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:43 EDT" duration-ms="448" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:44 EDT" duration-ms="104" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:43 EDT" duration-ms="107" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:45 EDT" duration-ms="267" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:43 EDT" duration-ms="268" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:45 EDT" duration-ms="188" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:43 EDT" duration-ms="207" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:45 EDT" duration-ms="181" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:44 EDT" duration-ms="196" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:45 EDT" duration-ms="221" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:44 EDT" duration-ms="180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,42 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:46 EDT" duration-ms="502" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:44 EDT" duration-ms="448" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["create user with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register with valid and invalid credentials"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at utilities.UtlityFunctions.check_url(UtlityFunctions.java:40)
+at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:61)
+at step_definition.Register_SD.user_willl_direct_to_home_page(Register_SD.java:39)
+at ✽.user willl direct to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:45 EDT" duration-ms="478" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +184,637 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:46 EDT" duration-ms="346" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:45 EDT" duration-ms="281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["An existing user logged in with valid credentials in homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:45 EDT" duration-ms="274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["An existing user logged in with valid credentials in homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:46 EDT" duration-ms="298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Graph page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:46 EDT" duration-ms="439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Graph page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:51 EDT" duration-ms="5108" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Graph/Graph page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=F5003ADE9656DF32502E7527D1DB42DD_element_96, value=[Ljava.lang.CharSequence;@3625a016}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=F5003ADE9656DF32502E7527D1DB42DD_element_96, value=[Ljava.lang.CharSequence;@3625a016}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Graph_SD.some_python_as_input_then_click_run_button(Graph_SD.java:85)
+at ✽.some python as input then click run button(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/graph.feature:53)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:51 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:52 EDT" duration-ms="407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Graph page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:52 EDT" duration-ms="308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Graph Representations page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:57 EDT" duration-ms="5101" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Graph/Graph Representations page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=53DDD902FC4C408E6817210A302C220C_element_118, value=[Ljava.lang.CharSequence;@21263314}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=53DDD902FC4C408E6817210A302C220C_element_118, value=[Ljava.lang.CharSequence;@21263314}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Graph_SD.the_user_enter_some_code_in_python_and_click_run_button(Graph_SD.java:123)
+at ✽.The user enter some code in python and click run button(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/graph.feature:70)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:57 EDT" duration-ms="430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Graph page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of graph"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:58 EDT" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["An existing user logged in with valid credentials in homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:58 EDT" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["An existing user logged in with valid credentials in homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:58 EDT" duration-ms="298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the queue page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:21:58 EDT" duration-ms="273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the queue/implementation-lists page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:21:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:04 EDT" duration-ms="5096" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page for queue/implementation-lists  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=9A0A9E1E2D1FD67439DE58C7DCF7EEBD_element_155, value=[Ljava.lang.CharSequence;@6bedd4e4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=9A0A9E1E2D1FD67439DE58C7DCF7EEBD_element_155, value=[Ljava.lang.CharSequence;@6bedd4e4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_lists(Queue_SD.java:76)
+at ✽.some python as input then click run button for queue/implementation-lists(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:53)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:04 EDT" duration-ms="458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the queue/implementation-lists Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:04 EDT" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the queue/implementation-collections page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:09 EDT" duration-ms="5091" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from queue/implementation-collections  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=B9C898025197D4F4E4107F82DDA140E8_element_175, value=[Ljava.lang.CharSequence;@1c33e528}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=B9C898025197D4F4E4107F82DDA140E8_element_175, value=[Ljava.lang.CharSequence;@1c33e528}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_collections(Queue_SD.java:115)
+at ✽.some python as input then click run button for queue/implementation-collections(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:69)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:10 EDT" duration-ms="534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the queue/implementation-collections  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:10 EDT" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the  queue/implementation using array page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:15 EDT" duration-ms="5089" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from queue/implementation using array page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=AE4DDBCC8AD4960A177B38169D4BFF3A_element_193, value=[Ljava.lang.CharSequence;@5f7eee96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=AE4DDBCC8AD4960A177B38169D4BFF3A_element_193, value=[Ljava.lang.CharSequence;@5f7eee96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_implementation_using_array(Queue_SD.java:155)
+at ✽.some python as input then click run button for queue/implementation using array(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:85)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:16 EDT" duration-ms="459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the queue/implementation using array page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:16 EDT" duration-ms="234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the  queue/Queue Operations page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:21 EDT" duration-ms="5062" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from queue/Queue Operations page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=234C228EA0D4AC562517DFFFF5496CA1_element_214, value=[Ljava.lang.CharSequence;@e700eba}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=234C228EA0D4AC562517DFFFF5496CA1_element_214, value=[Ljava.lang.CharSequence;@e700eba}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Queue_SD.some_python_as_input_then_click_run_button_for_queue_queue_operations(Queue_SD.java:194)
+at ✽.some python as input then click run button for queue/Queue Operations(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/queue.feature:101)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:21 EDT" duration-ms="520" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Queue Operations page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of queue"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:22 EDT" duration-ms="362" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +830,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:46 EDT" duration-ms="207" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:22 EDT" duration-ms="230" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +846,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:47 EDT" duration-ms="294" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:22 EDT" duration-ms="327" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +862,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:47 EDT" duration-ms="383" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:23 EDT" duration-ms="241" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,7 +878,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:54 EDT" duration-ms="7240" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:28 EDT" duration-ms="5082" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -226,10 +891,51 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=4F75F1E9AE852064A3A1C8FDCE266216_element_259, value=[Ljava.lang.CharSequence;@310b2b6f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=4F75F1E9AE852064A3A1C8FDCE266216_element_259, value=[Ljava.lang.CharSequence;@310b2b6f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Stack_SD.some_python_as_input_then_click_run_button_for_operations_in_stack(Stack_SD.java:71)
+at ✽.some python as input then click run button for Operations in Stack(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/stack.feature:55)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:55 EDT" duration-ms="386" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:28 EDT" duration-ms="409" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,7 +951,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:19:55 EDT" duration-ms="220" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:28 EDT" duration-ms="227" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,7 +967,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:19:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:20:02 EDT" duration-ms="7185" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:33 EDT" duration-ms="5070" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -274,10 +980,51 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=22CA5C718F7444A1701143E3728F1656_element_280, value=[Ljava.lang.CharSequence;@1a1ccaaf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=22CA5C718F7444A1701143E3728F1656_element_280, value=[Ljava.lang.CharSequence;@1a1ccaaf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Stack_SD.some_python_as_input_then_click_run_button_for_implementation(Stack_SD.java:110)
+at ✽.some python as input then click run button for Implementation(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/stack.feature:72)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:20:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:20:02 EDT" duration-ms="364" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:34 EDT" duration-ms="420" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -293,7 +1040,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:20:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:20:03 EDT" duration-ms="262" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:34 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:34 EDT" duration-ms="228" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,7 +1056,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:20:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:20:10 EDT" duration-ms="7192" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:34 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:39 EDT" duration-ms="5053" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -322,10 +1069,51 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=61640BA3146BF727D967642AE300D796_element_297, value=[Ljava.lang.CharSequence;@1578b8ec}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=61640BA3146BF727D967642AE300D796_element_297, value=[Ljava.lang.CharSequence;@1578b8ec}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Stack_SD.some_python_as_input_then_click_run_button_for_applications(Stack_SD.java:149)
+at ✽.some python as input then click run button for Applications(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/stack.feature:88)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:20:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:20:10 EDT" duration-ms="372" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:39 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:39 EDT" duration-ms="313" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -341,7 +1129,1212 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:20:10 EDT" name="tearDownClass" finished-at="2023-09-24T20:20:10 EDT" duration-ms="28" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:39 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:40 EDT" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["An existing user logged in with valid credentials in homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:40 EDT" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["An existing user logged in with valid credentials in homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:40 EDT" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tree page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:40 EDT" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Overview of Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:46 EDT" duration-ms="5054" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page for Overview of Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=F0269F76F4C60913EDF6FF31708D9BE5_element_333, value=[Ljava.lang.CharSequence;@11c78080}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=F0269F76F4C60913EDF6FF31708D9BE5_element_333, value=[Ljava.lang.CharSequence;@11c78080}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_overview_of_trees(Tree_SD.java:76)
+at ✽.some python as input then click run button for Overview of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:53)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:46 EDT" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Overview of Trees Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:46 EDT" duration-ms="218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Terminologies page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:51 EDT" duration-ms="5067" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Terminologies  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=710C397E1A380D39E2D2EAA264F4098C_element_351, value=[Ljava.lang.CharSequence;@329dc214}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=710C397E1A380D39E2D2EAA264F4098C_element_351, value=[Ljava.lang.CharSequence;@329dc214}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_terminologies(Tree_SD.java:115)
+at ✽.some python as input then click run button for Terminologies(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:69)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:51 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:52 EDT" duration-ms="355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Terminologies  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:52 EDT" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the  Types of Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:57 EDT" duration-ms="5045" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Types of Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=9B9E8FE0A3AD734263167D172ED23DA3_element_368, value=[Ljava.lang.CharSequence;@349c4d1c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=9B9E8FE0A3AD734263167D172ED23DA3_element_368, value=[Ljava.lang.CharSequence;@349c4d1c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_trees(Tree_SD.java:154)
+at ✽.some python as input then click run button for Types of Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:85)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:57 EDT" duration-ms="412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Types of Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:22:57 EDT" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the  Tree Traversals page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:22:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:02 EDT" duration-ms="5061" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Tree Traversals page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=F0DF675C97C159FC6C604E890BB6E7DD_element_387, value=[Ljava.lang.CharSequence;@b1b471}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=F0DF675C97C159FC6C604E890BB6E7DD_element_387, value=[Ljava.lang.CharSequence;@b1b471}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_tree_traversals(Tree_SD.java:193)
+at ✽.some python as input then click run button for Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:101)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:03 EDT" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Tree Traversals page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:03 EDT" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Traversals-Illustration page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:08 EDT" duration-ms="5076" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page for Traversals-Illustration page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=0BE1F6739B2F5972B277E2702BD95D42_element_405, value=[Ljava.lang.CharSequence;@5111de7c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=0BE1F6739B2F5972B277E2702BD95D42_element_405, value=[Ljava.lang.CharSequence;@5111de7c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_traversals_illustration(Tree_SD.java:232)
+at ✽.some python as input then click run button for Traversals-Illustration(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:117)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:09 EDT" duration-ms="407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Traversals-Illustration Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:09 EDT" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Binary Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:14 EDT" duration-ms="5090" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Binary Trees  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=5B33C7D19CA6D4B160F972270A7519BE_element_425, value=[Ljava.lang.CharSequence;@430df350}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=5B33C7D19CA6D4B160F972270A7519BE_element_425, value=[Ljava.lang.CharSequence;@430df350}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_trees(Tree_SD.java:271)
+at ✽.some python as input then click run button for Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:133)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:14 EDT" duration-ms="405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Binary Trees  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:15 EDT" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the  Types of Binary Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:20 EDT" duration-ms="5082" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Types of Binary Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=3A1E05A9F78C916E665A24BBC7C05625_element_448, value=[Ljava.lang.CharSequence;@578c3fd9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=3A1E05A9F78C916E665A24BBC7C05625_element_448, value=[Ljava.lang.CharSequence;@578c3fd9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_types_of_binary_trees(Tree_SD.java:310)
+at ✽.some python as input then click run button for Types of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:149)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:20 EDT" duration-ms="438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Types of Binary Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:20 EDT" duration-ms="221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the  Implementation in Python page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:25 EDT" duration-ms="5050" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Implementation in Python page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=8A571A0A3CF23C6B49C136C9BD48E3A1_element_468, value=[Ljava.lang.CharSequence;@7ac5b4c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=8A571A0A3CF23C6B49C136C9BD48E3A1_element_468, value=[Ljava.lang.CharSequence;@7ac5b4c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_in_python(Tree_SD.java:349)
+at ✽.some python as input then click run button for Implementation in Python(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:165)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:26 EDT" duration-ms="405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Implementation in Python page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:26 EDT" duration-ms="243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Binary Tree Traversals page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:31 EDT" duration-ms="5078" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page for Binary Tree Traversals page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=AEB99E50CCC2D0CE3636B2729371372F_element_485, value=[Ljava.lang.CharSequence;@427308f8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=AEB99E50CCC2D0CE3636B2729371372F_element_485, value=[Ljava.lang.CharSequence;@427308f8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_tree_traversals(Tree_SD.java:388)
+at ✽.some python as input then click run button for Binary Tree Traversals(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:181)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:31 EDT" duration-ms="366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Binary Tree Traversals Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:32 EDT" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Implementation of Binary Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:37 EDT" duration-ms="5074" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Implementation of Binary Trees  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=487F8259C26DCAC22BEBABE472A8F577_element_501, value=[Ljava.lang.CharSequence;@53d30d23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=487F8259C26DCAC22BEBABE472A8F577_element_501, value=[Ljava.lang.CharSequence;@53d30d23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_of_binary_trees(Tree_SD.java:427)
+at ✽.some python as input then click run button for Implementation of Binary Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:197)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:37 EDT" duration-ms="376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Implementation of Binary Trees  page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:37 EDT" duration-ms="223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the  Applications of Binary trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:42 EDT" duration-ms="5089" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Applications of Binary trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=9AC678973C331BF65357D042537FF4DB_element_520, value=[Ljava.lang.CharSequence;@4df7d9ee}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=9AC678973C331BF65357D042537FF4DB_element_520, value=[Ljava.lang.CharSequence;@4df7d9ee}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_applications_of_binary_trees(Tree_SD.java:466)
+at ✽.some python as input then click run button for Applications of Binary trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:213)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:43 EDT" duration-ms="517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Applications of Binary trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:43 EDT" duration-ms="246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Binary Search Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:48 EDT" duration-ms="5071" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Binary Search Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=1E421765C6F8EA6A2E716B7F74ED928F_element_540, value=[Ljava.lang.CharSequence;@713999c2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=1E421765C6F8EA6A2E716B7F74ED928F_element_540, value=[Ljava.lang.CharSequence;@713999c2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_binary_search_trees(Tree_SD.java:505)
+at ✽.some python as input then click run button for Binary Search Trees(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:229)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:49 EDT" duration-ms="508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Binary Search Trees page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:49 EDT" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the Implementation Of BST page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:54 EDT" duration-ms="5077" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in the tryEditor page from Implementation Of BST page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=500B7D70AF9B156A369F0854DEB2ADBB_element_558, value=[Ljava.lang.CharSequence;@4899799b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [917784b7c93305d4db0b728c510973e2, sendKeysToElement {id=500B7D70AF9B156A369F0854DEB2ADBB_element_558, value=[Ljava.lang.CharSequence;@4899799b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\bobby\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53431/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (917784b7c93305d4db0b728c510973e2)] -> xpath: //textarea[@tabindex='0']]
+Session ID: 917784b7c93305d4db0b728c510973e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at utilities.UtlityFunctions.send_keys(UtlityFunctions.java:48)
+at utilities.UtlityFunctions.try_editor_code(UtlityFunctions.java:85)
+at step_definition.Tree_SD.some_python_as_input_then_click_run_button_for_implementation_of_bst(Tree_SD.java:544)
+at ✽.some python as input then click run button for Implementation Of BST(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/tree.feature:245)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T20:23:54 EDT" duration-ms="396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["A logged in user is in Implementation Of BST page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["to test functionality of tree"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@7eac9008]" started-at="2023-09-24T20:23:54 EDT" name="tearDownClass" finished-at="2023-09-24T20:23:55 EDT" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
