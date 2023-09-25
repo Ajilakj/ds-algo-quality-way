@@ -163,14 +163,12 @@ public class Stack_SD extends BaseClass {
 
 	@When("The user clicks Practice questions link from stack")
 	public void the_user_clicks_practice_questions_link_from_stack() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.select_practice_questions_link();
 	}
 
 	@Then("The user should be directed to practice questions Page for stack")
 	public void the_user_should_be_directed_to_practice_questions_page_for_stack() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		 UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/practice");
 	}
 
 

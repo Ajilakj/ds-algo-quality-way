@@ -78,21 +78,21 @@
     When The user clicks Applications link
     Then The user should be directed to Applications Page
     
-#	@tag12  
-  #Scenario: A logged in user is in the  Applications page
-    #When The user clicks Try Here button button from Applications page
-    #Then The user should be redirected to a tryEditor for Applications
-  #
-  #@tag13 
-  #Scenario: A logged in user is in the tryEditor page from Applications page
-    #When some python as input then click run button for Applications
-    #Then The output will be display in the editor for Applications
-    #
-  #@tag14
-  #Scenario:  A logged in user is in the Applications page
-    #Given The user is in the Applications page
-    #When The user clicks Practice questions link from stack
-    #Then The user should be directed to practice questions Page for stack
+	@tag10  
+  Scenario: A logged in user is in the  Applications page
+    When The user clicks Try Here button button from Applications page
+    Then The user should be redirected to a tryEditor for Applications
+  
+  @tag11 
+  Scenario: A logged in user is in the tryEditor page from Applications page
+    When some python as input then click run button for Applications
+    Then The output will be display in the editor for Applications
+    
+  @tag12
+  Scenario:  A logged in user is in the Applications page
+    Given The user is in the Applications page
+    When The user clicks Practice questions link from stack
+    Then The user should be directed to practice questions Page for stack
     
     
 
