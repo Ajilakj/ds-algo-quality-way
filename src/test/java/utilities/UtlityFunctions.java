@@ -107,6 +107,13 @@ public class UtlityFunctions extends BaseClass {
 		web_element_click(practiceQuestions);
 	}
 	
+	public void get_message_from_active_window(){
+		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		String messageFromActiveElement = activeElement.getAttribute("validationMessage");
+//		System.out.println("Actual message appeared on screen: " + messageStr);
+		Assert.assertEquals(messageFromActiveElement, "Please fill out this field.");
+	}
+	
 //	public void click_back_button_twice(){
 //		chromeDriver.navigate().back();
 //		chromeDriver.navigate().refresh();

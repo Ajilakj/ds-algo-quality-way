@@ -1,6 +1,7 @@
 package pageObjeccts;
 
 import org.openqa.selenium.By;
+
 import utilities.UtlityFunctions;
 
 public class Login_POM extends BaseClass {
@@ -8,21 +9,22 @@ public class Login_POM extends BaseClass {
 	By password=By.id("id_password");
 	By loginBtn=By.xpath("//input[@value='Login']");
 	
-//	WebElement activeElement = driver.switchTo().activeElement();
-//	String messageStr = activeElement.getAttribute("validationMessage");
-//	System.out.println("Actual message appeared on screen: " + messageStr);
-	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
+	
+	public void username_empty(){
+		UtlityFunctionsOBJ.send_keys(username,"");
+	}
+	
+	public void password_empty(){
+		UtlityFunctionsOBJ.send_keys(password,"");
+	}
+	
 	public void enter_valid_credentials(){
 		UtlityFunctionsOBJ.send_keys(username,"QualityWay");
 		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2");
 	}
 	
-	public void login(){
+	public void click_login_button(){
 		UtlityFunctionsOBJ.web_element_click(loginBtn);
-	}
-	
-	public void check_url_home(){
-		UtlityFunctionsOBJ.check_url_home();
 	}
 }
