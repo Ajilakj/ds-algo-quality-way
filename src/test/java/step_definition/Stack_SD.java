@@ -57,79 +57,68 @@ public class Stack_SD extends BaseClass {
 //	@tag4
 	@When("The user clicks Try Here button for Operations in Stack")
 	public void the_user_clicks_try_here_button_for_operations_in_stack() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.click_try_here();
 	}
 
 	@Then("The user should be redirected to a tryEditor page for Operations in Stack")
 	public void the_user_should_be_redirected_to_a_try_editor_page_for_operations_in_stack() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
 //	@tag5
 	@When("some python as input then click run button for Operations in Stack")
 	public void some_python_as_input_then_click_run_button_for_operations_in_stack() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.try_editor_code();
 	}
 
 	@Then("The output will be display in the editor for Operations in Stack")
 	public void the_output_will_be_display_in_the_editor_for_operations_in_stack() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_output();
 	}
 
 //	@tag6
-	@Given("The user is in the Implementation Page")
-	public void the_user_is_in_the_implementation_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@Given("The user is in the Operations in Stack Page")
+	public void the_user_is_in_the_Operations_in_Stack_page() {
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/operations-in-stack/");
 	}
 
 	@When("The user clicks Implementation link")
 	public void the_user_clicks_implementation_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		StackOBJ.select_implementation_of_stack();
 	}
 
 	@Then("The user should be directed to Implementation Page")
 	public void the_user_should_be_directed_to_implementation_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/operations-in-stack/");
 	}
 
 //	@tag7
 	@When("The user clicks Try Here button from Implementation page")
 	public void the_user_clicks_try_here_button_from_implementation_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.click_try_here();
 	}
 
 	@Then("The user should be redirected to a tryEditor page for Implementation")
 	public void the_user_should_be_redirected_to_a_try_editor_page_for_implementation() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
 //	@tag8
 	@When("some python as input then click run button for Implementation")
 	public void some_python_as_input_then_click_run_button_for_implementation() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.try_editor_code();
 	}
 
 	@Then("The output will be display in the editor for Implementation")
 	public void the_output_will_be_display_in_the_editor_for_implementation() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_output();
 	}
 	
 //	@tag9
 	@Given("The user is in the queue page Applications  page")
 	public void the_user_is_in_the_queue_page_applications_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.click_back_button();
 	}
 
 	@When("The user clicks Applications link")
@@ -147,34 +136,29 @@ public class Stack_SD extends BaseClass {
 //	@tag10 
 	@When("The user clicks Try Here button button from Applications page")
 	public void the_user_clicks_try_here_button_button_from_applications_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.click_try_here();
 	}
 
 	@Then("The user should be redirected to a tryEditor for Applications")
 	public void the_user_should_be_redirected_to_a_try_editor_for_applications() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
 //	@tag11
 	@When("some python as input then click run button for Applications")
 	public void some_python_as_input_then_click_run_button_for_applications() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.try_editor_code();
 	}
 
 	@Then("The output will be display in the editor for Applications")
 	public void the_output_will_be_display_in_the_editor_for_applications() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_output();
 	}
 
 //	@tag12
 	@Given("The user is in the Applications page")
 	public void the_user_is_in_the_applications_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.click_back_button();
 	}
 
 	@When("The user clicks Practice questions link from stack")

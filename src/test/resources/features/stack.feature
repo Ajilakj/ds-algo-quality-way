@@ -44,25 +44,25 @@
     When The user clicks Operations in Stack link
     Then The user should be directed to Operations in Stack Page
 
-  #@tag4
-  #Scenario: A logged in user is in the Operations in Stack page
-    #When The user clicks Try Here button for Operations in Stack
-    #Then The user should be redirected to a tryEditor page for Operations in Stack
-  #
+  @tag4
+  Scenario: User is in the Operations in Stack page
+    When The user clicks Try Here button for Operations in Stack
+    Then The user should be redirected to a tryEditor page for Operations in Stack
+  
 
-  	  #	@tag5  
-  #Scenario: A logged in user is in the tryEditor page for Operations in Stack  page
-    #When some python as input then click run button for Operations in Stack
-    #Then The output will be display in the editor for Operations in Stack
-    #
+  @tag5  
+  Scenario: A logged in user is in the tryEditor page for Operations in Stack  page
+    When some python as input then click run button for Operations in Stack
+    Then The output will be display in the editor for Operations in Stack
+    
 
-    #@tag8
-  #Scenario: A logged in user is in the Operations in Stack Page
-    #Given The user is in the Implementation Page
-    #When The user clicks Implementation link
-    #Then The user should be directed to Implementation Page
-    #
-#	@tag9  
+  @tag6
+  Scenario: A logged in user is in the Operations in Stack Page
+    Given The user is in the Operations in Stack Page
+    When The user clicks Implementation link
+    Then The user should be directed to Implementation Page
+    
+#	@tag7  
   #Scenario: A logged in user is in the Implementation page
     #When The user clicks Try Here button from Implementation page
     #Then The user should be redirected to a tryEditor page for Implementation
