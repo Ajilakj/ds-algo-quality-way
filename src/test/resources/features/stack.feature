@@ -62,22 +62,22 @@
     When The user clicks Implementation link
     Then The user should be directed to Implementation Page
     
-#	@tag7  
-  #Scenario: A logged in user is in the Implementation page
-    #When The user clicks Try Here button from Implementation page
-    #Then The user should be redirected to a tryEditor page for Implementation
-  #
-  #@tag10
-  #Scenario: A logged in user is in the tryEditor page from Implementation page
-    #When some python as input then click run button for Implementation
-    #Then The output will be display in the editor for Implementation
-    #
-   #@tag11
-  #Scenario: A logged in user is in the Implementation page
-    #Given The user is in the queue page Applications  page
-    #When The user clicks Applications link
-    #Then The user should be directed to Applications Page
-    #
+	@tag7  
+  Scenario: A logged in user is in the Implementation page
+    When The user clicks Try Here button from Implementation page
+    Then The user should be redirected to a tryEditor page for Implementation
+  
+  @tag8
+  Scenario: A logged in user is in the tryEditor page from Implementation page
+    When some python as input then click run button for Implementation
+    Then The output will be display in the editor for Implementation
+    
+   @tag9
+  Scenario: A logged in user is in the Implementation page
+    Given The user is in the queue page Applications  page
+    When The user clicks Applications link
+    Then The user should be directed to Applications Page
+    
 #	@tag12  
   #Scenario: A logged in user is in the  Applications page
     #When The user clicks Try Here button button from Applications page

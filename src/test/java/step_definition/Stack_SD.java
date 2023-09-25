@@ -79,6 +79,7 @@ public class Stack_SD extends BaseClass {
 //	@tag6
 	@Given("The user is in the Operations in Stack Page")
 	public void the_user_is_in_the_Operations_in_Stack_page() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/operations-in-stack/");
 	}
 
@@ -89,8 +90,7 @@ public class Stack_SD extends BaseClass {
 
 	@Then("The user should be directed to Implementation Page")
 	public void the_user_should_be_directed_to_implementation_page() {
-		UtlityFunctionsOBJ.click_back_button();
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/operations-in-stack/");
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/implementation/");
 	}
 
 //	@tag7
@@ -119,18 +119,17 @@ public class Stack_SD extends BaseClass {
 	@Given("The user is in the queue page Applications  page")
 	public void the_user_is_in_the_queue_page_applications_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/implementation/");
 	}
 
 	@When("The user clicks Applications link")
 	public void the_user_clicks_applications_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		StackOBJ.select_applications_of_stack();
 	}
 
 	@Then("The user should be directed to Applications Page")
 	public void the_user_should_be_directed_to_applications_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/stack-applications/");
 	}
 
 //	@tag10 
@@ -159,6 +158,7 @@ public class Stack_SD extends BaseClass {
 	@Given("The user is in the Applications page")
 	public void the_user_is_in_the_applications_page() {
 		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/stack-applications/");
 	}
 
 	@When("The user clicks Practice questions link from stack")
