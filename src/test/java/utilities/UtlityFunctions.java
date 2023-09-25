@@ -61,6 +61,11 @@ public class UtlityFunctions extends BaseClass {
 		check_url(expected_url);
 	}
 	
+	public void check_url_login(){
+		String expected_url="https://dsportalapp.herokuapp.com/login";
+		check_url(expected_url);
+	}
+	
 	public void check_url_try_editor(){
 		String expected_url="https://dsportalapp.herokuapp.com/tryEditor";
 		check_url(expected_url);

@@ -18,7 +18,7 @@ public class Login_SD extends BaseClass{
 //	  @tag1
 	@Given("User is in Login page to check both fields empty")
 	public void user_is_in_login_page_to_check_both_fields_empty() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/login");
+		UtlityFunctionsOBJ.check_url_login();
 	}
 	
 	@When("user leaves username password fields empty")
@@ -32,50 +32,55 @@ public class Login_SD extends BaseClass{
 		 LoginOBJ.click_login_button();
 	}
 	
-	@Then("please fill out this field text is displayed")
-	public void please_fill_out_this_field_text_is_displayed() {
+	@Then("please fill out this field text is displayed for only username")
+	public void please_fill_out_this_field_text_is_displayed_for_only_username() {
 		 UtlityFunctionsOBJ.get_message_from_active_window();
 	}
 	
 //	  @tag2
 	@Given("User is in Login page to check pssword empty")
 	public void user_is_in_login_page_to_check_pssword_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_login();
 	}
 	
 	@When("user enters valid username and leaves password field empty")
 	public void user_enters_valid_username_and_leaves_password_field_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		LoginOBJ.enter_valid_usename();
+		LoginOBJ.password_empty();
 	}
 	
 	@When("clicks Login button to check pssword empty")
 	public void clicks_login_button_to_check_pssword_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		LoginOBJ.click_login_button();
+	}
+	
+	@Then("please fill out this field text is displayed for password")
+	public void please_fill_out_this_field_text_is_displayed_for_password() {
+		 UtlityFunctionsOBJ.get_message_from_active_window();
 	}
 	
 	
-//	  @tag4
+//	  @tag3
 	@Given("User is in Login page to check username empty")
 	public void user_is_in_login_page_to_check_username_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_login();
 	}
 	
 	@When("user enters valid password and leaves username field empty")
 	public void user_enters_valid_password_and_leaves_username_field_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		LoginOBJ.username_empty();
+		LoginOBJ.enter_valid_password();;
 	}
 	
 	@When("clicks Login button to check username empty")
 	public void clicks_login_button_to_check_username_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		LoginOBJ.click_login_button();
 	}
 	
+	@Then("please fill out this field text is displayed for username")
+	public void please_fill_out_this_field_text_is_displayed_for_username() {
+		 UtlityFunctionsOBJ.get_message_from_active_window();
+	}
 //	  @tag5
 	@Given("User is in Login page to check nonregister user")
 	public void user_is_in_login_page_to_check_nonregister_user() {
@@ -167,7 +172,7 @@ public class Login_SD extends BaseClass{
 	
 	@When("enters valid username and valid password")
 	public void enters_valid_username_and_valid_password() {
-	   LoginOBJ.enter_valid_credentials();
+//	   LoginOBJ.enter_valid_credentials();
 	}
 
 	@When("clicks Login button")

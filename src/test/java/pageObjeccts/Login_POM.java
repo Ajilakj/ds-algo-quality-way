@@ -19,8 +19,11 @@ public class Login_POM extends BaseClass {
 		UtlityFunctionsOBJ.send_keys(password,"");
 	}
 	
-	public void enter_valid_credentials(){
+	public void enter_valid_usename(){
 		UtlityFunctionsOBJ.send_keys(username,"QualityWay");
+	}
+	
+	public void enter_valid_password(){
 		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2");
 	}
 	

@@ -63,22 +63,22 @@
     Given User is in Login page to check both fields empty
     When  user leaves username password fields empty
     And clicks Login button to check both fields empty
-    Then please fill out this field text is displayed
+    Then please fill out this field text is displayed for only username
     
-  #@tag2
-    #Scenario: check logging with valid username and leaving password field empty
-    #Given User is in Login page to check pssword empty
-    #When  user enters valid username and leaves password field empty
-    #And clicks Login button to check pssword empty
-    #Then please fill out this field text is displayed
-#
-#@tag3
-    #Scenario: check logging with valid password  and leaving username field empty
-    #Given User is in Login page to check username empty
-    #When  user enters valid password and leaves username field empty
-    #And clicks Login button to check username empty
-    #Then please fill out this field text is displayed
-    #
+  @tag2
+    Scenario: check logging with valid username and leaving password field empty
+    Given User is in Login page to check pssword empty
+    When  user enters valid username and leaves password field empty
+    And clicks Login button to check pssword empty
+    Then please fill out this field text is displayed for password
+
+@tag3
+    Scenario: check logging with valid password  and leaving username field empty
+    Given User is in Login page to check username empty
+    When  user enters valid password and leaves username field empty
+    And clicks Login button to check username empty
+    Then please fill out this field text is displayed for username
+    
  #@tag4
   #Scenario: Check login with non registered user
   #Given User is in Login page to check nonregister user
