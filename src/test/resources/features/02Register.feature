@@ -20,57 +20,80 @@
 # I want to use this template for my feature file
 
 
-@tag @register
-Feature: Register with valid and invalid credentials
-
-  #@tag1
-  #Scenario: Registration
-   #When User is in First page  
-   #Then click the 'Get started button'
-   #And click the Register
-   #And it enters the register page
-   #When User is in register page
-   #Then enter the valid username
-   #And click the Register button
-   #Then 'please fillout this field'message appears
-   #
-    
-  #@tag2
-  #Scenario Outline: Register with Valid username and password and Valid username but invalid password credentials
-  #
-#When User is in First page  
-   #Then click the 'Get started button'
-   #And click the Register
-   #And it enters the register page
-   #When User is in register page
-   #Then enter the valid <username> and <password>
-   #And Re-enter valid <passsword>
-   #And click Register button
-   #Then Registration is successful
-    #
-    #Examples: 
-      #| Username  |password| value | status  |
-      #| Bismiraj | doorno@32  |8 | success |
-      #| Bismiraj |  BIsmi  |5| Fail    |
-      #
-      #
-      #@tag3e
-      #
-      #Scenario: password mismatch
-      #
-      #When user is in the Register page
-      #And enters valid username 
-      #And enters valid password in password textbox
-      #And enters invalid or different password in password confirmation box
-      #And clicks the register button
-      #Then "The two password fields didn't match" appears below.
-      #
-      
-      
-  @tag8
-  Scenario: create user with valid credentials
+  @tag @register
+  Feature: to test register with valid and invalid credentials
   
-  Given clicks on register link
-  When enters valid username and valid password and confirm password
-  And click register button
-  Then user willl direct to home page
+  @tag1
+    Scenario: try register with username and password and confirm password fields empty
+    Given User is in register page to check every fields empty
+    When  user leaves username, password and confirm password fields empty
+    And clicks register button to check every fields empty
+    Then please fill out this field text is displayed for only username-register
+    
+  @tag2
+    Scenario: check logging with valid username and leaving password field empty
+    Given User is in register page to check password empty
+    When  user enters valid username and leaves password field empty in register page
+    And clicks register button to check pssword empty
+    Then please fill out this field text is displayed for password-register
+
+@tag3
+    Scenario: check logging with valid password  and leaving username field empty
+    Given User is in register page to check username empty
+    When  user enters valid password and leaves username field empty in register page
+    And clicks register button to check username empty
+    Then please fill out this field text is displayed for username-register
+    
+ @tag4
+    Scenario: check logging with valid password  and username but leaving confirm password field empty
+    Given User is in register page to check confirm password empty
+    When  user enters valid password and username but leaves confirm password field empty
+    And clicks register button to check confirm password empty
+    Then please fill out this field text is displayed for confirm password
+    
+ @tag5
+  Scenario: Check register with similar usename and password
+  Given User is in register page to check similarity between usename and password
+  When enters a username and password same as usename then confirm password
+  And clicks register button to check similarity similarity between usename and password
+  Then Your password can’t be too similar to your other personal information message should display
+  
+  @tag6
+  Scenario: Check register with password minimum length
+  Given User is in register page to check password length
+  When enters a valid username and password contains less than 8 characters
+  And clicks register button to check password length
+  Then Your password must contain at least 8 characters message should display
+  
+  @tag7
+  Scenario: Check register with password characters
+  Given User is in register page to check password characters
+  When enters a valid username and password only with numbers
+  And clicks register button to check password characters
+  Then Your password can’t be entirely numeri message should display
+  
+  @tag8
+  Scenario: Check login link from register page
+  Given User is in register page
+  When  use click login link from register page
+  Then user is navigated to login page
+  
+  @tag9 
+  Scenario: password mismatch
+  Given user is in the Register page to check password mismatch
+  When user enters valid username 
+  And enters valid password in password textbox
+  And enters invalid or different password in password confirmation box
+  And clicks the register button
+  Then password_mismatch:The two password fields didn’t match message should appears below.
+      
+ @tag10
+  Scenario: Check register is successful with valid credentials
+  Given User is in register page to check successful register with valid credentials
+  When enters valid username, valid password and confirm password
+  And clicks register button
+  Then user will navigate to home page
+  
+ 
+    
+
