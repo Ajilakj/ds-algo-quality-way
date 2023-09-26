@@ -81,19 +81,19 @@
   And clicks the register button
   Then password_mismatch:The two password fields didn not match message should appears below.
   
-    #@tag9
-  #Scenario: Check login link from register page
-  #Given User is in register page
-  #When  use click login link from register page
-  #Then user is navigated to login page
-      #
- #@tag10
-  #Scenario: Check register is successful with valid credentials
-  #Given User is in register page to check successful register with valid credentials
-  #When enters valid username, valid password and confirm password
-  #And clicks register button
-  #Then user will navigate to home page
-  #
+  @tag9
+  Scenario: Check login link from register page
+  Given User is in register page
+  When  use click login link from register page
+  Then user is navigated to login page
+      
+ @tag10
+  Scenario: Check register is successful with valid credentials
+  Given User is in register page to check successful register with valid credentials
+  When enters valid username, valid password and confirm password
+  And clicks register button
+  Then user will navigate to home page
+  
  
     
 

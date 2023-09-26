@@ -213,28 +213,26 @@ public class Register_SD extends BaseClass{
 
 	@When("use click login link from register page")
 	public void use_click_login_link_from_register_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.click_login_link();
 	}
 
 	@Then("user is navigated to login page")
 	public void user_is_navigated_to_login_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_login();
 	}
-
-	
 
 //	@tag10
 	@Given("User is in register page to check successful register with valid credentials")
 	public void user_is_in_register_page_to_check_successful_register_with_valid_credentials() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("enters valid username, valid password and confirm password")
 	public void enters_valid_username_valid_password_and_confirm_password() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.enter_valid_usename();
+		RegisterOBJ.enter_valid_password();
+		RegisterOBJ.enter_valid_confirm_password();	
 	}
 
 	@When("clicks register button")

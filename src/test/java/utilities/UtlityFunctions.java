@@ -20,6 +20,7 @@ public class UtlityFunctions extends BaseClass {
 	WebDriverWait wait=new WebDriverWait(chromeDriver,Duration.ofSeconds(20));
 	By sign_in=By.partialLinkText("Sign in");
 	By register =By.partialLinkText("Register");
+	By login =By.partialLinkText("Login");
 	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By tryHere=By.partialLinkText("Try here");
 	By code=By.xpath("//textarea[@tabindex='0']"); 
@@ -55,6 +56,10 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void click_register(){
 		web_element_click(register);
+	}
+	
+	public void click_login_link(){
+		web_element_click(login);
 	}
 	
 	public void check_url_home(){
