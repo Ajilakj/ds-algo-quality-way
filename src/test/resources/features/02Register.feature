@@ -37,20 +37,20 @@
     And clicks register button to check pssword empty
     Then please fill out this field text is displayed for password-register
 
-#@tag3
-    #Scenario: check logging with valid password  and leaving username field empty
-    #Given User is in register page to check username empty
-    #When  user enters valid password and leaves username field empty in register page
-    #And clicks register button to check username empty
-    #Then please fill out this field text is displayed for username-register
-    #
- #@tag4
-    #Scenario: check logging with valid password  and username but leaving confirm password field empty
-    #Given User is in register page to check confirm password empty
-    #When  user enters valid password and username but leaves confirm password field empty
-    #And clicks register button to check confirm password empty
-    #Then please fill out this field text is displayed for confirm password
-    #
+@tag3
+    Scenario: check logging with valid password  and leaving username field empty
+    Given User is in register page to check username empty
+    When  user enters valid password and leaves username field empty in register page
+    And clicks register button to check username empty
+    Then please fill out this field text is displayed for username-register
+    
+ @tag4
+    Scenario: check logging with valid password  and username but leaving confirm password field empty
+    Given User is in register page to check confirm password empty
+    When  user enters valid password and username but leaves confirm password field empty
+    And clicks register button to check confirm password empty
+    Then please fill out this field text is displayed for confirm password
+    
  #@tag5
   #Scenario: Check register with similar usename and password
   #Given User is in register page to check similarity between usename and password

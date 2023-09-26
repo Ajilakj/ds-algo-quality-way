@@ -68,58 +68,53 @@ public class Register_SD extends BaseClass{
 //	@tag3
 	@Given("User is in register page to check username empty")
 	public void user_is_in_register_page_to_check_username_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("user enters valid password and leaves username field empty in register page")
 	public void user_enters_valid_password_and_leaves_username_field_empty_in_register_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.username_empty();;
+		RegisterOBJ.enter_valid_password();
+		RegisterOBJ.enter_valid_confirm_password();
 	}
 
 	@When("clicks register button to check username empty")
 	public void clicks_register_button_to_check_username_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.click_register_button();
 	}
 
 	@Then("please fill out this field text is displayed for username-register")
 	public void please_fill_out_this_field_text_is_displayed_for_username_register() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.get_message_from_active_window();
 	}
 
 //	@tag4
 	@Given("User is in register page to check confirm password empty")
 	public void user_is_in_register_page_to_check_confirm_password_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("user enters valid password and username but leaves confirm password field empty")
 	public void user_enters_valid_password_and_username_but_leaves_confirm_password_field_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.enter_valid_usename();
+		RegisterOBJ.enter_valid_password();
+		RegisterOBJ.confirm_password_empty();
 	}
 
 	@When("clicks register button to check confirm password empty")
 	public void clicks_register_button_to_check_confirm_password_empty() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.click_register_button();
 	}
 
 	@Then("please fill out this field text is displayed for confirm password")
 	public void please_fill_out_this_field_text_is_displayed_for_confirm_password() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.get_message_from_active_window();
 	}
 
 //	@tag5
 	@Given("User is in register page to check similarity between usename and password")
 	public void user_is_in_register_page_to_check_similarity_between_usename_and_password() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("enters a username and password same as usename then confirm password")
@@ -130,8 +125,7 @@ public class Register_SD extends BaseClass{
 
 	@When("clicks register button to check similarity similarity between usename and password")
 	public void clicks_register_button_to_check_similarity_similarity_between_usename_and_password() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.click_register_button();
 	}
 
 	@Then("Your password can�t be too similar to your other personal information message should display")
@@ -143,8 +137,7 @@ public class Register_SD extends BaseClass{
 //	@tag6
 	@Given("User is in register page to check password length")
 	public void user_is_in_register_page_to_check_password_length() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("enters a valid username and password contains less than {int} characters")
@@ -155,8 +148,7 @@ public class Register_SD extends BaseClass{
 
 	@When("clicks register button to check password length")
 	public void clicks_register_button_to_check_password_length() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.click_register_button();
 	}
 
 	@Then("Your password must contain at least {int} characters message should display")
@@ -168,8 +160,7 @@ public class Register_SD extends BaseClass{
 //	@tag7
 	@Given("User is in register page to check password characters")
 	public void user_is_in_register_page_to_check_password_characters() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("enters a valid username and password only with numbers")
@@ -180,8 +171,7 @@ public class Register_SD extends BaseClass{
 
 	@When("clicks register button to check password characters")
 	public void clicks_register_button_to_check_password_characters() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.click_register_button();
 	}
 
 	@Then("Your password can�t be entirely numeri message should display")
@@ -193,8 +183,7 @@ public class Register_SD extends BaseClass{
 //	@tag8
 	@Given("User is in register page")
 	public void user_is_in_register_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("use click login link from register page")
@@ -212,8 +201,7 @@ public class Register_SD extends BaseClass{
 //	@tag9
 	@Given("user is in the Register page to check password mismatch")
 	public void user_is_in_the_register_page_to_check_password_mismatch() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("user enters valid username")
@@ -236,8 +224,7 @@ public class Register_SD extends BaseClass{
 
 	@When("clicks the register button")
 	public void clicks_the_register_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.click_register_button();
 	}
 
 	@Then("password_mismatch:The two password fields didn�t match message should appears below.")
@@ -249,8 +236,7 @@ public class Register_SD extends BaseClass{
 //	@tag10
 	@Given("User is in register page to check successful register with valid credentials")
 	public void user_is_in_register_page_to_check_successful_register_with_valid_credentials() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_url_register();
 	}
 
 	@When("enters valid username, valid password and confirm password")
@@ -261,8 +247,7 @@ public class Register_SD extends BaseClass{
 
 	@When("clicks register button")
 	public void clicks_register_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.click_register_button();
 	}
 
 	@Then("user will navigate to home page")
