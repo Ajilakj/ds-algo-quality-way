@@ -25,7 +25,7 @@ public class Register_POM extends BaseClass{
 	}
 	
 	public void enter_valid_usename(){
-		UtlityFunctionsOBJ.send_keys(username,"QualityWayA1B");
+		UtlityFunctionsOBJ.send_keys(username,"QualityWayA1B2");
 	}
 	
 	public void enter_valid_password(){
