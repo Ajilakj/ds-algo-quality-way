@@ -204,8 +204,29 @@ public class Register_SD extends BaseClass{
 		RegisterOBJ.password_mismatch_msg();
 	}
 
-	
 //	@tag9
+	@Given("user is in the Register page to check existing user")
+	public void user_is_in_the_register_page_to_check_existing_user() {
+		UtlityFunctionsOBJ.check_url_register();
+	}
+
+	@When("user enter an already existing username but valid passwords")
+	public void user_enter_an_already_existing_username_but_valid_passwords() {
+		RegisterOBJ.enter_existing_username();
+	}
+
+	@When("clicks the register button to check existing user")
+	public void clicks_the_register_button_to_check_existing_user() {
+		RegisterOBJ.click_register_button();
+	}
+
+	@Then("user already exists message should appears.")
+	public void user_already_exists_message_should_appears() {
+		RegisterOBJ.enter_existing_username_msg();
+	}
+	
+	
+//	@tag10
 	@Given("User is in register page")
 	public void user_is_in_register_page() {
 		UtlityFunctionsOBJ.check_url_register();
@@ -221,7 +242,7 @@ public class Register_SD extends BaseClass{
 		UtlityFunctionsOBJ.check_url_login();
 	}
 
-//	@tag10
+//	@tag11
 	@Given("User is in register page to check successful register with valid credentials")
 	public void user_is_in_register_page_to_check_successful_register_with_valid_credentials() {
 		UtlityFunctionsOBJ.click_back_button();

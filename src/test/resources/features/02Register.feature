@@ -81,13 +81,20 @@
   And clicks the register button
   Then password_mismatch:The two password fields didn not match message should appears below.
   
-  @tag9
+   @tag9
+  Scenario: Try to register with already existing user
+  Given user is in the Register page to check existing user 
+  When user enter an already existing username but valid passwords
+  And clicks the register button to check existing user 
+  Then user already exists message should appears.
+  
+  @tag10
   Scenario: Check login link from register page
   Given User is in register page
   When  use click login link from register page
   Then user is navigated to login page
       
- @tag10
+ @tag11
   Scenario: Check register is successful with valid credentials
   Given User is in register page to check successful register with valid credentials
   When enters valid username, valid password and confirm password

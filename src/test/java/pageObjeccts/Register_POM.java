@@ -25,7 +25,7 @@ public class Register_POM extends BaseClass{
 	}
 	
 	public void enter_valid_usename(){
-		UtlityFunctionsOBJ.send_keys(username,"QualityWayABC");
+		UtlityFunctionsOBJ.send_keys(username,"QualityWayA1B");
 	}
 	
 	public void enter_valid_password(){
@@ -60,6 +60,12 @@ public class Register_POM extends BaseClass{
 		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@2ABCD");
 	}
 	
+	public void enter_existing_username(){
+		UtlityFunctionsOBJ.send_keys(username,"QualityWay");
+		UtlityFunctionsOBJ.send_keys(password1,"pwd_ds_algo@2valid");
+		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@2valid");
+	}
+	
 	public void enter_same_password_as_usename_msg(){
 		String txt=UtlityFunctionsOBJ.get_message_from_alert();
 		UtlityFunctionsOBJ.check_text(txt, "Your password can’t be too similar to your other personal information.");
@@ -78,6 +84,11 @@ public class Register_POM extends BaseClass{
 	public void password_mismatch_msg(){
 		String txt=UtlityFunctionsOBJ.get_message_from_alert();
 		UtlityFunctionsOBJ.check_text(txt, "password_mismatch:The two password fields didn’t match.");
+	}
+	
+	public void enter_existing_username_msg(){
+		String txt=UtlityFunctionsOBJ.get_message_from_alert();
+		UtlityFunctionsOBJ.check_text(txt, "User already exists.");
 	}
 	
 	public void click_register_button(){
