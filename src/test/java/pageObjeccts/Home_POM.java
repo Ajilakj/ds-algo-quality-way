@@ -18,9 +18,14 @@ public class Home_POM extends BaseClass{
 	By getStartLnk=By.xpath("//a[text()='Get Started']");
 	By signoutLnk=By.xpath("//ul/a[3]"); 
 	By dropdown_item =By.className("dropdown-item");
+	WebDriver chromeDriver=super.chromeDriver;
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	String expected_url="";
+	
+	public void open_Ds_Algo(){
+		chromeDriver.get("https://dsportalapp.herokuapp.com/");  
+	}
 	
 	public void home(){
 		UtlityFunctionsOBJ.web_element_click(getStartedLnk);

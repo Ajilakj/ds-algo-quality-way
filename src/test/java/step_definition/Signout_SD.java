@@ -10,7 +10,7 @@ import utilities.UtlityFunctions;
 public class Signout_SD extends BaseClass{
 	
 	Signout_POM SignoutOBJ=new Signout_POM();
-//	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
+	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	@Given("The user already login with valid usernae and password")
 	public void the_user_already_login_with_valid_usernae_and_password() {

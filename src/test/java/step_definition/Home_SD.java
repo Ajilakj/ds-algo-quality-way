@@ -14,17 +14,16 @@ public class Home_SD extends BaseClass {
 	
 	Home_POM HomeOBJ=new Home_POM();
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-	
 
 	@Given("The user try to  open DS Algo portal link") 
 	public void the_user_try_to_open_ds_algo_portal_link() {
-		System.out.print("chromeDriver" + chromeDriver);
+		HomeOBJ.open_Ds_Algo();
 		
 	}
 
 	@Then("DS Algo portal page should open")
 	public void ds_algo_portal_page_should_open() {
-		super.open_Ds_Algo();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/");
 	}
 
 
