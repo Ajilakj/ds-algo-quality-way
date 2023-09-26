@@ -119,8 +119,8 @@ public class Register_SD extends BaseClass{
 
 	@When("enters a username and password same as usename then confirm password")
 	public void enters_a_username_and_password_same_as_usename_then_confirm_password() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.enter_valid_usename();
+		RegisterOBJ.enter_same_password_as_usename();
 	}
 
 	@When("clicks register button to check similarity similarity between usename and password")
@@ -128,10 +128,9 @@ public class Register_SD extends BaseClass{
 		RegisterOBJ.click_register_button();
 	}
 
-	@Then("Your password can�t be too similar to your other personal information message should display")
+	@Then("Your password can’t be too similar to your other personal information message should display")
 	public void your_password_can_t_be_too_similar_to_your_other_personal_information_message_should_display() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.get_message_from_alert();
 	}
 
 //	@tag6
@@ -140,10 +139,10 @@ public class Register_SD extends BaseClass{
 		UtlityFunctionsOBJ.check_url_register();
 	}
 
-	@When("enters a valid username and password contains less than {int} characters")
-	public void enters_a_valid_username_and_password_contains_less_than_characters(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@When("enters a valid username and password contains less than min characters")
+	public void enters_a_valid_username_and_password_contains_less_than_min_characters() {
+		RegisterOBJ.enter_valid_usename();
+		RegisterOBJ.enter_password_less_than_eight();
 	}
 
 	@When("clicks register button to check password length")
@@ -153,8 +152,7 @@ public class Register_SD extends BaseClass{
 
 	@Then("Your password must contain at least {int} characters message should display")
 	public void your_password_must_contain_at_least_characters_message_should_display(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.enter_password_less_than_eight_msg();;
 	}
 
 //	@tag7
@@ -165,8 +163,8 @@ public class Register_SD extends BaseClass{
 
 	@When("enters a valid username and password only with numbers")
 	public void enters_a_valid_username_and_password_only_with_numbers() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		RegisterOBJ.enter_valid_usename();
+		RegisterOBJ.enter_password_only_numeric();
 	}
 
 	@When("clicks register button to check password characters")
@@ -174,13 +172,40 @@ public class Register_SD extends BaseClass{
 		RegisterOBJ.click_register_button();
 	}
 
-	@Then("Your password can�t be entirely numeri message should display")
-	public void your_password_can_t_be_entirely_numeri_message_should_display() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@Then("Your password can not be entirely numeric message should display")
+	public void your_password_can_not_be_entirely_numeric_message_should_display() {
+		RegisterOBJ.enter_password_only_numeric_msg();
 	}
 
 //	@tag8
+	@Given("user is in the Register page to check password mismatch")
+	public void user_is_in_the_register_page_to_check_password_mismatch() {
+		UtlityFunctionsOBJ.check_url_register();
+	}
+
+	@When("user enters valid username")
+	public void user_enters_valid_username() {
+		RegisterOBJ.enter_valid_usename();
+	}
+
+	@When("enters valid password in password textbox, enters invalid or different password in password confirmation box")
+	public void enters_valid_password_in_password_textbox_enters_invalid_or_different_password_in_password_confirmation_box() {
+		RegisterOBJ.enter_valid_usename();
+		RegisterOBJ.password_mismatch();
+	}
+
+	@When("clicks the register button")
+	public void clicks_the_register_button() {
+		RegisterOBJ.click_register_button();
+	}
+
+	@Then("password_mismatch:The two password fields didn not match message should appears below.")
+	public void password_mismatch_the_two_password_fields_didn_not_match_message_should_appears_below() {
+		RegisterOBJ.password_mismatch_msg();
+	}
+
+	
+//	@tag9
 	@Given("User is in register page")
 	public void user_is_in_register_page() {
 		UtlityFunctionsOBJ.check_url_register();
@@ -198,40 +223,7 @@ public class Register_SD extends BaseClass{
 	    throw new io.cucumber.java.PendingException();
 	}
 
-//	@tag9
-	@Given("user is in the Register page to check password mismatch")
-	public void user_is_in_the_register_page_to_check_password_mismatch() {
-		UtlityFunctionsOBJ.check_url_register();
-	}
-
-	@When("user enters valid username")
-	public void user_enters_valid_username() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("enters valid password in password textbox")
-	public void enters_valid_password_in_password_textbox() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("enters invalid or different password in password confirmation box")
-	public void enters_invalid_or_different_password_in_password_confirmation_box() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("clicks the register button")
-	public void clicks_the_register_button() {
-		RegisterOBJ.click_register_button();
-	}
-
-	@Then("password_mismatch:The two password fields didn�t match message should appears below.")
-	public void password_mismatch_the_two_password_fields_didn_t_match_message_should_appears_below() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
+	
 
 //	@tag10
 	@Given("User is in register page to check successful register with valid credentials")

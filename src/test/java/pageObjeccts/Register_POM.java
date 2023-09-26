@@ -40,6 +40,46 @@ public class Register_POM extends BaseClass{
 		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@2Invalid");
 	}
 	
+	public void enter_same_password_as_usename(){
+		UtlityFunctionsOBJ.send_keys(password1,"QualityWayABC");
+		UtlityFunctionsOBJ.send_keys(password2,"QualityWayABC");
+	}
+	
+	public void enter_password_less_than_eight(){
+		UtlityFunctionsOBJ.send_keys(password1,"Quality");
+		UtlityFunctionsOBJ.send_keys(password2,"Quality");
+	}
+	
+	public void enter_password_only_numeric(){
+		UtlityFunctionsOBJ.send_keys(password1,"123456789");
+		UtlityFunctionsOBJ.send_keys(password2,"123456789");
+	}
+	
+	public void password_mismatch(){
+		UtlityFunctionsOBJ.send_keys(password1,"pwd_ds_algo@2ABC");
+		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@2ABCD");
+	}
+	
+	public void enter_same_password_as_usename_msg(){
+		String txt=UtlityFunctionsOBJ.get_message_from_alert();
+		UtlityFunctionsOBJ.check_text(txt, "Your password can’t be too similar to your other personal information.");
+	}
+	
+	public void enter_password_less_than_eight_msg(){
+		String txt=UtlityFunctionsOBJ.get_message_from_alert();
+		UtlityFunctionsOBJ.check_text(txt, "Your password must contain at least 8 characters.");
+	}
+	
+	public void enter_password_only_numeric_msg(){
+		String txt=UtlityFunctionsOBJ.get_message_from_alert();
+		UtlityFunctionsOBJ.check_text(txt, "Your password can’t be entirely numeric.");
+	}
+	
+	public void password_mismatch_msg(){
+		String txt=UtlityFunctionsOBJ.get_message_from_alert();
+		UtlityFunctionsOBJ.check_text(txt, "password_mismatch:The two password fields didn’t match.");
+	}
+	
 	public void click_register_button(){
 		UtlityFunctionsOBJ.web_element_click(regiterBtn);
 	}
