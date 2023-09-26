@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 				plugin = {"pretty", "html:target/quality_way.html"}, //reporting purpose
 				monochrome=false,  //console output color
 //				tags = "@tag", //tags from feature file
-				tags = "@home or @login or @signout", //tags from feature file
+				tags = "@home or @register", //tags from feature file
 //				tags = "@home or @register or @login", //tags from feature file
 				features = {"src/test/resources/features"}, //location of feature files - folder name
 				glue= "step_definition") //location of step definition files - package name

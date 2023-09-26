@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\bobby\AppData\Local\Temp\testng-eclipse--1356677624\testng-customsuite.xml</span>
+                    <span>C:\Users\bobby\AppData\Local\Temp\testng-eclipse-700293690\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">18 methods, 3 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Try to register with already existing user&quot;, &quot;to test register with valid and invalid credentials&quot;)">runScenario("Try to register with already existing user", "to test register with valid and invalid credentials")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check register with password characters&quot;, &quot;to test register with valid and invalid credentials&quot;)">runScenario("Check register with password characters", "to test register with valid and invalid credentials")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check register with password minimum length&quot;, &quot;to test register with valid and invalid credentials&quot;)">runScenario("Check register with password minimum length", "to test register with valid and invalid credentials")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,32 +127,32 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;open home page&quot;, &quot;to test functionality of home page&quot;)">runScenario("open home page", "to test functionality of home page")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check register with similar usename and password&quot;, &quot;to test register with valid and invalid credent...)">runScenario("Check register with similar usename and password", "to test register with valid and invalid credent...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;get started button to go to home page&quot;, &quot;to test functionality of home page&quot;)">runScenario("get started button to go to home page", "to test functionality of home page")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;check logging with valid password  and username but leaving confirm password field empty&quot;, &quot;to test...)">runScenario("check logging with valid password  and username but leaving confirm password field empty", "to test...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;The user already on DS Algo portal page and the user try to go to sign in page&quot;, &quot;to test functiona...)">runScenario("The user already on DS Algo portal page and the user try to go to sign in page", "to test functiona...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;select one item from drop down without sign in&quot;, &quot;to test functionality of home page&quot;)">runScenario("select one item from drop down without sign in", "to test functionality of home page")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check login is successful with valid credentials&quot;, &quot;to test login functionality&quot;)">runScenario("Check login is successful with valid credentials", "to test login functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;password mismatch&quot;, &quot;to test register with valid and invalid credentials&quot;)">runScenario("password mismatch", "to test register with valid and invalid credentials")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;select one item from home page without sign in&quot;, &quot;to test functionality of home page&quot;)">runScenario("select one item from home page without sign in", "to test functionality of home page")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check register is successful with valid credentials&quot;, &quot;to test register with valid and invalid cred...)">runScenario("Check register is successful with valid credentials", "to test register with valid and invalid cred...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;The user already on DS Algo portal page drop down with Data structures&quot;, &quot;to test functionality of ...)">runScenario("The user already on DS Algo portal page drop down with Data structures", "to test functionality of ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;check logging with valid password  and leaving username field empty&quot;, &quot;to test register with valid ...)">runScenario("check logging with valid password  and leaving username field empty", "to test register with valid ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,12 +162,42 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;The user already login with valid usernae and password&quot;, &quot;to test functionality of signout link&quot;)">runScenario("The user already login with valid usernae and password", "to test functionality of signout link")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;open home page&quot;, &quot;to test functionality of home page&quot;)">runScenario("open home page", "to test functionality of home page")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;select one item from drop down without sign in&quot;, &quot;to test functionality of home page&quot;)">runScenario("select one item from drop down without sign in", "to test functionality of home page")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;The user already on DS Algo portal page drop down with Data structures&quot;, &quot;to test functionality of ...)">runScenario("The user already on DS Algo portal page drop down with Data structures", "to test functionality of ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;try register with username and password and confirm password fields empty&quot;, &quot;to test register with ...)">runScenario("try register with username and password and confirm password fields empty", "to test register with ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;select one item from home page without sign in&quot;, &quot;to test functionality of home page&quot;)">runScenario("select one item from home page without sign in", "to test functionality of home page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;get started button to go to home page&quot;, &quot;to test functionality of home page&quot;)">runScenario("get started button to go to home page", "to test functionality of home page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;check logging with valid username and leaving password field empty&quot;, &quot;to test register with valid a...)">runScenario("check logging with valid username and leaving password field empty", "to test register with valid a...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;The user already on DS Algo portal page and the user try to go to sign in page&quot;, &quot;to test functiona...)">runScenario("The user already on DS Algo portal page and the user try to go to sign in page", "to test functiona...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check login link from register page&quot;, &quot;to test register with valid and invalid credentials&quot;)">runScenario("Check login link from register page", "to test register with valid and invalid credentials")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -158,6 +212,83 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Try to register with already existing user&quot;, &quot;to test register with valid and invalid credentials&quot;)">
+                  </a> <!-- runScenario("Try to register with already existing user", "to test register with valid and invalid credentials") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Try to register with already existing user","to test register with valid and invalid credentials")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:46)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:91)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:225)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check register with password characters&quot;, &quot;to test register with valid and invalid credentials&quot;)">
+                  </a> <!-- runScenario("Check register with password characters", "to test register with valid and invalid credentials") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check register with password characters","to test register with valid and invalid credentials")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:46)
+	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:81)
+	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:177)
+	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check register with password minimum length&quot;, &quot;to test register with valid and invalid credentials&quot;)">
+                  </a> <!-- runScenario("Check register with password minimum length", "to test register with valid and invalid credentials") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check register with password minimum length","to test register with valid and invalid credentials")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:46)
+	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:76)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -166,60 +297,60 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;open home page&quot;, &quot;to test functionality of home page&quot;)">
-                  </a> <!-- runScenario("open home page", "to test functionality of home page") -->
+                  <a name="runScenario(&quot;Check register with similar usename and password&quot;, &quot;to test register with valid and invalid credent...)">
+                  </a> <!-- runScenario("Check register with similar usename and password", "to test register with valid and invalid credent...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("open home page","to test functionality of home page")</span>
+                  <span class="parameters">("Check register with similar usename and password","to test register with valid and invalid credentials")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;get started button to go to home page&quot;, &quot;to test functionality of home page&quot;)">
-                  </a> <!-- runScenario("get started button to go to home page", "to test functionality of home page") -->
+                  <a name="runScenario(&quot;check logging with valid password  and username but leaving confirm password field empty&quot;, &quot;to test...)">
+                  </a> <!-- runScenario("check logging with valid password  and username but leaving confirm password field empty", "to test...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("get started button to go to home page","to test functionality of home page")</span>
+                  <span class="parameters">("check logging with valid password  and username but leaving confirm password field empty","to test register with valid and invalid credentials")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;The user already on DS Algo portal page and the user try to go to sign in page&quot;, &quot;to test functiona...)">
-                  </a> <!-- runScenario("The user already on DS Algo portal page and the user try to go to sign in page", "to test functiona...) -->
+                  <a name="runScenario(&quot;select one item from drop down without sign in&quot;, &quot;to test functionality of home page&quot;)">
+                  </a> <!-- runScenario("select one item from drop down without sign in", "to test functionality of home page") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("The user already on DS Algo portal page and the user try to go to sign in page","to test functionality of home page")</span>
+                  <span class="parameters">("select one item from drop down without sign in","to test functionality of home page")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Check login is successful with valid credentials&quot;, &quot;to test login functionality&quot;)">
-                  </a> <!-- runScenario("Check login is successful with valid credentials", "to test login functionality") -->
+                  <a name="runScenario(&quot;password mismatch&quot;, &quot;to test register with valid and invalid credentials&quot;)">
+                  </a> <!-- runScenario("password mismatch", "to test register with valid and invalid credentials") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check login is successful with valid credentials","to test login functionality")</span>
+                  <span class="parameters">("password mismatch","to test register with valid and invalid credentials")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;select one item from home page without sign in&quot;, &quot;to test functionality of home page&quot;)">
-                  </a> <!-- runScenario("select one item from home page without sign in", "to test functionality of home page") -->
+                  <a name="runScenario(&quot;Check register is successful with valid credentials&quot;, &quot;to test register with valid and invalid cred...)">
+                  </a> <!-- runScenario("Check register is successful with valid credentials", "to test register with valid and invalid cred...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("select one item from home page without sign in","to test functionality of home page")</span>
+                  <span class="parameters">("Check register is successful with valid credentials","to test register with valid and invalid credentials")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;The user already on DS Algo portal page drop down with Data structures&quot;, &quot;to test functionality of ...)">
-                  </a> <!-- runScenario("The user already on DS Algo portal page drop down with Data structures", "to test functionality of ...) -->
+                  <a name="runScenario(&quot;check logging with valid password  and leaving username field empty&quot;, &quot;to test register with valid ...)">
+                  </a> <!-- runScenario("check logging with valid password  and leaving username field empty", "to test register with valid ...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("The user already on DS Algo portal page drop down with Data structures","to test functionality of home page")</span>
+                  <span class="parameters">("check logging with valid password  and leaving username field empty","to test register with valid and invalid credentials")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -236,20 +367,80 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;The user already login with valid usernae and password&quot;, &quot;to test functionality of signout link&quot;)">
-                  </a> <!-- runScenario("The user already login with valid usernae and password", "to test functionality of signout link") -->
+                  <a name="runScenario(&quot;open home page&quot;, &quot;to test functionality of home page&quot;)">
+                  </a> <!-- runScenario("open home page", "to test functionality of home page") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("The user already login with valid usernae and password","to test functionality of signout link")</span>
+                  <span class="parameters">("open home page","to test functionality of home page")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;select one item from drop down without sign in&quot;, &quot;to test functionality of home page&quot;)">
-                  </a> <!-- runScenario("select one item from drop down without sign in", "to test functionality of home page") -->
+                  <a name="runScenario(&quot;The user already on DS Algo portal page drop down with Data structures&quot;, &quot;to test functionality of ...)">
+                  </a> <!-- runScenario("The user already on DS Algo portal page drop down with Data structures", "to test functionality of ...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("select one item from drop down without sign in","to test functionality of home page")</span>
+                  <span class="parameters">("The user already on DS Algo portal page drop down with Data structures","to test functionality of home page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;try register with username and password and confirm password fields empty&quot;, &quot;to test register with ...)">
+                  </a> <!-- runScenario("try register with username and password and confirm password fields empty", "to test register with ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("try register with username and password and confirm password fields empty","to test register with valid and invalid credentials")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;select one item from home page without sign in&quot;, &quot;to test functionality of home page&quot;)">
+                  </a> <!-- runScenario("select one item from home page without sign in", "to test functionality of home page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("select one item from home page without sign in","to test functionality of home page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;get started button to go to home page&quot;, &quot;to test functionality of home page&quot;)">
+                  </a> <!-- runScenario("get started button to go to home page", "to test functionality of home page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("get started button to go to home page","to test functionality of home page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;check logging with valid username and leaving password field empty&quot;, &quot;to test register with valid a...)">
+                  </a> <!-- runScenario("check logging with valid username and leaving password field empty", "to test register with valid a...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("check logging with valid username and leaving password field empty","to test register with valid and invalid credentials")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;The user already on DS Algo portal page and the user try to go to sign in page&quot;, &quot;to test functiona...)">
+                  </a> <!-- runScenario("The user already on DS Algo portal page and the user try to go to sign in page", "to test functiona...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("The user already on DS Algo portal page and the user try to go to sign in page","to test functionality of home page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check login link from register page&quot;, &quot;to test register with valid and invalid credentials&quot;)">
+                  </a> <!-- runScenario("Check login link from register page", "to test register with valid and invalid credentials") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check login link from register page","to test register with valid and invalid credentials")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -259,7 +450,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\bobby\AppData\Local\Temp\testng-eclipse--1356677624\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\bobby\AppData\Local\Temp\testng-eclipse-700293690\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -316,48 +507,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 3269);
+data.setCell(0, 3, 8082);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.TestRunner')
-data.setCell(1, 3, 516);
+data.setCell(1, 3, 797);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.TestRunner')
-data.setCell(2, 3, 421);
+data.setCell(2, 3, 594);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.TestRunner')
-data.setCell(3, 3, 283);
+data.setCell(3, 3, 451);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runner.TestRunner')
-data.setCell(4, 3, 213);
+data.setCell(4, 3, 447);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'runner.TestRunner')
-data.setCell(5, 3, 202);
+data.setCell(5, 3, 443);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'runner.TestRunner')
-data.setCell(6, 3, 200);
+data.setCell(6, 3, 408);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'runner.TestRunner')
-data.setCell(7, 3, 200);
+data.setCell(7, 3, 401);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'runner.TestRunner')
-data.setCell(8, 3, 90);
+data.setCell(8, 3, 373);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.TestRunner')
+data.setCell(9, 3, 368);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.TestRunner')
+data.setCell(10, 3, 348);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runner.TestRunner')
+data.setCell(11, 3, 313);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runner.TestRunner')
+data.setCell(12, 3, 288);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runner.TestRunner')
+data.setCell(13, 3, 265);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runner.TestRunner')
+data.setCell(14, 3, 256);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runner.TestRunner')
+data.setCell(15, 3, 247);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runner.TestRunner')
+data.setCell(16, 3, 219);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runner.TestRunner')
+data.setCell(17, 3, 114);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -385,48 +612,90 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@5a49af50)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@78a8978a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("open home page", "to test functionality of home page")</span>
-                <span class="method-start">580 ms</span>
+                <span class="method-start">639 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("get started button to go to home page", "to test functionality of home page")</span>
-                <span class="method-start">3854 ms</span>
+                <span class="method-start">8729 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("The user already on DS Algo portal page drop down with Data structures", "to test functionality of ...)</span>
-                <span class="method-start">4277 ms</span>
+                <span class="method-start">9529 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("select one item from drop down without sign in", "to test functionality of home page")</span>
-                <span class="method-start">4369 ms</span>
+                <span class="method-start">9644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("select one item from home page without sign in", "to test functionality of home page")</span>
-                <span class="method-start">4654 ms</span>
+                <span class="method-start">9911 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("The user already on DS Algo portal page and user try to go to sign in page", "to test functionality...)</span>
-                <span class="method-start">4869 ms</span>
+                <span class="method-start">10132 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("The user already on DS Algo portal page and the user try to go to sign in page", "to test functiona...)</span>
-                <span class="method-start">5070 ms</span>
+                <span class="method-start">10391 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check login is successful with valid credentials", "to test login functionality")</span>
-                <span class="method-start">5274 ms</span>
+                <span class="method-name">runScenario("try register with username and password and confirm password fields empty", "to test register with ...)</span>
+                <span class="method-start">10640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("The user already login with valid usernae and password", "to test functionality of signout link")</span>
-                <span class="method-start">5793 ms</span>
+                <span class="method-name">runScenario("check logging with valid username and leaving password field empty", "to test register with valid a...)</span>
+                <span class="method-start">11085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("check logging with valid password  and leaving username field empty", "to test register with valid ...)</span>
+                <span class="method-start">11488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("check logging with valid password  and username but leaving confirm password field empty", "to test...)</span>
+                <span class="method-start">11838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check register with similar usename and password", "to test register with valid and invalid credent...)</span>
+                <span class="method-start">12152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check register with password minimum length", "to test register with valid and invalid credentials")</span>
+                <span class="method-start">12527 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check register with password characters", "to test register with valid and invalid credentials")</span>
+                <span class="method-start">12980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("password mismatch", "to test register with valid and invalid credentials")</span>
+                <span class="method-start">13390 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Try to register with already existing user", "to test register with valid and invalid credentials")</span>
+                <span class="method-start">13838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check login link from register page", "to test register with valid and invalid credentials")</span>
+                <span class="method-start">14210 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check register is successful with valid credentials", "to test register with valid and invalid cred...)</span>
+                <span class="method-start">14501 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">5996 ms</span>
+                <span class="method-start">15098 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

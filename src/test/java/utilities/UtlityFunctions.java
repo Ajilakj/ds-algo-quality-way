@@ -20,12 +20,14 @@ public class UtlityFunctions extends BaseClass {
 	WebDriverWait wait=new WebDriverWait(chromeDriver,Duration.ofSeconds(20));
 	By sign_in=By.partialLinkText("Sign in");
 	By register =By.partialLinkText("Register");
+	By login =By.partialLinkText("Login");
 	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By tryHere=By.partialLinkText("Try here");
 	By code=By.xpath("//textarea[@tabindex='0']"); 
 //	By code=By.xpath("//div[@class='CodeMirror-lines']");
 //	By code=By.className("cm-variable");
 //	By code=By.className("CodeMirror-scroll"); 
+	By alert =By.className("alert-primary"); 
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
 	By practiceQuestions=By.partialLinkText("Practice Questions");
@@ -56,8 +58,22 @@ public class UtlityFunctions extends BaseClass {
 		web_element_click(register);
 	}
 	
+	public void click_login_link(){
+		web_element_click(login);
+	}
+	
 	public void check_url_home(){
 		String expected_url="https://dsportalapp.herokuapp.com/home";
+		check_url(expected_url);
+	}
+	
+	public void check_url_login(){
+		String expected_url="https://dsportalapp.herokuapp.com/login";
+		check_url(expected_url);
+	}
+	
+	public void check_url_register(){
+		String expected_url="https://dsportalapp.herokuapp.com/register";
 		check_url(expected_url);
 	}
 	
@@ -105,6 +121,18 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void select_practice_questions_link(){
 		web_element_click(practiceQuestions);
+	}
+	
+	public String get_message_from_alert(){
+		String txt=(chromeDriver.findElement(alert)).getText();
+		return txt; 
+	}
+	
+	public void get_message_from_active_window(){
+		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		String messageFromActiveElement = activeElement.getAttribute("validationMessage");
+//		System.out.println("Actual message appeared on screen: " + messageStr);
+		Assert.assertEquals(messageFromActiveElement, "Please fill out this field.");
 	}
 	
 //	public void click_back_button_twice(){
