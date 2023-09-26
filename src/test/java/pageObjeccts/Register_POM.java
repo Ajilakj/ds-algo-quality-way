@@ -12,13 +12,35 @@ public class Register_POM extends BaseClass{
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
-	public void enter_valid_credentials() {
-		UtlityFunctionsOBJ.send_keys(username,"QualityWayAB");
-		UtlityFunctionsOBJ.send_keys(password1,"pwd_ds_algo@12ABC");
-		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@12ABC");
+	public void username_empty(){
+		UtlityFunctionsOBJ.send_keys(username,"");
 	}
 	
-	public void register(){
+	public void password_empty(){
+		UtlityFunctionsOBJ.send_keys(password1,"");
+	}
+	
+	public void confirm_password_empty(){
+		UtlityFunctionsOBJ.send_keys(password2,"");
+	}
+	
+	public void enter_valid_usename(){
+		UtlityFunctionsOBJ.send_keys(username,"QualityWayABC");
+	}
+	
+	public void enter_valid_password(){
+		UtlityFunctionsOBJ.send_keys(password1,"pwd_ds_algo@2ABC");
+	}
+	
+	public void enter_valid_confirm_password(){
+		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@2ABC");
+	}
+	
+	public void enter_invalid_password(){
+		UtlityFunctionsOBJ.send_keys(password2,"pwd_ds_algo@2Invalid");
+	}
+	
+	public void click_register_button(){
 		UtlityFunctionsOBJ.web_element_click(regiterBtn);
 	}
 }
