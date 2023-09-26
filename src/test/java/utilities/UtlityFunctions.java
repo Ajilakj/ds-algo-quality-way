@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -92,7 +93,9 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void try_editor_code(){
 		WebElement activeElement = chromeDriver.switchTo().activeElement();
-		activeElement.sendKeys("print 'welcome'");
+		Actions action = new Actions(chromeDriver);
+		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
+//		send_keys(code, "print 'welcome'");
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
 	}
