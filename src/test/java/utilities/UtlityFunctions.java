@@ -33,6 +33,8 @@ public class UtlityFunctions extends BaseClass {
 	By runBtn=By.xpath("//button[text()='Run']");
 	By practiceQuestions=By.partialLinkText("Practice Questions");
 	
+	Actions action = new Actions(chromeDriver);
+	
 	public void web_element_click(By webEle) {
 		chromeDriver.findElement(webEle).click();
 	}
@@ -93,9 +95,22 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void try_editor_code(){
 		WebElement activeElement = chromeDriver.switchTo().activeElement();
-		Actions action = new Actions(chromeDriver);
 		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
 //		send_keys(code, "print 'welcome'");
+		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
+		web_element_click(runBtn);
+	}
+	
+	public void try_editor_invalid_code(){
+		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
+		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
+		web_element_click(runBtn);
+	}
+	
+	public void try_editor_valid_java_code(){
+		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		action.moveToElement(activeElement).sendKeys("System.out.println('welcome');").perform();
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
 	}
@@ -105,6 +120,17 @@ public class UtlityFunctions extends BaseClass {
 		check_text(txt,"welcome");
 	}
 	
+	public void check_output_valid_java(){
+		String txt=(chromeDriver.switchTo().alert().getText());
+		chromeDriver.switchTo().alert().accept();
+		check_text(txt,"NameError: name 'System' is not defined on line 1");
+	}
+	
+	public void check_output_invalid_code(){
+		String txt=(chromeDriver.switchTo().alert().getText());
+		chromeDriver.switchTo().alert().accept();
+		check_text(txt,"yntaxError: bad input on line 1");
+	}
 	public void click_back_button(){
 		chromeDriver.navigate().back();
 		chromeDriver.navigate().refresh();

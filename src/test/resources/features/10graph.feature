@@ -33,7 +33,7 @@
 	  
 	@tag2
   Scenario:  An existing user logged in with valid credentials in homepage
-  	Given( A valid user is in the Home page after logged in
+  	Given( A valid user is in the Home page for graph
 	  When The user select the option Graph from the datastructure drop down menu
 	  Then The user will directed to graph Page
     
@@ -45,36 +45,56 @@
     
 	@tag4  
   Scenario: A logged in user is in the Graph page
-    When The user clicks Try Here button
-    Then The user should be redirected to a tryEditor page
+    When The user clicks Try Here button for Graph page
+    Then The user should be redirected to a tryEditor page for Graph page
     
-  @tag5
+   @tag5
   Scenario: A logged in user is in the tryEditor page from Graph/Graph page
-    When some python as input then click run button
-    Then The output will be display in the editor
+    When user write some valid java code for Graph page then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for Graph page
     
-   @tag6 
-  Scenario: A logged in user is in the Graph page
-  	Given The user is in the graph or graph graph page
-    When The user clicks Graph Representations link
-    Then The user should be directed to Graph Representations Page
+    @tag6
+  Scenario: A logged in user is in the tryEditor page from Graph/Graph page
+    When user write some invalid code for Graph then click run button
+    Then an alert with SyntaxError: bad input on line 1 will display for Graph
     
-    @tag7
-  Scenario:A logged in user is in the Graph Representations page
-    Given A logged in user is in the Graph Representations page
-    When The user clicks Try Here button
-    Then A tryEditor page with run button will appear
+  @tag7
+  Scenario: A logged in user is in the tryEditor page from Graph/Graph page
+    When user write some python code for Graph page as input then click run button
+    Then The output will be display in the editor for Graph page
     
-     @tag8
-  Scenario: A logged in user is in the tryEditor page from Graph/Graph Representations page
-    When The user enter some code in python and click run button
-    Then The output from the pyton code will display in the editor
-    
-    @tag9
-  Scenario: A logged in user is in the Graph page
-  	Given A logged in user is in the graph home page
-    When The user clicks Practice questions link
-    Then The user should be directed to practice questions Page
+   #@tag8 
+  #Scenario: A logged in user is in the Graph page
+  #	Given The user is in the graph page for Graph Representations 
+    #When The user clicks Graph Representations link from graph
+    #Then The user should be directed to Graph Representations Page
+    #
+    #@tag9
+  #Scenario: The user is in the graph Representations page
+    #Given The user is in the graph Representations page
+    #When The user clicks Try Here button for Graph Representations
+    #Then A tryEditor page with run button will appear for Graph Representations page
+    #
+     #@tag10
+  #Scenario: A logged in user is in the tryEditor page from Graph/Graph Representations page
+    #When user write some valid java code for Graph Representations then click run button
+    #Then an alert with NameError: name System is not defined on line 1 will display for Graph Representations 
+    #
+    #@tag11
+  #Scenario: A logged in user is in the tryEditor page from Graph/Graph Representations page
+    #When user write some invalid java code for Graph Representations then click run button
+    #Then an alert with SyntaxError: bad input on line 1 will display for Graph Representations 
+    #
+     #@tag12
+  #Scenario: A logged in user is in the tryEditor page from Graph/Graph Representations page
+    #When The user enter some code in python for Graph Representations and click run button
+    #Then The output from the pyton code will display in the editor for Graph Representations
+    #
+    #@tag13
+  #Scenario: A logged in user is in the Graph page
+  #	Given A logged in user is in the graph home page
+    #When The user clicks Practice questions link for Graph page
+    #Then The user should be directed to practice questions Page for Graph page
     
     
 
