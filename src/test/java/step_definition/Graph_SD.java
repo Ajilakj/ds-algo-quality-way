@@ -106,12 +106,12 @@ public class Graph_SD extends BaseClass {
 //	@tag7
 	@When("user write some python code for Graph page as input then click run button")
 	public void user_write_some_python_code_for_graph_page_as_input_then_click_run_button() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Graph page")
 	public void the_output_will_be_display_in_the_editor_for_graph_page() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	  @tag8
@@ -172,12 +172,12 @@ public class Graph_SD extends BaseClass {
 //	@tag12
 	@When("The user enter some code in python for Graph Representations and click run button")
 	public void the_user_enter_some_code_in_python_for_graph_representations_and_click_run_button() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output from the pyton code will display in the editor for Graph Representations")
 	public void the_output_from_the_pyton_code_will_display_in_the_editor_for_graph_representations() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag13

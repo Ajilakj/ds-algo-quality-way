@@ -73,12 +73,12 @@ public class Tree_SD extends BaseClass {
 //	@tag5
 	@When("some python as input then click run button for Overview of Trees")
 	public void some_python_as_input_then_click_run_button_for_overview_of_trees() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Overview of Trees")
 	public void the_output_will_be_display_in_the_editor_for_overview_of_trees() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag6
@@ -112,12 +112,12 @@ public class Tree_SD extends BaseClass {
 //	@tag8
 	@When("some python as input then click run button for Terminologies")
 	public void some_python_as_input_then_click_run_button_for_terminologies() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Terminologies")
 	public void the_output_will_be_display_in_the_editor_for_terminologies() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag9
@@ -151,12 +151,12 @@ public class Tree_SD extends BaseClass {
 //	@tag11
 	@When("some python as input then click run button for Types of Trees")
 	public void some_python_as_input_then_click_run_button_for_types_of_trees() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Types of Trees")
 	public void the_output_will_be_display_in_the_editor_for_types_of_trees() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag12
@@ -190,12 +190,12 @@ public class Tree_SD extends BaseClass {
 //	@tag14
 	@When("some python as input then click run button for Tree Traversals")
 	public void some_python_as_input_then_click_run_button_for_tree_traversals() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor  for Tree Traversals")
 	public void the_output_will_be_display_in_the_editor_for_tree_traversals() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag15
@@ -229,12 +229,12 @@ public class Tree_SD extends BaseClass {
 //	@tag17
 	@When("some python as input then click run button for Traversals-Illustration")
 	public void some_python_as_input_then_click_run_button_for_traversals_illustration() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Traversals-Illustration")
 	public void the_output_will_be_display_in_the_editor_for_traversals_illustration() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag18
@@ -268,12 +268,12 @@ public class Tree_SD extends BaseClass {
 //	@tag20
 	@When("some python as input then click run button for Binary Trees")
 	public void some_python_as_input_then_click_run_button_for_binary_trees() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Binary Trees")
 	public void the_output_will_be_display_in_the_editor_for_binary_trees() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag21
@@ -307,12 +307,12 @@ public class Tree_SD extends BaseClass {
 //	@tag23
 	@When("some python as input then click run button for Types of Binary Trees")
 	public void some_python_as_input_then_click_run_button_for_types_of_binary_trees() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Types of Binary Trees")
 	public void the_output_will_be_display_in_the_editor_for_types_of_binary_trees() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag24
@@ -346,12 +346,12 @@ public class Tree_SD extends BaseClass {
 //	@tag26
 	@When("some python as input then click run button for Implementation in Python")
 	public void some_python_as_input_then_click_run_button_for_implementation_in_python() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor  for Implementation in Python")
 	public void the_output_will_be_display_in_the_editor_for_implementation_in_python() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag27
@@ -385,12 +385,12 @@ public class Tree_SD extends BaseClass {
 //	@tag29
 	@When("some python as input then click run button for Binary Tree Traversals")
 	public void some_python_as_input_then_click_run_button_for_binary_tree_traversals() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Binary Tree Traversals")
 	public void the_output_will_be_display_in_the_editor_for_binary_tree_traversals() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag30
@@ -424,11 +424,11 @@ public class Tree_SD extends BaseClass {
 //	@tag32
 	@When("some python as input then click run button for Implementation of Binary Trees")
 	public void some_python_as_input_then_click_run_button_for_implementation_of_binary_trees() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 	@Then("The output will be display in the editor for Implementation of Binary Trees")
 	public void the_output_will_be_display_in_the_editor_for_implementation_of_binary_trees() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 	
 //	@tag33
@@ -463,12 +463,12 @@ public class Tree_SD extends BaseClass {
 //	@tag35
 	@When("some python as input then click run button for Applications of Binary trees")
 	public void some_python_as_input_then_click_run_button_for_applications_of_binary_trees() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Applications of Binary trees")
 	public void the_output_will_be_display_in_the_editor_for_applications_of_binary_trees() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag36
@@ -502,12 +502,12 @@ public class Tree_SD extends BaseClass {
 //	@tag38
 	@When("some python as input then click run button for Binary Search Trees")
 	public void some_python_as_input_then_click_run_button_for_binary_search_trees() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor  for Binary Search Trees")
 	public void the_output_will_be_display_in_the_editor_for_binary_search_trees() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag39
@@ -541,12 +541,12 @@ public class Tree_SD extends BaseClass {
 //	@tag41
 	@When("some python as input then click run button for Implementation Of BST")
 	public void some_python_as_input_then_click_run_button_for_implementation_of_bst() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor  for Implementation Of BST")
 	public void the_output_will_be_display_in_the_editor_for_implementation_of_bst() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag42

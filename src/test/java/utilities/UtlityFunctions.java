@@ -93,7 +93,7 @@ public class UtlityFunctions extends BaseClass {
 		web_element_click(tryHere);
 	}
 	
-	public void try_editor_code(){
+	public void try_editor_python_code(){
 		chromeDriver.navigate().refresh();
 		WebElement activeElement = chromeDriver.switchTo().activeElement();
 		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
@@ -105,7 +105,6 @@ public class UtlityFunctions extends BaseClass {
 	public void try_editor_invalid_code(){
 		chromeDriver.navigate().refresh();
 		WebElement activeElement = chromeDriver.switchTo().activeElement();
-		action.moveToElement(activeElement).sendKeys("").perform();
 		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
@@ -118,21 +117,21 @@ public class UtlityFunctions extends BaseClass {
 		web_element_click(runBtn);
 	}
 	
-	public void check_output(){
-		String txt=(chromeDriver.findElement(output)).getText();
-		check_text(txt,"welcome");
+	public void check_python_output(){
+		String outputmsg=(chromeDriver.findElement(output)).getText();
+		check_text(outputmsg,"welcome");
 	}
 	
 	public void check_output_valid_java(){
-		String txt=(chromeDriver.switchTo().alert().getText());
+		String output=(chromeDriver.switchTo().alert().getText());
 		chromeDriver.switchTo().alert().accept();
-		check_text(txt,"NameError: name 'System' is not defined on line 1");
+		check_text(output,"NameError: name 'System' is not defined on line 1");
 	}
 	
 	public void check_output_invalid_code(){
-		String txt=(chromeDriver.switchTo().alert().getText());
+		String output=(chromeDriver.switchTo().alert().getText());
 		chromeDriver.switchTo().alert().accept();
-		check_text(txt,"SyntaxError: bad input on line 1");
+		check_text(output,"SyntaxError: bad input on line 1");
 	}
 	public void click_back_button(){
 		chromeDriver.navigate().back();
@@ -144,14 +143,13 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public String get_message_from_alert(){
-		String txt=(chromeDriver.findElement(alert)).getText();
-		return txt; 
+		String msg=(chromeDriver.findElement(alert)).getText();
+		return msg; 
 	}
 	
 	public void get_message_from_active_window(){
 		WebElement activeElement = chromeDriver.switchTo().activeElement();
 		String messageFromActiveElement = activeElement.getAttribute("validationMessage");
-//		System.out.println("Actual message appeared on screen: " + messageStr);
 		Assert.assertEquals(messageFromActiveElement, "Please fill out this field.");
 	}
 	

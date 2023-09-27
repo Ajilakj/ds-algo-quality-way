@@ -73,12 +73,12 @@ public class Queue_SD extends BaseClass  {
 //	@tag5
 	@When("some python as input then click run button for queue\\/implementation-lists")
 	public void some_python_as_input_then_click_run_button_for_queue_implementation_lists() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for queue\\/implementation-lists")
 	public void the_output_will_be_display_in_the_editor_for_queue_implementation_lists() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 	
 //	@tag6
@@ -112,12 +112,12 @@ public class Queue_SD extends BaseClass  {
 //	@tag8
 	@When("some python as input then click run button for queue\\/implementation-collections")
 	public void some_python_as_input_then_click_run_button_for_queue_implementation_collections() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for queue\\/implementation-collections")
 	public void the_output_will_be_display_in_the_editor_for_queue_implementation_collections() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 	
 //	@tag9 
@@ -152,12 +152,12 @@ public class Queue_SD extends BaseClass  {
 //	@tag11 
 	@When("some python as input then click run button for queue\\/implementation using array")
 	public void some_python_as_input_then_click_run_button_for_queue_implementation_using_array() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for queue\\/implementation using array")
 	public void the_output_will_be_display_in_the_editor_for_queue_implementation_using_array() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag12 
@@ -191,12 +191,12 @@ public class Queue_SD extends BaseClass  {
 //	@tag14 
 	@When("some python as input then click run button for queue\\/Queue Operations")
 	public void some_python_as_input_then_click_run_button_for_queue_queue_operations() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor  for queue\\/Queue Operations")
 	public void the_output_will_be_display_in_the_editor_for_queue_queue_operations() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag15 

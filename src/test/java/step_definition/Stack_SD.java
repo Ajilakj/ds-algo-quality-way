@@ -68,12 +68,12 @@ public class Stack_SD extends BaseClass {
 //	@tag5
 	@When("some python as input then click run button for Operations in Stack")
 	public void some_python_as_input_then_click_run_button_for_operations_in_stack() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Operations in Stack")
 	public void the_output_will_be_display_in_the_editor_for_operations_in_stack() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag6
@@ -107,12 +107,12 @@ public class Stack_SD extends BaseClass {
 //	@tag8
 	@When("some python as input then click run button for Implementation")
 	public void some_python_as_input_then_click_run_button_for_implementation() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Implementation")
 	public void the_output_will_be_display_in_the_editor_for_implementation() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 	
 //	@tag9
@@ -146,12 +146,12 @@ public class Stack_SD extends BaseClass {
 //	@tag11
 	@When("some python as input then click run button for Applications")
 	public void some_python_as_input_then_click_run_button_for_applications() {
-		UtlityFunctionsOBJ.try_editor_code();
+		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
 	@Then("The output will be display in the editor for Applications")
 	public void the_output_will_be_display_in_the_editor_for_applications() {
-		UtlityFunctionsOBJ.check_output();
+		UtlityFunctionsOBJ.check_python_output();
 	}
 
 //	@tag12
