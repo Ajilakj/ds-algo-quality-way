@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>40/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>45/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 27 12:19:22 EDT 2023</td>
+<td>Started on:</td><td>Wed Sep 27 12:43:55 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24419 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24681 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,34 +76,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password minimum length", "to test register with valid and invalid credentials"</td>
-<td><div><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:49)
-	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:76)
-	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
-	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1074868579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1074868579'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:49)
-	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:76)
-	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
-	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password characters", "to test register with valid and invalid credentials"</td>
 <td><div><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -116,8 +88,8 @@ function toggleAllBoxes() {
 	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:81)
 	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:177)
 	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1104243907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1104243907'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
+</pre></div><a href='#' onClick='toggleBox("stack-trace733693146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace733693146'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -128,34 +100,6 @@ function toggleAllBoxes() {
 	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:81)
 	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:177)
 	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to register with already existing user", "to test register with valid and invalid credentials"</td>
-<td><div><pre>java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:49)
-	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:91)
-	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:225)
-	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2034610694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2034610694'><pre>java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:49)
-	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:91)
-	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:225)
-	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -172,8 +116,8 @@ function toggleAllBoxes() {
 	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:70)
 	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:266)
 	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
-</pre></div><a href='#' onClick='toggleBox("stack-trace925955862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace925955862'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+</pre></div><a href='#' onClick='toggleBox("stack-trace982313508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace982313508'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -187,6 +131,62 @@ function toggleAllBoxes() {
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password minimum length", "to test register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:49)
+	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:76)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
+</pre></div><a href='#' onClick='toggleBox("stack-trace831285461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace831285461'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:49)
+	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:76)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to register with already existing user", "to test register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:49)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:91)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:225)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1633770314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1633770314'><pre>java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:49)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:91)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:225)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -197,32 +197,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -232,27 +212,52 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Applications page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Applications page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections  page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Queue Operations page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/implementation using array page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -262,12 +267,67 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation using array page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/Queue Operations page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login link from register page", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -282,42 +342,37 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the stack page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test register with valid and invalid credentials"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -327,62 +382,12 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is in the Operations in Stack page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Operations in Stack Page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
-<td></td>
-<td>7</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
@@ -392,7 +397,27 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login link from register page", "to test register with valid and invalid credentials"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page", "to test functionality of queue"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7eac9008</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists Page", "to test functionality of queue"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@7eac9008</td></tr>

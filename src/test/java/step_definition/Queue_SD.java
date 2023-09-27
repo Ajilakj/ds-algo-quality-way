@@ -71,17 +71,39 @@ public class Queue_SD extends BaseClass  {
 	}
 	
 //	@tag5
-	@When("some python as input then click run button for queue\\/implementation-lists")
-	public void some_python_as_input_then_click_run_button_for_queue_implementation_lists() {
+	@When("user write some valid java code for implementation-lists page then click run button")
+	public void user_write_some_valid_java_code_for_implementation_lists_page_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
+	}
+
+	@Then("an alert with NameError: name System is not defined on line {int} will display for implementation-lists page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_implementation_lists_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
+	}
+
+//	@tag6
+	@When("user write some invalid code for implementation-lists then click run button")
+	public void user_write_some_invalid_code_for_implementation_lists_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for implementation-lists")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_implementation_lists(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	@tag7
+	@When("user write some python code for implementation-lists page as input then click run button")
+	public void user_write_some_python_code_for_implementation_lists_page_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
-	@Then("The output will be display in the editor for queue\\/implementation-lists")
-	public void the_output_will_be_display_in_the_editor_for_queue_implementation_lists() {
+	@Then("The output will be display in the editor for implementation-lists page")
+	public void the_output_will_be_display_in_the_editor_for_implementation_lists_page() {
 		UtlityFunctionsOBJ.check_python_output();
 	}
-	
-//	@tag6
+
+//	@tag8
 	@Given("The user is in the queue\\/implementation-lists Page")
 	public void the_user_is_in_the_queue_implementation_lists_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -98,7 +120,7 @@ public class Queue_SD extends BaseClass  {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/implementation-collections/");
 	}
 
-//	@tag7
+//	@tag9
 	@When("The user clicks Try Here button from queue\\/implementation-collections page")
 	public void the_user_clicks_try_here_button_from_queue_implementation_collections_page() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -109,18 +131,40 @@ public class Queue_SD extends BaseClass  {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
-//	@tag8
-	@When("some python as input then click run button for queue\\/implementation-collections")
-	public void some_python_as_input_then_click_run_button_for_queue_implementation_collections() {
+//	@tag10
+	@When("user write some valid java code for implementation-collectionss page then click run button")
+	public void user_write_some_valid_java_code_for_implementation_collectionss_page_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
+	}
+
+	@Then("an alert with NameError: name System is not defined on line {int} will display for implementation-collectionss page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_implementation_collectionss_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
+	}
+
+//	@tag11
+	@When("user write some invalid code for implementation-collectionss then click run button")
+	public void user_write_some_invalid_code_for_implementation_collectionss_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for implementation-collectionss")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_implementation_collectionss(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	@tag12
+	@When("user write some python code for implementation-collectionss page as input then click run button")
+	public void user_write_some_python_code_for_implementation_collectionss_page_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
-	@Then("The output will be display in the editor for queue\\/implementation-collections")
-	public void the_output_will_be_display_in_the_editor_for_queue_implementation_collections() {
+	@Then("The output will be display in the editor for implementation-collectionss page")
+	public void the_output_will_be_display_in_the_editor_for_implementation_collectionss_page() {
 		UtlityFunctionsOBJ.check_python_output();
 	}
-	
-//	@tag9 
+
+//	@tag13
 	@Given("The user is in the queue page queue\\/implementation-collections  page")
 	public void the_user_is_in_the_queue_page_queue_implementation_collections_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -138,7 +182,7 @@ public class Queue_SD extends BaseClass  {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/Implementation-array/");
 	}
 	
-//	@tag10 
+//	@tag14 
 	@When("The user clicks Try Here button button from queue\\/implementation using array page")
 	public void the_user_clicks_try_here_button_button_from_queue_implementation_using_array_page() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -149,18 +193,40 @@ public class Queue_SD extends BaseClass  {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
-//	@tag11 
-	@When("some python as input then click run button for queue\\/implementation using array")
-	public void some_python_as_input_then_click_run_button_for_queue_implementation_using_array() {
+//	@tag15
+	@When("user write some valid java code for implementation using array page then click run button")
+	public void user_write_some_valid_java_code_for_implementation_using_array_page_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
+	}
+
+	@Then("an alert with NameError: name System is not defined on line {int} will display for implementation using array page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_implementation_using_array_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
+	}
+
+//	@tag16
+	@When("user write some invalid code for implementation using array then click run button")
+	public void user_write_some_invalid_code_for_implementation_using_array_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for implementation using array")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_implementation_using_array(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	@tag17
+	@When("user write some python code for implementation using array page as input then click run button")
+	public void user_write_some_python_code_for_implementation_using_array_page_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
-	@Then("The output will be display in the editor for queue\\/implementation using array")
-	public void the_output_will_be_display_in_the_editor_for_queue_implementation_using_array() {
+	@Then("The output will be display in the editor for implementation using array page")
+	public void the_output_will_be_display_in_the_editor_for_implementation_using_array_page() {
 		UtlityFunctionsOBJ.check_python_output();
 	}
 
-//	@tag12 
+//	@tag18
 	@Given("The user is in the queue\\/implementation using array page")
 	public void the_user_is_in_the_queue_implementation_using_array_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -177,7 +243,7 @@ public class Queue_SD extends BaseClass  {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/QueueOp/");
 	}
 
-//	@tag13
+//	@tag19
 	@When("The user clicks Try Here button for queue\\/Queue Operations")
 	public void the_user_clicks_try_here_button_for_queue_queue_operations() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -187,25 +253,46 @@ public class Queue_SD extends BaseClass  {
 	public void the_user_should_be_redirected_to_a_try_editor_page_for_queue_queue_operations() {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
+	
+//	@tag20 
+	@When("user write some valid java code for Queue Operations page then click run button")
+	public void user_write_some_valid_java_code_for_queue_operations_page_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
+	}
 
-//	@tag14 
-	@When("some python as input then click run button for queue\\/Queue Operations")
-	public void some_python_as_input_then_click_run_button_for_queue_queue_operations() {
+	@Then("an alert with NameError: name System is not defined on line {int} will display for Queue Operations page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_queue_operations_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
+	}
+
+//	@tag21
+	@When("user write some invalid code for Queue Operations then click run button")
+	public void user_write_some_invalid_code_for_queue_operations_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for Queue Operations")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_queue_operations(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	@tag22
+	@When("user write some python code for Queue Operations page as input then click run button")
+	public void user_write_some_python_code_for_queue_operations_page_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
-	@Then("The output will be display in the editor  for queue\\/Queue Operations")
-	public void the_output_will_be_display_in_the_editor_for_queue_queue_operations() {
+	@Then("The output will be display in the editor for Queue Operations page")
+	public void the_output_will_be_display_in_the_editor_for_queue_operations_page() {
 		UtlityFunctionsOBJ.check_python_output();
 	}
 
-//	@tag15 
+//	@tag23
 	@Given("A logged in user is in the Queue Operations page")
 	public void a_logged_in_user_is_in_the_queue_operations_page() {
 		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/queue/QueueOp/");
 	}
-
 
 	@When("The user clicks Practice questions link from queue")
 	public void the_user_clicks_practice_questions_link_from_queue() {

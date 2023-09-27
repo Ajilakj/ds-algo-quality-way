@@ -49,59 +49,99 @@
     Then The user should be redirected to a tryEditor page for queue/implementation-lists
   
   @tag5
-  Scenario: A logged in user is in the tryEditor page for queue/implementation-lists  page
-    When some python as input then click run button for queue/implementation-lists
-    Then The output will be display in the editor for queue/implementation-lists
+  Scenario: A logged in user is in the tryEditor page from implementation-lists page
+    When user write some valid java code for implementation-lists page then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for implementation-lists page
     
     @tag6
+  Scenario: A logged in user is in the tryEditor page from implementation-lists page
+    When user write some invalid code for implementation-lists then click run button
+    Then an alert with SyntaxError: bad input on line 1 will display for implementation-lists
+    
+  @tag7
+  Scenario: A logged in user is in the tryEditor page from implementation-lists page
+    When user write some python code for implementation-lists page as input then click run button
+    Then The output will be display in the editor for implementation-lists page
+    
+  @tag8
   Scenario: A logged in user is in the queue/implementation-lists Page
     Given The user is in the queue/implementation-lists Page
     When The user clicks Implementation using collections link
     Then The user should be directed to queue/implementation-collectionss Page
     
-	@tag7  
+	@tag9  
   Scenario: A logged in user is in the queue/implementation-collections page
     When The user clicks Try Here button from queue/implementation-collections page
     Then The user should be redirected to a tryEditor page for queue/implementation-collections
   
-  @tag8
-  Scenario: A logged in user is in the tryEditor page from queue/implementation-collections  page
-    When some python as input then click run button for queue/implementation-collections
-    Then The output will be display in the editor for queue/implementation-collections
+  @tag10
+  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page
+    When user write some valid java code for implementation-collectionss page then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for implementation-collectionss page
     
-   @tag9
+  @tag11
+  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page
+    When user write some invalid code for implementation-collectionss then click run button
+    Then an alert with SyntaxError: bad input on line 1 will display for implementation-collectionss
+    
+  @tag12
+  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page
+    When user write some python code for implementation-collectionss page as input then click run button
+    Then The output will be display in the editor for implementation-collectionss page
+    
+   @tag13
   Scenario: A logged in user is in the queue/implementation-collections  page
     Given The user is in the queue page queue/implementation-collections  page
     When The user clicks implementation using array link
     Then The user should be directed to queue/implementation using array Page
     
-	@tag10  
+	@tag14
   Scenario: A logged in user is in the  queue/implementation using array page
     When The user clicks Try Here button button from queue/implementation using array page
     Then The user should be redirected to a tryEditor for queue/implementation using array
   
-  @tag11
-  Scenario: A logged in user is in the tryEditor page from queue/implementation using array page
-    When some python as input then click run button for queue/implementation using array
-    Then The output will be display in the editor for queue/implementation using array
+ @tag15
+  Scenario: A logged in user is in the tryEditor page from implementation using array page
+    When user write some valid java code for implementation using array page then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for implementation using array page
     
-  @tag12
+  @tag16
+  Scenario: A logged in user is in the tryEditor page from implementation using array page
+    When user write some invalid code for implementation using array then click run button
+    Then an alert with SyntaxError: bad input on line 1 will display for implementation using array
+    
+  @tag17
+  Scenario: A logged in user is in the tryEditor page from implementation using array page
+    When user write some python code for implementation using array page as input then click run button
+    Then The output will be display in the editor for implementation using array page
+    
+  @tag18
   Scenario:  A logged in user is in the queue/implementation using array page
     Given The user is in the queue/implementation using array page
     When The user clicks Queue Operations link
     Then The user should be directed to queue/Queue Operations Page
     
-	@tag13  
+	@tag19  
   Scenario: A logged in user is in the  queue/Queue Operations page
     When The user clicks Try Here button for queue/Queue Operations
     Then The user should be redirected to a tryEditor page for queue/Queue Operations
   
-  @tag14
-  Scenario: A logged in user is in the tryEditor page from queue/Queue Operations page
-    When some python as input then click run button for queue/Queue Operations
-    Then The output will be display in the editor  for queue/Queue Operations
+  @tag20
+  Scenario: A logged in user is in the tryEditor page from Queue Operations page
+    When user write some valid java code for Queue Operations page then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for Queue Operations page
     
-  @tag15
+ 	@tag21
+  Scenario: A logged in user is in the tryEditor page from Queue Operations page
+    When user write some invalid code for Queue Operations then click run button
+    Then an alert with SyntaxError: bad input on line 1 will display for Queue Operations
+    
+  @tag22
+  Scenario: A logged in user is in the tryEditor page from Queue Operations page
+    When user write some python code for Queue Operations page as input then click run button
+    Then The output will be display in the editor for Queue Operations page
+    
+  @tag23
   Scenario: A logged in user is in the Queue Operations page
   	Given A logged in user is in the Queue Operations page
     When The user clicks Practice questions link from queue
