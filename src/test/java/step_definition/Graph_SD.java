@@ -84,27 +84,23 @@ public class Graph_SD extends BaseClass {
 //	@tag5
 	@When("user write some valid java code for Graph page then click run button")
 	public void user_write_some_valid_java_code_for_graph_page_then_click_run_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
 	}
 
 	@Then("an alert with NameError: name System is not defined on line {int} will display for Graph page")
 	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_graph_page(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_output_valid_java();
 	}
 
 //	@tag6
 	@When("user write some invalid code for Graph then click run button")
 	public void user_write_some_invalid_code_for_graph_then_click_run_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.try_editor_invalid_code();
 	}
 
-	@Then("an alert with SyntaxError: bad input on line {int} will display for Graph")
-	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_graph(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@Then("an alert with SyntaxError: bad input on line 1 will display for Graph")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_graph() {
+		UtlityFunctionsOBJ.check_output_invalid_code();
 	}
 
 //	@tag7
@@ -118,46 +114,59 @@ public class Graph_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_output();
 	}
 
+//	  @tag8
+	@Given("The user is in the Graph page for Graph Representations")
+	public void the_user_is_in_the_graph_page_graph_representations() {
+		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph/");
+	}
+
+	@When("The user clicks Graph Representations link")
+	public void the_user_clicks_graph_representations_link() {
+		GraphOBJ.select_graph_reprsentation_from_left_link();
+	}
+
+	@Then("The user should be directed to Graph Representations Page")
+	public void the_user_should_be_directed_to_graph_representations_page() {
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph-representations/");
+	}
+	
 //	@tag9
 	@Given("The user is in the graph Representations page")
 	public void the_user_is_in_the_graph_representations_page() {
-		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph-representations/");
 	}
 
 	@When("The user clicks Try Here button for Graph Representations")
 	public void the_user_clicks_try_here_button_for_graph_representations() {
-		GraphOBJ.select_graph_reprsentation_from_left_link();
+		UtlityFunctionsOBJ.click_try_here();
 	}
 
 	@Then("A tryEditor page with run button will appear for Graph Representations page")
 	public void a_try_editor_page_with_run_button_will_appear_for_graph_representations_page() {
-		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/graph/graph-representations/");
+		UtlityFunctionsOBJ.check_url_try_editor();
 	}
 
 //	@tag10
 	@When("user write some valid java code for Graph Representations then click run button")
 	public void user_write_some_valid_java_code_for_graph_representations_then_click_run_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
 	}
 
 	@Then("an alert with NameError: name System is not defined on line {int} will display for Graph Representations")
 	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_graph_representations(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_output_valid_java();
 	}
 
 //	@tag11
 	@When("user write some invalid java code for Graph Representations then click run button")
 	public void user_write_some_invalid_java_code_for_graph_representations_then_click_run_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.try_editor_invalid_code();
 	}
 
 	@Then("an alert with SyntaxError: bad input on line {int} will display for Graph Representations")
 	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_graph_representations(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		UtlityFunctionsOBJ.check_output_invalid_code();
 	}
 
 //	@tag12

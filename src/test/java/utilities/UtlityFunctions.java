@@ -94,6 +94,7 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void try_editor_code(){
+		chromeDriver.navigate().refresh();
 		WebElement activeElement = chromeDriver.switchTo().activeElement();
 		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
 //		send_keys(code, "print 'welcome'");
@@ -102,7 +103,9 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void try_editor_invalid_code(){
+		chromeDriver.navigate().refresh();
 		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		action.moveToElement(activeElement).sendKeys("").perform();
 		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
@@ -129,7 +132,7 @@ public class UtlityFunctions extends BaseClass {
 	public void check_output_invalid_code(){
 		String txt=(chromeDriver.switchTo().alert().getText());
 		chromeDriver.switchTo().alert().accept();
-		check_text(txt,"yntaxError: bad input on line 1");
+		check_text(txt,"SyntaxError: bad input on line 1");
 	}
 	public void click_back_button(){
 		chromeDriver.navigate().back();
