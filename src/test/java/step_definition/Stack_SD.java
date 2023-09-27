@@ -66,17 +66,39 @@ public class Stack_SD extends BaseClass {
 	}
 
 //	@tag5
-	@When("some python as input then click run button for Operations in Stack")
-	public void some_python_as_input_then_click_run_button_for_operations_in_stack() {
-		UtlityFunctionsOBJ.try_editor_python_code();
+	@When("user write some valid java code for Operations in Stack page then click run button")
+	public void user_write_some_valid_java_code_for_operations_in_stack_page_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
 	}
 
-	@Then("The output will be display in the editor for Operations in Stack")
-	public void the_output_will_be_display_in_the_editor_for_operations_in_stack() {
-		UtlityFunctionsOBJ.check_python_output();
+	@Then("an alert with NameError: name System is not defined on line {int} will display for Operations in Stack page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_operations_in_stack_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
 	}
 
 //	@tag6
+	@When("user write some invalid code for Operations in Stack then click run button")
+	public void user_write_some_invalid_code_for_operations_in_stack_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for Operations in Stack")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_operations_in_stack(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	@tag7
+	@When("user write some python code for Operations in Stack page as input then click run button")
+	public void user_write_some_python_code_for_operations_in_stack_page_as_input_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_python_code();
+	}
+
+	@Then("The output will be display in the editor for Operations in Stack page")
+	public void the_output_will_be_display_in_the_editor_for_operations_in_stack_page() {
+		UtlityFunctionsOBJ.check_python_output();
+	}
+
+//	@tag8
 	@Given("The user is in the Operations in Stack Page")
 	public void the_user_is_in_the_Operations_in_Stack_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -93,7 +115,7 @@ public class Stack_SD extends BaseClass {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/implementation/");
 	}
 
-//	@tag7
+//	@tag9
 	@When("The user clicks Try Here button from Implementation page")
 	public void the_user_clicks_try_here_button_from_implementation_page() {
 		UtlityFunctionsOBJ.click_try_here();
@@ -103,21 +125,44 @@ public class Stack_SD extends BaseClass {
 	public void the_user_should_be_redirected_to_a_try_editor_page_for_implementation() {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
+	
+//	@tag10
+	@When("user write some valid java code for Implementation page then click run button")
+	public void user_write_some_valid_java_code_for_implementation_page_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
+	}
 
-//	@tag8
-	@When("some python as input then click run button for Implementation")
-	public void some_python_as_input_then_click_run_button_for_implementation() {
+	@Then("an alert with NameError: name System is not defined on line {int} will display for Implementation page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_implementation_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
+	}
+
+//	@tag11
+	@When("user write some invalid code for Implementation then click run button")
+	public void user_write_some_invalid_code_for_implementation_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for Implementation")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_implementation(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	@tag12
+	@When("user write some python code for Implementation page as input then click run button")
+	public void user_write_some_python_code_for_implementation_page_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
-	@Then("The output will be display in the editor for Implementation")
-	public void the_output_will_be_display_in_the_editor_for_implementation() {
+	@Then("The output will be display in the editor for Implementation page")
+	public void the_output_will_be_display_in_the_editor_for_implementation_page() {
 		UtlityFunctionsOBJ.check_python_output();
 	}
+
 	
-//	@tag9
-	@Given("The user is in the queue page Applications  page")
-	public void the_user_is_in_the_queue_page_applications_page() {
+//	@tag13
+	@Given("The user is in the Implementation page")
+	public void the_user_is_in_the_queue_page_implementation_page() {
 		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/implementation/");
 	}
@@ -131,9 +176,9 @@ public class Stack_SD extends BaseClass {
 	public void the_user_should_be_directed_to_applications_page() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/stack-applications/");
 	}
-
-//	@tag10 
-	@When("The user clicks Try Here button button from Applications page")
+	
+//	@tag14
+	@When("The user clicks Try Here button from Applications page")
 	public void the_user_clicks_try_here_button_button_from_applications_page() {
 		UtlityFunctionsOBJ.click_try_here();
 	}
@@ -142,19 +187,41 @@ public class Stack_SD extends BaseClass {
 	public void the_user_should_be_redirected_to_a_try_editor_for_applications() {
 		UtlityFunctionsOBJ.check_url_try_editor();
 	}
+	
+//	@tag15
+	@When("user write some valid java code for Applications page then click run button")
+	public void user_write_some_valid_java_code_for_applications_page_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
+	}
 
-//	@tag11
-	@When("some python as input then click run button for Applications")
-	public void some_python_as_input_then_click_run_button_for_applications() {
+	@Then("an alert with NameError: name System is not defined on line {int} will display for Applications page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_applications_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
+	}
+
+//	@tag16
+	@When("user write some invalid code for Applications then click run button")
+	public void user_write_some_invalid_code_for_applications_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for Applications")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_applications(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	@tag17
+	@When("user write some python code for Applications page as input then click run button")
+	public void user_write_some_python_code_for_applications_page_as_input_then_click_run_button() {
 		UtlityFunctionsOBJ.try_editor_python_code();
 	}
 
-	@Then("The output will be display in the editor for Applications")
-	public void the_output_will_be_display_in_the_editor_for_applications() {
+	@Then("The output will be display in the editor for Applications page")
+	public void the_output_will_be_display_in_the_editor_for_applications_page() {
 		UtlityFunctionsOBJ.check_python_output();
 	}
 
-//	@tag12
+//	@tag18
 	@Given("The user is in the Applications page")
 	public void the_user_is_in_the_applications_page() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -170,7 +237,4 @@ public class Stack_SD extends BaseClass {
 	public void the_user_should_be_directed_to_practice_questions_page_for_stack() {
 		 UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/stack/practice");
 	}
-
-
-
 }
