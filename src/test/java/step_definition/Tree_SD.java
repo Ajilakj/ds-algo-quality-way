@@ -12,13 +12,13 @@ import utilities.UtlityFunctions;
 public class Tree_SD extends BaseClass {
 	
 	Tree_POM TreeOBJ=new Tree_POM();
-	WebDriver chromeDriver=super.chromeDriver;
+	WebDriver driver=super.driver;
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 //	@tag1 
 	@Given("An existing user is in the Home page for tree")
 	public void an_existing_user_is_in_the_home_page_for_tree() {
-		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
+		driver.get("https://dsportalapp.herokuapp.com/home");
 	}
 
 	@When("The user clicks the Getting Started button in tree Pane")

@@ -18,7 +18,7 @@ public class Login_SD extends BaseClass{
 //	  @tag1
 	@Given("User is in Login page to check both fields empty")
 	public void user_is_in_login_page_to_check_both_fields_empty() {
-		chromeDriver.get("https://dsportalapp.herokuapp.com/login");
+		driver.get("https://dsportalapp.herokuapp.com/login");
 	}
 	
 	@When("user leaves username password fields empty")

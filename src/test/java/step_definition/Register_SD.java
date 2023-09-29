@@ -1,7 +1,6 @@
 package step_definition;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +21,7 @@ public class Register_SD extends BaseClass{
 //	@tag1
 	@Given("User is in register page to check every fields empty")
 	public void user_is_in_register_page_to_check_every_fields_empty() {
-		chromeDriver.get("https://dsportalapp.herokuapp.com/register");
+		driver.get("https://dsportalapp.herokuapp.com/register");
 	}
 
 	@When("user leaves username, password and confirm password fields empty")

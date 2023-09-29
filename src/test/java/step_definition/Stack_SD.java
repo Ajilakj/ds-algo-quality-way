@@ -11,13 +11,13 @@ import utilities.UtlityFunctions;
 
 public class Stack_SD extends BaseClass {
 	Stack_POM StackOBJ=new Stack_POM();
-	WebDriver chromeDriver=super.chromeDriver;
+	WebDriver driver=super.driver;
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 //	@tag1 
 	@When("The user clicks the Getting Started button in stack Pane")
 	public void the_user_clicks_the_getting_started_button_in_stack_pane() {
-		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
+		driver.get("https://dsportalapp.herokuapp.com/home");
 		StackOBJ.click_get_start_lnk();
 	}
 

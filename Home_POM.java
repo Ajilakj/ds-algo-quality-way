@@ -24,6 +24,7 @@ public class Home_POM extends BaseClass{
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	String expected_url="";
+	WebDriver driver=super.driver;
 	
 	public void home(){
 		UtlityFunctionsOBJ.web_element_click(getStartedLnk);
@@ -51,7 +52,7 @@ public class Home_POM extends BaseClass{
 //		Select selEle = new Select(chromeDriver.findElement(ds));
 //		List options = selEle.getOptions();
 //		int ds_size=options.size();
-		List options = chromeDriver.findElements(By.className("dropdown-item"));
+		List options = driver.findElements(By.className("dropdown-item"));
 		int ds_size=options.size();
 		Assert.assertEquals(int1, ds_size);
 	}
@@ -61,12 +62,12 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void check_sign_in(){
-		String txt=(chromeDriver.findElement(signoutLnk)).getText();
+		String txt=(driver.findElement(signoutLnk)).getText();
 		UtlityFunctionsOBJ.check_text(txt, "Sign in");
 	}
 	
 	public void check_not_sign_in_msg(){
-		String txt=(chromeDriver.findElement(alert)).getText();
+		String txt=(driver.findElement(alert)).getText();
 		UtlityFunctionsOBJ.check_text(txt, "You are not logged in");
 	}
 	
@@ -81,7 +82,7 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void sign_out(){
-		chromeDriver.findElement(sign_out).click();
+		driver.findElement(sign_out).click();
 	}
 	
 }

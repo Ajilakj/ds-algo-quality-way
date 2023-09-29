@@ -18,13 +18,21 @@ public class Home_POM extends BaseClass{
 	By getStartLnk=By.xpath("//a[text()='Get Started']");
 	By signoutLnk=By.xpath("//ul/a[3]"); 
 	By dropdown_item =By.className("dropdown-item");
-	WebDriver chromeDriver=super.chromeDriver;
+	WebDriver driver=super.driver;
+//	WebDriver driver=super.geckoDriver;
+//	WebDriver driver=super.geckoDriver;
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	String expected_url="";
 	
 	public void open_Ds_Algo(){
-		chromeDriver.get("https://dsportalapp.herokuapp.com/");  
+//		try {
+//			super.setup("chrome");
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		driver.get("https://dsportalapp.herokuapp.com/");  
 	}
 	
 	public void home(){
@@ -45,10 +53,10 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void check_DS_size(int int1){
-//		Select selEle = new Select(chromeDriver.findElement(ds));
+//		Select selEle = new Select(driver.findElement(ds));
 //		List options = selEle.getOptions();
 //		int ds_size=options.size();
-		List options = chromeDriver.findElements(By.className("dropdown-item"));
+		List options = driver.findElements(By.className("dropdown-item"));
 		int ds_size=options.size();
 		Assert.assertEquals(int1, ds_size);
 	}
@@ -58,7 +66,7 @@ public class Home_POM extends BaseClass{
 	}
 	
 	public void check_sign_in(){
-		String txt=(chromeDriver.findElement(signoutLnk)).getText();
+		String txt=(driver.findElement(signoutLnk)).getText();
 		UtlityFunctionsOBJ.check_text(txt, "Sign in");
 	}
 	

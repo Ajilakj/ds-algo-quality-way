@@ -13,16 +13,16 @@ public class Signout_POM extends BaseClass{
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	public void check_sign_out(){
-		String txt=(chromeDriver.findElement(signinORsignout)).getText();
+		String txt=(driver.findElement(signinORsignout)).getText();
 		Assert.assertEquals("Sign out", txt);
 	}
 	
 	public void check_sign_in_and_register(){
-		String txt=(chromeDriver.findElement(signinORsignout)).getText();
+		String txt=(driver.findElement(signinORsignout)).getText();
 		Assert.assertEquals("Sign in", txt);
 	}
 	
 	public void select_sign_out(){
-		chromeDriver.findElement(sign_out).click();
+		driver.findElement(sign_out).click();
 	}
 }

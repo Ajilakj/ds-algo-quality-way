@@ -16,7 +16,7 @@ import utilities.UtlityFunctions;
 public class Graph_SD extends BaseClass {
 	
 	Graph_POM GraphOBJ=new Graph_POM();
-	WebDriver chromeDriver=super.chromeDriver;
+	WebDriver driver=super.driver;
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	
@@ -24,7 +24,7 @@ public class Graph_SD extends BaseClass {
 //	  @tag1 
 	@Given("An existing user is in the Home page after logged in")
 	public void an_existing_user_is_in_the_home_page_after_logged_in() {
-		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
+		driver.get("https://dsportalapp.herokuapp.com/home");
 	}
 
 	@When("The user clicks the Getting Started button in Graph Pane")
@@ -40,7 +40,7 @@ public class Graph_SD extends BaseClass {
 //	  @tag2 
 	@Given("A valid user is in the Home page after logged in")
 	public void a_valid_user_is_in_the_home_page_after_logged_in() {
-		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
+		driver.get("https://dsportalapp.herokuapp.com/home");
 	}
 	
 	@When("The user select the option Graph from the datastructure drop down menu")

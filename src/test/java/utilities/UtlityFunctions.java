@@ -15,10 +15,10 @@ import pageObjeccts.BaseClass;
 
 public class UtlityFunctions extends BaseClass {
 //	public  UtlityFunctions(WebDriver driver) {
-//		super.chromeDriver = driver;
-//		PageFactory.initElements(chromeDriver, this);
+//		super.driver = driver;
+//		PageFactory.initElements(driver, this);
 //	} 
-	WebDriverWait wait=new WebDriverWait(chromeDriver,Duration.ofSeconds(20));
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 	By sign_in=By.partialLinkText("Sign in");
 	By register =By.partialLinkText("Register");
 	By login =By.partialLinkText("Login");
@@ -33,15 +33,15 @@ public class UtlityFunctions extends BaseClass {
 	By runBtn=By.xpath("//button[text()='Run']");
 	By practiceQuestions=By.partialLinkText("Practice Questions");
 	
-	Actions action = new Actions(chromeDriver);
+	Actions action = new Actions(driver);
 	
 	public void web_element_click(By webEle) {
-		chromeDriver.findElement(webEle).click();
+		driver.findElement(webEle).click();
 	}
 	
 	public void check_url(String expected_url){
-		chromeDriver.navigate().refresh();
-		String current_url=chromeDriver.getCurrentUrl();
+		driver.navigate().refresh();
+		String current_url=driver.getCurrentUrl();
 		Assert.assertEquals(current_url, expected_url);
 	}
 	
@@ -50,7 +50,7 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void send_keys(By ele, String text){
-		chromeDriver.findElement(ele).sendKeys(text);
+		driver.findElement(ele).sendKeys(text);
 	}
 	
 	public void click_sign_in(){
@@ -94,8 +94,8 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void try_editor_python_code(){
-		chromeDriver.navigate().refresh();
-		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		driver.navigate().refresh();
+		WebElement activeElement = driver.switchTo().activeElement();
 		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
 //		send_keys(code, "print 'welcome'");
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
@@ -103,39 +103,39 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public void try_editor_invalid_code(){
-		chromeDriver.navigate().refresh();
-		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		driver.navigate().refresh();
+		WebElement activeElement = driver.switchTo().activeElement();
 		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
 	}
 	
 	public void try_editor_valid_java_code(){
-		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		WebElement activeElement = driver.switchTo().activeElement();
 		action.moveToElement(activeElement).sendKeys("System.out.println('welcome');").perform();
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
 	}
 	
 	public void check_python_output(){
-		String outputmsg=(chromeDriver.findElement(output)).getText();
+		String outputmsg=(driver.findElement(output)).getText();
 		check_text(outputmsg,"welcome");
 	}
 	
 	public void check_output_valid_java(){
-		String output=(chromeDriver.switchTo().alert().getText());
-		chromeDriver.switchTo().alert().accept();
+		String output=(driver.switchTo().alert().getText());
+		driver.switchTo().alert().accept();
 		check_text(output,"NameError: name 'System' is not defined on line 1");
 	}
 	
 	public void check_output_invalid_code(){
-		String output=(chromeDriver.switchTo().alert().getText());
-		chromeDriver.switchTo().alert().accept();
+		String output=(driver.switchTo().alert().getText());
+		driver.switchTo().alert().accept();
 		check_text(output,"SyntaxError: bad input on line 1");
 	}
 	public void click_back_button(){
-		chromeDriver.navigate().back();
-		chromeDriver.navigate().refresh();
+		driver.navigate().back();
+		driver.navigate().refresh();
 	}
 	
 	public void select_practice_questions_link(){
@@ -143,21 +143,21 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public String get_message_from_alert(){
-		String msg=(chromeDriver.findElement(alert)).getText();
+		String msg=(driver.findElement(alert)).getText();
 		return msg; 
 	}
 	
 	public void get_message_from_active_window(){
-		WebElement activeElement = chromeDriver.switchTo().activeElement();
+		WebElement activeElement = driver.switchTo().activeElement();
 		String messageFromActiveElement = activeElement.getAttribute("validationMessage");
 		Assert.assertEquals(messageFromActiveElement, "Please fill out this field.");
 	}
 	
 //	public void click_back_button_twice(){
-//		chromeDriver.navigate().back();
-//		chromeDriver.navigate().refresh();
-//		chromeDriver.navigate().back();
-//		chromeDriver.navigate().refresh();
+//		driver.navigate().back();
+//		driver.navigate().refresh();
+//		driver.navigate().back();
+//		driver.navigate().refresh();
 //	}
 }
 

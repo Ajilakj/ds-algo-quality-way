@@ -12,13 +12,13 @@ import utilities.UtlityFunctions;
 
 public class Queue_SD extends BaseClass  {
 	Queue_POM QueueOBJ=new Queue_POM();
-	WebDriver chromeDriver=super.chromeDriver;
+	WebDriver driver=super.driver;
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 //	@tag1 
 	@Given("An existing user is in the Home page")
 	public void an_existing_user_is_in_the_home_page() {
-		chromeDriver.get("https://dsportalapp.herokuapp.com/home");
+		driver.get("https://dsportalapp.herokuapp.com/home");
 	}
 	
 	@When("The user clicks the Getting Started button in queue Pane")
