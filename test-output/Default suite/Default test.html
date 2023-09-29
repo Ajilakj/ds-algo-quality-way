@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>140/9/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 29 11:10:29 EDT 2023</td>
+<td>Started on:</td><td>Fri Sep 29 16:37:13 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>126 seconds (126721 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12420 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,419 +76,219 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password minimum length", "to test register with valid and invalid credentials"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_register_page_to_check_password_length(Register_SD.java:138)
-	at ✽.User is in register page to check password length(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:63)
-</pre></div><a href='#' onClick='toggleBox("stack-trace552266488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace552266488'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_register_page_to_check_password_length(Register_SD.java:138)
-	at ✽.User is in register page to check password length(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:63)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "password mismatch", "to test register with valid and invalid credentials"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_the_register_page_to_check_password_mismatch(Register_SD.java:182)
-	at ✽.user is in the Register page to check password mismatch(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:78)
-</pre></div><a href='#' onClick='toggleBox("stack-trace345132865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace345132865'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_the_register_page_to_check_password_mismatch(Register_SD.java:182)
-	at ✽.user is in the Register page to check password mismatch(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:78)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_login(UtlityFunctions.java:69)
-	at step_definition.Login_SD.clicks_login_button_to_check_username_incorrect(Login_SD.java:143)
-	at ✽.clicks Login button to check username incorrect(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/03login.feature:66)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1292487390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1292487390'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_login(UtlityFunctions.java:69)
-	at step_definition.Login_SD.clicks_login_button_to_check_username_incorrect(Login_SD.java:143)
-	at ✽.clicks Login button to check username incorrect(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/03login.feature:66)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to register with already existing user", "to test register with valid and invalid credentials"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_the_register_page_to_check_existing_user(Register_SD.java:209)
-	at ✽.user is in the Register page to check existing user(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:86)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2130329443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2130329443'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_the_register_page_to_check_existing_user(Register_SD.java:209)
-	at ✽.user is in the Register page to check existing user(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:86)
+<td><div><pre>java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:91)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
+</pre></div><a href='#' onClick='toggleBox("stack-trace111238003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace111238003'><pre>java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:91)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
 </pre></div></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_login(UtlityFunctions.java:69)
-	at step_definition.Login_SD.user_is_in_login_page_to_check_password_incorrect(Login_SD.java:110)
-	at ✽.User is in Login page to check password incorrect(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/03login.feature:57)
-</pre></div><a href='#' onClick='toggleBox("stack-trace340792090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace340792090'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_login(UtlityFunctions.java:69)
-	at step_definition.Login_SD.user_is_in_login_page_to_check_password_incorrect(Login_SD.java:110)
-	at ✽.User is in Login page to check password incorrect(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/03login.feature:57)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_login(UtlityFunctions.java:69)
-	at step_definition.Login_SD.check_register_link_from_login_page(Login_SD.java:154)
-	at ✽.Check register link from login page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/03login.feature:71)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1947378744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1947378744'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_login(UtlityFunctions.java:69)
-	at step_definition.Login_SD.check_register_link_from_login_page(Login_SD.java:154)
-	at ✽.Check register link from login page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/03login.feature:71)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register is successful with valid credentials", "to test register with valid and invalid credentials"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:64)
-	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:265)
-	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
-</pre></div><a href='#' onClick='toggleBox("stack-trace378227888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace378227888'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:64)
-	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:265)
-	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
-</pre></div></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password characters", "to test register with valid and invalid credentials"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_register_page_to_check_password_characters(Register_SD.java:160)
-	at ✽.User is in register page to check password characters(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:70)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1282100951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1282100951'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_register_page_to_check_password_characters(Register_SD.java:160)
-	at ✽.User is in register page to check password characters(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:70)
+<td><div><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:81)
+	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:176)
+	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2122225197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2122225197'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:81)
+	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:176)
+	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
 </pre></div></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login link from register page", "to test register with valid and invalid credentials"</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_register_page(Register_SD.java:231)
-	at ✽.User is in register page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:93)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1692481404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1692481404'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [22059932-73bf-4b23-82bc-d66dbef24298, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:11471, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31332, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11471/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:38)
-	at utilities.UtlityFunctions.check_url_register(UtlityFunctions.java:74)
-	at step_definition.Register_SD.user_is_in_register_page(Register_SD.java:231)
-	at ✽.User is in register page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:93)
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register is successful with valid credentials", "to test register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:39)
+	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:64)
+	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:265)
+	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1510869126", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1510869126'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:39)
+	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:64)
+	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:265)
+	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
 </pre></div></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password minimum length", "to test register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:76)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:154)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2065587797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2065587797'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:76)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:154)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;clicks Login button&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;clicks Login button&quot;)
+public void clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user is navigated to home page&quot;)
+public void user_is_navigated_to_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1770876208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1770876208'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;clicks Login button&apos; and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;clicks Login button&quot;)
+public void clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user is navigated to home page&quot;)
+public void user_is_navigated_to_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -499,705 +299,110 @@ Session ID: 22059932-73bf-4b23-82bc-d66dbef24298
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation Of BST page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Tree Traversals page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Traversals-Illustration page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Applications of Binary trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation in Python page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try logging with username and password fields empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications of Binary trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Tree Traversals Page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Tree Traversals page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
 <td></td>
-<td>4</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Overview of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>3</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation Of BST page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Applications page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Types of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Search Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Tree Traversals page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Tree Traversals page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Implementation in Python page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in the graph Representations page", "to test functionality of graph"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Traversals-Illustration page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Terminologies page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Applications of Binary trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Operations in Stack Page", "to test functionality of stack"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Terminologies  page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph Representations page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Terminologiess page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack page", "to test functionality of stack"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Search Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Trees page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications of Binary trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Overview of Trees page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph page", "to test functionality of graph"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try logging with username and password fields empty", "to test login functionality"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Overview of Trees Page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Tree Traversals page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph Representations page", "to test functionality of graph"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Tree Traversals page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation in Python page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already login with valid usernae and password", "to test functionality of signout link"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Types of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Traversals-Illustration page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation in Python page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Types of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Overview of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in Implementation Of BST page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Terminologiess page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try register with username and password and confirm password fields empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections  page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Tree Traversals page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Terminologiess page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test login functionality"</td>
 <td></td>
 <td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph Representations page", "to test functionality of graph"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login link from register page", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Types of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is in the Operations in Stack page", "to test functionality of stack"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Tree Traversals page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation Of BST page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Applications page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tree page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation in Python page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Traversals-Illustration Page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the stack page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Search Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Search Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists Page", "to test functionality of queue"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Trees  page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Search Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Overview of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation Of BST page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "password mismatch", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation of Binary Trees  page", "to test functionality of tree"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page", "to test functionality of stack"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Tree Traversals page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications of Binary trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Traversals-Illustration page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@7eac9008</td></tr>
+<td>runner.TestRunner@3d285d7e</td></tr>
 </table><p>
 </body>
 </html>

@@ -177,15 +177,15 @@ public class Login_SD extends BaseClass{
 	   LoginOBJ.enter_valid_password();
 	}
 
-	@When("clicks Login button")
-	public void clicks_login_button() {
-		LoginOBJ.click_login_button();
-	}
-
-	@Then("user is navigated to home page")
-	public void user_is_navigated_to_home_page() {
-		UtlityFunctionsOBJ.check_url_home();
-	}
+//	@When("clicks Login button")
+//	public void clicks_login_button() {
+//		LoginOBJ.click_login_button();
+//	}
+//
+//	@Then("user is navigated to home page")
+//	public void user_is_navigated_to_home_page() {
+//		UtlityFunctionsOBJ.check_url_home();
+//	}
 	
 
 }
