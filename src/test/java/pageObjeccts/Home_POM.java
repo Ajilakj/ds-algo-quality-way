@@ -19,19 +19,11 @@ public class Home_POM extends BaseClass{
 	By signoutLnk=By.xpath("//ul/a[3]"); 
 	By dropdown_item =By.className("dropdown-item");
 	WebDriver driver=super.driver;
-//	WebDriver driver=super.geckoDriver;
-//	WebDriver driver=super.geckoDriver;
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	String expected_url="";
 	
 	public void open_Ds_Algo(){
-//		try {
-//			super.setup("chrome");
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 		driver.get("https://dsportalapp.herokuapp.com/");  
 	}
 	

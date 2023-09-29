@@ -14,10 +14,7 @@ import org.testng.Assert;
 import pageObjeccts.BaseClass;
 
 public class UtlityFunctions extends BaseClass {
-//	public  UtlityFunctions(WebDriver driver) {
-//		super.driver = driver;
-//		PageFactory.initElements(driver, this);
-//	} 
+
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 	By sign_in=By.partialLinkText("Sign in");
 	By register =By.partialLinkText("Register");
@@ -25,9 +22,6 @@ public class UtlityFunctions extends BaseClass {
 	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By tryHere=By.partialLinkText("Try here");
 	By code=By.xpath("//textarea[@tabindex='0']"); 
-//	By code=By.xpath("//div[@class='CodeMirror-lines']");
-//	By code=By.className("cm-variable");
-//	By code=By.className("CodeMirror-scroll"); 
 	By alert =By.className("alert-primary"); 
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
