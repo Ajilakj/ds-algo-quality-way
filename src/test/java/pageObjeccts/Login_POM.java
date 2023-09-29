@@ -15,43 +15,46 @@ public class Login_POM extends BaseClass {
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	@DataProvider(name="testdata")
-	public Object[][] loginDataExcel(){
-		DataDrivenExcel configuration = new DataDrivenExcel("C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\testData\\DemoDDT.xlsx");
+	public String[][] loginDataExcel(){
+		DataDrivenExcel configuration = new DataDrivenExcel("C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\testData\\Login (2).xlsx");
 		int rows = configuration.getRowCount(0);
-		Object[][]signin_credentials = new Object[rows][2];
+		String[][]signin_credentials = new String[rows][2];
 	
 		for(int i=0;i<rows;i++)
 		{
-			signin_credentials[i][0] = configuration.getData(0, i, 0);
-			signin_credentials[i][1] = configuration.getData(0, i, 1);
+			signin_credentials[i][0] = (configuration.getData(0, i, 0)).toString();
+			signin_credentials[i][1] = (configuration.getData(0, i, 1)).toString();
 		}
 		return signin_credentials;
 	}
 	
 	
 	public void username_empty(){
-		UtlityFunctionsOBJ.send_keys(username,"");
+		UtlityFunctionsOBJ.send_keys(username,(loginDataExcel()[1][0]));
 	}
 	
 	public void password_empty(){
-		UtlityFunctionsOBJ.send_keys(password,"");
+		UtlityFunctionsOBJ.send_keys(password,(loginDataExcel()[1][1]));
 	}
 	
 	public void enter_valid_usename(){
 //		UtlityFunctionsOBJ.send_keys(username,"QualityWay");
-		UtlityFunctionsOBJ.send_keys(username,(loginDataExcel()[0][0]).toString());
+		UtlityFunctionsOBJ.send_keys(username,(loginDataExcel()[2][0]));
 	}
 	
 	public void enter_valid_password(){
-		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2");
+//		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2");
+		UtlityFunctionsOBJ.send_keys(password,(loginDataExcel()[2][1]));
 	}
 	
 	public void enter_invalid_usename(){
-		UtlityFunctionsOBJ.send_keys(username,"QualityWayInvalid");
+//		UtlityFunctionsOBJ.send_keys(username,"QualityWayInvalid");
+		UtlityFunctionsOBJ.send_keys(username,(loginDataExcel()[3][0]));
 	}
 	
 	public void enter_invalid_password(){
-		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2Invalid");
+//		UtlityFunctionsOBJ.send_keys(password,"pwd_ds_algo@2Invalid");
+		UtlityFunctionsOBJ.send_keys(password,(loginDataExcel()[3][1]));
 	}
 	
 	public void click_login_button(){
