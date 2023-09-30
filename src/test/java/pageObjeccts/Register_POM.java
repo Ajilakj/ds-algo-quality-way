@@ -18,13 +18,14 @@ public class Register_POM extends BaseClass{
 	public String[][] RegisterDataExcel(){
 		DataDrivenExcel configuration = new DataDrivenExcel("C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\testData\\DataDriven.xlsx");
 		int rows = configuration.getRowCount(1);
-		String[][]register_credentials = new String[rows][3];
+		String[][]register_credentials = new String[rows][4];
 	
 		for(int i=0;i<rows;i++)
 		{
 			register_credentials[i][0] = (configuration.getData(1, i, 0)).toString();
 			register_credentials[i][1] = (configuration.getData(1, i, 1)).toString();
 			register_credentials[i][2] = (configuration.getData(1, i, 2)).toString();
+			register_credentials[i][3] = (configuration.getData(1, i, 3)).toString();
 		}
 		return register_credentials;
 	}
@@ -103,27 +104,32 @@ public class Register_POM extends BaseClass{
 	
 	public void enter_same_password_as_usename_msg(){
 		String txt=UtlityFunctionsOBJ.get_message_from_alert();
-		UtlityFunctionsOBJ.check_text(txt, "Your password can’t be too similar to your other personal information.");
+//		UtlityFunctionsOBJ.check_text(txt, "Your password can’t be too similar to your other personal information.");
+		UtlityFunctionsOBJ.check_text(txt, (RegisterDataExcel()[4][3]));
 	}
 	
 	public void enter_password_less_than_eight_msg(){
 		String txt=UtlityFunctionsOBJ.get_message_from_alert();
-		UtlityFunctionsOBJ.check_text(txt, "Your password must contain at least 8 characters.");
+//		UtlityFunctionsOBJ.check_text(txt, "Your password must contain at least 8 characters.");
+		UtlityFunctionsOBJ.check_text(txt, (RegisterDataExcel()[5][3]));
 	}
 	
 	public void enter_password_only_numeric_msg(){
 		String txt=UtlityFunctionsOBJ.get_message_from_alert();
-		UtlityFunctionsOBJ.check_text(txt, "Your password can’t be entirely numeric.");
+//		UtlityFunctionsOBJ.check_text(txt, "Your password can’t be entirely numeric.");
+		UtlityFunctionsOBJ.check_text(txt, (RegisterDataExcel()[6][3]));
 	}
 	
 	public void password_mismatch_msg(){
 		String txt=UtlityFunctionsOBJ.get_message_from_alert();
-		UtlityFunctionsOBJ.check_text(txt, "password_mismatch:The two password fields didn’t match.");
+//		UtlityFunctionsOBJ.check_text(txt, "password_mismatch:The two password fields didn’t match.");
+		UtlityFunctionsOBJ.check_text(txt, (RegisterDataExcel()[7][3]));
 	}
 	
 	public void enter_existing_username_msg(){
 		String txt=UtlityFunctionsOBJ.get_message_from_alert();
-		UtlityFunctionsOBJ.check_text(txt, "User already exists.");
+//		UtlityFunctionsOBJ.check_text(txt, "User already exists.");
+		UtlityFunctionsOBJ.check_text(txt, (RegisterDataExcel()[8][3]));
 	}
 	
 	public void click_register_button(){

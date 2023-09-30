@@ -18,12 +18,13 @@ public class Login_POM extends BaseClass {
 	public String[][] loginDataExcel(){
 		DataDrivenExcel configuration = new DataDrivenExcel("C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\testData\\DataDriven.xlsx");
 		int rows = configuration.getRowCount(0);
-		String[][]login_credentials = new String[rows][2];
+		String[][]login_credentials = new String[rows][3];
 	
 		for(int i=0;i<rows;i++)
 		{
 			login_credentials[i][0] = (configuration.getData(0, i, 0)).toString();
 			login_credentials[i][1] = (configuration.getData(0, i, 1)).toString();
+			login_credentials[i][2] = (configuration.getData(0, i, 2)).toString();
 		}
 		return login_credentials;
 	}
@@ -63,6 +64,7 @@ public class Login_POM extends BaseClass {
 	
 	public void invalid_username_password__msg(){
 		String txt=UtlityFunctionsOBJ.get_message_from_alert();
-		UtlityFunctionsOBJ.check_text(txt, "Invalid Username and Password");
+//		UtlityFunctionsOBJ.check_text(txt, "Invalid Username and Password");
+		UtlityFunctionsOBJ.check_text(txt, (loginDataExcel()[3][2]));
 	}
 }

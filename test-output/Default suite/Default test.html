@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>22/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 30 16:27:39 EDT 2023</td>
+<td>Started on:</td><td>Sat Sep 30 16:41:54 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18937 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16546 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password minimum length", "to test register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:114)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:154)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
+</pre></div><a href='#' onClick='toggleBox("stack-trace586164630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace586164630'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:114)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:154)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register is successful with valid credentials", "to test register with valid and invalid credentials"</td>
 <td><div><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -88,8 +116,8 @@ function toggleAllBoxes() {
 	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:64)
 	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:265)
 	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1947349264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1947349264'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+</pre></div><a href='#' onClick='toggleBox("stack-trace235740612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace235740612'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -100,6 +128,34 @@ function toggleAllBoxes() {
 	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:64)
 	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:265)
 	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to register with already existing user", "to test register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [User already exists] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:132)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2050410554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2050410554'><pre>java.lang.AssertionError: expected [User already exists] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:132)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
@@ -113,11 +169,11 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
-	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:116)
+	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:120)
 	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:176)
 	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2107760645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2107760645'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
+</pre></div><a href='#' onClick='toggleBox("stack-trace328140385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace328140385'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -125,65 +181,9 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
-	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:116)
+	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:120)
 	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:176)
 	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password minimum length", "to test register with valid and invalid credentials"</td>
-<td><div><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
-	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:111)
-	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:154)
-	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
-</pre></div><a href='#' onClick='toggleBox("stack-trace33238764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace33238764'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
-	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:111)
-	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:154)
-	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to register with already existing user", "to test register with valid and invalid credentials"</td>
-<td><div><pre>java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
-	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:126)
-	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
-	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
-</pre></div><a href='#' onClick='toggleBox("stack-trace155224151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace155224151'><pre>java.lang.AssertionError: expected [User already exists.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:43)
-	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:126)
-	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
-	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
@@ -197,37 +197,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login link from register page", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "password mismatch", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
@@ -242,32 +217,17 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
 <td></td>
 <td>7</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
@@ -277,7 +237,42 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "password mismatch", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try register with username and password and confirm password fields empty", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login link from register page", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
@@ -285,11 +280,6 @@ function toggleAllBoxes() {
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test login functionality"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@3d285d7e</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try register with username and password and confirm password fields empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>1</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
@@ -302,7 +292,17 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@3d285d7e</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@3d285d7e</td></tr>
