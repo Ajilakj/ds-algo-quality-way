@@ -16,16 +16,16 @@ public class Login_POM extends BaseClass {
 	
 	@DataProvider(name="testdata")
 	public String[][] loginDataExcel(){
-		DataDrivenExcel configuration = new DataDrivenExcel("C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\testData\\Login (2).xlsx");
+		DataDrivenExcel configuration = new DataDrivenExcel("C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\testData\\DataDriven.xlsx");
 		int rows = configuration.getRowCount(0);
-		String[][]signin_credentials = new String[rows][2];
+		String[][]login_credentials = new String[rows][2];
 	
 		for(int i=0;i<rows;i++)
 		{
-			signin_credentials[i][0] = (configuration.getData(0, i, 0)).toString();
-			signin_credentials[i][1] = (configuration.getData(0, i, 1)).toString();
+			login_credentials[i][0] = (configuration.getData(0, i, 0)).toString();
+			login_credentials[i][1] = (configuration.getData(0, i, 1)).toString();
 		}
-		return signin_credentials;
+		return login_credentials;
 	}
 	
 	

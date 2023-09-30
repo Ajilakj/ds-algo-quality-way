@@ -21,6 +21,7 @@ public class DataDrivenExcel {
 		public String getData(int sheetnumber, int row, int column){
 			sheet = work_book.getSheetAt(sheetnumber);
 			String data = sheet.getRow(row).getCell(column).getStringCellValue();
+			System.out.println("*********************************"+data);
 			return data;
 		} 
 		
