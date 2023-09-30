@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 
 import pageObjeccts.BaseClass;
 
@@ -28,6 +29,21 @@ public class UtlityFunctions extends BaseClass {
 	By practiceQuestions=By.partialLinkText("Practice Questions");
 	
 	Actions action = new Actions(driver);
+	
+	@DataProvider(name="testdata")
+	public String[][] TryEditorDataExcel(){
+	DataDrivenExcel configuration = new DataDrivenExcel("C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\testData\\DataDriven.xlsx");
+	int rows = configuration.getRowCount(2);
+	String[][]try_editor_code = new String[rows][3];
+
+	for(int i=0;i<rows;i++)
+	{
+		try_editor_code[i][0] = (configuration.getData(2, i, 0)).toString();
+		try_editor_code[i][1] = (configuration.getData(2, i, 1)).toString();
+		try_editor_code[i][2] = (configuration.getData(2, i, 2)).toString();
+	}
+	return try_editor_code;
+}
 	
 	public void web_element_click(By webEle) {
 		driver.findElement(webEle).click();
@@ -89,8 +105,9 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void try_editor_python_code(){
 		driver.navigate().refresh();
-		WebElement activeElement = driver.switchTo().activeElement();
-		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
+		WebElement activeElement = driver.switchTo().activeElement(); 
+//		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
+		action.moveToElement(activeElement).sendKeys((TryEditorDataExcel()[1][0])).perform();
 //		send_keys(code, "print 'welcome'");
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
@@ -98,34 +115,39 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void try_editor_invalid_code(){
 		driver.navigate().refresh();
-		WebElement activeElement = driver.switchTo().activeElement();
-		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
+		WebElement activeElement = driver.switchTo().activeElement(); 
+//		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
+		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][2]).perform();
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
 	}
 	
 	public void try_editor_valid_java_code(){
-		WebElement activeElement = driver.switchTo().activeElement();
-		action.moveToElement(activeElement).sendKeys("System.out.println('welcome');").perform();
+		WebElement activeElement = driver.switchTo().activeElement(); 
+//		action.moveToElement(activeElement).sendKeys("System.out.println('welcome');").perform();
+		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][1]).perform();
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
 	}
 	
 	public void check_python_output(){
-		String outputmsg=(driver.findElement(output)).getText();
-		check_text(outputmsg,"welcome");
+		String outputmsg=(driver.findElement(output)).getText(); 
+//		check_text(outputmsg,"welcome");
+		check_text(outputmsg,(TryEditorDataExcel()[2][0]));
 	}
 	
 	public void check_output_valid_java(){
 		String output=(driver.switchTo().alert().getText());
-		driver.switchTo().alert().accept();
-		check_text(output,"NameError: name 'System' is not defined on line 1");
+		driver.switchTo().alert().accept(); 
+//		check_text(output,"NameError: name 'System' is not defined on line 1");
+		check_text(output,(TryEditorDataExcel()[2][1]));
 	}
 	
 	public void check_output_invalid_code(){
 		String output=(driver.switchTo().alert().getText());
-		driver.switchTo().alert().accept();
-		check_text(output,"SyntaxError: bad input on line 1");
+		driver.switchTo().alert().accept(); 
+//		check_text(output,"SyntaxError: bad input on line 1");
+		check_text(output,(TryEditorDataExcel()[2][2]));
 	}
 	public void click_back_button(){
 		driver.navigate().back();
