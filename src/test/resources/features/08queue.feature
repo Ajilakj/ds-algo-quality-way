@@ -26,13 +26,13 @@
   Feature: to test functionality of queue
   
   @tag1 
-  Scenario: An existing user logged in with valid credentials in homepage
+  Scenario: An existing user logged in with valid credentials in homepage to check  Getting Started button in queue Pane 
 	  Given An existing user is in the Home page
 	  When The user clicks the Getting Started button in queue Pane
 	  Then The user will directed to queue Page
 	  
 	@tag2
-  Scenario:  An existing user logged in with valid credentials in homepage
+  Scenario:  An existing user logged in with valid credentials in homepage to check the option queue from the datastructure drop down menu
   	Given( A valid user is in the Home page after logged in
 	  When The user select the option queue from the datastructure drop down menu
 	  Then The user will directed to queue Page using dropdown
@@ -44,22 +44,22 @@
     Then The user should be directed to queue/implementation-lists Page
     
 	@tag4  
-  Scenario: A logged in user is in the queue/implementation-lists page
+  Scenario: A logged in user is in the queue/implementation-lists page 
     When The user clicks Try Here button for queue/implementation-lists
     Then The user should be redirected to a tryEditor page for queue/implementation-lists
   
   @tag5
-  Scenario: A logged in user is in the tryEditor page from implementation-lists page
+  Scenario: A logged in user is in the tryEditor page from implementation-lists page to check valid java code
     When user write some valid java code for implementation-lists page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for implementation-lists page
     
     @tag6
-  Scenario: A logged in user is in the tryEditor page from implementation-lists page
+  Scenario: A logged in user is in the tryEditor page from implementation-lists page to check invalid code
     When user write some invalid code for implementation-lists then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for implementation-lists
     
   @tag7
-  Scenario: A logged in user is in the tryEditor page from implementation-lists page
+  Scenario: A logged in user is in the tryEditor page from implementation-lists page to check valid python code
     When user write some python code for implementation-lists page as input then click run button
     Then The output will be display in the editor for implementation-lists page
     
@@ -75,17 +75,17 @@
     Then The user should be redirected to a tryEditor page for queue/implementation-collections
   
   @tag10
-  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page
+  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page to check valid java code
     When user write some valid java code for implementation-collectionss page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for implementation-collectionss page
     
   @tag11
-  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page
+  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page to check invalid code
     When user write some invalid code for implementation-collectionss then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for implementation-collectionss
     
   @tag12
-  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page
+  Scenario: A logged in user is in the tryEditor page from implementation-collectionss page to check valid python code
     When user write some python code for implementation-collectionss page as input then click run button
     Then The output will be display in the editor for implementation-collectionss page
     
@@ -101,17 +101,17 @@
     Then The user should be redirected to a tryEditor for queue/implementation using array
   
  @tag15
-  Scenario: A logged in user is in the tryEditor page from implementation using array page
+  Scenario: A logged in user is in the tryEditor page from implementation using array page to check valid java code
     When user write some valid java code for implementation using array page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for implementation using array page
     
   @tag16
-  Scenario: A logged in user is in the tryEditor page from implementation using array page
+  Scenario: A logged in user is in the tryEditor page from implementation using array page to check invalid code
     When user write some invalid code for implementation using array then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for implementation using array
     
   @tag17
-  Scenario: A logged in user is in the tryEditor page from implementation using array page
+  Scenario: A logged in user is in the tryEditor page from implementation using array page to check valid python code
     When user write some python code for implementation using array page as input then click run button
     Then The output will be display in the editor for implementation using array page
     
@@ -127,17 +127,17 @@
     Then The user should be redirected to a tryEditor page for queue/Queue Operations
   
   @tag20
-  Scenario: A logged in user is in the tryEditor page from Queue Operations page
+  Scenario: A logged in user is in the tryEditor page from Queue Operations page to check valid java code
     When user write some valid java code for Queue Operations page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Queue Operations page
     
  	@tag21
-  Scenario: A logged in user is in the tryEditor page from Queue Operations page
+  Scenario: A logged in user is in the tryEditor page from Queue Operations page to check invalid code
     When user write some invalid code for Queue Operations then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Queue Operations
     
   @tag22
-  Scenario: A logged in user is in the tryEditor page from Queue Operations page
+  Scenario: A logged in user is in the tryEditor page from Queue Operations page to check valid python code
     When user write some python code for Queue Operations page as input then click run button
     Then The output will be display in the editor for Queue Operations page
     
