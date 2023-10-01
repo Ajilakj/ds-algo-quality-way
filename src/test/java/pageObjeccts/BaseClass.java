@@ -27,9 +27,9 @@ public class BaseClass {
 	
 	public  BaseClass() {
 		try {
-			browserSetup("chrome");
+//			browserSetup("chrome");
 //			browserSetup("firefox");
-//			browserSetup("edge");
+			browserSetup("edge");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -48,11 +48,11 @@ public class BaseClass {
 			}
 			
 			else if(browser.equalsIgnoreCase("firefox")){
-				System.setProperty("webdriver.gecko.driver", "C:\\Users\\bobby\\eclipse-workspace\\HelloWorldSelenium\\src\\test\\resources\\drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\drivers\\geckodriver.exe");
 				driver = new FirefoxDriver();
 			}
 			else if(browser.equalsIgnoreCase("edge")){
-				System.setProperty("webdriver.edge.driver", "C:\\Users\\bobby\\eclipse-workspace\\HelloWorldSelenium\\src\\test\\resources\\drivers\\msedgedriver.exe");
+				System.setProperty("webdriver.edge.driver", "C:\\Users\\bobby\\eclipse-workspace\\ds-algo-quality-way\\src\\test\\resources\\drivers\\msedgedriver.exe");
 				driver = new EdgeDriver();
 			}
 			
