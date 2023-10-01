@@ -27,8 +27,8 @@ public class BaseClass {
 	
 	public  BaseClass() {
 		try {
-//			browserSetup("chrome");
-			browserSetup("firefox");
+			browserSetup("chrome");
+//			browserSetup("firefox");
 //			browserSetup("edge");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
