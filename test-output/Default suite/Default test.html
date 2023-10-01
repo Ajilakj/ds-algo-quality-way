@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>145/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 01 18:07:07 EDT 2023</td>
+<td>Started on:</td><td>Sun Oct 01 18:11:50 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59227 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15094 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -88,8 +88,8 @@ function toggleAllBoxes() {
 	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:120)
 	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:176)
 	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
-</pre></div><a href='#' onClick='toggleBox("stack-trace488372159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace488372159'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1296277943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1296277943'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -116,8 +116,8 @@ function toggleAllBoxes() {
 	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:114)
 	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:154)
 	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1562019228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1562019228'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1914847495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1914847495'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -128,34 +128,6 @@ function toggleAllBoxes() {
 	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:114)
 	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:154)
 	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to register with already existing user", "to test register with valid and invalid credentials"</td>
-<td><div><pre>java.lang.AssertionError: expected [User already exists] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:59)
-	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:132)
-	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
-	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1189771504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1189771504'><pre>java.lang.AssertionError: expected [User already exists] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:59)
-	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:132)
-	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
-	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
@@ -172,8 +144,8 @@ function toggleAllBoxes() {
 	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:80)
 	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:265)
 	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1825485441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1825485441'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+</pre></div><a href='#' onClick='toggleBox("stack-trace818609427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace818609427'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -187,6 +159,34 @@ function toggleAllBoxes() {
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to register with already existing user", "to test register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [User already exists] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:59)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:132)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1388972756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1388972756'><pre>java.lang.AssertionError: expected [User already exists] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:59)
+	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:132)
+	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:224)
+	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -197,302 +197,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Trees page to check valid java code", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try register with username and password and confirm password fields empty", "to test register with valid and invalid credentials"</td>
 <td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tree page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Applications of Binary trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in Implementation Of BST page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Overview of Trees page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Tree Traversals page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Trees page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Operations in Stack Page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check the option stack from the datastructure drop down menu", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Tree Traversals page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page to check practice questions Page for Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Binary Trees page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation of Binary Trees  page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation in Python page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Types of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications of Binary trees page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Overview of Trees page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Overview of Trees page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Terminologiess page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections  page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check Getting Started button in Graph Pane", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Applications page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Search Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation Of BST page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Trees page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Search Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Trees page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page to check invalid code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page to check tryeditor", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Applications page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Traversals-Illustration page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation Of BST page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the stack page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page to check invalid code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page to check valid python code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page to check valid java code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Traversals-Illustration page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Tree Traversals page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Search Trees page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
+<td>1</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login link from register page", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check Getting Started button in tree Pane", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page to check invalid code", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page to check valid java code", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Types of Binary Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page to check valid python code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Terminologiess page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check the option queue from the datastructure drop down menu", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Trees  page", "to test functionality of tree"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
@@ -502,287 +212,22 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Terminologiess page to check valid java code", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation of Binary Trees page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in the graph Representations page", "to test functionality of graph"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-collections page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Applications of Binary trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack page to check invelid code", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation in Python page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation Of BST page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph Representations page to check valid java code", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation of Binary Trees page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page to check valid java code", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Tree Traversals Page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Types of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Implementation in Python page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-collectionss page to check valid java code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try logging with username and password fields empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications of Binary trees page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page to check valid code", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph Representations page to check valid python code", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already login with valid usernae and password", "to test functionality of signout link"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Trees page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph page to check valid java code", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "password mismatch", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Overview of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  queue/Queue Operations page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page to check valid python code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Graph page", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Overview of Trees Page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Tree Traversals page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph Representations page to check invalid code", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph page to check valid python code", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation of Binary Trees page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications of Binary trees page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Graph/Graph page to check invalid code", "to test functionality of graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation using array page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Tree Traversals page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation page to check invalid code", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page to check invalid code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Operations in Stack page to check valid code", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Applications page to check invalid code", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Terminologies  page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Binary Trees page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation Of BST page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try register with username and password and confirm password fields empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation in Python page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Binary Trees page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Search Trees page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check Getting Started button in stack Pane", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Tree Traversals page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check the option stack from the datastructure drop down menu", "to test functionality of stack"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
@@ -792,72 +237,32 @@ function toggleAllBoxes() {
 <td>3</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation using array page to check valid java code", "to test functionality of queue"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try logging with username and password fields empty", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check the option Graph from the datastructure drop down menu", "to test functionality of graph"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "password mismatch", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check Getting Started button in stack Pane", "to test functionality of stack"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Tree Traversals page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page to check valid java code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Binary Tree Traversals page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Terminologies page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Implementation of Binary Trees page to check valid python code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Search Trees page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check the option tree from the datastructure drop down menu", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Queue Operations page to check invalid code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the  Types of Trees page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check  Getting Started button in queue Pane", "to test functionality of queue"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
@@ -867,57 +272,52 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Types of Trees page to check invalid code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Implementation in Python page", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Binary Tree Traversals page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is in the Operations in Stack page", "to test functionality of stack"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Traversals-Illustration page to check valid java code", "to test functionality of tree"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the queue/implementation-lists Page", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from implementation-lists page to check valid python code", "to test functionality of queue"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the Traversals-Illustration Page", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "A logged in user is in the tryEditor page from Traversals-Illustration page to check invalid code", "to test functionality of tree"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already login with valid usernae and password to check signout link", "to test functionality of signout link"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>

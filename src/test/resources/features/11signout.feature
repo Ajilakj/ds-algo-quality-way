@@ -22,7 +22,7 @@ Feature:  to test functionality of signout link
 
 
   @tag1
-  Scenario: The user already login with valid usernae and password
+  Scenario: The user already login with valid usernae and password to check signout link
     Given The user already login with valid usernae and password
     When the user selects signout link
     Then register and signin links will appear
