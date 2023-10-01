@@ -26,13 +26,13 @@
   Feature: to test functionality of stack
   
   @tag1 
-  Scenario: An existing user logged in with valid credentials in homepage
+  Scenario: An existing user logged in with valid credentials in homepage to check Getting Started button in stack Pane
 	  Given An existing user is in the Home page
 	  When The user clicks the Getting Started button in stack Pane
 	  Then The user will directed to stack Page
 	  
 	@tag2
-  Scenario:  An existing user logged in with valid credentials in homepage
+  Scenario:  An existing user logged in with valid credentials in homepage to check the option stack from the datastructure drop down menu
   	Given( A valid user is in the Home page after logged in
 	  When The user select the option stack from the datastructure drop down menu
 	  Then The user will directed to stack Page using dropdown
@@ -56,12 +56,12 @@
     Then an alert with NameError: name System is not defined on line 1 will display for Operations in Stack page
     
    @tag6
-  Scenario: A logged in user is in the tryEditor page from Operations in Stack page
+  Scenario: A logged in user is in the tryEditor page from Operations in Stack page to check invelid code
     When user write some invalid code for Operations in Stack then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Operations in Stack
     
   @tag7
-  Scenario: A logged in user is in the tryEditor page from Operations in Stack page
+  Scenario: A logged in user is in the tryEditor page from Operations in Stack page to check valid code
     When user write some python code for Operations in Stack page as input then click run button
     Then The output will be display in the editor for Operations in Stack page
     
@@ -78,17 +78,17 @@
     Then The user should be redirected to a tryEditor page for Implementation
   
   @tag10
-  Scenario: A logged in user is in the tryEditor page from Implementation page
+  Scenario: A logged in user is in the tryEditor page from Implementation page to check valid java code
     When user write some valid java code for Implementation page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Implementation page
     
   @tag11
-  Scenario: A logged in user is in the tryEditor page from Implementation page
+  Scenario: A logged in user is in the tryEditor page from Implementation page to check invalid code
     When user write some invalid code for Implementation then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Implementation
     
   @tag12
-  Scenario: A logged in user is in the tryEditor page from Implementation page
+  Scenario: A logged in user is in the tryEditor page from Implementation page to check invalid code
     When user write some python code for Implementation page as input then click run button
     Then The output will be display in the editor for Implementation page
     
@@ -104,17 +104,17 @@
     Then The user should be redirected to a tryEditor for Applications
   
   @tag15
-  Scenario: A logged in user is in the tryEditor page from Applications page
+  Scenario: A logged in user is in the tryEditor page from Applications page to check valid java code
     When user write some valid java code for Applications page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Applications page
     
   @tag16
-  Scenario: A logged in user is in the tryEditor page from Applications page
+  Scenario: A logged in user is in the tryEditor page from Applications page to check invalid code
     When user write some invalid code for Applications then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Applications
     
   @tag17
-  Scenario: A logged in user is in the tryEditor page from Applications page
+  Scenario: A logged in user is in the tryEditor page from Applications page to check valid code
     When user write some python code for Applications page as input then click run button
     Then The output will be display in the editor for Applications page
     
