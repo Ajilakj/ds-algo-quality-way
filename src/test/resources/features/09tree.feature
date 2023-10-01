@@ -26,13 +26,13 @@
   Feature: to test functionality of tree
   
   @tag1 
-  Scenario: An existing user logged in with valid credentials in homepage
+  Scenario: An existing user logged in with valid credentials in homepage to check Getting Started button in tree Pane
 	  Given An existing user is in the Home page for tree
 	  When The user clicks the Getting Started button in tree Pane
 	  Then The user will directed to tree Page
 	  
 	@tag2
-  Scenario:  An existing user logged in with valid credentials in homepage
+  Scenario:  An existing user logged in with valid credentials in homepage to check the option tree from the datastructure drop down menu
   	Given( An existing user is in the Home page for tree
 	  When The user select the option tree from the datastructure drop down menu
 	  Then The user will directed to tree Page using dropdown
@@ -49,17 +49,17 @@
     Then The user should be redirected to a tryEditor page for Overview of Trees
   
   @tag5
-  Scenario: A logged in user is in the tryEditor page from Overview of Trees page
+  Scenario: A logged in user is in the tryEditor page from Overview of Trees page to check valid java code
     When user write some valid java code for Overview of Trees page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Overview of Trees page
     
   @tag6
-  Scenario: A logged in user is in the tryEditor page from Overview of Trees page
+  Scenario: A logged in user is in the tryEditor page from Overview of Trees page to check invalid code
     When user write some invalid code for Overview of Trees then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Overview of Trees
     
   @tag7
-  Scenario: A logged in user is in the tryEditor page from Overview of Trees page
+  Scenario: A logged in user is in the tryEditor page from Overview of Trees page to check valid python code
     When user write some python code for Overview of Trees page as input then click run button
     Then The output will be display in the editor for Overview of Trees page
     
@@ -75,17 +75,17 @@
     Then The user should be redirected to a tryEditor page for Terminologies
   
  @tag10
-  Scenario: A logged in user is in the tryEditor page from Terminologiess page
+  Scenario: A logged in user is in the tryEditor page from Terminologiess page to check valid java code
     When user write some valid java code for Terminologiess page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Terminologiess page
     
   @tag11
-  Scenario: A logged in user is in the tryEditor page from Terminologiess page
+  Scenario: A logged in user is in the tryEditor page from Terminologiess page to check invalid code
     When user write some invalid code for Terminologiess then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Terminologiess
     
   @tag12
-  Scenario: A logged in user is in the tryEditor page from Terminologiess page
+  Scenario: A logged in user is in the tryEditor page from Terminologiess page to check valid python code
     When user write some python code for Terminologiess page as input then click run button
     Then The output will be display in the editor for Terminologiess page
     
@@ -101,17 +101,17 @@
     Then The user should be redirected to a tryEditor for Types of Trees
   
   @tag15
-  Scenario: A logged in user is in the tryEditor page from Types of Trees page
+  Scenario: A logged in user is in the tryEditor page from Types of Trees page to check valid java code
     When user write some valid java code for Types of Trees page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Types of Trees page
     
   @tag16
-  Scenario: A logged in user is in the tryEditor page from Types of Trees page
+  Scenario: A logged in user is in the tryEditor page from Types of Trees page to check invalid code
     When user write some invalid code for Types of Trees then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Types of Trees
     
   @tag17
-  Scenario: A logged in user is in the tryEditor page from Types of Trees page
+  Scenario: A logged in user is in the tryEditor page from Types of Trees page to check valid python code
     When user write some python code for Types of Trees page as input then click run button
     Then The output will be display in the editor for Types of Trees page
     
@@ -127,17 +127,17 @@
     Then The user should be redirected to a tryEditor page for Tree Traversals
   
  @tag20
-  Scenario: A logged in user is in the tryEditor page from Tree Traversals page
+  Scenario: A logged in user is in the tryEditor page from Tree Traversals page to check valid java code
     When user write some valid java code for Tree Traversals page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Tree Traversals page
     
   @tag21
-  Scenario: A logged in user is in the tryEditor page from Tree Traversals page
+  Scenario: A logged in user is in the tryEditor page from Tree Traversals page to check invalid code
     When user write some invalid code for Tree Traversals then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Tree Traversals
     
   @tag22
-  Scenario: A logged in user is in the tryEditor page from Tree Traversals page
+  Scenario: A logged in user is in the tryEditor page from Tree Traversals page to check valid python code
     When user write some python code for Tree Traversals page as input then click run button
     Then The output will be display in the editor for Tree Traversals page
     
@@ -153,17 +153,17 @@
     Then The user should be redirected to a tryEditor page for Traversals-Illustration
   
   @tag25
-  Scenario: A logged in user is in the tryEditor page from Traversals-Illustration page
+  Scenario: A logged in user is in the tryEditor page from Traversals-Illustration page to check valid java code
     When user write some valid java code for Traversals-Illustration page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Traversals-Illustration page
     
   @tag26
-  Scenario: A logged in user is in the tryEditor page from Traversals-Illustration page
+  Scenario: A logged in user is in the tryEditor page from Traversals-Illustration page to check invalid code
     When user write some invalid code for Traversals-Illustration then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Traversals-Illustration
     
   @tag27
-  Scenario: A logged in user is in the tryEditor page from Traversals-Illustration page
+  Scenario: A logged in user is in the tryEditor page from Traversals-Illustration page to check valid python code
     When user write some python code for Traversals-Illustration page as input then click run button
     Then The output will be display in the editor for Traversals-Illustration page
     
@@ -179,17 +179,17 @@
     Then The user should be redirected to a tryEditor page for Binary Trees
   
   @tag30
-  Scenario: A logged in user is in the tryEditor page from Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Binary Trees page to check valid java code
     When user write some valid java code for Binary Trees page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Binary Trees page
     
   @tag31
-  Scenario: A logged in user is in the tryEditor page from Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Binary Trees page to check invalid code
     When user write some invalid code for Binary Trees then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Binary Trees
     
   @tag32
-  Scenario: A logged in user is in the tryEditor page from Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Binary Trees page to check valid python code
     When user write some python code for Binary Trees page as input then click run button
     Then The output will be display in the editor for Binary Trees page
     
@@ -205,17 +205,17 @@
     Then The user should be redirected to a tryEditor for Types of Binary Trees
   
  @tag35
-  Scenario: A logged in user is in the tryEditor page from Types of Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Types of Binary Trees page to check valid java code
     When user write some valid java code for Types of Binary Trees page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Types of Binary Trees page
     
   @tag36
-  Scenario: A logged in user is in the tryEditor page from Types of Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Types of Binary Trees page to check invalid code
     When user write some invalid code for Types of Binary Trees then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Types of Binary Trees
     
   @tag37
-  Scenario: A logged in user is in the tryEditor page from Types of Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Types of Binary Trees page to check valid python code
     When user write some python code for Types of Binary Trees page as input then click run button
     Then The output will be display in the editor for Types of Binary Trees page
     
@@ -231,17 +231,17 @@
     Then The user should be redirected to a tryEditor page for Implementation in Python
   
  @tag40
-  Scenario: A logged in user is in the tryEditor page from Implementation in Python page
+  Scenario: A logged in user is in the tryEditor page from Implementation in Python page to check valid java code
     When user write some valid java code for Implementation in Python page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Implementation in Python page
     
   @tag41
-  Scenario: A logged in user is in the tryEditor page from Implementation in Python page
+  Scenario: A logged in user is in the tryEditor page from Implementation in Python page to check invalid code
     When user write some invalid code for Implementation in Python then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Implementation in Python
     
   @tag42
-  Scenario: A logged in user is in the tryEditor page from Implementation in Python page
+  Scenario: A logged in user is in the tryEditor page from Implementation in Python page to check valid python code
     When user write some python code for Implementation in Python page as input then click run button
     Then The output will be display in the editor for Implementation in Python page
     
@@ -257,17 +257,17 @@
     Then The user should be redirected to a tryEditor page for Binary Tree Traversals
   
   @tag45
-  Scenario: A logged in user is in the tryEditor page from Binary Tree Traversals page
+  Scenario: A logged in user is in the tryEditor page from Binary Tree Traversals page to check valid java code
     When user write some valid java code for Binary Tree Traversals page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Binary Tree Traversals page
     
     @tag46
-  Scenario: A logged in user is in the tryEditor page from Binary Tree Traversals page
+  Scenario: A logged in user is in the tryEditor page from Binary Tree Traversals page to check invalid code
     When user write some invalid code for Binary Tree Traversals then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Binary Tree Traversals
     
   @tag47
-  Scenario: A logged in user is in the tryEditor page from Binary Tree Traversals page
+  Scenario: A logged in user is in the tryEditor page from Binary Tree Traversals page to check valid python code
     When user write some python code for Binary Tree Traversals page as input then click run button
     Then The output will be display in the editor for Binary Tree Traversals page
     
@@ -283,17 +283,17 @@
     Then The user should be redirected to a tryEditor page for Implementation of Binary Trees
   
   @tag50
-  Scenario: A logged in user is in the tryEditor page from Implementation of Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Implementation of Binary Trees page to check valid java code
     When user write some valid java code for Implementation of Binary Trees page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Implementation of Binary Trees page
     
   @tag51
-  Scenario: A logged in user is in the tryEditor page from Implementation of Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Implementation of Binary Trees page to check invalid code
     When user write some invalid code for Implementation of Binary Trees then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Implementation of Binary Trees
     
   @tag52
-  Scenario: A logged in user is in the tryEditor page from Implementation of Binary Trees page
+  Scenario: A logged in user is in the tryEditor page from Implementation of Binary Trees page to check valid python code
     When user write some python code for Implementation of Binary Trees page as input then click run button
     Then The output will be display in the editor for Implementation of Binary Trees page
     
@@ -309,17 +309,17 @@
     Then The user should be redirected to a tryEditor for Applications of Binary trees
   
  @tag55
-  Scenario: A logged in user is in the tryEditor page from Applications of Binary trees page
+  Scenario: A logged in user is in the tryEditor page from Applications of Binary trees page to check valid java code
     When user write some valid java code for Applications of Binary trees page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Applications of Binary trees page
     
   @tag56
-  Scenario: A logged in user is in the tryEditor page from Applications of Binary trees page
+  Scenario: A logged in user is in the tryEditor page from Applications of Binary trees page to check invalid code
     When user write some invalid code for Applications of Binary trees then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Applications of Binary trees
     
   @tag57
-  Scenario: A logged in user is in the tryEditor page from Applications of Binary trees page
+  Scenario: A logged in user is in the tryEditor page from Applications of Binary trees page to check valid python code
     When user write some python code for Applications of Binary trees page as input then click run button
     Then The output will be display in the editor for Applications of Binary trees page
     
@@ -335,17 +335,17 @@
     Then The user should be redirected to a tryEditor page for Binary Search Trees
   
   @tag60
-  Scenario: A logged in user is in the tryEditor page from Binary Search Trees page
+  Scenario: A logged in user is in the tryEditor page from Binary Search Trees page to check valid java code
     When user write some valid java code for Binary Search Trees page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Binary Search Trees page
     
   @tag61
-  Scenario: A logged in user is in the tryEditor page from Binary Search Trees page
+  Scenario: A logged in user is in the tryEditor page from Binary Search Trees page to check invalid code
     When user write some invalid code for Binary Search Trees then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Binary Search Trees
     
   @tag62
-  Scenario: A logged in user is in the tryEditor page from Binary Search Trees page
+  Scenario: A logged in user is in the tryEditor page from Binary Search Trees page to check valid python code
     When some python as input then click run button for Binary Search Trees page
     Then The output will be display in the editor for Binary Search Tree page
     
@@ -361,17 +361,17 @@
     Then The user should be redirected to a tryEditor page for Implementation Of BST
   
   @tag65
-  Scenario: A logged in user is in the tryEditor page from Implementation Of BST page
+  Scenario: A logged in user is in the tryEditor page from Implementation Of BST page to check valid java code
     When user write some valid java code for Implementation Of BST page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Implementation Of BST page
     
   @tag66
-  Scenario: A logged in user is in the tryEditor page from Implementation Of BST page
+  Scenario: A logged in user is in the tryEditor page from Implementation Of BST page to check invalid code
     When user write some invalid code for Implementation Of BST then click run button
     Then an alert with SyntaxError: bad input on line 1 will display for Implementation Of BST
     
   @tag67
-  Scenario: A logged in user is in the tryEditor page from Implementation Of BST page
+  Scenario: A logged in user is in the tryEditor page from Implementation Of BST page to check valid python code
     When user write some python code for Implementation Of BST page as input then click run button
     Then The output will be display in the editor for Implementation Of BST page
     
