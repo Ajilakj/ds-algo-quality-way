@@ -91,7 +91,7 @@ public class Home_SD extends BaseClass {
 
 	@When("The user clicks Register link")
 	public void the_user_clicks_register_link() {
-		UtlityFunctionsOBJ.click_register();;;
+		UtlityFunctionsOBJ.click_register_link();;;
 	}
 	
 	@Then("Register page should open")

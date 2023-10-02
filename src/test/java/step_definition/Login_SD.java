@@ -107,6 +107,7 @@ public class Login_SD extends BaseClass{
 //	  @tag5
 	@Given("User is in Login page to check password incorrect")
 	public void user_is_in_login_page_to_check_password_incorrect() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_login();
 	}
 	
@@ -129,7 +130,8 @@ public class Login_SD extends BaseClass{
 //	  @tag6
 	@Given("User is in Login page to check username incorrect")
 	public void user_is_in_login_page_to_check_username_incorrect() {
-		LoginOBJ.click_login_button();
+		UtlityFunctionsOBJ.click_back_button();
+		UtlityFunctionsOBJ.check_url_login();
 	}
 	
 	@When("enters an incorrect username and a valid password")
@@ -140,7 +142,7 @@ public class Login_SD extends BaseClass{
 	
 	@When("clicks Login button to check username incorrect")
 	public void clicks_login_button_to_check_username_incorrect() {
-		UtlityFunctionsOBJ.check_url_login();
+		LoginOBJ.click_login_button();
 	}
 	
 	@Then("Invalid Username and Password message should display for non registered username")
@@ -151,12 +153,13 @@ public class Login_SD extends BaseClass{
 //	  @tag7
 	@Given("Check register link from login page")
 	public void check_register_link_from_login_page() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_login();
 	}
 
 	@When("use click register link from login page")
 	public void use_click_register_link_from_login_page() {
-		UtlityFunctionsOBJ.click_register();
+		UtlityFunctionsOBJ.click_register_link();
 	}
 
 	@Then("user is navigated to register page")

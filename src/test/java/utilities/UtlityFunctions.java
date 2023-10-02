@@ -3,6 +3,7 @@ package utilities;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -23,7 +24,7 @@ public class UtlityFunctions extends BaseClass {
 	By ds=By.xpath("//a[text()='Data Structures']"); 
 	By tryHere=By.partialLinkText("Try here");
 	By code=By.xpath("//textarea[@tabindex='0']"); 
-	By alert =By.className("alert-primary"); 
+	By alertMsg =By.className("alert-primary"); 
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
 	By practiceQuestions=By.partialLinkText("Practice Questions");
@@ -67,7 +68,7 @@ public class UtlityFunctions extends BaseClass {
 		web_element_click(sign_in); 
 	}
 	
-	public void click_register(){
+	public void click_register_link(){
 		web_element_click(register);
 	}
 	
@@ -159,7 +160,7 @@ public class UtlityFunctions extends BaseClass {
 	}
 	
 	public String get_message_from_alert(){
-		String msg=(driver.findElement(alert)).getText();
+		String msg=(driver.findElement(alertMsg)).getText();
 		return msg; 
 	}
 	

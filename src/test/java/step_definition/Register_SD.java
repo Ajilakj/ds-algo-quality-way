@@ -135,6 +135,7 @@ public class Register_SD extends BaseClass{
 //	@tag6
 	@Given("User is in register page to check password length")
 	public void user_is_in_register_page_to_check_password_length() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_register();
 	}
 
@@ -157,6 +158,7 @@ public class Register_SD extends BaseClass{
 //	@tag7
 	@Given("User is in register page to check password characters")
 	public void user_is_in_register_page_to_check_password_characters() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_register();
 	}
 
@@ -179,6 +181,7 @@ public class Register_SD extends BaseClass{
 //	@tag8
 	@Given("user is in the Register page to check password mismatch")
 	public void user_is_in_the_register_page_to_check_password_mismatch() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_register();
 	}
 
@@ -206,6 +209,7 @@ public class Register_SD extends BaseClass{
 //	@tag9
 	@Given("user is in the Register page to check existing user")
 	public void user_is_in_the_register_page_to_check_existing_user() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_register();
 	}
 
@@ -228,6 +232,7 @@ public class Register_SD extends BaseClass{
 //	@tag10
 	@Given("User is in register page")
 	public void user_is_in_register_page() {
+		UtlityFunctionsOBJ.click_back_button();
 		UtlityFunctionsOBJ.check_url_register();
 	}
 
