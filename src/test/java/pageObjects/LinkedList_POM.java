@@ -10,14 +10,14 @@ import utilities.UtlityFunctions;
 public class LinkedList_POM extends BaseClass {
 
 	By getStartedLnklinkedlist=By.xpath("//a[@href='linked-list']");
-	By linkedList=By.partialLinkText("linked-list");
+	By linkedList=By.partialLinkText("Linked List");
 	By Introduction=By.partialLinkText("Introduction");
-	By creatingLinkedList=By.partialLinkText("creating-linked-list");
-	By typesOfLinkedList=By.partialLinkText("types-of-linked-list");
-	By implementLinkedListInPython=By.partialLinkText("implement-linked-list-in-python");
-	By traversal=By.partialLinkText("traversal");
-	By insertionInLinkedList=By.partialLinkText("insertion-in-linked-list");
-	By deletionInLinkedList=By.partialLinkText("deletion-in-linked-list");
+	By creatingLinkedList=By.partialLinkText("Creating Linked LIst");
+	By typesOfLinkedList=By.partialLinkText("Types of Linked List");
+	By implementLinkedListInPython=By.partialLinkText("Implement Linked List in Python");
+	By traversal=By.partialLinkText("Traversal");
+	By insertionInLinkedList=By.partialLinkText("Insertion");
+	By deletionInLinkedList=By.partialLinkText("Deletion");
 	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
@@ -25,7 +25,7 @@ public class LinkedList_POM extends BaseClass {
 		UtlityFunctionsOBJ.web_element_click(getStartedLnklinkedlist);
 	}
 	
-	public void select_tree_from_drop_down(){
+	public void select_linked_list_from_drop_down(){
 		UtlityFunctionsOBJ.web_element_click(linkedList);
 	}
 	
@@ -39,6 +39,10 @@ public class LinkedList_POM extends BaseClass {
 	
 	public void select_types_of_linked_list(){
 		UtlityFunctionsOBJ.web_element_click(typesOfLinkedList);
+	}
+	
+	public void select_implement_of_linked_list_in_python(){
+		UtlityFunctionsOBJ.web_element_click(implementLinkedListInPython);
 	}
 	
 	public void select_traversals(){

@@ -91,7 +91,7 @@
     
    @tag13
   Scenario: A logged in user is in the Creating Linked LIst  page
-    Given The user is in the queue page Creating Linked LIst page
+    Given The user is in the Creating Linked LIst page
     When The user clicks Types of linked lists link
     Then The user should be directed to Types of linked lists Page
     
