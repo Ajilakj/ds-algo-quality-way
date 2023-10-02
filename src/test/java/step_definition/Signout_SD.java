@@ -3,8 +3,8 @@ package step_definition;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjeccts.BaseClass;
-import pageObjeccts.Signout_POM;
+import pageObjects.BaseClass;
+import pageObjects.Signout_POM;
 import utilities.UtlityFunctions;
 
 public class Signout_SD extends BaseClass{

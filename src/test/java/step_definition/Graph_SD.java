@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjeccts.BaseClass;
-import pageObjeccts.Graph_POM;
+import pageObjects.BaseClass;
+import pageObjects.Graph_POM;
 import utilities.UtlityFunctions;
 
 

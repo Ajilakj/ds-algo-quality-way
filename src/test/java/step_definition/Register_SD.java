@@ -10,8 +10,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 //import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjeccts.BaseClass;
-import pageObjeccts.Register_POM;
+import pageObjects.BaseClass;
+import pageObjects.Register_POM;
 import utilities.UtlityFunctions;
 
 public class Register_SD extends BaseClass{

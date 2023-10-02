@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 
-import pageObjeccts.BaseClass;
+import pageObjects.BaseClass;
 
 public class UtlityFunctions extends BaseClass {
 

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>23/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 02 16:27:58 EDT 2023</td>
+<td>Started on:</td><td>Mon Oct 02 17:26:39 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20201 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25750 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register is successful with valid credentials", "to test register with valid and invalid credentials"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [08ac3138-5d71-4ce8-8eee-ca0fe80a617f, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:25535, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9372, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25535/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 08ac3138-5d71-4ce8-8eee-ca0fe80a617f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:55)
+	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:81)
+	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:270)
+	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
+</pre></div><a href='#' onClick='toggleBox("stack-trace583593544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace583593544'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.: 
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [08ac3138-5d71-4ce8-8eee-ca0fe80a617f, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:25535, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9372, moz:profile: C:\Users\bobby\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25535/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 08ac3138-5d71-4ce8-8eee-ca0fe80a617f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:55)
+	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:81)
+	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:270)
+	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password characters", "to test register with valid and invalid credentials"</td>
 <td><div><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -85,11 +131,11 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:60)
-	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:120)
+	at pageObjects.Register_POM.enter_password_only_numeric_msg(Register_POM.java:120)
 	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:178)
 	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2011857007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2011857007'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
+</pre></div><a href='#' onClick='toggleBox("stack-trace249267192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace249267192'><pre>java.lang.AssertionError: expected [Your password can’t be entirely numeric.] but found [password_mismatch:The two password fields didn’t match.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -97,9 +143,37 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:60)
-	at pageObjeccts.Register_POM.enter_password_only_numeric_msg(Register_POM.java:120)
+	at pageObjects.Register_POM.enter_password_only_numeric_msg(Register_POM.java:120)
 	at step_definition.Register_SD.your_password_can_not_be_entirely_numeric_message_should_display(Register_SD.java:178)
 	at ✽.Your password can not be entirely numeric message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:73)
+</pre></div></td>
+<td>1</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password minimum length", "to test register with valid and invalid credentials"</td>
+<td><div><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:60)
+	at pageObjects.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:114)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1797648156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1797648156'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:60)
+	at pageObjects.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:114)
+	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
+	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
@@ -113,11 +187,11 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:60)
-	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:132)
+	at pageObjects.Register_POM.enter_existing_username_msg(Register_POM.java:132)
 	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:228)
 	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
-</pre></div><a href='#' onClick='toggleBox("stack-trace5313207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace5313207'><pre>java.lang.AssertionError: expected [User already exists] but found [password_mismatch:The two password fields didn’t match.]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1928254791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1928254791'><pre>java.lang.AssertionError: expected [User already exists] but found [password_mismatch:The two password fields didn’t match.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -125,65 +199,9 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:60)
-	at pageObjeccts.Register_POM.enter_existing_username_msg(Register_POM.java:132)
+	at pageObjects.Register_POM.enter_existing_username_msg(Register_POM.java:132)
 	at step_definition.Register_SD.user_already_exists_message_should_appears(Register_SD.java:228)
 	at ✽.user already exists message should appears.(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:89)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with password minimum length", "to test register with valid and invalid credentials"</td>
-<td><div><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:60)
-	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:114)
-	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
-	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
-</pre></div><a href='#' onClick='toggleBox("stack-trace82086221", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace82086221'><pre>java.lang.AssertionError: expected [Your password must contain at least 8 characters.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_text(UtlityFunctions.java:60)
-	at pageObjeccts.Register_POM.enter_password_less_than_eight_msg(Register_POM.java:114)
-	at step_definition.Register_SD.your_password_must_contain_at_least_characters_message_should_display(Register_SD.java:155)
-	at ✽.Your password must contain at least 8 characters message should display(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:66)
-</pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register is successful with valid credentials", "to test register with valid and invalid credentials"</td>
-<td><div><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:56)
-	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:81)
-	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:270)
-	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
-</pre></div><a href='#' onClick='toggleBox("stack-trace104494977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace104494977'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at utilities.UtlityFunctions.check_url(UtlityFunctions.java:56)
-	at utilities.UtlityFunctions.check_url_home(UtlityFunctions.java:81)
-	at step_definition.Register_SD.user_will_navigate_to_home_page(Register_SD.java:270)
-	at ✽.user will navigate to home page(file:///C:/Users/bobby/eclipse-workspace/ds-algo-quality-way/src/test/resources/features/02Register.feature:102)
 </pre></div></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
@@ -197,107 +215,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
-<td></td>
-<td>7</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "password mismatch", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try register with username and password and confirm password fields empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>1</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try logging with username and password fields empty", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check Getting Started button in DataStructures Pane", "feature to test module1: DataStructures-Introduction"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user with username incorrect", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test register with valid and invalid credentials"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@5be1d0a4</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
@@ -307,7 +230,102 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>
 <tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "open home page", "to test functionality of home page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register with similar usename and password", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "get started button to go to home page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from home page without sign in", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login is successful with valid credentials", "to test login functionality"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and user try to go to sign in page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "select one item from drop down without sign in", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page drop down with Data structures", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and username but leaving confirm password field empty", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with non registered user", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "try logging with username and password fields empty", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user already on DS Algo portal page and the user try to go to sign in page", "to test functionality of home page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check login with registered user with password incorrect", "to test login functionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "password mismatch", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check register link from login page", "to test login functionality"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "An existing user logged in with valid credentials in homepage to check Getting Started button in DataStructures Pane", "feature to test module1: DataStructures-Introduction"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid username and leaving password field empty", "to test register with valid and invalid credentials"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@5be1d0a4</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check logging with valid password  and leaving username field empty", "to test register with valid and invalid credentials"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@5be1d0a4</td></tr>

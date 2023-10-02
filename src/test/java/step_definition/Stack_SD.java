@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjeccts.BaseClass;
-import pageObjeccts.Stack_POM;
+import pageObjects.BaseClass;
+import pageObjects.Stack_POM;
 import utilities.UtlityFunctions;
 
 public class Stack_SD extends BaseClass {

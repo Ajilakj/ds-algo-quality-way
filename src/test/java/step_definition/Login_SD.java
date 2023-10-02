@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjeccts.BaseClass;
-import pageObjeccts.Home_POM;
-import pageObjeccts.Login_POM;
+import pageObjects.BaseClass;
+import pageObjects.Home_POM;
+import pageObjects.Login_POM;
 import utilities.UtlityFunctions;
 
 public class Login_SD extends BaseClass{

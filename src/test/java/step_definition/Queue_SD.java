@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjeccts.BaseClass;
-import pageObjeccts.Graph_POM;
-import pageObjeccts.Queue_POM;
+import pageObjects.BaseClass;
+import pageObjects.Graph_POM;
+import pageObjects.Queue_POM;
 import utilities.UtlityFunctions;
 
 public class Queue_SD extends BaseClass  {

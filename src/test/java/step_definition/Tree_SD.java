@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjeccts.BaseClass;
-import pageObjeccts.Tree_POM;
+import pageObjects.BaseClass;
+import pageObjects.Tree_POM;
 import utilities.UtlityFunctions;
 
 public class Tree_SD extends BaseClass {
