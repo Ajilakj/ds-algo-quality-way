@@ -1,6 +1,6 @@
 Feature: feature to test module1: DataStructures-Introduction
 
-   @tag1 
+   @tag1 @ds
   Scenario: An existing user logged in with valid credentials in homepage to check Getting Started button in DataStructures Pane
 	  Given An existing user is in the Home page after logged in to check Getting Started button in DataStructures Pane
 	  When The user clicks the Getting Started button in DataStructures Pane

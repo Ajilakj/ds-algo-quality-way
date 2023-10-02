@@ -19,8 +19,6 @@ public class Graph_SD extends BaseClass {
 	WebDriver driver=super.driver;
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
-	
-	
 //	  @tag1 
 	@Given("An existing user is in the Home page after logged in")
 	public void an_existing_user_is_in_the_home_page_after_logged_in() {
