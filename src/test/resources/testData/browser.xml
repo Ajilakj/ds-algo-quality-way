@@ -1,0 +1,15 @@
+<root>
+    <!-- data for login test -->
+    <browser>
+        <data>
+            <browser_name>chrome</browser_name>
+        </data>
+         <data>
+            <browser_name>firefox</browser_name>
+        </data>
+         <data>
+            <browser_name>edge</browser_name>
+        </data>
+    </browser>
+    <!-- file may contain other data -->
+</root>
