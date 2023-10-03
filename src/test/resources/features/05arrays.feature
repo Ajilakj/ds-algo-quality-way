@@ -32,7 +32,7 @@ Feature: To validate the  Array Page
     Then user is directed to array page
     
    @tag2
-  Scenario:  An existing user logged in with valid credentials in homepage to check the option array from the datastructure drop down menu 
+  Scenario: An existing user logged in with valid credentials in homepage to check the option array from the datastructure drop down menu 
   	Given( A valid user is in the Home page for array
 	  When The user select the option array from the datastructure drop down menu
 	  Then The user will directed to array Page
@@ -54,12 +54,12 @@ Feature: To validate the  Array Page
     Then an alert with NameError: name System is not defined on line 1 will display for  arrays-in-python page  page
     
   @tag6
-  Scenario: to test writing invalid code in tryEditor
+  Scenario: to test writing invalid code in tryEditor for arrays-in-python
     When user enters invalid code in tryeditor box then clicks Run button
     Then an alert with SyntaxError: bad input on line 1 will display for arrays-in-python
     
   @tag7
-  Scenario: to test writing valid code in the try Editor
+  Scenario: to test writing valid code in the try Editor for arrays-in-python
     When user enters valid code in tryEditor box then clicks Run button for arrays-in-python
     Then user gets valid output for arrays-in-python
 
@@ -80,12 +80,12 @@ Feature: To validate the  Array Page
     Then an alert with NameError: name System is not defined on line 1 will display for arrays-using-list  page
     
   @tag11
-  Scenario: to test writing invalid code in tryEditor
+  Scenario: to test writing invalid code in tryEditor Run button to test array using list
     When user enters invalid code in tryeditor box then clicks Run button to test array using list
     Then an alert with SyntaxError: bad input on line 1 will display for arrays-using-list
     
   @tag12
-  Scenario: to test writing valid code in the try Editor
+  Scenario: to test writing valid code in the try Editor for arrays-using-list
     When user enters valid code in tryEditor box then clicks Run button for arrays-using-list
     Then user gets valid output for arrays-using-list
 
