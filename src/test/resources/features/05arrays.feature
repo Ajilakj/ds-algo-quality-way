@@ -1,8 +1,33 @@
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#""" (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#<> (placeholder)
+#""
+## (Comments)
+#Sample Feature Definition Template
+
+# Feature: Title of your feature
+# I want to use this template for my feature file
+  
+  
+  
+  @tag  @array
 Feature: To validate the  Array Page
 
-  @tag1
+  @tag1 
   Scenario: user enters into Array page after logged in
-    Given user is in home page
+    Given user is in home page to test array
     When clicks Get Started button under Array
     Then user is directed to array page
     
@@ -15,8 +40,8 @@ Feature: To validate the  Array Page
   @tag3
   Scenario: to test arrays-in-python page
     Given user is in array page
-    When clicks Arrays in Python button
-    Then user is directed to arrays-in-python page
+    When clicks Arrays in Python link
+    Then user will directed to arrays-in-python page
     
   @tag4  
   Scenario: A logged in user is in the  arrays-in-python page page to check tryeditor
@@ -30,13 +55,11 @@ Feature: To validate the  Array Page
     
   @tag6
   Scenario: to test writing invalid code in tryEditor
-    Given user is already in tryeditor page to check invalid code for arrays-in-python page 
     When user enters invalid code in tryeditor box then clicks Run button
     Then an alert with SyntaxError: bad input on line 1 will display for arrays-in-python
     
   @tag7
   Scenario: to test writing valid code in the try Editor
-    Given user is already in tryeditor page to check valid code for arrays-in-python page 
     When user enters valid code in tryEditor box then clicks Run button for arrays-in-python
     Then user gets valid output for arrays-in-python
 
@@ -44,7 +67,7 @@ Feature: To validate the  Array Page
   Scenario: to click Arrays Using List text and navigate into arrays-using-list page after logged in
     Given User is in arrays-in-python page
     When clicks Array Using List link
-    Then user is directed to arrays-using-list page
+    Then user will directed to arrays-using-list page
     
    @tag9  
   Scenario: A logged in user is in the  arrays-using-list page to check tryeditor
@@ -58,21 +81,19 @@ Feature: To validate the  Array Page
     
   @tag11
   Scenario: to test writing invalid code in tryEditor
-    Given user is already in tryeditor page to check invalid code for arrays-using-list page 
     When user enters invalid code in tryeditor box then clicks Run button to test array using list
     Then an alert with SyntaxError: bad input on line 1 will display for arrays-using-list
     
   @tag12
   Scenario: to test writing valid code in the try Editor
-    Given user is already in tryeditor page to check valid code for arrays-using-list page 
     When user enters valid code in tryEditor box then clicks Run button for arrays-using-list
     Then user gets valid output for arrays-using-list
 
   @tag13
   Scenario: to navigate into Basic Operations in Lists Page
-    Given user is already in arrays-using-List page
+    Given user is in arrays-using-List page
     When clicks Basic Operations in Lists Page link
-    Then user is directed into basic-operations-in-lists page
+    Then user will directed into basic-operations-in-lists page
     
   @tag14  
   Scenario: A logged in user is in the  basic-operations-in-lists page to check tryeditor
@@ -86,21 +107,19 @@ Feature: To validate the  Array Page
     
   @tag16
   Scenario: to test writing invalid code in tryEditor for basic-operations-in-lists
-    Given user is already in tryeditor page to check invalid code for basic-operations-in-lists page 
     When user enters invalid code in tryeditor box then clicks Run button to test basic-operations-in-lists
     Then an alert with SyntaxError: bad input on line 1 will display for basic-operations-in-lists
     
   @tag17
   Scenario: to test writing valid code in the try Editor for basic-operations-in-lists
-    Given user is already in tryeditor page to check valid code for basic-operations-in-lists page 
     When user enters valid code in tryEditor box then clicks Run button for basic-operations-in-lists
     Then user gets valid output for basic-operations-in-lists
     
   @tag18
   Scenario: to navigate into Applications of Array page
-    Given user is already in basic-operations-in-lists page
+    Given user is in basic-operations-in-lists page
     When clicks Applications of Array link
-    Then user is directed to applications-of-array page
+    Then user will directed to applications-of-array page
     
   @tag19  
   Scenario: A logged in user is in the applications-of-array page to check tryeditor
@@ -114,13 +133,11 @@ Feature: To validate the  Array Page
     
   @tag21
   Scenario: to test writing invalid code in tryEditor for applications-of-array
-    Given user is already in tryeditor page to check invalid code for applications-of-array page 
     When user enters invalid code in tryeditor box then clicks Run button to test applications-of-array
     Then an alert with SyntaxError: bad input on line 1 will display for applications-of-array
     
   @tag22
   Scenario: to test writing valid code in the try Editor for applications-of-array
-    Given user is already in tryeditor page to check valid code forapplications-of-array page 
     When user enters valid code in tryEditor box then clicks Run button for applications-of-array
     Then user gets valid output for applications-of-array
     
@@ -129,3 +146,27 @@ Feature: To validate the  Array Page
   	Given A logged in user is in the applications-of-array page
     When The user clicks Practice questions link for array page
     Then The user should be directed to practice questions Page for array page
+    
+  @tag24
+  Scenario: The user already in practice questions Page to check links
+    Given The user already in practice questions Page for array page
+    When user select search the Array link
+    Then user will directed to a text editor for search the Array
+    
+   @tag25
+  Scenario: The user already in practice questions Page to check Max Consecutive Ones link
+    Given The user already in practice questions Page for Max Consecutive Ones
+    When user select Max Consecutive Ones link
+    Then user will directed to a text editor for Max Consecutive Ones
+    
+     @tag26
+  Scenario: The user already in practice questions Page to check Find Numbers with Even Number of Digits link
+    Given The user already in practice questions Page for Find Numbers with Even Number of Digits
+    When user select Find Numbers with Even Number of Digits link
+    Then user will directed to a text editor for Find Numbers with Even Number of Digits
+    
+     @tag27
+  Scenario: The user already in practice questions Page to check Squares of a Sorted Array links
+    Given The user already in practice questions Page for Squares of a Sorted Array
+    When user select Squares of a Sorted Array link
+    Then user will directed to a text editor for Squares of a Sorted Array
