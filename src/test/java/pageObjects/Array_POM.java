@@ -5,35 +5,36 @@ import org.openqa.selenium.By;
 import utilities.UtlityFunctions;
 
 public class Array_POM extends BaseClass{
-	By getStartedLnkArray = By.xpath("//a[@href='array']");	
-	By arraysInPython = By.xpath("//a[@href='arrays-in-python']");
-	By tryEditor = By.xpath("//a[@href='/tryEditor']");
-	By tryEditorBox = By.xpath("//pre[@class='CodeMirror-line']");
-	By run = By.xpath("//button[@type='button']");
-
+	By getStartedLnkArray=By.xpath("//a[@href='array']");
+	By array=By.partialLinkText("Array");
+	By arraysInPython=By.partialLinkText("Arrays in Python");
+	By arraysUsingList=By.partialLinkText("Arrays Using List");
+	By basicOperationsInLists=By.partialLinkText("Basic Operations in Lists");
+	By applicationsOfArray=By.partialLinkText("Applications of Array");
+	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
-
-
+	
 	public void click_get_start_lnk(){
 		UtlityFunctionsOBJ.web_element_click(getStartedLnkArray);
 	}
-
-
-	public void click_arrays_in_Python(){
+	
+	public void select_array_from_drop_down(){
+		UtlityFunctionsOBJ.web_element_click(array);
+	}
+	
+	public void select_arrays_in_python(){
 		UtlityFunctionsOBJ.web_element_click(arraysInPython);
 	}
-
-
-	public void click_try_Editor(){
-		UtlityFunctionsOBJ.web_element_click(tryEditor);
+	
+	public void select_arrays_using_list(){
+		UtlityFunctionsOBJ.web_element_click(arraysUsingList);
 	}
-
-		public void try_Editor_Box(){
-			UtlityFunctionsOBJ.send_keys(tryEditorBox,"Print 1");
-
+	
+	public void select_basic_operations_in_list(){
+		UtlityFunctionsOBJ.web_element_click(basicOperationsInLists);
 	}
-
-		public void click_Run(){
-			UtlityFunctionsOBJ.web_element_click(run);
+	
+	public void select_applications_of_arrays(){
+		UtlityFunctionsOBJ.web_element_click(applicationsOfArray);
 	}
-	}
+}
