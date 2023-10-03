@@ -170,3 +170,33 @@ Feature: To validate the  Array Page
     Given The user already in practice questions Page for Squares of a Sorted Array
     When user select Squares of a Sorted Array link
     Then user will directed to a text editor for Squares of a Sorted Array
+    
+   @tag28
+  Scenario: A user is in the question page from  Squares of a Sorted Array page to check valid java code
+    When user write some valid java code for Squares of a Sorted page then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for Squares of a Sorted page
+    
+   @tag29
+  Scenario: to test writing valid java code in the try Editor for Squares of a Sorted to test submit
+    When user enters valid code  then clicks submit button for Squares of a Sorted
+    Then user gets No tests were collected message for Squares of a Sorted
+    
+  @tag30
+  Scenario:  A user is in the question page from  Squares of a Sorted Array page to check invalid code
+    When user enters invalid code then clicks Run button to test Squares of a Sorted
+    Then an alert with SyntaxError: bad input on line 1 will display for Squares of a Sorted
+    
+  @tag31 
+  Scenario: to test writing invalid code in the try Editor for Squares of a Sorted to test submit
+    When user enters invalid code  then clicks submit button for Squares of a Sorted
+    Then user gets No tests were collected message for Squares of a Sorted
+    
+  @tag32 
+  Scenario: to test writing valid code in the try Editor for Squares of a Sorted
+    When user enters valid code then clicks Run button for Squares of a Sorted
+    Then user gets valid output for Squares of a Sorted
+    
+   @tag33 
+  Scenario: to test writing valid code in the try Editor for Squares of a Sorted to test submit
+    When user enters valid code  then clicks submit button for Squares of a Sorted
+    Then user gets No tests were collected message for Squares of a Sorted

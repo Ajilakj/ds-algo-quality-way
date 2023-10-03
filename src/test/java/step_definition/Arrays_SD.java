@@ -371,4 +371,50 @@ public class Arrays_SD  extends BaseClass {
 	public void user_will_directed_to_a_text_editor_for_squares_of_a_sorted_array() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/question/4");
 	}
+	
+	
+	@When("user write some valid java code for Squares of a Sorted page then click run button")
+	public void user_write_some_valid_java_code_for_squares_of_a_sorted_page_then_click_run_button() {
+		UtlityFunctionsOBJ.try_editor_valid_java_code();
+	}
+
+	@Then("an alert with NameError: name System is not defined on line {int} will display for Squares of a Sorted page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_squares_of_a_sorted_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+	@When("user enters valid code  then clicks submit button for Squares of a Sorted")
+	public void user_enters_valid_code_then_clicks_submit_button_for_squares_of_a_sorted() {
+		UtlityFunctionsOBJ.try_editor_invalid_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Squares of a Sorted")
+	public void user_gets_no_tests_were_collected_message_for_squares_of_a_sorted() {
+		UtlityFunctionsOBJ.check_submit_output();
+	}
+
+	@When("user enters invalid code then clicks Run button to test Squares of a Sorted")
+	public void user_enters_invalid_code_then_clicks_run_button_to_test_squares_of_a_sorted() {
+		UtlityFunctionsOBJ.try_editor_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for Squares of a Sorted")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_squares_of_a_sorted(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+	@When("user enters invalid code  then clicks submit button for Squares of a Sorted")
+	public void user_enters_invalid_code_then_clicks_submit_button_for_squares_of_a_sorted() {
+		UtlityFunctionsOBJ.try_editor_invalid_code_submit();
+	}
+
+	@When("user enters valid code then clicks Run button for Squares of a Sorted")
+	public void user_enters_valid_code_then_clicks_run_button_for_squares_of_a_sorted() {
+		UtlityFunctionsOBJ.try_editor_python_code();
+	}
+
+	@Then("user gets valid output for Squares of a Sorted")
+	public void user_gets_valid_output_for_squares_of_a_sorted() {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
 }

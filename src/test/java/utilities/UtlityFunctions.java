@@ -3,6 +3,7 @@ package utilities;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,9 +28,10 @@ public class UtlityFunctions extends BaseClass {
 	By alertMsg =By.className("alert-primary"); 
 	By output=By.id("output");
 	By runBtn=By.xpath("//button[text()='Run']");
+	By submitBtn=By.xpath("//input[@value='Submit']");
 	By practiceQuestions=By.partialLinkText("Practice Questions");
 	
-	Actions action = new Actions(driver);
+	Actions action = new Actions(driver); 
 	
 	@DataProvider(name="testdata")
 	public String[][] TryEditorDataExcel(){
@@ -110,8 +112,7 @@ public class UtlityFunctions extends BaseClass {
 //		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
 		action.moveToElement(activeElement).sendKeys((TryEditorDataExcel()[1][0])).perform();
 //		send_keys(code, "print 'welcome'");
-		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
-		web_element_click(runBtn);
+		click_run_button();
 	}
 	
 	public void try_editor_invalid_code(){
@@ -119,14 +120,18 @@ public class UtlityFunctions extends BaseClass {
 		WebElement activeElement = driver.switchTo().activeElement(); 
 //		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
 		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][2]).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
-		web_element_click(runBtn);
+		click_run_button();
 	}
 	
 	public void try_editor_valid_java_code(){
+		driver.navigate().refresh();
 		WebElement activeElement = driver.switchTo().activeElement(); 
 //		action.moveToElement(activeElement).sendKeys("System.out.println('welcome');").perform();
 		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][1]).perform();
+		click_run_button();
+	}
+	
+	public void click_run_button(){
 		wait.until(ExpectedConditions.elementToBeClickable(runBtn));
 		web_element_click(runBtn);
 	}
@@ -170,11 +175,39 @@ public class UtlityFunctions extends BaseClass {
 		Assert.assertEquals(messageFromActiveElement, "Please fill out this field.");
 	}
 	
-//	public void click_back_button_twice(){
-//		driver.navigate().back();
-//		driver.navigate().refresh();
-//		driver.navigate().back();
-//		driver.navigate().refresh();
-//	}
+	public void try_editor_python_code_submit(){
+		driver.navigate().refresh();
+		WebElement activeElement = driver.switchTo().activeElement(); 
+//		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
+		action.moveToElement(activeElement).sendKeys((TryEditorDataExcel()[1][0])).perform();
+//		send_keys(code, "print 'welcome'");
+		click_submit_button();
+	}
+	
+	public void try_editor_invalid_code_submit(){
+		driver.navigate().refresh();
+		WebElement activeElement = driver.switchTo().activeElement(); 
+//		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
+		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][2]).perform();
+		click_submit_button();
+	}
+	
+	public void try_editor_valid_java_code_submit(){
+		WebElement activeElement = driver.switchTo().activeElement(); 
+//		action.moveToElement(activeElement).sendKeys("System.out.println('welcome');").perform();
+		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][1]).perform();
+		click_submit_button();
+	}
+	
+	public void click_submit_button(){
+		wait.until(ExpectedConditions.elementToBeClickable(submitBtn));
+		web_element_click(submitBtn);
+	}
+	
+	public void check_submit_output(){
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(output));
+		String outputmsg=(driver.findElement(output)).getText().trim(); 
+		check_text(outputmsg,"No tests were collected");
+	}
 }
 
