@@ -1,1 +1,0 @@
-{"uuid":"58699fcb-f3d0-4e45-a7d0-258bdaa57165","name":"Test On Edge","children":[],"befores":[{"name":"browserSetup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1696280100832,"stop":1696280103410}],"afters":[],"start":1696280100830,"stop":1696280103411}
