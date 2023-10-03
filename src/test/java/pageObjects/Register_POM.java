@@ -47,7 +47,8 @@ public class Register_POM extends BaseClass{
 	
 	public void enter_valid_usename(){
 //		UtlityFunctionsOBJ.send_keys(username,"QualityWayA1B2C");
-		UtlityFunctionsOBJ.send_keys(username,(RegisterDataExcel()[2][0]));
+		double r=Math.floor(Math.random()*1000);
+		UtlityFunctionsOBJ.send_keys(username,((RegisterDataExcel()[2][0])+r));
 	}
 	
 	public void enter_valid_password(){
