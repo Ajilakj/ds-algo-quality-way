@@ -154,49 +154,139 @@ Feature: To validate the  Array Page
     Then user will directed to a text editor for search the Array
     
    @tag25
+  Scenario: A user is in the question page from  for search the Array page to check valid java code
+    When user write some valid java code for for search the Array page then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for for search the Array page
+    
+   @tag26
+  Scenario: to test writing valid java code in the try Editor for for search the Array to test submit
+    When user enters valid code  then clicks submit button for for search the Array
+    Then user gets No tests were collected message for for search the Array for valid code
+    
+  @tag27
+  Scenario:  A user is in the question page from  for search the Array page to check invalid code
+    When user enters invalid code then clicks Run button to test for search the Array
+    Then an alert with SyntaxError: bad input on line 1 will display for for search the Array
+    
+  @tag28 
+  Scenario: to test writing invalid code in the try Editor for for search the Array to test submit
+    When user enters invalid code  then clicks submit button for for search the Array
+    Then user gets No tests were collected message forfor search the Array for invalid code
+    
+  @tag29 
+  Scenario: to test writing valid python code in the try Editor for for search the Array
+    When user enters valid python code then clicks Run button for for search the Array
+    Then user gets valid output for for search the Array
+    
+   @tag30  
+  Scenario: to test writing valid python code in the try Editor for for search the Array to test submit
+    When user enters valid python code  then clicks submit button for for search the Array
+    Then user gets No tests were collected message for Squares of a for search the Array
+    
+   @tag31
   Scenario: The user already in practice questions Page to check Max Consecutive Ones link
     Given The user already in practice questions Page for Max Consecutive Ones
     When user select Max Consecutive Ones link
     Then user will directed to a text editor for Max Consecutive Ones
     
-     @tag26
+  @tag32
+  Scenario: A user is in the question page from  Squares of a Max Consecutive Ones page to check valid java code
+    When user write some valid java code for Squares of a Max Consecutive Ones then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for SMax Consecutive Ones
+    
+  @tag33
+  Scenario: to test writing valid java code in the try Editor for Max Consecutive Ones to test submit
+    When user enters valid code  then clicks submit button for Max Consecutive Ones
+    Then user gets No tests were collected message for Max Consecutive Ones for valid code
+    
+  @tag34
+  Scenario:  A user is in the question page from Max Consecutive Ones page to check invalid code
+    When user enters invalid code then clicks Run button to test Max Consecutive Ones
+    Then an alert with SyntaxError: bad input on line 1 will display for Max Consecutive Ones
+    
+  @tag35 
+  Scenario: to test writing invalid code in the try Editor for Max Consecutive Ones to test submit
+    When user enters invalid code  then clicks submit button for Max Consecutive Ones
+    Then user gets No tests were collected message for Max Consecutive Ones for invalid code
+    
+  @tag36
+  Scenario: to test writing valid python code in the try Editor for Max Consecutive Ones
+    When user enters valid python code then clicks Run button for Max Consecutive Ones
+    Then user gets valid output for Max Consecutive Ones
+    
+   @tag37  
+  Scenario: to test writing valid python code in the try Editor for Max Consecutive Ones to test submit
+    When user enters valid python code  then clicks submit button for Max Consecutive Ones
+    Then user gets No tests were collected message for Max Consecutive Ones for python code
+    
+     @tag38
   Scenario: The user already in practice questions Page to check Find Numbers with Even Number of Digits link
     Given The user already in practice questions Page for Find Numbers with Even Number of Digits
     When user select Find Numbers with Even Number of Digits link
     Then user will directed to a text editor for Find Numbers with Even Number of Digits
     
-     @tag27
+   @tag39
+  Scenario: A user is in the question page from Find Numbers with Even Number of Digits page to check valid java code
+    When user write some valid java code for Find Numbers with Even Number of Digits page then click run button
+    Then an alert with NameError: name System is not defined on line 1 will display for Find Numbers with Even Number of Digits page
+    
+   @tag40
+  Scenario: to test writing valid java code in the try Editor for Find Numbers with Even Number of Digits to test submit
+    When user enters valid code  then clicks submit button for Find Numbers with Even Number of Digits
+    Then user gets No tests were collected message for Find Numbers with Even Number of Digits for valid code
+    
+   @tag41
+  Scenario:  A user is in the question page from  Find Numbers with Even Number of Digits page to check invalid code
+    When user enters invalid code then clicks Run button to test Find Numbers with Even Number of Digits
+    Then an alert with SyntaxError: bad input on line 1 will display for Find Numbers with Even Number of Digits
+    
+   @tag42
+  Scenario: to test writing invalid code in the try Editor for Find Numbers with Even Number of Digits to test submit
+    When user enters invalid code  then clicks submit button for Find Numbers with Even Number of Digits
+    Then user gets No tests were collected message for Find Numbers with Even Number of Digits for invalid code
+    
+   @tag43
+  Scenario: to test writing valid python code in the try Editor for Find Numbers with Even Number of Digits
+    When user enters valid python code then clicks Run button for Find Numbers with Even Number of Digits
+    Then user gets valid output for Find Numbers with Even Number of Digits
+    
+   @tag44
+  Scenario: to test writing valid python code in the try Editor for Find Numbers with Even Number of Digits to test submit
+    When user enters valid python code  then clicks submit button for Find Numbers with Even Number of Digits
+    Then user gets No tests were collected message for Find Numbers with Even Number of Digits for python code
+    
+   @tag45
   Scenario: The user already in practice questions Page to check Squares of a Sorted Array links
     Given The user already in practice questions Page for Squares of a Sorted Array
     When user select Squares of a Sorted Array link
     Then user will directed to a text editor for Squares of a Sorted Array
     
-   @tag28
+   @tag46
   Scenario: A user is in the question page from  Squares of a Sorted Array page to check valid java code
     When user write some valid java code for Squares of a Sorted page then click run button
     Then an alert with NameError: name System is not defined on line 1 will display for Squares of a Sorted page
     
-   @tag29
+   @tag47
   Scenario: to test writing valid java code in the try Editor for Squares of a Sorted to test submit
     When user enters valid code  then clicks submit button for Squares of a Sorted
-    Then user gets No tests were collected message for Squares of a Sorted
+    Then user gets No tests were collected message for Squares of a Sorted for valid code
     
-  @tag30
+   @tag48
   Scenario:  A user is in the question page from  Squares of a Sorted Array page to check invalid code
     When user enters invalid code then clicks Run button to test Squares of a Sorted
     Then an alert with SyntaxError: bad input on line 1 will display for Squares of a Sorted
     
-  @tag31 
+   @tag49
   Scenario: to test writing invalid code in the try Editor for Squares of a Sorted to test submit
     When user enters invalid code  then clicks submit button for Squares of a Sorted
-    Then user gets No tests were collected message for Squares of a Sorted
+    Then user gets No tests were collected message for Squares of a Sorted for invalid code
     
-  @tag32 
-  Scenario: to test writing valid code in the try Editor for Squares of a Sorted
-    When user enters valid code then clicks Run button for Squares of a Sorted
+   @tag50
+  Scenario: to test writing valid python code in the try Editor for Squares of a Sorted
+    When user enters valid python code then clicks Run button for Squares of a Sorted
     Then user gets valid output for Squares of a Sorted
     
-   @tag33 
-  Scenario: to test writing valid code in the try Editor for Squares of a Sorted to test submit
-    When user enters valid code  then clicks submit button for Squares of a Sorted
-    Then user gets No tests were collected message for Squares of a Sorted
+   @tag51
+  Scenario: to test writing valid python code in the try Editor for Squares of a Sorted to test submit
+    When user enters valid python code  then clicks submit button for Squares of a Sorted
+    Then user gets No tests were collected message for Squares of a Sorted for python code

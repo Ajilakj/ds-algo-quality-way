@@ -18,7 +18,7 @@ import pageObjects.BaseClass;
 
 public class UtlityFunctions extends BaseClass {
 
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 	By sign_in=By.partialLinkText("Sign in");
 	By register =By.partialLinkText("Register");
 	By login =By.partialLinkText("Login");
@@ -30,6 +30,7 @@ public class UtlityFunctions extends BaseClass {
 	By runBtn=By.xpath("//button[text()='Run']");
 	By submitBtn=By.xpath("//input[@value='Submit']");
 	By practiceQuestions=By.partialLinkText("Practice Questions");
+	By editor=By.id("editor");
 	
 	Actions action = new Actions(driver); 
 	
@@ -109,16 +110,13 @@ public class UtlityFunctions extends BaseClass {
 	public void try_editor_python_code(){
 		driver.navigate().refresh();
 		WebElement activeElement = driver.switchTo().activeElement(); 
-//		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
 		action.moveToElement(activeElement).sendKeys((TryEditorDataExcel()[1][0])).perform();
-//		send_keys(code, "print 'welcome'");
 		click_run_button();
 	}
 	
 	public void try_editor_invalid_code(){
 		driver.navigate().refresh();
 		WebElement activeElement = driver.switchTo().activeElement(); 
-//		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
 		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][2]).perform();
 		click_run_button();
 	}
@@ -126,7 +124,6 @@ public class UtlityFunctions extends BaseClass {
 	public void try_editor_valid_java_code(){
 		driver.navigate().refresh();
 		WebElement activeElement = driver.switchTo().activeElement(); 
-//		action.moveToElement(activeElement).sendKeys("System.out.println('welcome');").perform();
 		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][1]).perform();
 		click_run_button();
 	}
@@ -138,23 +135,21 @@ public class UtlityFunctions extends BaseClass {
 	
 	public void check_python_output(){
 		String outputmsg=(driver.findElement(output)).getText(); 
-//		check_text(outputmsg,"welcome");
 		check_text(outputmsg,(TryEditorDataExcel()[2][0]));
 	}
 	
 	public void check_output_valid_java(){
 		String output=(driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept(); 
-//		check_text(output,"NameError: name 'System' is not defined on line 1");
 		check_text(output,(TryEditorDataExcel()[2][1]));
 	}
 	
 	public void check_output_invalid_code(){
 		String output=(driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept(); 
-//		check_text(output,"SyntaxError: bad input on line 1");
 		check_text(output,(TryEditorDataExcel()[2][2]));
 	}
+	
 	public void click_back_button(){
 		driver.navigate().back();
 		driver.navigate().refresh();
@@ -175,27 +170,43 @@ public class UtlityFunctions extends BaseClass {
 		Assert.assertEquals(messageFromActiveElement, "Please fill out this field.");
 	}
 	
-	public void try_editor_python_code_submit(){
+	public void practice_question_python_code(){
 		driver.navigate().refresh();
-		WebElement activeElement = driver.switchTo().activeElement(); 
-//		action.moveToElement(activeElement).sendKeys("print 'welcome'").perform();
-		action.moveToElement(activeElement).sendKeys((TryEditorDataExcel()[1][0])).perform();
-//		send_keys(code, "print 'welcome'");
+		
+		for(int i=0;i<100;i++) {
+			action.sendKeys(Keys.DELETE).perform();;
+		}		
+		action.sendKeys(TryEditorDataExcel()[1][0]).perform();
+		click_run_button();
+	}
+	
+	public void practice_question_invalid_code(){
+		practice_question_textarea_clear();
+		action.sendKeys(TryEditorDataExcel()[1][2]).perform();
+		click_run_button();
+	}
+	
+	public void practice_question_valid_java_code(){
+		practice_question_textarea_clear();
+		action.sendKeys(TryEditorDataExcel()[1][1]).perform();
+		click_run_button();
+	}
+	
+	public void practice_question_python_code_submit(){
+		practice_question_textarea_clear();
+		action.sendKeys(TryEditorDataExcel()[1][0]).perform();
 		click_submit_button();
 	}
 	
-	public void try_editor_invalid_code_submit(){
-		driver.navigate().refresh();
-		WebElement activeElement = driver.switchTo().activeElement(); 
-//		action.moveToElement(activeElement).sendKeys("System.out.println 'welcome'").perform();
-		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][2]).perform();
+	public void practice_question_invalid_code_submit(){
+		practice_question_textarea_clear();
+		action.sendKeys(TryEditorDataExcel()[1][2]).perform();
 		click_submit_button();
 	}
 	
-	public void try_editor_valid_java_code_submit(){
-		WebElement activeElement = driver.switchTo().activeElement(); 
-//		action.moveToElement(activeElement).sendKeys("System.out.println('welcome');").perform();
-		action.moveToElement(activeElement).sendKeys(TryEditorDataExcel()[1][1]).perform();
+	public void practice_question_valid_java_code_submit(){
+		practice_question_textarea_clear();
+		action.sendKeys(TryEditorDataExcel()[1][1]).perform();
 		click_submit_button();
 	}
 	
@@ -204,10 +215,24 @@ public class UtlityFunctions extends BaseClass {
 		web_element_click(submitBtn);
 	}
 	
-	public void check_submit_output(){
+	public void check_submit_output1(){
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(output));
+		String outputmsg=(driver.findElement(output)).getText().trim(); 
+		check_text(outputmsg,"Error occurred during submission");
+	}
+	
+	public void check_submit_output2(){
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(output));
 		String outputmsg=(driver.findElement(output)).getText().trim(); 
 		check_text(outputmsg,"No tests were collected");
+	}
+	
+	public void practice_question_textarea_clear(){
+		driver.navigate().refresh();
+//		int len=editor.toString().length(); 
+		for(int i=0;i<50;i++) {
+			action.sendKeys(Keys.DELETE).perform();
+		}		
 	}
 }
 

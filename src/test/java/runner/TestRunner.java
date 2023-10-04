@@ -15,9 +15,8 @@ import io.cucumber.testng.CucumberOptions;
 		@CucumberOptions(
 				plugin = {"pretty", "html:target/quality_way.html"}, //reporting purpose
 				monochrome=false,  //console output color
-				tags = "@tag", //tags from feature file
-//				tags = "@home or @register or @login or @array", //tags from feature file
-//				tags = "@home", //tags from feature file
+//				tags = "@tag", //tags from feature file
+						tags = "@home or @login or @array", //tags from feature file
 				features = {"src/test/resources/features"}, //location of feature files - folder name
 				glue= "step_definition") //location of step definition files - package name
 
@@ -26,8 +25,7 @@ import io.cucumber.testng.CucumberOptions;
 			
 			@Override
 		    @DataProvider(parallel = false)
-		    public Object[][] scenarios() {
-						
+		    public Object[][] scenarios() {	
 				return super.scenarios();
 		    }
 	}

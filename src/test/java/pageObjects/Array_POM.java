@@ -16,6 +16,7 @@ public class Array_POM extends BaseClass{
 	By evenNumberOfDigits=By.partialLinkText("Find Numbers with Even Number of Digits");
 	By squaresOfASortedArray=By.partialLinkText("Squares of a Sorted Array");
 	
+	
 	UtlityFunctions UtlityFunctionsOBJ=new UtlityFunctions();
 	
 	public void click_get_start_lnk(){

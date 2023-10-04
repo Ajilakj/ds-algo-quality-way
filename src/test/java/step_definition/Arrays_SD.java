@@ -320,8 +320,74 @@ public class Arrays_SD  extends BaseClass {
 	public void user_will_directed_to_a_text_editor_for_search_the_array() {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/question/1");
 	}
-
+	
 //	  @tag25
+	@When("user write some valid java code for for search the Array page then click run button")
+	public void user_write_some_valid_java_code_for_for_search_the_array_page_then_click_run_button() {
+		UtlityFunctionsOBJ.practice_question_valid_java_code_submit();;
+	}
+
+	@Then("an alert with NameError: name System is not defined on line {int} will display for for search the Array page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_for_search_the_array_page(Integer int1) {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag26
+	@When("user enters valid code  then clicks submit button for for search the Array")
+	public void user_enters_valid_code_then_clicks_submit_button_for_for_search_the_array() {
+		UtlityFunctionsOBJ.practice_question_invalid_code();
+	}
+
+	@Then("user gets No tests were collected message for for search the Array for valid code")
+	public void user_gets_no_tests_were_collected_message_for_for_search_the_array_for_valid_code() {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	  @tag27
+	@When("user enters invalid code then clicks Run button to test for search the Array")
+	public void user_enters_invalid_code_then_clicks_run_button_to_test_for_search_the_array() {
+		UtlityFunctionsOBJ.practice_question_invalid_code_submit();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for for search the Array")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_for_search_the_array(Integer int1) {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag28
+	@When("user enters invalid code  then clicks submit button for for search the Array")
+	public void user_enters_invalid_code_then_clicks_submit_button_for_for_search_the_array() {
+		UtlityFunctionsOBJ.practice_question_invalid_code_submit();
+	}
+
+	@Then("user gets No tests were collected message forfor search the Array for invalid code")
+	public void user_gets_no_tests_were_collected_message_forfor_search_the_array_for_invalid_code() {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag29
+	@When("user enters valid python code then clicks Run button for for search the Array")
+	public void user_enters_valid_python_code_then_clicks_run_button_for_for_search_the_array() {
+		UtlityFunctionsOBJ.practice_question_python_code();
+	}
+
+	@Then("user gets valid output for for search the Array")
+	public void user_gets_valid_output_for_for_search_the_array() {
+		UtlityFunctionsOBJ.check_python_output();
+	}
+
+//	  @tag30
+	@When("user enters valid python code  then clicks submit button for for search the Array")
+	public void user_enters_valid_python_code_then_clicks_submit_button_for_for_search_the_array() {
+		UtlityFunctionsOBJ.practice_question_python_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Squares of a for search the Array")
+	public void user_gets_no_tests_were_collected_message_for_squares_of_a_for_search_the_array() {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag31
 	@Given("The user already in practice questions Page for Max Consecutive Ones")
 	public void the_user_already_in_practice_questions_page_for_max_consecutive_ones() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -338,7 +404,73 @@ public class Arrays_SD  extends BaseClass {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/question/2");
 	}
 
-//	  @tag26
+//	  @tag32
+	@When("user write some valid java code for Squares of a Max Consecutive Ones then click run button")
+	public void user_write_some_valid_java_code_for_squares_of_a_max_consecutive_ones_then_click_run_button() {
+		UtlityFunctionsOBJ.practice_question_valid_java_code();
+	}
+
+	@Then("an alert with NameError: name System is not defined on line {int} will display for SMax Consecutive Ones")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_s_max_consecutive_ones(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
+	}
+
+//	  @tag33
+	@When("user enters valid code  then clicks submit button for Max Consecutive Ones")
+	public void user_enters_valid_code_then_clicks_submit_button_for_max_consecutive_ones() {
+		UtlityFunctionsOBJ.practice_question_valid_java_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Max Consecutive Ones for valid code")
+	public void user_gets_no_tests_were_collected_message_for_max_consecutive_ones_for_valid_code() {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag34
+	@When("user enters invalid code then clicks Run button to test Max Consecutive Ones")
+	public void user_enters_invalid_code_then_clicks_run_button_to_test_max_consecutive_ones() {
+		UtlityFunctionsOBJ.practice_question_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for Max Consecutive Ones")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_max_consecutive_ones(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	  @tag35
+	@When("user enters invalid code  then clicks submit button for Max Consecutive Ones")
+	public void user_enters_invalid_code_then_clicks_submit_button_for_max_consecutive_ones() {
+		UtlityFunctionsOBJ.practice_question_invalid_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Max Consecutive Ones for invalid code")
+	public void user_gets_no_tests_were_collected_message_for_max_consecutive_ones_for_invalid_code() {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag36
+	@When("user enters valid python code then clicks Run button for Max Consecutive Ones")
+	public void user_enters_valid_python_code_then_clicks_run_button_for_max_consecutive_ones() {
+		UtlityFunctionsOBJ.practice_question_python_code();
+	}
+
+	@Then("user gets valid output for Max Consecutive Ones")
+	public void user_gets_valid_output_for_max_consecutive_ones() {
+		UtlityFunctionsOBJ.check_python_output();
+	}
+
+//	  @tag37
+	@When("user enters valid python code  then clicks submit button for Max Consecutive Ones")
+	public void user_enters_valid_python_code_then_clicks_submit_button_for_max_consecutive_ones() {
+		UtlityFunctionsOBJ.practice_question_python_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Max Consecutive Ones for python code")
+	public void user_gets_no_tests_were_collected_message_for_max_consecutive_ones_for_python_code() {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag38
 	@Given("The user already in practice questions Page for Find Numbers with Even Number of Digits")
 	public void the_user_already_in_practice_questions_page_for_find_numbers_with_even_number_of_digits() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -355,7 +487,73 @@ public class Arrays_SD  extends BaseClass {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/question/3");
 	}
 
-//	  @tag27
+//	  @tag39
+	@When("user write some valid java code for Find Numbers with Even Number of Digits page then click run button")
+	public void user_write_some_valid_java_code_for_find_numbers_with_even_number_of_digits_page_then_click_run_button() {
+		UtlityFunctionsOBJ.practice_question_valid_java_code();
+	}
+
+	@Then("an alert with NameError: name System is not defined on line {int} will display for Find Numbers with Even Number of Digits page")
+	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_find_numbers_with_even_number_of_digits_page(Integer int1) {
+		UtlityFunctionsOBJ.check_output_valid_java();
+	}
+
+//	  @tag40
+	@When("user enters valid code  then clicks submit button for Find Numbers with Even Number of Digits")
+	public void user_enters_valid_code_then_clicks_submit_button_for_find_numbers_with_even_number_of_digits() {
+		UtlityFunctionsOBJ.practice_question_valid_java_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Find Numbers with Even Number of Digits for valid code")
+	public void user_gets_no_tests_were_collected_message_for_find_numbers_with_even_number_of_digits_for_valid_code() {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag41
+	@When("user enters invalid code then clicks Run button to test Find Numbers with Even Number of Digits")
+	public void user_enters_invalid_code_then_clicks_run_button_to_test_find_numbers_with_even_number_of_digits() {
+		UtlityFunctionsOBJ.practice_question_invalid_code();
+	}
+
+	@Then("an alert with SyntaxError: bad input on line {int} will display for Find Numbers with Even Number of Digits")
+	public void an_alert_with_syntax_error_bad_input_on_line_will_display_for_find_numbers_with_even_number_of_digits(Integer int1) {
+		UtlityFunctionsOBJ.check_output_invalid_code();
+	}
+
+//	  @tag42
+	@When("user enters invalid code  then clicks submit button for Find Numbers with Even Number of Digits")
+	public void user_enters_invalid_code_then_clicks_submit_button_for_find_numbers_with_even_number_of_digits() {
+		UtlityFunctionsOBJ.practice_question_invalid_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Find Numbers with Even Number of Digits for invalid code")
+	public void user_gets_no_tests_were_collected_message_for_find_numbers_with_even_number_of_digits_for_invalid_code() {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+	
+//	  @tag43
+	@When("user enters valid python code then clicks Run button for Find Numbers with Even Number of Digits")
+	public void user_enters_valid_python_code_then_clicks_run_button_for_find_numbers_with_even_number_of_digits() {
+		UtlityFunctionsOBJ.practice_question_python_code();
+	}
+
+	@Then("user gets valid output for Find Numbers with Even Number of Digits")
+	public void user_gets_valid_output_for_find_numbers_with_even_number_of_digits() {
+		UtlityFunctionsOBJ.check_python_output();
+	}
+
+//	  @tag44
+	@When("user enters valid python code  then clicks submit button for Find Numbers with Even Number of Digits")
+	public void user_enters_valid_python_code_then_clicks_submit_button_for_find_numbers_with_even_number_of_digits() {
+		UtlityFunctionsOBJ.practice_question_python_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Find Numbers with Even Number of Digits for python code")
+	public void user_gets_no_tests_were_collected_message_for_find_numbers_with_even_number_of_digits_for_python_code() {
+		UtlityFunctionsOBJ.check_submit_output1();
+	}
+
+//	  @tag45
 	@Given("The user already in practice questions Page for Squares of a Sorted Array")
 	public void the_user_already_in_practice_questions_page_for_squares_of_a_sorted_array() {
 		UtlityFunctionsOBJ.click_back_button();
@@ -372,30 +570,32 @@ public class Arrays_SD  extends BaseClass {
 		UtlityFunctionsOBJ.check_url("https://dsportalapp.herokuapp.com/question/4");
 	}
 	
-	
+//	  @tag46
 	@When("user write some valid java code for Squares of a Sorted page then click run button")
 	public void user_write_some_valid_java_code_for_squares_of_a_sorted_page_then_click_run_button() {
-		UtlityFunctionsOBJ.try_editor_valid_java_code();
+		UtlityFunctionsOBJ.practice_question_valid_java_code();
 	}
 
 	@Then("an alert with NameError: name System is not defined on line {int} will display for Squares of a Sorted page")
 	public void an_alert_with_name_error_name_system_is_not_defined_on_line_will_display_for_squares_of_a_sorted_page(Integer int1) {
-		UtlityFunctionsOBJ.check_output_invalid_code();
+		UtlityFunctionsOBJ.check_output_valid_java();
 	}
 
+//	  @tag47
 	@When("user enters valid code  then clicks submit button for Squares of a Sorted")
 	public void user_enters_valid_code_then_clicks_submit_button_for_squares_of_a_sorted() {
-		UtlityFunctionsOBJ.try_editor_invalid_code_submit();
+		UtlityFunctionsOBJ.practice_question_valid_java_code_submit();
 	}
 
-	@Then("user gets No tests were collected message for Squares of a Sorted")
-	public void user_gets_no_tests_were_collected_message_for_squares_of_a_sorted() {
-		UtlityFunctionsOBJ.check_submit_output();
+	@Then("user gets No tests were collected message for Squares of a Sorted for valid code")
+	public void user_gets_no_tests_were_collected_message_for_squares_of_a_sorted_for_valid_code() {
+		UtlityFunctionsOBJ.check_submit_output2();
 	}
 
+//	  @tag48
 	@When("user enters invalid code then clicks Run button to test Squares of a Sorted")
 	public void user_enters_invalid_code_then_clicks_run_button_to_test_squares_of_a_sorted() {
-		UtlityFunctionsOBJ.try_editor_invalid_code();
+		UtlityFunctionsOBJ.practice_question_invalid_code();
 	}
 
 	@Then("an alert with SyntaxError: bad input on line {int} will display for Squares of a Sorted")
@@ -403,18 +603,36 @@ public class Arrays_SD  extends BaseClass {
 		UtlityFunctionsOBJ.check_output_invalid_code();
 	}
 
+//	  @tag49
 	@When("user enters invalid code  then clicks submit button for Squares of a Sorted")
 	public void user_enters_invalid_code_then_clicks_submit_button_for_squares_of_a_sorted() {
-		UtlityFunctionsOBJ.try_editor_invalid_code_submit();
+		UtlityFunctionsOBJ.practice_question_invalid_code_submit();
+	}
+	
+	@Then("user gets No tests were collected message for Squares of a Sorted for invalid code")
+	public void user_gets_no_tests_were_collected_message_for_squares_of_a_sorted_for_invalid_code() {
+		UtlityFunctionsOBJ.check_submit_output2();
 	}
 
-	@When("user enters valid code then clicks Run button for Squares of a Sorted")
-	public void user_enters_valid_code_then_clicks_run_button_for_squares_of_a_sorted() {
-		UtlityFunctionsOBJ.try_editor_python_code();
+//	  @tag50
+	@When("user enters valid python code then clicks Run button for Squares of a Sorted")
+	public void user_enters_valid_python_code_then_clicks_run_button_for_squares_of_a_sorted() {
+		UtlityFunctionsOBJ.practice_question_python_code();
 	}
 
 	@Then("user gets valid output for Squares of a Sorted")
 	public void user_gets_valid_output_for_squares_of_a_sorted() {
-		UtlityFunctionsOBJ.check_output_invalid_code();
+		UtlityFunctionsOBJ.check_python_output();
+	}
+	
+//	  @tag51
+	@When("user enters valid python code  then clicks submit button for Squares of a Sorted")
+	public void user_enters_valid_python_code_then_clicks_submit_button_for_squares_of_a_sorted() {
+		UtlityFunctionsOBJ.practice_question_python_code_submit();
+	}
+
+	@Then("user gets No tests were collected message for Squares of a Sorted for python code")
+	public void user_gets_no_tests_were_collected_message_for_squares_of_a_sorted_for_python_code() {
+		UtlityFunctionsOBJ.check_submit_output2();
 	}
 }

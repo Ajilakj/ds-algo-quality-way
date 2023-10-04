@@ -30,12 +30,9 @@ public class BaseClass {
 //			browserSetup("firefox");
 //			browserSetup("edge");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}	
-	@BeforeTest
-	@Parameters("browser")
 	public void browserSetup(String browser) throws Exception{
 		
 		if(driver==null)
