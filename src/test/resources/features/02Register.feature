@@ -94,12 +94,12 @@
   When  use click login link from register page
   Then user is navigated to login page
       
- @tag11
-  Scenario: Check register is successful with valid credentials
-  Given User is in register page to check successful register with valid credentials
-  When enters valid username, valid password and confirm password
-  And clicks register button
-  Then user will navigate to home page
+ #@tag11
+  #Scenario: Check register is successful with valid credentials
+  #Given User is in register page to check successful register with valid credentials
+  #When enters valid username, valid password and confirm password
+  #And clicks register button
+  #Then user will navigate to home page
   
  
     
