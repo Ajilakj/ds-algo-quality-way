@@ -13,9 +13,11 @@ import io.cucumber.testng.CucumberOptions;
 	@RunWith(Cucumber.class) //Junit execution
 
 		@CucumberOptions(
-				plugin = {"pretty", "html:target/quality_way.html"}, //reporting purpose
+				plugin = {"pretty", "json:target/quality_way.json"}, //reporting purpose
 				monochrome=false,  //console output color
-				tags = "@tag", //tags from feature file
+//				tags = "@tag", //tags from feature file
+
+						tags = "@home", //tags from feature file
 				features = {"src/test/resources/features"}, //location of feature files - folder name
 				glue= "step_definition") //location of step definition files - package name
 
