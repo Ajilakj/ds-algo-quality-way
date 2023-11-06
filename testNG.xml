@@ -6,9 +6,4 @@
 			<class name="runner.TestRunner" />
 		</classes>
 	</test>	
-	<listeners>
-
-<listener class-name="extentreports.ExtentreportListener"/>
-
-</listeners>
 </suite>

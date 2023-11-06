@@ -13,7 +13,10 @@ import io.cucumber.testng.CucumberOptions;
 	@RunWith(Cucumber.class) //Junit execution
 
 		@CucumberOptions(
-				plugin = {"pretty", "json:target/quality_way.json"}, //reporting purpose
+//				plugin = {"pretty", "json:target/quality_way.json"}, //reporting purpose
+				plugin= {"pretty","html:target/cucumber.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+				         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				        })
 				monochrome=false,  //console output color
 //				tags = "@tag", //tags from feature file
 
